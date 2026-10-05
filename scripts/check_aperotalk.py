@@ -22,7 +22,7 @@ EVENT_LINK = re.compile(
 
 
 def clean(fragment):
-    return html.unescape(re.sub(r"<[^>]+>", "", fragment)).strip()
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", fragment))).strip()
 
 
 def fetch(url):
@@ -31,19 +31,47 @@ def fetch(url):
         return resp.read().decode("utf-8", errors="replace")
 
 
+def title_from_alt(anchor):
+    """Titre tiré du texte alternatif de l'affiche, du type « Affiche : Mon talk »."""
+    match = re.search(r'alt="([^"]{3,200})"', anchor)
+    if not match:
+        return ""
+    value = clean(match.group(1))
+    return re.sub(r"^Affiche\s*:\s*", "", value, flags=re.IGNORECASE).strip()
+
+
+def title_and_date_from_heading(after):
+    match = re.search(r"<h[23][^>]*>(.*?)</h[23]>", after, re.S | re.I)
+    if not match:
+        return "", ""
+    title = clean(match.group(1))
+    li = re.search(r"<li[^>]*>(.*?)</li>", after[match.end():match.end() + 3000], re.S | re.I)
+    return title, clean(li.group(1)) if li else ""
+
+
 def extract_events(page):
+    """Chaque événement est identifié par son lien Shotgun.
+
+    On ne garde que la première occurrence de chaque lien (le bloc de l'affiche)
+    et on borne la recherche du titre au lien suivant, pour ne jamais déborder
+    sur la carte de l'événement d'après.
+    """
+    matches = list(EVENT_LINK.finditer(page))
     events = {}
-    for match in EVENT_LINK.finditer(page):
+    for index, match in enumerate(matches):
         url, slug = match.group(1), match.group(2).lower()
         if slug in events:
             continue
-        after = page[match.end(): match.end() + 4000]
-        title_match = re.search(r"<h3[^>]*>(.*?)</h3>", after, re.S | re.I)
-        title = clean(title_match.group(1)) if title_match else slug.replace("-", " ").capitalize()
-        date = ""
-        if title_match:
-            li = re.search(r"<li[^>]*>(.*?)</li>", after[title_match.end():], re.S | re.I)
-            date = clean(li.group(1)) if li else ""
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(page)
+        window = page[match.end():end]
+        anchor = window.split("</a>", 1)[0]
+
+        title, date = title_and_date_from_heading(window)
+        alt_title = title_from_alt(anchor)
+        if alt_title:
+            title = alt_title
+        if not title:
+            title = slug.replace("-", " ").capitalize()
         events[slug] = {"title": title, "date": date, "url": url}
     return events
 

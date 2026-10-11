@@ -1,0 +1,37 @@
+name: Veille Le Briefing
+
+on:
+  schedule:
+    - cron: "43 */3 * * *"   # toutes les 3 heures (heure UTC), décalé d'Apéro Talk
+  workflow_dispatch:          # bouton "Run workflow" pour tester à la main
+
+permissions:
+  contents: write   # pour sauvegarder la liste des événements déjà vus
+  issues: write     # pour créer l'issue de notification
+
+concurrency:
+  group: veille-lebriefing
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Vérifier les événements
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python scripts/check_lebriefing.py
+
+      - name: Sauvegarder l'état
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase
+          git add data/lebriefing_seen.json
+          git diff --staged --quiet || (git commit -m "Veille Le Briefing : mise à jour" && git push)

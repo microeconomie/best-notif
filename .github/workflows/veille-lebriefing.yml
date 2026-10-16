@@ -32,6 +32,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase
           git add data/lebriefing_seen.json
-          git diff --staged --quiet || (git commit -m "Veille Le Briefing : mise à jour" && git push)
+          if git diff --staged --quiet; then
+            echo "Aucun changement à sauvegarder."
+          else
+            git commit -m "Veille Le Briefing : mise à jour"
+            git pull --rebase   # après le commit : le dossier de travail est propre
+            git push
+          fi

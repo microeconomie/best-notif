@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
 """Veille des nouveaux événements parisiens publiés sur lebriefing.co.
 
-Chaque événement est identifié par son lien de billetterie (l'identifiant
-Eventbrite), plus stable qu'un titre qui peut être reformulé. Le titre, la date
-et le lieu sont lus juste avant ce lien.
+Lecture de toutes les cartes de la section « Programmation », y compris celles
+affichées « Sold out » : quand tous les talks parisiens sont complets, la page
+n'affiche plus aucun lien de billetterie, et se fier aux liens reviendrait à
+croire que le site est cassé.
 
-Filtre ville : seuls les événements parisiens sont notifiés. Le site n'indique
+Identité d'un événement : le numéro Eventbrite quand un lien existe, sinon le
+titre normalisé. Les deux sont comparés à l'état connu, pour qu'un talk qui
+perd son lien (passage en complet) ou qui en gagne un (remise en vente) ne soit
+pas pris pour un nouveau.
+
+Filtre ville : seuls les événements parisiens sont notifiés. Le site n'écrit
 pas « Bruxelles » sur les cartes, donc un événement n'est écarté que s'il y a
-une preuve qu'il est belge (mot-clé, lieu connu, billetterie .be). Dans le
-doute, on notifie : mieux vaut une alerte de trop qu'un talk manqué.
+une preuve qu'il n'est pas parisien (lieu connu, mot-clé, billetterie .be).
+Dans le doute, on notifie.
 
 Notifications :
   - création d'une issue GitHub (toujours, via le GITHUB_TOKEN du workflow)
@@ -19,14 +25,16 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import urllib.request
 from pathlib import Path
 
 PAGE_URL = "https://www.lebriefing.co/"
+PROG_URL = PAGE_URL + "#programmation"
 STATE_FILE = Path("data/lebriefing_seen.json")
 
-# Indices qu'un événement n'est pas parisien. Liste à compléter si Le Briefing
-# ouvre d'autres villes (Bordeaux, Lyon, Lille...).
+# Indices qu'un événement n'est pas parisien. À compléter si Le Briefing ouvre
+# d'autres villes (Bordeaux, Lyon, Lille...), lieux compris.
 HORS_PARIS = [
     "bruxelles", "brussels", "belgique", "belgium", "ixelles", "saint-gilles",
     "le petit bailli", "bordeaux", "marseille", "lyon", "lille", "toulouse",
@@ -50,14 +58,22 @@ def clean(fragment):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", fragment))).strip()
 
 
+def slugify(value):
+    value = unicodedata.normalize("NFKD", value.lower())
+    value = "".join(c for c in value if not unicodedata.combining(c))
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", value)).strip("-")
+
+
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (veille-lebriefing)"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         return resp.read().decode("utf-8", errors="replace")
 
 
-def event_key(url):
-    """Identifiant stable : le numéro Eventbrite, sinon l'adresse sans paramètres."""
+def ticket_id(url):
+    """Numéro Eventbrite, seul identifiant vraiment stable quand il est là."""
+    if not url:
+        return ""
     numero = re.search(r"/e/(?:[^/?#]*-)?(\d{6,})", url)
     return numero.group(1) if numero else url.split("?")[0]
 
@@ -70,39 +86,64 @@ def is_paris(card_text, url):
 
 
 def extract_events(page):
-    """Une carte = tout ce qui précède un lien de billetterie, depuis le lien d'avant."""
-    events = {}
-    previous_end = 0
-    for match in TICKET_LINK.finditer(page):
-        url = match.group(1)
-        window = page[previous_end:match.start()]
-        previous_end = match.end()
+    """Une carte = une ligne de date, puis le premier titre qui suit.
 
-        dates = list(DATE_LINE.finditer(window))
-        if not dates:
-            continue  # lien de billetterie hors programmation (menu, bannière...)
-        date_match = dates[-1]
+    Renvoie (toutes_les_cartes, cartes_parisiennes). Le premier compte sert de
+    garde-fou : si la page ne donne plus aucune carte, la structure a changé.
+    """
+    total = 0
+    paris = {}
+    starts = [m.start() for m in DATE_LINE.finditer(page)]
+    for index, start in enumerate(starts):
+        end = starts[index + 1] if index + 1 < len(starts) else len(page)
+        window = page[start:end]
+
+        date_match = DATE_LINE.search(window)
         headings = [h for h in HEADING.finditer(window) if h.start() >= date_match.end()]
         if not headings:
-            continue
+            continue  # date isolée (pied de page, mention légale...), pas une carte
         heading = headings[0]
-
         title = clean(heading.group(1))
         if not title:
             continue
+
+        total += 1
+        link = TICKET_LINK.search(window)
+        url = link.group(1) if link else ""
         venue = clean(window[date_match.end():heading.start()]).lstrip("@ ").strip()
-        card_text = clean(window[date_match.start():])
+        card_text = clean(window[:heading.end()])
 
         if not is_paris(card_text, url):
             continue
 
-        events[event_key(url)] = {
+        slug = slugify(title)
+        paris[ticket_id(url) or slug] = {
             "title": title,
             "date": clean(date_match.group(0)),
             "venue": venue[:80],
-            "url": url,
+            "url": url or PROG_URL,
+            "slug": slug,
+            "ticket_id": ticket_id(url),
         }
-    return events
+    return total, paris
+
+
+def known_keys(seen):
+    """Tout ce qui permet de reconnaître un événement déjà vu.
+
+    Les anciens états ne contenaient ni « slug » ni « ticket_id » : on les
+    reconstitue depuis le titre et la clé pour rester compatible.
+    """
+    ids, slugs = set(), set()
+    for key, entry in seen.items():
+        ids.add(key)
+        if entry.get("ticket_id"):
+            ids.add(entry["ticket_id"])
+        if entry.get("slug"):
+            slugs.add(entry["slug"])
+        if entry.get("title"):
+            slugs.add(slugify(entry["title"]))
+    return ids, slugs
 
 
 def load_seen():
@@ -145,10 +186,7 @@ def notify_github(new):
         else f"Le Briefing : {len(new)} nouveaux événements"
     )
     lines = [f"- **{describe(e)}** : {e['url']}" for e in new.values()]
-    payload = {
-        "title": title,
-        "body": f"Détecté sur {PAGE_URL}#programmation\n\n" + "\n".join(lines),
-    }
+    payload = {"title": title, "body": f"Détecté sur {PROG_URL}\n\n" + "\n".join(lines)}
     owner = os.environ.get("GITHUB_REPOSITORY_OWNER")
     if owner:
         payload["assignees"] = [owner]
@@ -177,20 +215,33 @@ def notify_ntfy(new):
 
 
 def main():
-    events = extract_events(fetch(PAGE_URL))
-    if not events:
-        print("Aucun événement trouvé : site en panne ou structure modifiée ?", file=sys.stderr)
+    total, events = extract_events(fetch(PAGE_URL))
+    if total == 0:
+        print("Aucune carte trouvée : site en panne ou structure modifiée ?", file=sys.stderr)
         sys.exit(1)
 
     seen = load_seen()
     if seen is None:
         save_seen(events)
-        print(f"Initialisation : {len(events)} événements parisiens enregistrés, aucune alerte.")
+        print(f"Initialisation : {len(events)} événements parisiens enregistrés "
+              f"({total} cartes au total), aucune alerte.")
         return
 
-    new = {key: e for key, e in events.items() if key not in seen}
+    ids, slugs = known_keys(seen)
+    new = {
+        key: event
+        for key, event in events.items()
+        if key not in ids and event["slug"] not in slugs
+        and not (event["ticket_id"] and event["ticket_id"] in ids)
+    }
+
+    # les événements déjà connus voient leur fiche rafraîchie (lien apparu ou
+    # disparu, lieu précisé) sans déclencher d'alerte
+    seen.update({k: v for k, v in events.items() if k in seen})
+
     if not new:
-        print(f"Rien de nouveau ({len(events)} événements parisiens en ligne).")
+        print(f"Rien de nouveau ({len(events)} événements parisiens, {total} cartes au total).")
+        save_seen(seen)
         return
 
     for event in new.values():
@@ -203,4 +254,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-  

@@ -2,7 +2,7 @@ name: Veille Le Briefing
 
 on:
   schedule:
-    - cron: "43 */3 * * *"   # toutes les 3 heures (heure UTC), décalé d'Apéro Talk
+    - cron: "43 * * * *"    # toutes les heures (heure UTC), décalé des trois autres
   workflow_dispatch:          # bouton "Run workflow" pour tester à la main
 
 permissions:

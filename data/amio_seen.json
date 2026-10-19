@@ -21,10 +21,10 @@
     "venue": "Bar à Paris"
   },
   "espion-olivier-mas": {
-    "complet": false,
+    "complet": true,
     "date": "Mardi 20 octobre 2026",
     "title": "15 ans à la DGSE : tous les secrets d'un ancien espion",
-    "url": "https://amioclub.com/checkout?date=Mardi%2020%20octobre%202026&title=15%20ans%20%C3%A0%20la%20DGSE%20%3A%20tous%20les%20secrets%20d'un%20ancien%20espion&event=espion-olivier-mas&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
+    "url": "https://amioclub.com/checkout?date=Mardi%2020%20octobre%202026&title=15%20ans%20%C3%A0%20la%20DGSE%20%3A%20tous%20les%20secrets%20d'un%20ancien%20espion&event=espion-olivier-mas&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris#liste-attente",
     "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
   },
   "geopolitique-bruno-tertrais": {
@@ -45,8 +45,8 @@
     "complet": false,
     "date": "Mercredi 28 octobre 2026",
     "title": "À six mois de la présidentielle, tour d'horizon du paysage politique français",
-    "url": "https://amioclub.com/checkout?date=Mercredi%2028%20octobre%202026&title=%C3%80%20six%20mois%20de%20la%20pr%C3%A9sidentielle%2C%20tour%20d'horizon%20du%20paysage%20politique%20fran%C3%A7ais&event=presidentielle-richard-flurin&venue=Bar%20%C3%A0%20Paris",
-    "venue": "Bar à Paris"
+    "url": "https://amioclub.com/checkout?date=Mercredi%2028%20octobre%202026&title=%C3%80%20six%20mois%20de%20la%20pr%C3%A9sidentielle%2C%20tour%20d'horizon%20du%20paysage%20politique%20fran%C3%A7ais&event=presidentielle-richard-flurin&venue=Impasse%20bar%2C%204%20Cit%C3%A9%20Griset%2C%2075011%20Paris",
+    "venue": "Impasse bar, 4 Cité Griset, 75011 Paris"
   },
   "prison-yannick-deslandes": {
     "complet": true,
@@ -59,7 +59,7 @@
     "complet": false,
     "date": "Mardi 27 octobre 2026",
     "title": "Sexologue : sexe, désir, liberté ; on en parle ?",
-    "url": "https://amioclub.com/checkout?date=Mardi%2027%20octobre%202026&title=Sexologue%20%3A%20sexe%2C%20d%C3%A9sir%2C%20libert%C3%A9%20%3B%20on%20en%20parle%20%3F&event=sexologue-catherine-blanc&venue=Bar%20%C3%A0%20Paris",
-    "venue": "Bar à Paris"
+    "url": "https://amioclub.com/checkout?date=Mardi%2027%20octobre%202026&title=Sexologue%20%3A%20sexe%2C%20d%C3%A9sir%2C%20libert%C3%A9%20%3B%20on%20en%20parle%20%3F&event=sexologue-catherine-blanc&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
+    "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
   }
 }

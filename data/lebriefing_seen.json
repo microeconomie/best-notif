@@ -1,56 +1,66 @@
 {
-  "2002419207754": {
-    "date": "Mardi 6 octobre 2026",
-    "title": "Paris : comment s’est-elle bâtie, comment va-t-elle évoluer ?",
-    "url": "https://www.eventbrite.com/e/2002419207754?aff=oddtdtcreator",
-    "venue": "Journey Paris"
-  },
-  "2002419636035": {
-    "date": "Mercredi 7 octobre 2026",
-    "title": "Comment répondre quand on se moque de nous ?",
-    "url": "https://www.eventbrite.com/e/2002419636035?aff=oddtdtcreator",
-    "venue": "Journey Paris"
-  },
-  "2002419773446": {
+  "abysses-que-renferme-le-fond-des-oceans": {
+    "complet": false,
     "date": "Mercredi 14 octobre 2026",
+    "ticket_id": "2002419773446",
     "title": "Abysses : que renferme le fond des océans ?",
     "url": "https://www.eventbrite.com/e/2002419773446?aff=oddtdtcreator",
     "venue": "Griffon"
   },
-  "2002419951980": {
+  "comment-repondre-quand-on-se-moque-de-nous": {
+    "complet": false,
+    "date": "Mercredi 7 octobre 2026",
+    "ticket_id": "2002419636035",
+    "title": "Comment répondre quand on se moque de nous ?",
+    "url": "https://www.eventbrite.com/e/2002419636035?aff=oddtdtcreator",
+    "venue": "Journey Paris"
+  },
+  "paris-comment-s-est-elle-batie-comment-va-t-elle-evoluer": {
+    "complet": false,
+    "date": "Mardi 6 octobre 2026",
+    "ticket_id": "2002419207754",
+    "title": "Paris : comment s’est-elle bâtie, comment va-t-elle évoluer ?",
+    "url": "https://www.eventbrite.com/e/2002419207754?aff=oddtdtcreator",
+    "venue": "Journey Paris"
+  },
+  "peut-on-apprendre-la-philosophie-en-regardant-netflix": {
+    "complet": false,
     "date": "Jeudi 15 octobre 2026",
+    "ticket_id": "2002419951980",
     "title": "Peut-on apprendre la philosophie en regardant Netflix ?",
     "url": "https://www.eventbrite.com/e/2002419951980?aff=oddtdtcreator",
     "venue": "Journey Paris"
   },
-  "2002421476540": {
-    "date": "Mardi 27 octobre 2026",
-    "title": "Sommes-nous seuls dans l’Univers ?",
-    "url": "https://www.eventbrite.com/e/2002421476540?aff=oddtdtcreator",
-    "venue": "Griffon"
-  },
   "peut-on-choisir-de-qui-l-on-tombe-amoureux": {
+    "complet": true,
     "date": "Mercredi 28 octobre 2026",
-    "slug": "peut-on-choisir-de-qui-l-on-tombe-amoureux",
     "ticket_id": "",
     "title": "Peut-on choisir de qui l’on tombe amoureux ?",
     "url": "https://www.lebriefing.co/#programmation",
     "venue": "Chez les Plombiers"
   },
   "peut-on-ficher-toute-une-population": {
+    "complet": false,
     "date": "Mercredi 21 octobre 2026",
-    "slug": "peut-on-ficher-toute-une-population",
-    "ticket_id": "",
+    "ticket_id": "2002421030205",
     "title": "Peut-on ficher toute une population ?",
-    "url": "https://www.lebriefing.co/#programmation",
+    "url": "https://www.eventbrite.com/e/2002421030205?aff=oddtdtcreator",
     "venue": "Touller Outillage"
   },
   "quel-est-le-futur-de-l-education": {
+    "complet": true,
     "date": "Lundi 19 octobre 2026",
-    "slug": "quel-est-le-futur-de-l-education",
     "ticket_id": "",
     "title": "Quel est le futur de l’éducation ?",
     "url": "https://www.lebriefing.co/#programmation",
     "venue": "Journey Paris"
+  },
+  "sommes-nous-seuls-dans-l-univers": {
+    "complet": true,
+    "date": "Mardi 27 octobre 2026",
+    "ticket_id": "",
+    "title": "Sommes-nous seuls dans l’Univers ?",
+    "url": "https://www.lebriefing.co/#programmation",
+    "venue": "Griffon"
   }
 }

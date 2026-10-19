@@ -2,7 +2,7 @@ name: Veille Causeries de Comptoir
 
 on:
   schedule:
-    - cron: "55 */3 * * *"   # toutes les 3 heures (heure UTC), décalé des trois autres
+    - cron: "55 * * * *"   # toutes les 3 heures (heure UTC), décalé des trois autres
   workflow_dispatch:          # bouton "Run workflow" pour tester à la main
 
 permissions:

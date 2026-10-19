@@ -1,0 +1,26 @@
+{
+  "352fe6f2-c30c-40ce-8a2d-b60042d6e9e0": {
+    "complet": true,
+    "date": "Mardi 20 octobre 2026 à 19h30",
+    "places": 0,
+    "title": "Et si notre idée de l'amour était complètement faussée ?",
+    "url": "https://causeriesdecomptoir.fr/reservation?eventId=352fe6f2-c30c-40ce-8a2d-b60042d6e9e0",
+    "venue": "Mezzanine"
+  },
+  "f43cab38-ed0f-44a5-b778-a3625e8e6ac4": {
+    "complet": false,
+    "date": "Mercredi 21 octobre 2026 à 19h30",
+    "places": 1,
+    "title": "Pourquoi on rêve tous d'un travail qui n'existe pas ?",
+    "url": "https://causeriesdecomptoir.fr/reservation?eventId=f43cab38-ed0f-44a5-b778-a3625e8e6ac4",
+    "venue": "Mezzanine"
+  },
+  "f7bb5ec6-9183-484f-a08b-62e7925d95ea": {
+    "complet": true,
+    "date": "Mardi 27 octobre 2026 à 19h30",
+    "places": 0,
+    "title": "Et si l'opinion publique était fabriquée ?",
+    "url": "https://causeriesdecomptoir.fr/reservation?eventId=f7bb5ec6-9183-484f-a08b-62e7925d95ea",
+    "venue": "Kawaa du Lucernaire"
+  }
+}

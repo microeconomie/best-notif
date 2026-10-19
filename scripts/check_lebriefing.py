@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
-"""Veille des nouveaux événements parisiens publiés sur lebriefing.co.
+"""Veille des événements parisiens publiés sur lebriefing.co.
 
-Lecture de toutes les cartes de la section « Programmation », y compris celles
-affichées « Sold out » : quand tous les talks parisiens sont complets, la page
-n'affiche plus aucun lien de billetterie, et se fier aux liens reviendrait à
-croire que le site est cassé.
+Deux types d'alerte :
+  - un nouveau talk apparaît dans la programmation ;
+  - un talk complet redevient réservable, souvent l'occasion la plus utile
+    puisque ces soirées se remplissent vite.
 
-Identité d'un événement : le numéro Eventbrite quand un lien existe, sinon le
-titre normalisé. Les deux sont comparés à l'état connu, pour qu'un talk qui
-perd son lien (passage en complet) ou qui en gagne un (remise en vente) ne soit
-pas pris pour un nouveau.
+Le site déclare lui-même ce dont on a besoin, on s'appuie donc dessus plutôt
+que sur des approximations :
+  - chaque ville a son bloc, repéré par data-city-panel="paris" ;
+  - chaque talk est un <article class="event-card">, affublé de la classe
+    event-card--sold-out quand il est complet ;
+  - un talk réservable porte un lien <a class="event-btn--reserve">.
 
-Filtre ville : seuls les événements parisiens sont notifiés. Le site n'écrit
-pas « Bruxelles » sur les cartes, donc un événement n'est écarté que s'il y a
-une preuve qu'il n'est pas parisien (lieu connu, mot-clé, billetterie .be).
-Dans le doute, on notifie.
+Identité d'un talk : son titre normalisé. Le numéro Eventbrite serait plus
+stable, mais il disparaît de la page dès que le talk est complet ; le titre,
+lui, reste, ce qui permet de suivre un même talk à travers ses changements de
+statut.
 
 Notifications :
   - création d'une issue GitHub (toujours, via le GITHUB_TOKEN du workflow)
@@ -32,34 +34,30 @@ from pathlib import Path
 PAGE_URL = "https://www.lebriefing.co/"
 PROG_URL = PAGE_URL + "#programmation"
 STATE_FILE = Path("data/lebriefing_seen.json")
+VILLE = "paris"
 
-# Indices qu'un événement n'est pas parisien. À compléter si Le Briefing ouvre
-# d'autres villes (Bordeaux, Lyon, Lille...), lieux compris.
-HORS_PARIS = [
-    "bruxelles", "brussels", "belgique", "belgium", "ixelles", "saint-gilles",
-    "le petit bailli", "bordeaux", "marseille", "lyon", "lille", "toulouse",
-]
-
-JOURS = "lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche"
-MOIS = ("janvier|février|fevrier|mars|avril|mai|juin|juillet|août|aout"
-        "|septembre|octobre|novembre|décembre|decembre")
-DATE_LINE = re.compile(
-    rf"(?:{JOURS})\s*(?:&nbsp;|\s)*\d{{1,2}}(?:er)?\s*(?:&nbsp;|\s)*(?:{MOIS})\s*(?:&nbsp;|\s)*\d{{4}}",
-    re.IGNORECASE,
+CITY_PANEL = re.compile(r'data-city-panel\s*=\s*"([^"]+)"', re.IGNORECASE)
+ARTICLE = re.compile(
+    r'<article[^>]*\bclass="([^"]*\bevent-card\b[^"]*)"[^>]*>(.*?)</article>',
+    re.S | re.IGNORECASE,
 )
-HEADING = re.compile(r"<h[1-4][^>]*>(.*?)</h[1-4]>", re.S | re.I)
+TITLE = re.compile(r'class="[^"]*event-card__title[^"]*"[^>]*>(.*?)</h[1-6]>', re.S | re.I)
+META = re.compile(r'class="[^"]*event-card__meta[^"]*"[^>]*>(.*?)</p>', re.S | re.I)
 TICKET_LINK = re.compile(
     r'href="(https?://(?:www\.)?(?:eventbrite\.[a-z.]+|shotgun\.live|billetweb\.fr)/[^"]+)"',
     re.IGNORECASE,
 )
+# repli si le site est refondu et que les blocs par ville disparaissent
+HORS_PARIS = ("bruxelles", "brussels", "belgique", "ixelles", "le petit bailli")
 
 
 def clean(fragment):
-    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", fragment))).strip()
+    fragment = re.sub(r"<[^>]+>", " ", fragment or "")
+    return re.sub(r"\s+", " ", html.unescape(fragment).replace(" ", " ")).strip()
 
 
 def slugify(value):
-    value = unicodedata.normalize("NFKD", value.lower())
+    value = unicodedata.normalize("NFKD", (value or "").lower())
     value = "".join(c for c in value if not unicodedata.combining(c))
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", value)).strip("-")
 
@@ -71,84 +69,94 @@ def fetch(url):
 
 
 def ticket_id(url):
-    """Numéro Eventbrite, seul identifiant vraiment stable quand il est là."""
-    if not url:
-        return ""
-    numero = re.search(r"/e/(?:[^/?#]*-)?(\d{6,})", url)
-    return numero.group(1) if numero else url.split("?")[0]
+    numero = re.search(r"/e/(?:[^/?#]*-)?(\d{6,})", url or "")
+    return numero.group(1) if numero else ""
 
 
-def is_paris(card_text, url):
-    haystack = f"{card_text} {url}".lower()
-    if re.search(r"eventbrite\.be|billetweb\.fr/[a-z-]*bruxelles", haystack):
-        return False
-    return not any(indice in haystack for indice in HORS_PARIS)
+def city_section(page):
+    """Portion de page consacrée à la ville suivie, ou None si non étiquetée."""
+    panels = list(CITY_PANEL.finditer(page))
+    for index, panel in enumerate(panels):
+        if panel.group(1).strip().lower() != VILLE:
+            continue
+        end = panels[index + 1].start() if index + 1 < len(panels) else len(page)
+        return page[panel.end():end]
+    return None
+
+
+def read_card(classes, body):
+    title = TITLE.search(body)
+    if not title:
+        return None
+    title = clean(title.group(1))
+    if not title:
+        return None
+
+    meta = clean(META.search(body).group(1)) if META.search(body) else ""
+    date, _, venue = meta.partition("@")
+    link = TICKET_LINK.search(body)
+    url = link.group(1) if link else ""
+    complet = "event-card--sold-out" in classes or "soldout-badge" in body
+
+    return {
+        "title": title,
+        "date": date.strip(),
+        "venue": venue.strip()[:80],
+        "url": url or PROG_URL,
+        "ticket_id": ticket_id(url),
+        "complet": bool(complet) or not url,
+    }
 
 
 def extract_events(page):
-    """Une carte = une ligne de date, puis le premier titre qui suit.
+    """Renvoie (nombre total de cartes sur la page, cartes de la ville suivie)."""
+    total = len(ARTICLE.findall(page))
+    section = city_section(page)
+    events = {}
 
-    Renvoie (toutes_les_cartes, cartes_parisiennes). Le premier compte sert de
-    garde-fou : si la page ne donne plus aucune carte, la structure a changé.
-    """
-    total = 0
-    paris = {}
-    starts = [m.start() for m in DATE_LINE.finditer(page)]
-    for index, start in enumerate(starts):
-        end = starts[index + 1] if index + 1 < len(starts) else len(page)
-        window = page[start:end]
+    if section is None:
+        # le site ne déclare plus ses villes : on retombe sur un filtrage par
+        # mots-clés, moins sûr mais préférable à une veille aveugle
+        print("Blocs par ville introuvables, filtrage de repli par mots-clés.", file=sys.stderr)
+        section = page
 
-        date_match = DATE_LINE.search(window)
-        headings = [h for h in HEADING.finditer(window) if h.start() >= date_match.end()]
-        if not headings:
-            continue  # date isolée (pied de page, mention légale...), pas une carte
-        heading = headings[0]
-        title = clean(heading.group(1))
-        if not title:
+    for classes, body in ARTICLE.findall(section):
+        card = read_card(classes, body)
+        if not card:
             continue
-
-        total += 1
-        link = TICKET_LINK.search(window)
-        url = link.group(1) if link else ""
-        venue = clean(window[date_match.end():heading.start()]).lstrip("@ ").strip()
-        card_text = clean(window[:heading.end()])
-
-        if not is_paris(card_text, url):
+        repere = f"{card['venue']} {card['url']}".lower()
+        if any(indice in repere for indice in HORS_PARIS):
             continue
-
-        slug = slugify(title)
-        paris[ticket_id(url) or slug] = {
-            "title": title,
-            "date": clean(date_match.group(0)),
-            "venue": venue[:80],
-            "url": url or PROG_URL,
-            "slug": slug,
-            "ticket_id": ticket_id(url),
-        }
-    return total, paris
+        events[slugify(card["title"])] = card
+    return total, events
 
 
-def known_keys(seen):
-    """Tout ce qui permet de reconnaître un événement déjà vu.
+def was_complet(entry):
+    """Statut précédent, y compris pour les fiches d'avant l'ajout de ce champ.
 
-    Les anciens états ne contenaient ni « slug » ni « ticket_id » : on les
-    reconstitue depuis le titre et la clé pour rester compatible.
+    Les anciennes versions n'enregistraient pas le statut mais stockaient
+    l'adresse de la billetterie quand elle existait : une fiche pointant vers
+    la page du site correspondait donc à un talk complet.
     """
-    ids, slugs = set(), set()
+    if "complet" in entry:
+        return bool(entry["complet"])
+    return not TICKET_LINK.search(f'href="{entry.get("url", "")}"')
+
+
+def migrate(seen):
+    """Reclasse un état enregistré sous d'anciennes clés (numéros Eventbrite)."""
+    migrated = {}
     for key, entry in seen.items():
-        ids.add(key)
-        if entry.get("ticket_id"):
-            ids.add(entry["ticket_id"])
-        if entry.get("slug"):
-            slugs.add(entry["slug"])
-        if entry.get("title"):
-            slugs.add(slugify(entry["title"]))
-    return ids, slugs
+        slug = entry.pop("slug", "") or slugify(entry.get("title", "")) or key
+        entry.setdefault("ticket_id", ticket_id(entry.get("url", "")))
+        entry.setdefault("complet", was_complet(entry))
+        migrated[slug] = entry
+    return migrated
 
 
 def load_seen():
     if STATE_FILE.exists():
-        return json.loads(STATE_FILE.read_text(encoding="utf-8"))
+        return migrate(json.loads(STATE_FILE.read_text(encoding="utf-8")))
     return None
 
 
@@ -171,22 +179,35 @@ def post_json(url, payload, headers=None):
 
 
 def describe(event):
-    details = " ".join(p for p in (event.get("date"), event.get("venue")) if p)
-    return f"{event['title']} ({details})" if details else event["title"]
+    details = ", ".join(p for p in (event.get("date"), event.get("venue")) if p)
+    suffixe = " [complet]" if event.get("complet") else ""
+    return f"{event['title']} ({details}){suffixe}" if details else event["title"] + suffixe
 
 
-def notify_github(new):
+def accord(nombre, singulier, pluriel):
+    return f"{nombre} {singulier if nombre == 1 else pluriel}"
+
+
+def notify_github(nouveaux, rouverts):
     token, repo = os.environ.get("GH_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
     if not token or not repo:
         print("Pas de contexte GitHub, aucune issue créée.")
         return
-    title = (
-        "Le Briefing : nouvel événement"
-        if len(new) == 1
-        else f"Le Briefing : {len(new)} nouveaux événements"
+    resume = ", ".join(
+        p for p in (
+            accord(len(rouverts), "remise en vente", "remises en vente") if rouverts else "",
+            accord(len(nouveaux), "nouveau talk", "nouveaux talks") if nouveaux else "",
+        ) if p
     )
-    lines = [f"- **{describe(e)}** : {e['url']}" for e in new.values()]
-    payload = {"title": title, "body": f"Détecté sur {PROG_URL}\n\n" + "\n".join(lines)}
+    corps = [f"Détecté sur {PROG_URL}", ""]
+    if rouverts:
+        corps.append("### Places à nouveau disponibles")
+        corps += [f"- **{describe(e)}** : {e['url']}" for e in rouverts.values()]
+        corps.append("")
+    if nouveaux:
+        corps.append("### Nouveaux talks")
+        corps += [f"- **{describe(e)}** : {e['url']}" for e in nouveaux.values()]
+    payload = {"title": f"Le Briefing : {resume}", "body": "\n".join(corps)}
     owner = os.environ.get("GITHUB_REPOSITORY_OWNER")
     if owner:
         payload["assignees"] = [owner]
@@ -199,57 +220,59 @@ def notify_github(new):
     print("Issue GitHub créée.")
 
 
-def notify_ntfy(new):
+def notify_ntfy(nouveaux, rouverts):
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
         return
-    for event in new.values():
-        post_json("https://ntfy.sh", {
-            "topic": topic,
-            "title": "Nouveau Briefing",
-            "message": describe(event),
-            "click": event["url"],
-            "tags": ["microphone"],
-        })
+    for titre, lot, tag in (("Places dispo au Briefing", rouverts, "tada"),
+                            ("Nouveau Briefing", nouveaux, "microphone")):
+        for event in lot.values():
+            post_json("https://ntfy.sh", {
+                "topic": topic,
+                "title": titre,
+                "message": describe(event),
+                "click": event["url"],
+                "tags": [tag],
+            })
     print("Notification ntfy envoyée.")
 
 
 def main():
     total, events = extract_events(fetch(PAGE_URL))
-    if total == 0:
+    if not events:
         print("Aucune carte trouvée : site en panne ou structure modifiée ?", file=sys.stderr)
         sys.exit(1)
 
     seen = load_seen()
     if seen is None:
         save_seen(events)
-        print(f"Initialisation : {len(events)} événements parisiens enregistrés "
+        print(f"Initialisation : {len(events)} talks parisiens enregistrés "
               f"({total} cartes au total), aucune alerte.")
         return
 
-    ids, slugs = known_keys(seen)
-    new = {
-        key: event
-        for key, event in events.items()
-        if key not in ids and event["slug"] not in slugs
-        and not (event["ticket_id"] and event["ticket_id"] in ids)
+    nouveaux = {k: e for k, e in events.items() if k not in seen}
+    rouverts = {
+        k: e for k, e in events.items()
+        if k in seen and was_complet(seen[k]) and not e["complet"]
     }
 
-    # les événements déjà connus voient leur fiche rafraîchie (lien apparu ou
-    # disparu, lieu précisé) sans déclencher d'alerte
-    seen.update({k: v for k, v in events.items() if k in seen})
+    seen.update(events)  # fiches rafraîchies : statut, lien, lieu
+    save_seen(seen)
 
-    if not new:
-        print(f"Rien de nouveau ({len(events)} événements parisiens, {total} cartes au total).")
-        save_seen(seen)
+    complets = sum(1 for e in events.values() if e["complet"])
+    etat = (f"{len(events)} talks parisiens dont {complets} complet"
+            f"{'s' if complets > 1 else ''}, {total} cartes au total")
+
+    if not nouveaux and not rouverts:
+        print(f"Rien de nouveau ({etat}).")
         return
 
-    for event in new.values():
+    for event in rouverts.values():
+        print("Remise en vente :", describe(event), event["url"])
+    for event in nouveaux.values():
         print("Nouveau :", describe(event), event["url"])
-    notify_github(new)
-    notify_ntfy(new)
-    seen.update(new)
-    save_seen(seen)
+    notify_github(nouveaux, rouverts)
+    notify_ntfy(nouveaux, rouverts)
 
 
 if __name__ == "__main__":

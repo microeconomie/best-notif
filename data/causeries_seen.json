@@ -1,24 +1,27 @@
 {
   "102d4f46-6ec3-42aa-82a7-dc31de22ea8c": {
+    "alerte_seuil": false,
     "complet": false,
     "date": "Lundi 2 novembre 2026 à 19h30",
-    "places": 65,
+    "places": 56,
     "title": "Va-t-on vers l'effondrement ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=102d4f46-6ec3-42aa-82a7-dc31de22ea8c",
     "venue": "Pomelo bistrot"
   },
   "1e1f1b6f-c875-42e3-91f4-596640dc9184": {
+    "alerte_seuil": false,
     "complet": false,
     "date": "Lundi 23 novembre 2026 à 19h30",
-    "places": 74,
+    "places": 70,
     "title": "Peut-on vraiment choisir de vivre longtemps en bonne santé ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=1e1f1b6f-c875-42e3-91f4-596640dc9184",
     "venue": "Pomelo bistrot"
   },
   "1e57722b-169c-45d1-916b-d51daa172983": {
+    "alerte_seuil": false,
     "complet": false,
     "date": "Mardi 3 novembre 2026 à 19h30",
-    "places": 64,
+    "places": 55,
     "title": "Pourquoi ne peut-on pas vivre sans rituels (même quand on croit s'en passer) ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=1e57722b-169c-45d1-916b-d51daa172983",
     "venue": "Kawaa du Lucernaire"
@@ -32,38 +35,43 @@
     "venue": "Mezzanine"
   },
   "3f2d18e4-f695-411c-83f7-cae1f961b5f3": {
+    "alerte_seuil": false,
     "complet": false,
     "date": "Lundi 30 novembre 2026 à 19h30",
-    "places": 59,
+    "places": 53,
     "title": "Jusqu’où peut-on défendre l’inacceptable ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=3f2d18e4-f695-411c-83f7-cae1f961b5f3",
     "venue": "Kawaa du Lucernaire"
   },
   "5f2d0447-76f0-4fbb-b841-e359160c9e4f": {
+    "alerte_seuil": false,
     "complet": false,
     "date": "Mardi 24 novembre 2026 à 19h30",
-    "places": 70,
+    "places": 58,
     "title": "Qu'est-ce qui nous fait vraiment dépasser nos limites ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=5f2d0447-76f0-4fbb-b841-e359160c9e4f",
     "venue": "Kawaa du Lucernaire"
   },
   "6e74e40e-5d70-480f-8bbf-312e60d229bf": {
+    "alerte_seuil": false,
     "complet": false,
     "date": "Lundi 9 novembre 2026 à 19h30",
-    "places": 60,
+    "places": 49,
     "title": "Comment parler politique sans s'engueuler (ni renoncer à ses idées) ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=6e74e40e-5d70-480f-8bbf-312e60d229bf",
     "venue": "Pomelo bistrot"
   },
   "9ca1cb44-555b-4545-b8df-2dfcfbe3a322": {
+    "alerte_seuil": false,
     "complet": false,
     "date": "Lundi 30 novembre 2026 à 19h30",
-    "places": 78,
+    "places": 75,
     "title": "Va-t-on vraiment manquer d'eau ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=9ca1cb44-555b-4545-b8df-2dfcfbe3a322",
     "venue": "Pomelo bistrot"
   },
   "a17d3a63-7c94-4552-99f5-aeb4f140b9f7": {
+    "alerte_seuil": false,
     "complet": false,
     "date": "Mardi 10 novembre 2026 à 19h30",
     "places": 69,
@@ -72,14 +80,16 @@
     "venue": "Kawaa du Lucernaire"
   },
   "da856edc-c465-4131-a73b-5bb42898afb6": {
+    "alerte_seuil": false,
     "complet": false,
     "date": "Lundi 16 novembre 2026 à 19h30",
-    "places": 69,
+    "places": 63,
     "title": "Sommes-nous prêts pour ce que l'IA va changer ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=da856edc-c465-4131-a73b-5bb42898afb6",
     "venue": "Pomelo bistrot"
   },
   "f43cab38-ed0f-44a5-b778-a3625e8e6ac4": {
+    "alerte_seuil": false,
     "complet": true,
     "date": "Mercredi 21 octobre 2026 à 19h30",
     "places": 0,
@@ -88,6 +98,7 @@
     "venue": "Mezzanine"
   },
   "f7bb5ec6-9183-484f-a08b-62e7925d95ea": {
+    "alerte_seuil": false,
     "complet": true,
     "date": "Mardi 27 octobre 2026 à 19h30",
     "places": 0,
@@ -96,9 +107,10 @@
     "venue": "Kawaa du Lucernaire"
   },
   "f9983532-05ce-4672-bcf3-390bccb3a265": {
+    "alerte_seuil": false,
     "complet": false,
     "date": "Mardi 17 novembre 2026 à 19h30",
-    "places": 57,
+    "places": 56,
     "title": "Pourquoi juge-t-on les autres alors qu'on déteste l'être ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=f9983532-05ce-4672-bcf3-390bccb3a265",
     "venue": "Bistouille - 20e"

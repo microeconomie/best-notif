@@ -18,6 +18,12 @@ stable, mais il disparaît de la page dès que le talk est complet ; le titre,
 lui, reste, ce qui permet de suivre un même talk à travers ses changements de
 statut.
 
+Avant d'alerter, le statut de vente est relevé sur Eventbrite, car le site et
+sa billetterie se désynchronisent parfois : un talk peut être présenté comme
+réservable alors que les ventes y sont closes. Ce relevé est purement
+informatif, il n'empêche jamais l'envoi d'une alerte, et son échec éventuel
+est signalé plutôt que silencieux.
+
 Notifications :
   - création d'une issue GitHub (toujours, via le GITHUB_TOKEN du workflow)
   - notification push ntfy.sh (optionnel, si le secret NTFY_TOPIC existe)
@@ -131,6 +137,42 @@ def extract_events(page):
     return total, events
 
 
+EVENTBRITE_STATUTS = {
+    "sales_ended": "ventes fermées",
+    "sales_not_started": "ventes pas encore ouvertes",
+    "on_sale": "en vente",
+    "sold_out": "complet",
+    "unavailable": "indisponible",
+}
+SALES_STATUS = re.compile(r'"salesStatus"\s*:\s*"([a-z_]+)"', re.IGNORECASE)
+
+
+def statut_eventbrite(url):
+    """Statut de vente lu sur la billetterie, ou une mention d'échec.
+
+    Volontairement tolérant : si Eventbrite est injoignable ou bloque nos
+    serveurs, on le dit dans l'alerte au lieu de la retenir.
+    """
+    if not url or "eventbrite." not in url:
+        return ""
+    try:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                           "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36"),
+            "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+        })
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            page = resp.read().decode("utf-8", errors="replace")
+    except Exception as erreur:
+        print(f"Statut Eventbrite non vérifié ({type(erreur).__name__}) : {url}", file=sys.stderr)
+        return "non vérifié"
+    trouve = SALES_STATUS.search(page)
+    if not trouve:
+        return "non vérifié"
+    brut = trouve.group(1).lower()
+    return EVENTBRITE_STATUTS.get(brut, brut.replace("_", " "))
+
+
 def was_complet(entry):
     """Statut précédent, y compris pour les fiches d'avant l'ajout de ce champ.
 
@@ -188,26 +230,32 @@ def accord(nombre, singulier, pluriel):
     return f"{nombre} {singulier if nombre == 1 else pluriel}"
 
 
-def notify_github(nouveaux, rouverts):
+def ligne(event):
+    etiquette = f" [Eventbrite : {event['eventbrite']}]" if event.get("eventbrite") else ""
+    return f"- **{describe(event)}**{etiquette} : {event['url']}"
+
+
+def objet(prefixe, lot, resume_pluriel):
+    """Objet du mail : l'étiquette d'abord, toujours au même endroit."""
+    if len(lot) == 1:
+        event = next(iter(lot.values()))
+        detail = event["title"]
+        if len(detail) > 60:
+            detail = detail[:59].rstrip() + "…"
+        if event.get("eventbrite"):
+            detail += f" [Eventbrite : {event['eventbrite']}]"
+    else:
+        detail = resume_pluriel
+    return f"{prefixe} Le Briefing : {detail}"
+
+
+def creer_issue(titre, lot):
     token, repo = os.environ.get("GH_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
+    corps = f"Détecté sur {PROG_URL}\n\n" + "\n".join(ligne(e) for e in lot.values())
     if not token or not repo:
-        print("Pas de contexte GitHub, aucune issue créée.")
+        print(f"Pas de contexte GitHub, issue non créée : {titre}")
         return
-    resume = ", ".join(
-        p for p in (
-            accord(len(rouverts), "remise en vente", "remises en vente") if rouverts else "",
-            accord(len(nouveaux), "nouveau talk", "nouveaux talks") if nouveaux else "",
-        ) if p
-    )
-    corps = [f"Détecté sur {PROG_URL}", ""]
-    if rouverts:
-        corps.append("### Places à nouveau disponibles")
-        corps += [f"- **{describe(e)}** : {e['url']}" for e in rouverts.values()]
-        corps.append("")
-    if nouveaux:
-        corps.append("### Nouveaux talks")
-        corps += [f"- **{describe(e)}** : {e['url']}" for e in nouveaux.values()]
-    payload = {"title": f"Le Briefing : {resume}", "body": "\n".join(corps)}
+    payload = {"title": titre, "body": corps}
     owner = os.environ.get("GITHUB_REPOSITORY_OWNER")
     if owner:
         payload["assignees"] = [owner]
@@ -217,15 +265,30 @@ def notify_github(nouveaux, rouverts):
     except Exception:
         payload.pop("assignees", None)
         post_json(f"https://api.github.com/repos/{repo}/issues", payload, headers)
-    print("Issue GitHub créée.")
+    print(f"Issue GitHub créée : {titre}")
+
+
+def notify_github(nouveaux, rouverts):
+    """Un mail par catégorie, pour que l'étiquette reste lisible d'un coup d'oeil."""
+    if rouverts:
+        creer_issue(
+            objet("BACK ON SALE", rouverts,
+                  accord(len(rouverts), "talk à nouveau disponible",
+                         "talks à nouveau disponibles")),
+            rouverts)
+    if nouveaux:
+        creer_issue(
+            objet("JUST DROPPED", nouveaux,
+                  accord(len(nouveaux), "nouveau talk", "nouveaux talks")),
+            nouveaux)
 
 
 def notify_ntfy(nouveaux, rouverts):
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
         return
-    for titre, lot, tag in (("Places dispo au Briefing", rouverts, "tada"),
-                            ("Nouveau Briefing", nouveaux, "microphone")):
+    for titre, lot, tag in (("BACK ON SALE Le Briefing", rouverts, "tada"),
+                            ("JUST DROPPED Le Briefing", nouveaux, "microphone")):
         for event in lot.values():
             post_json("https://ntfy.sh", {
                 "topic": topic,
@@ -267,10 +330,13 @@ def main():
         print(f"Rien de nouveau ({etat}).")
         return
 
+    for event in list(rouverts.values()) + list(nouveaux.values()):
+        event["eventbrite"] = statut_eventbrite(event.get("url", ""))
+
     for event in rouverts.values():
-        print("Remise en vente :", describe(event), event["url"])
+        print("Remise en vente :", ligne(event))
     for event in nouveaux.values():
-        print("Nouveau :", describe(event), event["url"])
+        print("Nouveau :", ligne(event))
     notify_github(nouveaux, rouverts)
     notify_ntfy(nouveaux, rouverts)
 

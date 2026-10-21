@@ -13,9 +13,10 @@ places restantes.
 
 Identité d'une causerie : son identifiant unique en base, parfaitement stable.
 
-Alerte : uniquement les nouvelles causeries parisiennes. Le statut complet est
-enregistré au passage, ce qui permettra d'ajouter plus tard une alerte de
-remise en vente sans rien perdre de l'historique.
+Deux alertes :
+  - une nouvelle causerie parisienne apparaît ;
+  - une causerie parisienne tombe à SEUIL_PLACES places ou moins, signalée une
+    seule fois, puis réarmée si le stock remonte au-dessus du seuil.
 
 Notifications :
   - création d'une issue GitHub (toujours, via le GITHUB_TOKEN du workflow)
@@ -45,6 +46,9 @@ ANON_KEY = (
     "MADD6c59OLy2LgUgrJUs7bc-tThyCH-KbXq0R34wUbo"
 )
 CHAMPS = "id,title,subtitle,event_date,event_time,city,venue,total_spots,spots_remaining"
+
+# Nombre de places à partir duquel on prévient qu'il ne reste presque rien.
+SEUIL_PLACES = 3
 
 JOURS = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
@@ -138,6 +142,12 @@ def extract_events(donnees):
     return len(donnees), events
 
 
+def derniers_billets(event):
+    """Vrai quand il reste peu de places, mais qu'il en reste."""
+    places = event.get("places")
+    return isinstance(places, int) and 0 < places <= SEUIL_PLACES
+
+
 def load_seen():
     if STATE_FILE.exists():
         return json.loads(STATE_FILE.read_text(encoding="utf-8"))
@@ -175,16 +185,32 @@ def describe(event):
     return f"{event['title']} ({details}){etat}" if details else event["title"] + etat
 
 
-def notify_github(new):
+def accord(nombre, singulier, pluriel):
+    return f"{nombre} {singulier if nombre == 1 else pluriel}"
+
+
+def objet(prefixe, lot, resume_pluriel):
+    """Objet du mail : le titre de la causerie quand il n'y en a qu'une."""
+    if len(lot) == 1:
+        event = next(iter(lot.values()))
+        detail = event["title"]
+        if len(detail) > 80:
+            detail = detail[:79].rstrip() + "…"
+        if prefixe == "LAST CHANCE" and isinstance(event.get("places"), int):
+            detail += f" ({accord(event['places'], 'place', 'places')})"
+    else:
+        detail = resume_pluriel
+    return f"{prefixe} Causeries : {detail}"
+
+
+def creer_issue(titre, lot):
     token, repo = os.environ.get("GH_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
+    lignes = [f"- **{describe(e)}** : {e['url']}" for e in lot.values()]
+    corps = f"Détecté sur {SITE_URL}#prochaines-causeries\n\n" + "\n".join(lignes)
     if not token or not repo:
-        print("Pas de contexte GitHub, aucune issue créée.")
+        print(f"Pas de contexte GitHub, issue non créée : {titre}")
         return
-    titre = ("Causeries de Comptoir : nouvelle causerie" if len(new) == 1
-             else f"Causeries de Comptoir : {len(new)} nouvelles causeries")
-    lignes = [f"- **{describe(e)}** : {e['url']}" for e in new.values()]
-    payload = {"title": titre,
-               "body": f"Détecté sur {SITE_URL}#prochaines-causeries\n\n" + "\n".join(lignes)}
+    payload = {"title": titre, "body": corps}
     owner = os.environ.get("GITHUB_REPOSITORY_OWNER")
     if owner:
         payload["assignees"] = [owner]
@@ -194,21 +220,37 @@ def notify_github(new):
     except Exception:
         payload.pop("assignees", None)
         post_json(f"https://api.github.com/repos/{repo}/issues", payload, headers)
-    print("Issue GitHub créée.")
+    print(f"Issue GitHub créée : {titre}")
 
 
-def notify_ntfy(new):
+def notify_github(nouveaux, seuil):
+    """Un mail pour les fins de stock, un autre pour les parutions."""
+    if seuil:
+        creer_issue(
+            objet("LAST CHANCE", seuil,
+                  f"{len(seuil)} causeries à {SEUIL_PLACES} places ou moins"),
+            seuil)
+    if nouveaux:
+        creer_issue(
+            objet("JUST DROPPED", nouveaux,
+                  accord(len(nouveaux), "nouvelle causerie", "nouvelles causeries")),
+            nouveaux)
+
+
+def notify_ntfy(nouveaux, seuil):
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
         return
-    for event in new.values():
-        post_json("https://ntfy.sh", {
-            "topic": topic,
-            "title": "Nouvelle causerie",
-            "message": describe(event),
-            "click": event["url"],
-            "tags": ["speech_balloon"],
-        })
+    for titre, lot, tag in (("LAST CHANCE Causeries", seuil, "hourglass"),
+                            ("JUST DROPPED Causeries", nouveaux, "speech_balloon")):
+        for event in lot.values():
+            post_json("https://ntfy.sh", {
+                "topic": topic,
+                "title": titre,
+                "message": describe(event),
+                "click": event["url"],
+                "tags": [tag],
+            })
     print("Notification ntfy envoyée.")
 
 
@@ -220,12 +262,24 @@ def main():
 
     seen = load_seen()
     if seen is None:
+        for event in events.values():
+            event["alerte_seuil"] = derniers_billets(event)
         save_seen(events)
         print(f"Initialisation : {len(events)} causeries parisiennes enregistrées "
               f"({total} toutes villes), aucune alerte.")
         return
 
-    new = {k: e for k, e in events.items() if k not in seen}
+    nouveaux = {k: e for k, e in events.items() if k not in seen}
+    seuil = {
+        k: e for k, e in events.items()
+        if k not in nouveaux and derniers_billets(e)
+        and not seen[k].get("alerte_seuil")
+    }
+
+    # mémorise l'état du seuil : une causerie déjà signalée ne le sera plus,
+    # et repasser au-dessus du seuil réarme l'alerte
+    for event in events.values():
+        event["alerte_seuil"] = derniers_billets(event)
 
     seen.update(events)  # fiches rafraîchies : places restantes, lieu, date
     save_seen(seen)
@@ -234,14 +288,16 @@ def main():
     etat = (f"{len(events)} causeries parisiennes dont {complets} complète"
             f"{'s' if complets > 1 else ''}, {total} toutes villes")
 
-    if not new:
+    if not nouveaux and not seuil:
         print(f"Rien de nouveau ({etat}).")
         return
 
-    for event in new.values():
+    for event in seuil.values():
+        print("Dernières places :", describe(event), event["url"])
+    for event in nouveaux.values():
         print("Nouveau :", describe(event), event["url"])
-    notify_github(new)
-    notify_ntfy(new)
+    notify_github(nouveaux, seuil)
+    notify_ntfy(nouveaux, seuil)
 
 
 if __name__ == "__main__":

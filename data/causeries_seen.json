@@ -3,7 +3,7 @@
     "alerte_seuil": false,
     "complet": false,
     "date": "Lundi 2 novembre 2026 à 19h30",
-    "places": 16,
+    "places": 14,
     "title": "Va-t-on vers l'effondrement ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=102d4f46-6ec3-42aa-82a7-dc31de22ea8c",
     "venue": "Pomelo bistrot"
@@ -65,7 +65,7 @@
     "alerte_seuil": false,
     "complet": false,
     "date": "Lundi 30 novembre 2026 à 19h30",
-    "places": 65,
+    "places": 64,
     "title": "Va-t-on vraiment manquer d'eau ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=9ca1cb44-555b-4545-b8df-2dfcfbe3a322",
     "venue": "Pomelo bistrot"
@@ -81,9 +81,9 @@
   },
   "da856edc-c465-4131-a73b-5bb42898afb6": {
     "alerte_seuil": false,
-    "complet": false,
+    "complet": true,
     "date": "Lundi 16 novembre 2026 à 19h30",
-    "places": 6,
+    "places": 0,
     "title": "Sommes-nous prêts pour ce que l'IA va changer ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=da856edc-c465-4131-a73b-5bb42898afb6",
     "venue": "Pomelo bistrot"

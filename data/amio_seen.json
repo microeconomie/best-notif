@@ -34,6 +34,13 @@
     "url": "https://amioclub.com/checkout?date=Mardi%2027%20octobre%202026%20%C2%B7%20Tendances%20g%C3%A9opolitiques&title=Tendances%20g%C3%A9opolitiques%20%3A%20quel%20monde%20en%202030%20%3F&event=geopolitique-bruno-tertrais&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
     "venue": "Bonnotte Club, Port de Suffren, 75007 Paris"
   },
+  "gizeh-patrice-pouillard": {
+    "complet": false,
+    "date": "Mercredi 18 novembre 2026",
+    "title": "Pyramide de Gizeh : un regard différent",
+    "url": "https://amioclub.com/checkout?date=Mercredi%2018%20novembre%202026&title=Pyramide%20de%20Gizeh%20%3A%20un%20regard%20diff%C3%A9rent&event=gizeh-patrice-pouillard&venue=Bar%20%C3%A0%20Paris",
+    "venue": "Bar à Paris"
+  },
   "jeux-video-didier-mennecier": {
     "complet": false,
     "date": "Mercredi 4 novembre 2026",
@@ -45,7 +52,21 @@
     "complet": false,
     "date": "Mardi 3 novembre 2026",
     "title": "Du casting à l'élimination : tous les secrets de Koh-Lanta",
-    "url": "https://amioclub.com/checkout?date=Mardi%203%20novembre%202026&title=Du%20casting%20%C3%A0%20l'%C3%A9limination%20%3A%20tous%20les%20secrets%20de%20Koh-Lanta&event=koh-lanta-sophia-mansouri&venue=Bar%20%C3%A0%20Paris",
+    "url": "https://amioclub.com/checkout?date=Mardi%203%20novembre%202026&title=Du%20casting%20%C3%A0%20l'%C3%A9limination%20%3A%20tous%20les%20secrets%20de%20Koh-Lanta&event=koh-lanta-sophia-mansouri&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
+    "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
+  },
+  "meurtre-julien-lefebure": {
+    "complet": false,
+    "date": "Mardi 17 novembre 2026",
+    "title": "Meurtre, faux marabout : dans la tête de l'avocat qui défend le pire",
+    "url": "https://amioclub.com/checkout?date=Mardi%2017%20novembre%202026%20%C2%B7%20Meurtre&title=Meurtre%2C%20faux%20marabout%20%3A%20dans%20la%20t%C3%AAte%20de%20l'avocat%20qui%20d%C3%A9fend%20le%20pire&event=meurtre-julien-lefebure&venue=Bar%20%C3%A0%20Paris",
+    "venue": "Bar à Paris"
+  },
+  "neurologue-biliana-todorova": {
+    "complet": false,
+    "date": "Mardi 17 novembre 2026",
+    "title": "Neurologue : ton cerveau peut faire beaucoup plus que ça",
+    "url": "https://amioclub.com/checkout?date=Mardi%2017%20novembre%202026&title=Neurologue%20%3A%20ton%20cerveau%20peut%20faire%20beaucoup%20plus%20que%20%C3%A7a&event=neurologue-biliana-todorova&venue=Bar%20%C3%A0%20Paris",
     "venue": "Bar à Paris"
   },
   "presidentielle-richard-flurin": {

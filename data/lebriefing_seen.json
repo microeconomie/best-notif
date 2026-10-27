@@ -88,11 +88,11 @@
     "venue": "Journey Paris"
   },
   "peut-on-choisir-de-qui-l-on-tombe-amoureux": {
-    "complet": true,
+    "complet": false,
     "date": "Mercredi 28 octobre 2026",
-    "ticket_id": "",
-    "title": "Peut-on choisir de qui l’on tombe amoureux ?",
-    "url": "https://www.lebriefing.co/#programmation",
+    "ticket_id": "2002421602918",
+    "title": "Peut-on choisir de qui l'on tombe amoureux ?",
+    "url": "https://www.eventbrite.com/e/2002421602918?aff=oddtdtcreator",
     "venue": "Chez les Plombiers"
   },
   "peut-on-ficher-toute-une-population": {
@@ -117,7 +117,7 @@
     "ticket_id": "2003856351289",
     "title": "Pourquoi tout le monde se met à courir ?",
     "url": "https://www.eventbrite.com/e/2003856351289?aff=oddtdtcreator",
-    "venue": "Chez les Plombiers"
+    "venue": "Journey"
   },
   "qu-est-ce-qu-une-peine-juste": {
     "complet": false,

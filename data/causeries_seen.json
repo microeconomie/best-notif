@@ -18,10 +18,10 @@
     "venue": "Pomelo bistrot"
   },
   "1e57722b-169c-45d1-916b-d51daa172983": {
-    "alerte_seuil": true,
-    "complet": false,
+    "alerte_seuil": false,
+    "complet": true,
     "date": "Mardi 3 novembre 2026 à 19h30",
-    "places": 3,
+    "places": 0,
     "title": "Pourquoi ne peut-on pas vivre sans rituels (même quand on croit s'en passer) ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=1e57722b-169c-45d1-916b-d51daa172983",
     "venue": "Kawaa du Lucernaire"
@@ -74,7 +74,7 @@
     "alerte_seuil": false,
     "complet": false,
     "date": "Mardi 10 novembre 2026 à 19h30",
-    "places": 49,
+    "places": 45,
     "title": "Faut-il encore faire des enfants ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=a17d3a63-7c94-4552-99f5-aeb4f140b9f7",
     "venue": "Kawaa du Lucernaire"
@@ -98,10 +98,10 @@
     "venue": "Mezzanine"
   },
   "f7bb5ec6-9183-484f-a08b-62e7925d95ea": {
-    "alerte_seuil": true,
-    "complet": false,
+    "alerte_seuil": false,
+    "complet": true,
     "date": "Mardi 27 octobre 2026 à 19h30",
-    "places": 2,
+    "places": 0,
     "title": "Et si l'opinion publique était fabriquée ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=f7bb5ec6-9183-484f-a08b-62e7925d95ea",
     "venue": "Kawaa du Lucernaire"

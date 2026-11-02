@@ -20,12 +20,26 @@
     "url": "https://amioclub.com/checkout?date=Lundi%202%20novembre%202026&title=Ce%20que%20les%20s%C3%A9ries%20ne%20vous%20disent%20pas&event=criminologie-elodie-eliot&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
     "venue": "Bonnotte Club, Port de Suffren, 75007 Paris"
   },
+  "defense-johanic-galode": {
+    "complet": false,
+    "date": "Mardi 24 novembre 2026",
+    "title": "Soudain, un retour de la conflictualité en Europe…",
+    "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026%20%C2%B7%20D%C3%A9fense&title=Soudain%2C%20un%20retour%20de%20la%20conflictualit%C3%A9%20en%20Europe%E2%80%A6&event=defense-johanic-galode&venue=Bar%20%C3%A0%20Paris",
+    "venue": "Bar à Paris"
+  },
   "espion-olivier-mas": {
     "complet": true,
     "date": "Mardi 20 octobre 2026",
     "title": "15 ans à la DGSE : tous les secrets d'un ancien espion",
     "url": "https://amioclub.com/checkout?date=Mardi%2020%20octobre%202026&title=15%20ans%20%C3%A0%20la%20DGSE%20%3A%20tous%20les%20secrets%20d'un%20ancien%20espion&event=espion-olivier-mas&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris#liste-attente",
     "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
+  },
+  "fonds-marins-guillaume-pitron": {
+    "complet": false,
+    "date": "Mercredi 25 novembre 2026",
+    "title": "Les fonds marins : nouvelle frontière du capitalisme",
+    "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Bar%20%C3%A0%20Paris",
+    "venue": "Bar à Paris"
   },
   "geopolitique-bruno-tertrais": {
     "complet": false,
@@ -55,11 +69,25 @@
     "url": "https://amioclub.com/checkout?date=Mardi%203%20novembre%202026&title=Du%20casting%20%C3%A0%20l'%C3%A9limination%20%3A%20tous%20les%20secrets%20de%20Koh-Lanta&event=koh-lanta-sophia-mansouri&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
     "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
   },
+  "legiste-nicolas-gmati": {
+    "complet": false,
+    "date": "Mardi 24 novembre 2026",
+    "title": "Médecin légiste : que peut bien dire un cadavre ?",
+    "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026&title=M%C3%A9decin%20l%C3%A9giste%20%3A%20que%20peut%20bien%20dire%20un%20cadavre%20%3F&event=legiste-nicolas-gmati&venue=Bar%20%C3%A0%20Paris",
+    "venue": "Bar à Paris"
+  },
   "meurtre-julien-lefebure": {
     "complet": false,
     "date": "Mardi 17 novembre 2026",
     "title": "Meurtre, faux marabout : dans la tête de l'avocat qui défend le pire",
     "url": "https://amioclub.com/checkout?date=Mardi%2017%20novembre%202026%20%C2%B7%20Meurtre&title=Meurtre%2C%20faux%20marabout%20%3A%20dans%20la%20t%C3%AAte%20de%20l'avocat%20qui%20d%C3%A9fend%20le%20pire&event=meurtre-julien-lefebure&venue=Bar%20%C3%A0%20Paris",
+    "venue": "Bar à Paris"
+  },
+  "nasa-nicolas-mahoume": {
+    "complet": false,
+    "date": "Mercredi 25 novembre 2026",
+    "title": "Expédition avec la NASA : explorer Mars… depuis la Terre",
+    "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026&title=Exp%C3%A9dition%20avec%20la%20NASA%20%3A%20explorer%20Mars%E2%80%A6%20depuis%20la%20Terre&event=nasa-nicolas-mahoume&venue=Bar%20%C3%A0%20Paris",
     "venue": "Bar à Paris"
   },
   "neurologue-biliana-todorova": {

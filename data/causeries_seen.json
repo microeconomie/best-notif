@@ -35,10 +35,10 @@
     "venue": "Mezzanine"
   },
   "3f2d18e4-f695-411c-83f7-cae1f961b5f3": {
-    "alerte_seuil": true,
-    "complet": false,
+    "alerte_seuil": false,
+    "complet": true,
     "date": "Lundi 30 novembre 2026 à 19h30",
-    "places": 1,
+    "places": 0,
     "title": "Jusqu’où peut-on défendre l’inacceptable ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=3f2d18e4-f695-411c-83f7-cae1f961b5f3",
     "venue": "Kawaa du Lucernaire"
@@ -80,10 +80,10 @@
     "venue": "Kawaa du Lucernaire"
   },
   "da856edc-c465-4131-a73b-5bb42898afb6": {
-    "alerte_seuil": true,
-    "complet": false,
+    "alerte_seuil": false,
+    "complet": true,
     "date": "Lundi 16 novembre 2026 à 19h30",
-    "places": 1,
+    "places": 0,
     "title": "Sommes-nous prêts pour ce que l'IA va changer ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=da856edc-c465-4131-a73b-5bb42898afb6",
     "venue": "Pomelo bistrot"

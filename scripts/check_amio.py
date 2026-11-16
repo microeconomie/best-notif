@@ -14,6 +14,7 @@ Le catalogue vient des liens de réservation, qui portent déjà le titre, la
 date et le lieu en paramètres. La capacité est lue dans le code du site, et
 mémorisée une fois trouvée ; sans elle, le complet reste indéterminé.
 """
+import datetime
 import json
 import os
 import re
@@ -95,6 +96,58 @@ def inscrits(cle, etiquettes):
     return rep.get("counts", {}) if rep.get("success") else {}
 
 
+MOIS = {m: i + 1 for i, m in enumerate(
+    "janvier fevrier mars avril mai juin juillet aout septembre octobre "
+    "novembre decembre".split())}
+
+
+def date_du(texte):
+    """« Mercredi 2 décembre 2026 » -> date, ou None si illisible."""
+    if not texte:
+        return None
+    sans_accent = texte.lower()
+    for a, b in zip("éèêëàâäûüôöç", "eeeeaaauuooc"):
+        sans_accent = sans_accent.replace(a, b)
+    m = re.search(r"(\d{1,2})\s+([a-z]+)\s+(\d{4})", sans_accent)
+    if not m or m.group(2) not in MOIS:
+        return None
+    try:
+        return datetime.date(int(m.group(3)), MOIS[m.group(2)], int(m.group(1)))
+    except ValueError:
+        return None
+
+
+def disparues(etat, sessions, quand):
+    """Les complets d'Amio, déduits de la disparition du lien de réservation.
+
+    Le badge COMPLET est posé par JavaScript, donc illisible ici, mais la
+    session perd en même temps son lien de réservation et quitte le catalogue.
+    Une session dont la date est encore à venir et qui manque à l'appel deux
+    passages de suite est donc comptée comme complète. Deux passages, pour
+    qu'un hoquet du site ne suffise pas ; et rien du tout si le catalogue est
+    trop maigre, car ce serait alors le script qui aurait cessé de voir.
+    """
+    if len(sessions) < 3:
+        return {}
+    aujourdhui = datetime.date.fromisoformat(quand[:10])
+    complets = {}
+    for cle, fiche in etat.items():
+        if cle in sessions:
+            fiche["absences"] = 0
+            continue
+        jour = date_du(fiche.get("date"))
+        if fiche.get("complet") or not fiche.get("vu_le") or not jour or jour < aujourdhui:
+            continue
+        fiche["absences"] = fiche.get("absences", 0) + 1
+        if fiche["absences"] >= 2:
+            fiche["complet"] = True
+            fiche["complet_le"] = fiche.get("complet_le") or quand
+            fiche["derniere_maj"] = quand
+            v._noter(fiche, quand, "complet")
+            complets[cle] = fiche
+    return complets
+
+
 def main():
     page = v.fetch(PAGE)
     sessions = catalogue(page)
@@ -113,12 +166,14 @@ def main():
         s["inscrits"] = n if isinstance(n, int) else None
         s["capacite"] = cap
         s["places"] = (cap - n) if (cap and isinstance(n, int)) else None
-        s["complet"] = (s["places"] <= 0) if s["places"] is not None else None
+        # figurer au catalogue, c'est avoir un lien de réservation ouvert
+        s["complet"] = (s["places"] <= 0) if s["places"] is not None else False
 
     etat = v.charger(ETAT)
     premier = etat is None
     etat = etat or {}
     nouveaux, rouverts, _ = v.fusionner(etat, sessions, premier_passage=premier)
+    complets = {} if premier else disparues(etat, sessions, v.maintenant())
     v.sauver(ETAT, etat)
 
     if premier:
@@ -128,7 +183,11 @@ def main():
         ("JUST DROPPED", nouveaux, v.accord(len(nouveaux), "nouvelle session", "nouvelles sessions"), "beer"),
     ])
     connus = sum(1 for s in sessions.values() if s["inscrits"] is not None)
-    print(v.resumer(ORGANISATEUR, etat, sessions) + f", {connus} avec compteur d'inscrits")
+    print(v.resumer(ORGANISATEUR, etat, sessions)
+          + f", {connus} avec compteur d'inscrits"
+          + (f", {len(complets)} passés complets" if complets else ""))
+    for f in complets.values():
+        print("  complet :", v.decrire(f))
     for f in nouveaux.values():
         print("  nouveau :", v.decrire(f))
 

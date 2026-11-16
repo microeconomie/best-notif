@@ -1,37 +1,53 @@
 {
   "addiction-juliette-hazart": {
-    "absences": 1,
-    "complet": false,
+    "alerte_seuil": false,
+    "capacite": 79,
+    "complet": true,
+    "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
+    "courbe": [
+      [
+        "2026-11-16",
+        86
+      ]
+    ],
     "date": "Mercredi 2 décembre 2026",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": null,
+    "inscrits": 86,
+    "intervenant": "Juliette Hazart",
     "journal": [
       [
         "2026-11-08T19:29",
         "drop"
+      ],
+      [
+        "2026-11-16T16:04",
+        "complet"
       ]
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 4.5,
+    "places": 0,
     "titre": "L'addiction : ça commence quand ? Pourquoi est-ce si difficile de s'arrêter ?",
     "url": "https://amioclub.com/checkout?date=Mercredi%202%20d%C3%A9cembre%202026&title=L'addiction%20%3A%20%C3%A7a%20commence%20quand%20%3F%20Pourquoi%20est-ce%20si%20difficile%20de%20s'arr%C3%AAter%20%3F&event=addiction-juliette-hazart&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-08T19:29"
   },
   "anxiete-monia-djillali": {
-    "absences": 0,
-    "capacite": null,
+    "alerte_seuil": false,
+    "capacite": 79,
     "complet": false,
     "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
-        43
+        49
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-16T15:57",
-    "dispo_le": "2026-11-16T15:57",
-    "inscrits": 43,
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": "2026-11-16T16:04",
+    "inscrits": 49,
     "intervenant": "Monia Djillali",
     "journal": [
       [
@@ -41,7 +57,7 @@
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 4.7,
-    "places": null,
+    "places": 30,
     "titre": "Anxiété, pression sociale : et si personne ne nous jugeait vraiment ?",
     "url": "https://amioclub.com/checkout?date=Mardi%208%20d%C3%A9cembre%202026&title=Anxi%C3%A9t%C3%A9%2C%20pression%20sociale%20%3A%20et%20si%20personne%20ne%20nous%20jugeait%20vraiment%20%3F&event=anxiete-monia-djillali&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-15T21:39"
@@ -101,40 +117,55 @@
     "vu_le": "2026-10-17T00:12"
   },
   "defense-johanic-galode": {
-    "absences": 0,
-    "capacite": null,
-    "complet": false,
+    "alerte_seuil": false,
+    "capacite": 79,
+    "complet": true,
+    "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
-        80
+        94
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-16T15:57",
-    "dispo_le": "2026-11-16T15:57",
-    "inscrits": 80,
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": null,
+    "inscrits": 94,
     "intervenant": "Johanic Galode",
     "journal": [
       [
         "2026-11-02T15:34",
         "drop"
+      ],
+      [
+        "2026-11-16T16:04",
+        "complet"
       ]
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 9.8,
-    "places": null,
+    "places": 0,
     "titre": "Soudain, un retour de la conflictualité en Europe…",
     "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026%20%C2%B7%20D%C3%A9fense&title=Soudain%2C%20un%20retour%20de%20la%20conflictualit%C3%A9%20en%20Europe%E2%80%A6&event=defense-johanic-galode&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-02T15:34"
   },
   "eruptions-solaires-guillaume-aulanier": {
-    "absences": 1,
+    "alerte_seuil": false,
+    "capacite": 79,
     "complet": false,
     "complet_marge_h": null,
+    "courbe": [
+      [
+        "2026-11-16",
+        8
+      ]
+    ],
     "date": "Lundi 7 décembre 2026",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": "2026-11-16T16:04",
+    "inscrits": 8,
+    "intervenant": "Guillaume Aulanier",
     "journal": [
       [
         "2026-11-15T21:39",
@@ -143,6 +174,7 @@
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 4.7,
+    "places": 71,
     "titre": "Éruptions solaires : dans la tête de l'astronome qui simule les colères du Soleil",
     "url": "https://amioclub.com/checkout?date=Lundi%207%20d%C3%A9cembre%202026&title=%C3%89ruptions%20solaires%20%3A%20dans%20la%20t%C3%AAte%20de%20l'astronome%20qui%20simule%20les%20col%C3%A8res%20du%20Soleil&event=eruptions-solaires-guillaume-aulanier&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-15T21:39"
@@ -171,20 +203,20 @@
     "vu_le": "2026-10-17T00:12"
   },
   "fonds-marins-guillaume-pitron": {
-    "absences": 0,
-    "capacite": null,
+    "alerte_seuil": false,
+    "capacite": 79,
     "complet": false,
     "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
-        60
+        69
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-16T15:57",
-    "dispo_le": "2026-11-16T15:57",
-    "inscrits": 60,
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": "2026-11-16T16:04",
+    "inscrits": 69,
     "intervenant": "Guillaume Pitron",
     "journal": [
       [
@@ -194,7 +226,7 @@
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 9.8,
-    "places": null,
+    "places": 10,
     "titre": "Les fonds marins : nouvelle frontière du capitalisme",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -218,7 +250,6 @@
     "vu_le": "2026-10-17T00:12"
   },
   "gizeh-patrice-pouillard": {
-    "absences": 1,
     "complet": false,
     "complet_marge_h": null,
     "date": "Mercredi 18 novembre 2026",
@@ -271,67 +302,88 @@
     "vu_le": "2026-10-20T11:23"
   },
   "legiste-nicolas-gmati": {
-    "absences": 0,
-    "capacite": null,
-    "complet": false,
+    "alerte_seuil": false,
+    "capacite": 79,
+    "complet": true,
+    "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
-        85
+        105
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-16T15:57",
-    "dispo_le": "2026-11-16T15:57",
-    "inscrits": 85,
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": null,
+    "inscrits": 105,
     "intervenant": "Nicolas Gmati",
     "journal": [
       [
         "2026-11-02T15:34",
         "drop"
+      ],
+      [
+        "2026-11-16T16:04",
+        "complet"
       ]
     ],
     "lieu": "Le Cirque",
     "parution_marge_h": 9.8,
-    "places": null,
+    "places": 0,
     "titre": "Médecin légiste : que peut bien dire un cadavre ?",
     "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026&title=M%C3%A9decin%20l%C3%A9giste%20%3A%20que%20peut%20bien%20dire%20un%20cadavre%20%3F&event=legiste-nicolas-gmati&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
     "vu_le": "2026-11-02T15:34"
   },
   "meurtre-julien-lefebure": {
-    "absences": 1,
-    "complet": false,
+    "alerte_seuil": false,
+    "capacite": 79,
+    "complet": true,
+    "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
+    "courbe": [
+      [
+        "2026-11-16",
+        107
+      ]
+    ],
     "date": "Mardi 17 novembre 2026",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": null,
+    "inscrits": 107,
+    "intervenant": "Julien Lefebure",
     "journal": [
       [
         "2026-10-26T12:47",
         "drop"
+      ],
+      [
+        "2026-11-16T16:04",
+        "complet"
       ]
     ],
-    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "lieu": "Le Cirque",
     "parution_marge_h": 6.8,
+    "places": 0,
     "titre": "Meurtre, faux marabout : dans la tête de l'avocat qui défend le pire",
     "url": "https://amioclub.com/checkout?date=Mardi%2017%20novembre%202026%20%C2%B7%20Meurtre&title=Meurtre%2C%20faux%20marabout%20%3A%20dans%20la%20t%C3%AAte%20de%20l'avocat%20qui%20d%C3%A9fend%20le%20pire&event=meurtre-julien-lefebure&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
     "vu_le": "2026-10-26T12:47"
   },
   "nasa-nicolas-mahoume": {
-    "absences": 0,
-    "capacite": null,
+    "alerte_seuil": false,
+    "capacite": 79,
     "complet": false,
     "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
-        47
+        50
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-16T15:57",
-    "dispo_le": "2026-11-16T15:57",
-    "inscrits": 47,
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": "2026-11-16T16:04",
+    "inscrits": 50,
     "intervenant": "Nicolas Mahoume",
     "journal": [
       [
@@ -341,54 +393,75 @@
     ],
     "lieu": "Le Cirque",
     "parution_marge_h": 9.8,
-    "places": null,
+    "places": 29,
     "titre": "Expédition avec la NASA : explorer Mars… depuis la Terre",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026&title=Exp%C3%A9dition%20avec%20la%20NASA%20%3A%20explorer%20Mars%E2%80%A6%20depuis%20la%20Terre&event=nasa-nicolas-mahoume&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
     "vu_le": "2026-11-02T15:34"
   },
   "neurologue-biliana-todorova": {
-    "absences": 0,
-    "capacite": null,
-    "complet": false,
+    "alerte_seuil": false,
+    "capacite": 79,
+    "complet": true,
+    "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
-        76
+        102
       ]
     ],
     "date": "Mardi 17 novembre 2026",
-    "derniere_maj": "2026-11-16T15:57",
-    "dispo_le": "2026-11-16T15:57",
-    "inscrits": 76,
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": null,
+    "inscrits": 102,
     "intervenant": "Biliana Todorova",
     "journal": [
       [
         "2026-10-26T12:47",
         "drop"
+      ],
+      [
+        "2026-11-16T16:04",
+        "complet"
       ]
     ],
     "lieu": "Impasse bar",
     "parution_marge_h": 6.8,
-    "places": null,
+    "places": 0,
     "titre": "Neurosciences : ton cerveau peut faire beaucoup plus que ça",
     "url": "https://amioclub.com/checkout?date=Mardi%2017%20novembre%202026&title=Neurosciences%20%3A%20ton%20cerveau%20peut%20faire%20beaucoup%20plus%20que%20%C3%A7a&event=neurologue-biliana-todorova&venue=Impasse%20bar%2C%204%20Cit%C3%A9%20Griset%2C%2075011%20Paris",
     "vu_le": "2026-10-26T12:47"
   },
   "passage-a-lacte-emma-christiaen-oliveira-2": {
-    "absences": 1,
-    "complet": false,
+    "alerte_seuil": false,
+    "capacite": 79,
+    "complet": true,
+    "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
+    "courbe": [
+      [
+        "2026-11-16",
+        96
+      ]
+    ],
     "date": "Lundi 30 novembre 2026",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": null,
+    "inscrits": 96,
+    "intervenant": "Oliveira 2",
     "journal": [
       [
         "2026-11-08T19:29",
         "drop"
+      ],
+      [
+        "2026-11-16T16:04",
+        "complet"
       ]
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 4.5,
+    "places": 0,
     "titre": "Le passage à l'acte meurtrier...",
     "url": "https://amioclub.com/checkout?date=Lundi%2030%20novembre%202026&title=Le%20passage%20%C3%A0%20l'acte%20meurtrier...&event=passage-a-lacte-emma-christiaen-oliveira-2&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-08T19:29"
@@ -435,30 +508,35 @@
     "vu_le": "2026-10-17T00:12"
   },
   "prison-yannick-deslandes-2": {
-    "absences": 0,
-    "capacite": null,
-    "complet": false,
+    "alerte_seuil": false,
+    "capacite": 79,
+    "complet": true,
+    "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
-        81
+        99
       ]
     ],
     "date": "Mercredi 18 novembre 2026",
-    "derniere_maj": "2026-11-16T15:57",
-    "dispo_le": "2026-11-16T15:57",
-    "inscrits": 81,
+    "derniere_maj": "2026-11-16T16:04",
+    "dispo_le": null,
+    "inscrits": 99,
     "intervenant": "Deslandes 2",
     "journal": [
       [
         "2026-10-28T15:55",
         "drop"
+      ],
+      [
+        "2026-11-16T16:04",
+        "complet"
       ]
     ],
     "lieu": "Bonnotte Club",
     "parution_marge_h": 0.0,
-    "places": null,
+    "places": 0,
     "titre": "22 ans en prison : les dessous du système carcéral",
     "url": "https://amioclub.com/checkout?date=Mercredi%2018%20novembre%202026%20%C2%B7%20Prison&title=22%20ans%20en%20prison%20%3A%20les%20dessous%20du%20syst%C3%A8me%20carc%C3%A9ral&event=prison-yannick-deslandes-2&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
     "vu_le": "2026-10-28T15:55"

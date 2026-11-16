@@ -50,14 +50,24 @@
     "vu_le": "2026-10-04T12:21"
   },
   "l-ia-nous-rend-elle-stupide": {
-    "date": "",
+    "capacite": null,
+    "complet": true,
+    "complet_le": "2026-11-16T15:12",
+    "date": "Lundi 23 novembre",
+    "derniere_maj": "2026-11-16T15:12",
+    "intervenant": null,
     "journal": [
       [
         "2026-10-04T12:21",
         "drop"
+      ],
+      [
+        "2026-11-16T15:12",
+        "complet"
       ]
     ],
-    "titre": "L ia nous rend elle stupide",
+    "lieu": "Le Musset",
+    "titre": "L'IA nous rend-elle stupide ?",
     "url": "https://shotgun.live/fr/events/l-ia-nous-rend-elle-stupide",
     "vu_le": "2026-10-04T12:21"
   },
@@ -75,37 +85,57 @@
     "vu_le": "2026-09-15T22:12"
   },
   "la-france-est-elle-prete-pour-la-guerre": {
-    "date": "",
+    "capacite": null,
+    "complet": false,
+    "date": "Mardi 17 novembre",
+    "derniere_maj": "2026-11-16T15:12",
+    "intervenant": null,
     "journal": [
       [
         "2026-10-04T12:21",
         "drop"
       ]
     ],
-    "titre": "La france est elle prete pour la guerre",
+    "lieu": "Le Musset",
+    "titre": "La France est-elle prête pour la guerre ?",
     "url": "https://shotgun.live/fr/events/la-france-est-elle-prete-pour-la-guerre",
     "vu_le": "2026-10-04T12:21"
   },
   "la-technologie-nous-rend-elle-plus-seuls": {
-    "date": "Jeudi 17 décembre de 19h30 à 21h30",
+    "capacite": null,
+    "complet": false,
+    "date": "Jeudi 17 décembre",
+    "derniere_maj": "2026-11-16T15:12",
+    "intervenant": null,
     "journal": [
       [
         "2026-11-01T19:44",
         "drop"
       ]
     ],
+    "lieu": "Pinot Grigio",
     "titre": "La technologie nous rend-elle plus seuls ?",
     "url": "https://shotgun.live/fr/events/la-technologie-nous-rend-elle-plus-seuls",
     "vu_le": "2026-11-01T19:44"
   },
   "notre-destin-est-il-deja-ecrit": {
-    "date": "Vendredi 4 décembre de 19h30 à 21h30",
+    "capacite": null,
+    "complet": true,
+    "complet_le": "2026-11-16T15:12",
+    "date": "Vendredi 4 décembre",
+    "derniere_maj": "2026-11-16T15:12",
+    "intervenant": null,
     "journal": [
       [
         "2026-11-01T19:44",
         "drop"
+      ],
+      [
+        "2026-11-16T15:12",
+        "complet"
       ]
     ],
+    "lieu": "Nanna (péniche)",
     "titre": "Notre destin est-il déjà écrit ?",
     "url": "https://shotgun.live/fr/events/notre-destin-est-il-deja-ecrit",
     "vu_le": "2026-11-01T19:44"
@@ -137,13 +167,18 @@
     "vu_le": "2026-09-15T22:12"
   },
   "qui-sont-vraiment-les-masculinistes": {
-    "date": "Lundi 7 décembre de 19h30 à 21h30",
+    "capacite": null,
+    "complet": false,
+    "date": "Lundi 7 décembre",
+    "derniere_maj": "2026-11-16T15:12",
+    "intervenant": null,
     "journal": [
       [
         "2026-11-01T19:44",
         "drop"
       ]
     ],
+    "lieu": "Le Musset",
     "titre": "Qui sont vraiment les masculinistes ?",
     "url": "https://shotgun.live/fr/events/qui-sont-vraiment-les-masculinistes",
     "vu_le": "2026-11-01T19:44"

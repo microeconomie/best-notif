@@ -1,6 +1,8 @@
 {
   "comment-bien-investir-son-epargne": {
+    "complet_marge_h": null,
     "date": "",
+    "dispo_le": null,
     "journal": [
       [
         "2026-09-15T22:12",
@@ -13,7 +15,9 @@
     "vu_le": "2026-09-15T22:12"
   },
   "comment-la-science-change-l-intime": {
+    "complet_marge_h": null,
     "date": "",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-04T12:21",
@@ -25,7 +29,9 @@
     "vu_le": "2026-10-04T12:21"
   },
   "et-si-on-etait-tous-mediums": {
+    "complet_marge_h": null,
     "date": "",
+    "dispo_le": null,
     "journal": [
       [
         "2026-09-15T22:12",
@@ -38,7 +44,9 @@
     "vu_le": "2026-09-15T22:12"
   },
   "l-amour-est-il-ecrit-dans-les-etoiles": {
+    "complet_marge_h": null,
     "date": "",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-04T12:21",
@@ -53,8 +61,10 @@
     "capacite": null,
     "complet": true,
     "complet_le": "2026-11-16T15:12",
+    "complet_marge_h": null,
     "date": "Lundi 23 novembre",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": null,
     "intervenant": null,
     "journal": [
       [
@@ -72,7 +82,9 @@
     "vu_le": "2026-10-04T12:21"
   },
   "l-ia-va-t-elle-prendre-nos-jobs": {
+    "complet_marge_h": null,
     "date": "",
+    "dispo_le": null,
     "journal": [
       [
         "2026-09-15T22:12",
@@ -87,8 +99,10 @@
   "la-france-est-elle-prete-pour-la-guerre": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 17 novembre",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "intervenant": null,
     "journal": [
       [
@@ -104,8 +118,10 @@
   "la-technologie-nous-rend-elle-plus-seuls": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 17 décembre",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "intervenant": null,
     "journal": [
       [
@@ -122,8 +138,10 @@
     "capacite": null,
     "complet": true,
     "complet_le": "2026-11-16T15:12",
+    "complet_marge_h": null,
     "date": "Vendredi 4 décembre",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": null,
     "intervenant": null,
     "journal": [
       [
@@ -141,7 +159,9 @@
     "vu_le": "2026-11-01T19:44"
   },
   "peut-on-controler-ses-fantasmes": {
+    "complet_marge_h": null,
     "date": "",
+    "dispo_le": null,
     "journal": [
       [
         "2026-09-15T22:12",
@@ -154,7 +174,9 @@
     "vu_le": "2026-09-15T22:12"
   },
   "peut-on-defendre-l-indefendable": {
+    "complet_marge_h": null,
     "date": "",
+    "dispo_le": null,
     "journal": [
       [
         "2026-09-15T22:12",
@@ -169,8 +191,10 @@
   "qui-sont-vraiment-les-masculinistes": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Lundi 7 décembre",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "intervenant": null,
     "journal": [
       [
@@ -184,7 +208,9 @@
     "vu_le": "2026-11-01T19:44"
   },
   "secte-un-an-infiltre-chez-les-gourous": {
+    "complet_marge_h": null,
     "date": "",
+    "dispo_le": null,
     "journal": [
       [
         "2026-09-15T22:12",

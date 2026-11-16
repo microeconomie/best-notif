@@ -3,7 +3,9 @@
     "alerte_seuil": false,
     "complet": true,
     "complet_le": "2026-10-26T08:20",
+    "complet_marge_h": 8.6,
     "date": "Lundi 2 novembre 2026 à 19h30",
+    "dispo_le": "2026-10-25T23:42",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -34,6 +36,7 @@
     "capacite": 80,
     "complet": true,
     "complet_le": "2026-11-10T17:24",
+    "complet_marge_h": 15.6,
     "courbe": [
       [
         "2026-11-16",
@@ -43,6 +46,7 @@
     "date": "Lundi 23 novembre 2026 à 19h30",
     "date_iso": "2026-11-23",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-10T01:49",
     "inscrits": 80,
     "intervenant": "Martine Glorian",
     "journal": [
@@ -67,7 +71,9 @@
     "alerte_seuil": false,
     "complet": true,
     "complet_le": "2026-10-27T11:22",
+    "complet_marge_h": 5.5,
     "date": "Mardi 3 novembre 2026 à 19h30",
+    "dispo_le": "2026-10-27T05:50",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -87,7 +93,9 @@
   "352fe6f2-c30c-40ce-8a2d-b60042d6e9e0": {
     "complet": true,
     "complet_le": "2026-10-19T15:53",
+    "complet_marge_h": null,
     "date": "Mardi 20 octobre 2026 à 19h30",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-19T15:53",
@@ -110,6 +118,7 @@
     "capacite": 75,
     "complet": true,
     "complet_le": "2026-10-23T21:46",
+    "complet_marge_h": 3.0,
     "courbe": [
       [
         "2026-11-16",
@@ -119,6 +128,7 @@
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-10-23T18:49",
     "inscrits": 75,
     "intervenant": "Bellet Baptiste",
     "journal": [
@@ -153,6 +163,7 @@
     "capacite": 75,
     "complet": true,
     "complet_le": "2026-10-23T18:49",
+    "complet_marge_h": 4.8,
     "courbe": [
       [
         "2026-11-16",
@@ -162,6 +173,7 @@
     "date": "Mardi 24 novembre 2026 à 19h30",
     "date_iso": "2026-11-24",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-10-23T13:59",
     "inscrits": 75,
     "intervenant": "Grégor Ozbolt",
     "journal": [
@@ -186,7 +198,9 @@
     "alerte_seuil": false,
     "complet": true,
     "complet_le": "2026-10-23T13:59",
+    "complet_marge_h": 5.8,
     "date": "Lundi 9 novembre 2026 à 19h30",
+    "dispo_le": "2026-10-23T08:08",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -207,6 +221,7 @@
     "alerte_seuil": false,
     "capacite": 80,
     "complet": false,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -216,6 +231,7 @@
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "inscrits": 72,
     "intervenant": "Leflaive Xavier",
     "journal": [
@@ -236,7 +252,9 @@
     "alerte_seuil": false,
     "complet": true,
     "complet_le": "2026-11-09T00:23",
+    "complet_marge_h": 4.3,
     "date": "Mardi 10 novembre 2026 à 19h30",
+    "dispo_le": "2026-11-08T20:04",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -258,6 +276,7 @@
     "capacite": 80,
     "complet": true,
     "complet_le": "2026-10-25T14:42",
+    "complet_marge_h": 4.2,
     "courbe": [
       [
         "2026-11-16",
@@ -267,6 +286,7 @@
     "date": "Lundi 16 novembre 2026 à 19h30",
     "date_iso": "2026-11-16",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-10-25T10:28",
     "inscrits": 80,
     "intervenant": "Aïda Elamrani",
     "journal": [
@@ -308,7 +328,9 @@
     "alerte_seuil": false,
     "complet": true,
     "complet_le": "2026-10-20T15:30",
+    "complet_marge_h": 23.6,
     "date": "Mercredi 21 octobre 2026 à 19h30",
+    "dispo_le": "2026-10-19T15:53",
     "journal": [
       [
         "2026-10-19T15:53",
@@ -330,7 +352,9 @@
     "alerte_seuil": false,
     "complet": true,
     "complet_le": "2026-10-19T15:53",
+    "complet_marge_h": null,
     "date": "Mardi 27 octobre 2026 à 19h30",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-19T15:53",
@@ -362,6 +386,7 @@
     "capacite": 60,
     "complet": false,
     "complet_le": "2026-11-03T23:50",
+    "complet_marge_h": 5.7,
     "courbe": [
       [
         "2026-11-16",
@@ -371,6 +396,7 @@
     "date": "Mardi 17 novembre 2026 à 19h30",
     "date_iso": "2026-11-17",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-03T18:11",
     "inscrits": 58,
     "intervenant": "Hubert Guérin.",
     "journal": [

@@ -14,8 +14,18 @@
     "vu_le": "2026-11-08T19:29"
   },
   "anxiete-monia-djillali": {
+    "capacite": null,
     "complet": false,
+    "courbe": [
+      [
+        "2026-11-16",
+        43
+      ]
+    ],
     "date": "Mardi 8 décembre 2026",
+    "derniere_maj": "2026-11-16T15:12",
+    "inscrits": 43,
+    "intervenant": "Monia Djillali",
     "journal": [
       [
         "2026-11-15T21:39",
@@ -23,6 +33,7 @@
       ]
     ],
     "lieu": "Bar à Paris",
+    "places": null,
     "titre": "Anxiété, pression sociale : et si personne ne nous jugeait vraiment ?",
     "url": "https://amioclub.com/checkout?date=Mardi%208%20d%C3%A9cembre%202026&title=Anxi%C3%A9t%C3%A9%2C%20pression%20sociale%20%3A%20et%20si%20personne%20ne%20nous%20jugeait%20vraiment%20%3F&event=anxiete-monia-djillali&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-15T21:39"
@@ -73,8 +84,18 @@
     "vu_le": "2026-10-17T00:12"
   },
   "defense-johanic-galode": {
+    "capacite": null,
     "complet": false,
+    "courbe": [
+      [
+        "2026-11-16",
+        80
+      ]
+    ],
     "date": "Mardi 24 novembre 2026",
+    "derniere_maj": "2026-11-16T15:12",
+    "inscrits": 80,
+    "intervenant": "Johanic Galode",
     "journal": [
       [
         "2026-11-02T15:34",
@@ -82,6 +103,7 @@
       ]
     ],
     "lieu": "Bar à Paris",
+    "places": null,
     "titre": "Soudain, un retour de la conflictualité en Europe…",
     "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026%20%C2%B7%20D%C3%A9fense&title=Soudain%2C%20un%20retour%20de%20la%20conflictualit%C3%A9%20en%20Europe%E2%80%A6&event=defense-johanic-galode&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -121,8 +143,18 @@
     "vu_le": "2026-10-17T00:12"
   },
   "fonds-marins-guillaume-pitron": {
+    "capacite": null,
     "complet": false,
+    "courbe": [
+      [
+        "2026-11-16",
+        60
+      ]
+    ],
     "date": "Mercredi 25 novembre 2026",
+    "derniere_maj": "2026-11-16T15:12",
+    "inscrits": 60,
+    "intervenant": "Guillaume Pitron",
     "journal": [
       [
         "2026-11-02T15:34",
@@ -130,6 +162,7 @@
       ]
     ],
     "lieu": "Bar à Paris",
+    "places": null,
     "titre": "Les fonds marins : nouvelle frontière du capitalisme",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -193,15 +226,26 @@
     "vu_le": "2026-10-20T11:23"
   },
   "legiste-nicolas-gmati": {
+    "capacite": null,
     "complet": false,
+    "courbe": [
+      [
+        "2026-11-16",
+        85
+      ]
+    ],
     "date": "Mardi 24 novembre 2026",
+    "derniere_maj": "2026-11-16T15:12",
+    "inscrits": 85,
+    "intervenant": "Nicolas Gmati",
     "journal": [
       [
         "2026-11-02T15:34",
         "drop"
       ]
     ],
-    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "lieu": "Le Cirque",
+    "places": null,
     "titre": "Médecin légiste : que peut bien dire un cadavre ?",
     "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026&title=M%C3%A9decin%20l%C3%A9giste%20%3A%20que%20peut%20bien%20dire%20un%20cadavre%20%3F&event=legiste-nicolas-gmati&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -221,29 +265,51 @@
     "vu_le": "2026-10-26T12:47"
   },
   "nasa-nicolas-mahoume": {
+    "capacite": null,
     "complet": false,
+    "courbe": [
+      [
+        "2026-11-16",
+        47
+      ]
+    ],
     "date": "Mercredi 25 novembre 2026",
+    "derniere_maj": "2026-11-16T15:12",
+    "inscrits": 47,
+    "intervenant": "Nicolas Mahoume",
     "journal": [
       [
         "2026-11-02T15:34",
         "drop"
       ]
     ],
-    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "lieu": "Le Cirque",
+    "places": null,
     "titre": "Expédition avec la NASA : explorer Mars… depuis la Terre",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026&title=Exp%C3%A9dition%20avec%20la%20NASA%20%3A%20explorer%20Mars%E2%80%A6%20depuis%20la%20Terre&event=nasa-nicolas-mahoume&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
     "vu_le": "2026-11-02T15:34"
   },
   "neurologue-biliana-todorova": {
+    "capacite": null,
     "complet": false,
+    "courbe": [
+      [
+        "2026-11-16",
+        76
+      ]
+    ],
     "date": "Mardi 17 novembre 2026",
+    "derniere_maj": "2026-11-16T15:12",
+    "inscrits": 76,
+    "intervenant": "Biliana Todorova",
     "journal": [
       [
         "2026-10-26T12:47",
         "drop"
       ]
     ],
-    "lieu": "Impasse bar, 4 Cité Griset, 75011 Paris",
+    "lieu": "Impasse bar",
+    "places": null,
     "titre": "Neurosciences : ton cerveau peut faire beaucoup plus que ça",
     "url": "https://amioclub.com/checkout?date=Mardi%2017%20novembre%202026&title=Neurosciences%20%3A%20ton%20cerveau%20peut%20faire%20beaucoup%20plus%20que%20%C3%A7a&event=neurologue-biliana-todorova&venue=Impasse%20bar%2C%204%20Cit%C3%A9%20Griset%2C%2075011%20Paris",
     "vu_le": "2026-10-26T12:47"
@@ -298,15 +364,26 @@
     "vu_le": "2026-10-17T00:12"
   },
   "prison-yannick-deslandes-2": {
+    "capacite": null,
     "complet": false,
+    "courbe": [
+      [
+        "2026-11-16",
+        81
+      ]
+    ],
     "date": "Mercredi 18 novembre 2026",
+    "derniere_maj": "2026-11-16T15:12",
+    "inscrits": 81,
+    "intervenant": "Deslandes 2",
     "journal": [
       [
         "2026-10-28T15:55",
         "drop"
       ]
     ],
-    "lieu": "Bonnotte Club, Port de Suffren, 75007 Paris",
+    "lieu": "Bonnotte Club",
+    "places": null,
     "titre": "22 ans en prison : les dessous du système carcéral",
     "url": "https://amioclub.com/checkout?date=Mercredi%2018%20novembre%202026%20%C2%B7%20Prison&title=22%20ans%20en%20prison%20%3A%20les%20dessous%20du%20syst%C3%A8me%20carc%C3%A9ral&event=prison-yannick-deslandes-2&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
     "vu_le": "2026-10-28T15:55"

@@ -117,6 +117,13 @@ def date_du(texte):
         return None
 
 
+# La déduction du complet par disparition est suspendue : le catalogue lu ici
+# ne voit que 7 des 11 sessions réellement annoncées, si bien que des sessions
+# parfaitement réservables passeraient pour pleines. À rétablir une fois que le
+# catalogue sera complet. Les absences continuent d'être comptées, sans effet.
+DEDUIRE_COMPLET = False
+
+
 def disparues(etat, sessions, quand):
     """Les complets d'Amio, déduits de la disparition du lien de réservation.
 
@@ -140,7 +147,7 @@ def disparues(etat, sessions, quand):
         if fiche.get("complet") or not fiche.get("vu_le") or not jour or jour <= aujourdhui:
             continue
         fiche["absences"] = fiche.get("absences", 0) + 1
-        if fiche["absences"] >= 2:
+        if DEDUIRE_COMPLET and fiche["absences"] >= 2:
             fiche["complet"] = True
             fiche["complet_le"] = fiche.get("complet_le") or quand
             fiche["derniere_maj"] = quand

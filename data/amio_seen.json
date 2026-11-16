@@ -1,5 +1,6 @@
 {
   "addiction-juliette-hazart": {
+    "absences": 1,
     "complet": false,
     "complet_marge_h": null,
     "date": "Mercredi 2 décembre 2026",
@@ -17,6 +18,7 @@
     "vu_le": "2026-11-08T19:29"
   },
   "anxiete-monia-djillali": {
+    "absences": 0,
     "capacite": null,
     "complet": false,
     "complet_marge_h": null,
@@ -27,8 +29,8 @@
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-16T15:12",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T15:57",
+    "dispo_le": "2026-11-16T15:57",
     "inscrits": 43,
     "intervenant": "Monia Djillali",
     "journal": [
@@ -99,6 +101,7 @@
     "vu_le": "2026-10-17T00:12"
   },
   "defense-johanic-galode": {
+    "absences": 0,
     "capacite": null,
     "complet": false,
     "complet_marge_h": null,
@@ -109,8 +112,8 @@
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-16T15:12",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T15:57",
+    "dispo_le": "2026-11-16T15:57",
     "inscrits": 80,
     "intervenant": "Johanic Galode",
     "journal": [
@@ -127,6 +130,7 @@
     "vu_le": "2026-11-02T15:34"
   },
   "eruptions-solaires-guillaume-aulanier": {
+    "absences": 1,
     "complet": false,
     "complet_marge_h": null,
     "date": "Lundi 7 décembre 2026",
@@ -167,6 +171,7 @@
     "vu_le": "2026-10-17T00:12"
   },
   "fonds-marins-guillaume-pitron": {
+    "absences": 0,
     "capacite": null,
     "complet": false,
     "complet_marge_h": null,
@@ -177,8 +182,8 @@
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-16T15:12",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T15:57",
+    "dispo_le": "2026-11-16T15:57",
     "inscrits": 60,
     "intervenant": "Guillaume Pitron",
     "journal": [
@@ -213,6 +218,7 @@
     "vu_le": "2026-10-17T00:12"
   },
   "gizeh-patrice-pouillard": {
+    "absences": 1,
     "complet": false,
     "complet_marge_h": null,
     "date": "Mercredi 18 novembre 2026",
@@ -265,6 +271,7 @@
     "vu_le": "2026-10-20T11:23"
   },
   "legiste-nicolas-gmati": {
+    "absences": 0,
     "capacite": null,
     "complet": false,
     "complet_marge_h": null,
@@ -275,8 +282,8 @@
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-16T15:12",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T15:57",
+    "dispo_le": "2026-11-16T15:57",
     "inscrits": 85,
     "intervenant": "Nicolas Gmati",
     "journal": [
@@ -293,6 +300,7 @@
     "vu_le": "2026-11-02T15:34"
   },
   "meurtre-julien-lefebure": {
+    "absences": 1,
     "complet": false,
     "complet_marge_h": null,
     "date": "Mardi 17 novembre 2026",
@@ -310,6 +318,7 @@
     "vu_le": "2026-10-26T12:47"
   },
   "nasa-nicolas-mahoume": {
+    "absences": 0,
     "capacite": null,
     "complet": false,
     "complet_marge_h": null,
@@ -320,8 +329,8 @@
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-16T15:12",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T15:57",
+    "dispo_le": "2026-11-16T15:57",
     "inscrits": 47,
     "intervenant": "Nicolas Mahoume",
     "journal": [
@@ -338,6 +347,7 @@
     "vu_le": "2026-11-02T15:34"
   },
   "neurologue-biliana-todorova": {
+    "absences": 0,
     "capacite": null,
     "complet": false,
     "complet_marge_h": null,
@@ -348,8 +358,8 @@
       ]
     ],
     "date": "Mardi 17 novembre 2026",
-    "derniere_maj": "2026-11-16T15:12",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T15:57",
+    "dispo_le": "2026-11-16T15:57",
     "inscrits": 76,
     "intervenant": "Biliana Todorova",
     "journal": [
@@ -366,6 +376,7 @@
     "vu_le": "2026-10-26T12:47"
   },
   "passage-a-lacte-emma-christiaen-oliveira-2": {
+    "absences": 1,
     "complet": false,
     "complet_marge_h": null,
     "date": "Lundi 30 novembre 2026",
@@ -424,6 +435,7 @@
     "vu_le": "2026-10-17T00:12"
   },
   "prison-yannick-deslandes-2": {
+    "absences": 0,
     "capacite": null,
     "complet": false,
     "complet_marge_h": null,
@@ -434,8 +446,8 @@
       ]
     ],
     "date": "Mercredi 18 novembre 2026",
-    "derniere_maj": "2026-11-16T15:12",
-    "dispo_le": "2026-11-16T15:12",
+    "derniere_maj": "2026-11-16T15:57",
+    "dispo_le": "2026-11-16T15:57",
     "inscrits": 81,
     "intervenant": "Deslandes 2",
     "journal": [

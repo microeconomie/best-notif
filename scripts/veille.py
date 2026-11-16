@@ -103,6 +103,25 @@ def _noter(fiche, quand, quoi):
     fiche.setdefault("journal", []).append([quand, quoi])
 
 
+def marge_h(dispo_le, complet_le):
+    """Heures d'incertitude sur la date de complet, ou None si indéterminable.
+
+    On ne sait pas quand un talk est tombé : on sait seulement qu'il était
+    encore ouvert à la dernière observation, et complet à celle-ci. L'écart
+    entre les deux est la marge d'erreur ; sans observation « disponible »
+    antérieure, le talk était déjà complet quand la veille l'a découvert et
+    la date reste indéterminée.
+    """
+    if not dispo_le or not complet_le:
+        return None
+    try:
+        d1 = datetime.fromisoformat(dispo_le[:16])
+        d2 = datetime.fromisoformat(complet_le[:16])
+    except ValueError:
+        return None
+    return round((d2 - d1).total_seconds() / 3600, 1)
+
+
 def fusionner(etat, trouves, seuil_places=None, premier_passage=False):
     """Met l'état à jour et renvoie ce qui mérite une alerte.
 
@@ -112,15 +131,22 @@ def fusionner(etat, trouves, seuil_places=None, premier_passage=False):
     quand = maintenant()
     jour = quand[:10]
     nouveaux, rouverts, derniers = {}, {}, {}
+    # le passage précédent borne la date d'apparition d'un talk découvert ici
+    passages = [f.get("derniere_maj") for f in etat.values() if f.get("derniere_maj")]
+    precedent = max(passages) if passages else None
 
     for cle, vu in trouves.items():
         fiche = etat.get(cle)
+        complet_vu = vu.get("complet")
         if fiche is None:
             fiche = dict(vu)
             fiche["vu_le"] = quand
             fiche["journal"] = [[quand, "drop"]]
-            fiche["complet_le"] = quand if vu.get("complet") else None
-            if vu.get("complet"):
+            fiche["complet_le"] = quand if complet_vu else None
+            fiche["dispo_le"] = None
+            fiche["complet_marge_h"] = None     # déjà complet à la découverte
+            fiche["parution_marge_h"] = None if premier_passage else marge_h(precedent, quand)
+            if complet_vu:
                 _noter(fiche, quand, "complet")
             etat[cle] = fiche
             if not premier_passage:
@@ -135,10 +161,12 @@ def fusionner(etat, trouves, seuil_places=None, premier_passage=False):
             capacite = vu.get("capacite") or fiche.get("capacite")
             fiche.update({k: v for k, v in vu.items() if v is not None or k not in fiche})
             fiche["capacite"] = capacite
-            if vu.get("complet") and not etait_complet:
+            if complet_vu and not etait_complet:
                 fiche["complet_le"] = fiche.get("complet_le") or quand
+                if fiche.get("complet_marge_h") is None:
+                    fiche["complet_marge_h"] = marge_h(fiche.get("dispo_le"), quand)
                 _noter(fiche, quand, "complet")
-            elif etait_complet and vu.get("complet") is False:
+            elif etait_complet and complet_vu is False:
                 fiche["rouvert_le"] = quand
                 _noter(fiche, quand, "revente")
                 if not premier_passage:
@@ -167,6 +195,9 @@ def fusionner(etat, trouves, seuil_places=None, premier_passage=False):
                     derniers[cle] = fiche
             fiche["alerte_seuil"] = sous_seuil
 
+        # dernière observation où le talk était encore ouvert
+        if complet_vu is False:
+            fiche["dispo_le"] = quand
         fiche["derniere_maj"] = quand
 
     return nouveaux, rouverts, derniers

@@ -60,10 +60,13 @@ def cle_de_secours():
     return jeton.group(0) if jeton else ""
 
 
-def interroger():
-    url = (f"{API}?select={CHAMPS}&deleted_at=is.null&is_active=eq.true&is_test=eq.false"
-           f"&booking_status=neq.cancelled&event_date=gte.{aujourd_hui().isoformat()}"
-           "&order=event_date.asc")
+def url_agenda():
+    return (f"{API}?select={CHAMPS}&deleted_at=is.null&is_active=eq.true&is_test=eq.false"
+            f"&booking_status=neq.cancelled&event_date=gte.{aujourd_hui().isoformat()}"
+            "&order=event_date.asc")
+
+
+def interroger(url):
     for cle in (CLE, None):
         if cle is None:
             cle = cle_de_secours()
@@ -115,8 +118,34 @@ def recuperer(donnees):
     return len(donnees), causeries
 
 
+def completer_parutions(etat):
+    """Retrouve la date de mise en ligne des causeries déjà passées.
+
+    L'agenda ne renvoie que les causeries à venir, si bien que celles
+    enregistrées avant que le script ne lise created_at n'ont jamais eu leur
+    vraie date de publication. On les redemande par identifiant, sans filtre
+    de date, ce qui transforme une parution approximative en parution exacte.
+    """
+    manquantes = [c for c, f in etat.items() if not f.get("publie_le")][:100]
+    if not manquantes:
+        return 0
+    try:
+        lignes = interroger(f"{API}?select=id,created_at&id=in.({','.join(manquantes)})")
+    except Exception as erreur:
+        print(f"Parutions passées non récupérées ({type(erreur).__name__}).", file=sys.stderr)
+        return 0
+    retrouvees = 0
+    for brut in lignes:
+        fiche = etat.get(brut.get("id"))
+        publie = (brut.get("created_at") or "")[:16]
+        if fiche and publie and not fiche.get("publie_le"):
+            fiche["publie_le"] = publie
+            retrouvees += 1
+    return retrouvees
+
+
 def main():
-    total, trouves = recuperer(interroger())
+    total, trouves = recuperer(interroger(url_agenda()))
     if total == 0:
         print("L'API ne renvoie aucune causerie : panne ou changement ?", file=sys.stderr)
         sys.exit(1)
@@ -126,7 +155,10 @@ def main():
     etat = etat or {}
     nouveaux, _rouverts, derniers = v.fusionner(
         etat, trouves, seuil_places=SEUIL_PLACES, premier_passage=premier)
+    retrouvees = completer_parutions(etat)
     v.sauver(ETAT, etat)
+    if retrouvees:
+        print(f"{retrouvees} dates de mise en ligne retrouvées pour des causeries passées.")
 
     if premier:
         print(f"Initialisation : {len(trouves)} causeries parisiennes enregistrées, aucune alerte.")

@@ -40,6 +40,14 @@ jobs:
             echo "Aucun changement à sauvegarder."
           else
             git commit -m "Veille Apéro Talk : mise à jour"
-            git pull --rebase
-            git push
+            # les quatre veilles poussent sur la meme branche : on reessaie
+            sauve=
+            for essai in 1 2 3; do
+              if git pull --rebase --quiet && git push --quiet; then
+                sauve=1; echo "Sauvegarde (tentative $essai)."; break
+              fi
+              echo "Collision avec une autre veille, nouvelle tentative."
+              sleep $((essai * 15))
+            done
+            [ -n "$sauve" ]
           fi

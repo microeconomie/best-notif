@@ -1,7 +1,9 @@
 {
   "abysses-que-renferme-le-fond-des-oceans": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 14 octobre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -9,6 +11,7 @@
       ]
     ],
     "lieu": "Griffon",
+    "parution_marge_h": 7.3,
     "ticket_id": "2002419773446",
     "titre": "Abysses : que renferme le fond des océans ?",
     "url": "https://www.eventbrite.com/e/2002419773446?aff=oddtdtcreator",
@@ -17,8 +20,10 @@
   "anatomie-d-un-gang-comment-ca-marche-de-l-interieur": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 17 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Martin Lamotte",
     "journal": [
       [
@@ -27,6 +32,7 @@
       ]
     ],
     "lieu": "Journey",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856350286",
     "titre": "Anatomie d’un gang : comment ça marche de l’intérieur ?",
     "url": "https://www.eventbrite.com/e/2003856350286?aff=oddtdtcreator",
@@ -35,8 +41,10 @@
   "comment-apprendre-a-parler-face-a-un-public": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 19 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Laurine Catillon",
     "journal": [
       [
@@ -45,6 +53,7 @@
       ]
     ],
     "lieu": "Griffon",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856353295",
     "titre": "Comment apprendre à parler face à un public ?",
     "url": "https://www.eventbrite.com/e/2003856353295?aff=oddtdtcreator",
@@ -52,7 +61,9 @@
   },
   "comment-repondre-quand-on-se-moque-de-nous": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 7 octobre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -60,6 +71,7 @@
       ]
     ],
     "lieu": "Journey Paris",
+    "parution_marge_h": 7.3,
     "ticket_id": "2002419636035",
     "titre": "Comment répondre quand on se moque de nous ?",
     "url": "https://www.eventbrite.com/e/2002419636035?aff=oddtdtcreator",
@@ -67,7 +79,9 @@
   },
   "comment-s-affirmer-au-travail": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 12 novembre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -75,6 +89,7 @@
       ]
     ],
     "lieu": "Journey",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856348280",
     "titre": "Comment s’affirmer au travail ?",
     "url": "https://www.eventbrite.com/e/2003856348280?aff=oddtdtcreator",
@@ -82,7 +97,9 @@
   },
   "dating-how-to-get-away-with-dating-in-paris": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Lundi 9 novembre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -90,6 +107,7 @@
       ]
     ],
     "lieu": "Delaville Café",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856349283",
     "titre": "Dating : How to get away with dating in Paris ?",
     "url": "https://www.eventbrite.com/e/2003856349283?aff=oddtdtcreator",
@@ -98,8 +116,10 @@
   "du-premier-echec-a-la-5e-startup-les-coulisses-d-un-serial-entrepreneur": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 19 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Maxime Blondel",
     "journal": [
       [
@@ -108,6 +128,7 @@
       ]
     ],
     "lieu": "Journey",
+    "parution_marge_h": 7.7,
     "ticket_id": "2004665884625",
     "titre": "Du premier échec à la 5ᵉ startup : les coulisses d’un serial entrepreneur",
     "url": "https://www.eventbrite.fr/e/billets-how-we-built-it-maxime-blondel-2004665884625",
@@ -115,7 +136,9 @@
   },
   "expositions-universelles-a-quoi-paris-aurait-il-pu-ressembler": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 10 novembre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -123,6 +146,7 @@
       ]
     ],
     "lieu": "Journey",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856347277",
     "titre": "Expositions universelles : à quoi Paris aurait-il pu ressembler ?",
     "url": "https://www.eventbrite.com/e/2003856347277?aff=oddtdtcreator",
@@ -131,8 +155,10 @@
   "faire-travailler-son-argent-par-ou-commencer": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 24 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Nacera Ramrajah",
     "journal": [
       [
@@ -141,6 +167,7 @@
       ]
     ],
     "lieu": "Journey",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856354298",
     "titre": "Faire travailler son argent : par où commencer ?",
     "url": "https://www.eventbrite.com/e/2003856354298?aff=oddtdtcreator",
@@ -149,8 +176,10 @@
   "l-etranger-ce-que-camus-a-vraiment-voulu-dire": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 25 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": null,
     "journal": [
       [
@@ -159,6 +188,7 @@
       ]
     ],
     "lieu": "Fougue Speakeasy",
+    "parution_marge_h": 8.1,
     "ticket_id": "2004812227340",
     "titre": "L'Étranger : ce que Camus a vraiment voulu dire",
     "url": "https://www.eventbrite.fr/e/billets-letranger-ce-que-camus-a-vraiment-voulu-dire-2004812227340",
@@ -167,8 +197,10 @@
   "moyen-age-tout-ce-qu-on-croit-savoir-est-il-faux": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 18 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Florian Besson",
     "journal": [
       [
@@ -177,6 +209,7 @@
       ]
     ],
     "lieu": "Journey",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856352292",
     "titre": "Moyen Âge : tout ce qu’on croit savoir est-il faux ?",
     "url": "https://www.eventbrite.com/e/2003856352292?aff=oddtdtcreator",
@@ -184,7 +217,9 @@
   },
   "paris-comment-s-est-elle-batie-comment-va-t-elle-evoluer": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 6 octobre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -192,6 +227,7 @@
       ]
     ],
     "lieu": "Journey Paris",
+    "parution_marge_h": 7.3,
     "ticket_id": "2002419207754",
     "titre": "Paris : comment s’est-elle bâtie, comment va-t-elle évoluer ?",
     "url": "https://www.eventbrite.com/e/2002419207754?aff=oddtdtcreator",
@@ -199,7 +235,9 @@
   },
   "peut-on-apprendre-la-philosophie-en-regardant-netflix": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 15 octobre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -207,6 +245,7 @@
       ]
     ],
     "lieu": "Journey Paris",
+    "parution_marge_h": 7.3,
     "ticket_id": "2002419951980",
     "titre": "Peut-on apprendre la philosophie en regardant Netflix ?",
     "url": "https://www.eventbrite.com/e/2002419951980?aff=oddtdtcreator",
@@ -215,7 +254,9 @@
   "peut-on-choisir-de-qui-l-on-tombe-amoureux": {
     "complet": false,
     "complet_le": "2026-10-19T21:13",
+    "complet_marge_h": null,
     "date": "Mercredi 28 octobre 2026",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-16T14:44",
@@ -231,6 +272,7 @@
       ]
     ],
     "lieu": "Chez les Plombiers",
+    "parution_marge_h": 0.0,
     "rouvert_le": "2026-10-27T16:50",
     "ticket_id": "2002421602918",
     "titre": "Peut-on choisir de qui l'on tombe amoureux ?",
@@ -239,7 +281,9 @@
   },
   "peut-on-ficher-toute-une-population": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 21 octobre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-16T14:44",
@@ -247,6 +291,7 @@
       ]
     ],
     "lieu": "Renaissance Paris Nobel",
+    "parution_marge_h": 0.0,
     "ticket_id": "2002421030205",
     "titre": "Peut-on ficher toute une population ?",
     "url": "https://www.eventbrite.com/e/2002421030205?aff=oddtdtcreator",
@@ -254,7 +299,9 @@
   },
   "photographe-de-l-extreme-jusqu-ou-aller-pour-une-image": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 3 novembre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -262,6 +309,7 @@
       ]
     ],
     "lieu": "Journey",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856344268",
     "titre": "Photographe de l’extrême : jusqu’où aller pour une image ?",
     "url": "https://www.eventbrite.com/e/2003856344268?aff=oddtdtcreator",
@@ -269,7 +317,9 @@
   },
   "pourquoi-tout-le-monde-se-met-a-courir": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 4 novembre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -277,6 +327,7 @@
       ]
     ],
     "lieu": "Journey",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856351289",
     "titre": "Pourquoi tout le monde se met à courir ?",
     "url": "https://www.eventbrite.com/e/2003856351289?aff=oddtdtcreator",
@@ -285,8 +336,10 @@
   "qu-est-ce-qu-une-peine-juste": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 25 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Fabrice Di Vizio",
     "journal": [
       [
@@ -295,6 +348,7 @@
       ]
     ],
     "lieu": "Griffon",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856355301",
     "titre": "Qu’est-ce qu’une peine juste ?",
     "url": "https://www.eventbrite.com/e/2003856355301?aff=oddtdtcreator",
@@ -303,7 +357,9 @@
   "quel-est-le-futur-de-l-education": {
     "complet": false,
     "complet_le": "2026-10-19T21:13",
+    "complet_marge_h": null,
     "date": "Jeudi 22 octobre 2026",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-16T14:44",
@@ -319,6 +375,7 @@
       ]
     ],
     "lieu": "Journey Paris",
+    "parution_marge_h": 0.0,
     "rouvert_le": "2026-10-20T10:24",
     "ticket_id": "2002420872734",
     "titre": "Quel est le futur de l’éducation ?",
@@ -328,8 +385,10 @@
   "sante-sommes-nous-vraiment-maitres-de-notre-corps": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 26 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Joël Doré",
     "journal": [
       [
@@ -338,6 +397,7 @@
       ]
     ],
     "lieu": "Journey",
+    "parution_marge_h": 3.3,
     "ticket_id": "2003856356304",
     "titre": "Santé : sommes-nous vraiment maîtres de notre corps ?",
     "url": "https://www.eventbrite.com/e/2003856356304?aff=oddtdtcreator",
@@ -346,7 +406,9 @@
   "sommes-nous-seuls-dans-l-univers": {
     "complet": true,
     "complet_le": "2026-10-19T21:13",
+    "complet_marge_h": null,
     "date": "Mardi 27 octobre 2026",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-19T21:13",
@@ -358,6 +420,7 @@
       ]
     ],
     "lieu": "Griffon",
+    "parution_marge_h": 7.3,
     "ticket_id": "",
     "titre": "Sommes-nous seuls dans l’Univers ?",
     "url": "https://www.lebriefing.co/#programmation",

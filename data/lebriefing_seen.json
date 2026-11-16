@@ -1,7 +1,9 @@
 {
   "abysses-que-renferme-le-fond-des-oceans": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 14 octobre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -17,8 +19,10 @@
   "anatomie-d-un-gang-comment-ca-marche-de-l-interieur": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 17 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Martin Lamotte",
     "journal": [
       [
@@ -35,8 +39,10 @@
   "comment-apprendre-a-parler-face-a-un-public": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 19 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Laurine Catillon",
     "journal": [
       [
@@ -52,7 +58,9 @@
   },
   "comment-repondre-quand-on-se-moque-de-nous": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 7 octobre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -67,7 +75,9 @@
   },
   "comment-s-affirmer-au-travail": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 12 novembre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -82,7 +92,9 @@
   },
   "dating-how-to-get-away-with-dating-in-paris": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Lundi 9 novembre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -98,8 +110,10 @@
   "du-premier-echec-a-la-5e-startup-les-coulisses-d-un-serial-entrepreneur": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 19 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Maxime Blondel",
     "journal": [
       [
@@ -115,7 +129,9 @@
   },
   "expositions-universelles-a-quoi-paris-aurait-il-pu-ressembler": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 10 novembre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -131,8 +147,10 @@
   "faire-travailler-son-argent-par-ou-commencer": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 24 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Nacera Ramrajah",
     "journal": [
       [
@@ -149,8 +167,10 @@
   "l-etranger-ce-que-camus-a-vraiment-voulu-dire": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 25 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": null,
     "journal": [
       [
@@ -167,8 +187,10 @@
   "moyen-age-tout-ce-qu-on-croit-savoir-est-il-faux": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 18 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Florian Besson",
     "journal": [
       [
@@ -184,7 +206,9 @@
   },
   "paris-comment-s-est-elle-batie-comment-va-t-elle-evoluer": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 6 octobre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -199,7 +223,9 @@
   },
   "peut-on-apprendre-la-philosophie-en-regardant-netflix": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 15 octobre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -215,7 +241,9 @@
   "peut-on-choisir-de-qui-l-on-tombe-amoureux": {
     "complet": false,
     "complet_le": "2026-10-19T21:13",
+    "complet_marge_h": null,
     "date": "Mercredi 28 octobre 2026",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-16T14:44",
@@ -239,7 +267,9 @@
   },
   "peut-on-ficher-toute-une-population": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 21 octobre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-16T14:44",
@@ -254,7 +284,9 @@
   },
   "photographe-de-l-extreme-jusqu-ou-aller-pour-une-image": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 3 novembre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -269,7 +301,9 @@
   },
   "pourquoi-tout-le-monde-se-met-a-courir": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 4 novembre 2026",
+    "dispo_le": "2026-11-16T15:20",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -285,8 +319,10 @@
   "qu-est-ce-qu-une-peine-juste": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 25 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Fabrice Di Vizio",
     "journal": [
       [
@@ -303,7 +339,9 @@
   "quel-est-le-futur-de-l-education": {
     "complet": false,
     "complet_le": "2026-10-19T21:13",
+    "complet_marge_h": null,
     "date": "Jeudi 22 octobre 2026",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-16T14:44",
@@ -328,8 +366,10 @@
   "sante-sommes-nous-vraiment-maitres-de-notre-corps": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "date": "Jeudi 26 novembre 2026",
     "derniere_maj": "2026-11-16T15:20",
+    "dispo_le": "2026-11-16T15:20",
     "intervenant": "Joël Doré",
     "journal": [
       [
@@ -346,7 +386,9 @@
   "sommes-nous-seuls-dans-l-univers": {
     "complet": true,
     "complet_le": "2026-10-19T21:13",
+    "complet_marge_h": null,
     "date": "Mardi 27 octobre 2026",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-19T21:13",

@@ -1,7 +1,9 @@
 {
   "addiction-juliette-hazart": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 2 décembre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-11-08T19:29",
@@ -16,6 +18,7 @@
   "anxiete-monia-djillali": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -24,6 +27,7 @@
     ],
     "date": "Mardi 8 décembre 2026",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "inscrits": 43,
     "intervenant": "Monia Djillali",
     "journal": [
@@ -40,7 +44,9 @@
   },
   "cold-cases-antoine-sauvestre-vinci": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Lundi 9 novembre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -55,7 +61,9 @@
   },
   "criminalite-jerome-barlatier": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Lundi 9 novembre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -70,7 +78,9 @@
   },
   "criminologie-elodie-eliot": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Lundi 2 novembre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -86,6 +96,7 @@
   "defense-johanic-galode": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -94,6 +105,7 @@
     ],
     "date": "Mardi 24 novembre 2026",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "inscrits": 80,
     "intervenant": "Johanic Galode",
     "journal": [
@@ -110,7 +122,9 @@
   },
   "eruptions-solaires-guillaume-aulanier": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Lundi 7 décembre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-11-15T21:39",
@@ -125,7 +139,9 @@
   "espion-olivier-mas": {
     "complet": true,
     "complet_le": "2026-10-19T12:57",
+    "complet_marge_h": 60.8,
     "date": "Mardi 20 octobre 2026",
+    "dispo_le": "2026-10-17T00:12",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -145,6 +161,7 @@
   "fonds-marins-guillaume-pitron": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -153,6 +170,7 @@
     ],
     "date": "Mercredi 25 novembre 2026",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "inscrits": 60,
     "intervenant": "Guillaume Pitron",
     "journal": [
@@ -169,7 +187,9 @@
   },
   "geopolitique-bruno-tertrais": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 27 octobre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -184,7 +204,9 @@
   },
   "gizeh-patrice-pouillard": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 18 novembre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-10-26T12:47",
@@ -198,7 +220,9 @@
   },
   "jeux-video-didier-mennecier": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 4 novembre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -213,7 +237,9 @@
   },
   "koh-lanta-sophia-mansouri": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 3 novembre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-10-20T11:23",
@@ -228,6 +254,7 @@
   "legiste-nicolas-gmati": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -236,6 +263,7 @@
     ],
     "date": "Mardi 24 novembre 2026",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "inscrits": 85,
     "intervenant": "Nicolas Gmati",
     "journal": [
@@ -252,7 +280,9 @@
   },
   "meurtre-julien-lefebure": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 17 novembre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-10-26T12:47",
@@ -267,6 +297,7 @@
   "nasa-nicolas-mahoume": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -275,6 +306,7 @@
     ],
     "date": "Mercredi 25 novembre 2026",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "inscrits": 47,
     "intervenant": "Nicolas Mahoume",
     "journal": [
@@ -292,6 +324,7 @@
   "neurologue-biliana-todorova": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -300,6 +333,7 @@
     ],
     "date": "Mardi 17 novembre 2026",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "inscrits": 76,
     "intervenant": "Biliana Todorova",
     "journal": [
@@ -316,7 +350,9 @@
   },
   "passage-a-lacte-emma-christiaen-oliveira-2": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Lundi 30 novembre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-11-08T19:29",
@@ -330,7 +366,9 @@
   },
   "presidentielle-richard-flurin": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mercredi 28 octobre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -346,7 +384,9 @@
   "prison-yannick-deslandes": {
     "complet": true,
     "complet_le": "2026-10-17T00:12",
+    "complet_marge_h": null,
     "date": "Mercredi 21 octobre 2026",
+    "dispo_le": null,
     "journal": [
       [
         "2026-10-17T00:12",
@@ -366,6 +406,7 @@
   "prison-yannick-deslandes-2": {
     "capacite": null,
     "complet": false,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -374,6 +415,7 @@
     ],
     "date": "Mercredi 18 novembre 2026",
     "derniere_maj": "2026-11-16T15:12",
+    "dispo_le": "2026-11-16T15:12",
     "inscrits": 81,
     "intervenant": "Deslandes 2",
     "journal": [
@@ -390,7 +432,9 @@
   },
   "sexologue-catherine-blanc": {
     "complet": false,
+    "complet_marge_h": null,
     "date": "Mardi 27 octobre 2026",
+    "dispo_le": "2026-11-16T15:12",
     "journal": [
       [
         "2026-10-17T00:12",

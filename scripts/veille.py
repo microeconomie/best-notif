@@ -126,6 +126,9 @@ def fusionner(etat, trouves, seuil_places=None, premier_passage=False):
             if not premier_passage:
                 nouveaux[cle] = fiche
         else:
+            if not fiche.get("vu_le"):          # fiche d'avant l'horodatage
+                fiche["vu_le"] = quand
+                _noter(fiche, quand, "reprise")
             etait_complet = bool(fiche.get("complet"))
             etait_sous_seuil = bool(fiche.get("alerte_seuil"))
             # la capacité, une fois connue, ne se perd pas

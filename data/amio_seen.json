@@ -2,155 +2,328 @@
   "addiction-juliette-hazart": {
     "complet": false,
     "date": "Mercredi 2 décembre 2026",
-    "title": "L'addiction : ça commence quand ? Pourquoi est-ce si difficile de s'arrêter ?",
+    "journal": [
+      [
+        "2026-11-08T19:29",
+        "drop"
+      ]
+    ],
+    "lieu": "Bar à Paris",
+    "titre": "L'addiction : ça commence quand ? Pourquoi est-ce si difficile de s'arrêter ?",
     "url": "https://amioclub.com/checkout?date=Mercredi%202%20d%C3%A9cembre%202026&title=L'addiction%20%3A%20%C3%A7a%20commence%20quand%20%3F%20Pourquoi%20est-ce%20si%20difficile%20de%20s'arr%C3%AAter%20%3F&event=addiction-juliette-hazart&venue=Bar%20%C3%A0%20Paris",
-    "venue": "Bar à Paris"
+    "vu_le": "2026-11-08T19:29"
   },
   "anxiete-monia-djillali": {
     "complet": false,
     "date": "Mardi 8 décembre 2026",
-    "title": "Anxiété, pression sociale : et si personne ne nous jugeait vraiment ?",
+    "journal": [
+      [
+        "2026-11-15T21:39",
+        "drop"
+      ]
+    ],
+    "lieu": "Bar à Paris",
+    "titre": "Anxiété, pression sociale : et si personne ne nous jugeait vraiment ?",
     "url": "https://amioclub.com/checkout?date=Mardi%208%20d%C3%A9cembre%202026&title=Anxi%C3%A9t%C3%A9%2C%20pression%20sociale%20%3A%20et%20si%20personne%20ne%20nous%20jugeait%20vraiment%20%3F&event=anxiete-monia-djillali&venue=Bar%20%C3%A0%20Paris",
-    "venue": "Bar à Paris"
+    "vu_le": "2026-11-15T21:39"
   },
   "cold-cases-antoine-sauvestre-vinci": {
     "complet": false,
     "date": "Lundi 9 novembre 2026",
-    "title": "Cold cases : ces crimes oubliés qu'on rouvre 30 ans après",
+    "journal": [
+      [
+        "2026-10-17T00:12",
+        "drop"
+      ]
+    ],
+    "lieu": "Bonnotte Club, Port de Suffren, 75007 Paris",
+    "parution_inconnue": true,
+    "titre": "Cold cases : ces crimes oubliés qu'on rouvre 30 ans après",
     "url": "https://amioclub.com/checkout?date=Lundi%209%20novembre%202026&title=Cold%20cases%20%3A%20ces%20crimes%20oubli%C3%A9s%20qu'on%20rouvre%2030%20ans%20apr%C3%A8s&event=cold-cases-antoine-sauvestre-vinci&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
-    "venue": "Bonnotte Club, Port de Suffren, 75007 Paris"
+    "vu_le": "2026-10-17T00:12"
   },
   "criminalite-jerome-barlatier": {
     "complet": false,
     "date": "Lundi 9 novembre 2026",
-    "title": "Criminalité : la comprendre et l'entraver",
+    "journal": [
+      [
+        "2026-10-17T00:12",
+        "drop"
+      ]
+    ],
+    "lieu": "5 Rue Meyerbeer, 75009 Paris",
+    "parution_inconnue": true,
+    "titre": "Criminalité : la comprendre et l'entraver",
     "url": "https://amioclub.com/checkout?date=Lundi%209%20novembre%202026%20%C2%B7%20Criminalit%C3%A9&title=Criminalit%C3%A9%20%3A%20la%20comprendre%20et%20l'entraver&event=criminalite-jerome-barlatier&venue=5%20Rue%20Meyerbeer%2C%2075009%20Paris",
-    "venue": "5 Rue Meyerbeer, 75009 Paris"
+    "vu_le": "2026-10-17T00:12"
   },
   "criminologie-elodie-eliot": {
     "complet": false,
     "date": "Lundi 2 novembre 2026",
-    "title": "Ce que les séries ne vous disent pas",
+    "journal": [
+      [
+        "2026-10-17T00:12",
+        "drop"
+      ]
+    ],
+    "lieu": "Bonnotte Club, Port de Suffren, 75007 Paris",
+    "parution_inconnue": true,
+    "titre": "Ce que les séries ne vous disent pas",
     "url": "https://amioclub.com/checkout?date=Lundi%202%20novembre%202026&title=Ce%20que%20les%20s%C3%A9ries%20ne%20vous%20disent%20pas&event=criminologie-elodie-eliot&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
-    "venue": "Bonnotte Club, Port de Suffren, 75007 Paris"
+    "vu_le": "2026-10-17T00:12"
   },
   "defense-johanic-galode": {
     "complet": false,
     "date": "Mardi 24 novembre 2026",
-    "title": "Soudain, un retour de la conflictualité en Europe…",
+    "journal": [
+      [
+        "2026-11-02T15:34",
+        "drop"
+      ]
+    ],
+    "lieu": "Bar à Paris",
+    "titre": "Soudain, un retour de la conflictualité en Europe…",
     "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026%20%C2%B7%20D%C3%A9fense&title=Soudain%2C%20un%20retour%20de%20la%20conflictualit%C3%A9%20en%20Europe%E2%80%A6&event=defense-johanic-galode&venue=Bar%20%C3%A0%20Paris",
-    "venue": "Bar à Paris"
+    "vu_le": "2026-11-02T15:34"
   },
   "eruptions-solaires-guillaume-aulanier": {
     "complet": false,
     "date": "Lundi 7 décembre 2026",
-    "title": "Éruptions solaires : dans la tête de l'astronome qui simule les colères du Soleil",
+    "journal": [
+      [
+        "2026-11-15T21:39",
+        "drop"
+      ]
+    ],
+    "lieu": "Bar à Paris",
+    "titre": "Éruptions solaires : dans la tête de l'astronome qui simule les colères du Soleil",
     "url": "https://amioclub.com/checkout?date=Lundi%207%20d%C3%A9cembre%202026&title=%C3%89ruptions%20solaires%20%3A%20dans%20la%20t%C3%AAte%20de%20l'astronome%20qui%20simule%20les%20col%C3%A8res%20du%20Soleil&event=eruptions-solaires-guillaume-aulanier&venue=Bar%20%C3%A0%20Paris",
-    "venue": "Bar à Paris"
+    "vu_le": "2026-11-15T21:39"
   },
   "espion-olivier-mas": {
     "complet": true,
+    "complet_le": "2026-10-19T12:57",
     "date": "Mardi 20 octobre 2026",
-    "title": "15 ans à la DGSE : tous les secrets d'un ancien espion",
+    "journal": [
+      [
+        "2026-10-17T00:12",
+        "drop"
+      ],
+      [
+        "2026-10-19T12:57",
+        "complet"
+      ]
+    ],
+    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "parution_inconnue": true,
+    "titre": "15 ans à la DGSE : tous les secrets d'un ancien espion",
     "url": "https://amioclub.com/checkout?date=Mardi%2020%20octobre%202026&title=15%20ans%20%C3%A0%20la%20DGSE%20%3A%20tous%20les%20secrets%20d'un%20ancien%20espion&event=espion-olivier-mas&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris#liste-attente",
-    "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
+    "vu_le": "2026-10-17T00:12"
   },
   "fonds-marins-guillaume-pitron": {
     "complet": false,
     "date": "Mercredi 25 novembre 2026",
-    "title": "Les fonds marins : nouvelle frontière du capitalisme",
+    "journal": [
+      [
+        "2026-11-02T15:34",
+        "drop"
+      ]
+    ],
+    "lieu": "Bar à Paris",
+    "titre": "Les fonds marins : nouvelle frontière du capitalisme",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Bar%20%C3%A0%20Paris",
-    "venue": "Bar à Paris"
+    "vu_le": "2026-11-02T15:34"
   },
   "geopolitique-bruno-tertrais": {
     "complet": false,
     "date": "Mardi 27 octobre 2026",
-    "title": "Tendances géopolitiques : quel monde en 2030 ?",
+    "journal": [
+      [
+        "2026-10-17T00:12",
+        "drop"
+      ]
+    ],
+    "lieu": "Bonnotte Club, Port de Suffren, 75007 Paris",
+    "parution_inconnue": true,
+    "titre": "Tendances géopolitiques : quel monde en 2030 ?",
     "url": "https://amioclub.com/checkout?date=Mardi%2027%20octobre%202026%20%C2%B7%20Tendances%20g%C3%A9opolitiques&title=Tendances%20g%C3%A9opolitiques%20%3A%20quel%20monde%20en%202030%20%3F&event=geopolitique-bruno-tertrais&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
-    "venue": "Bonnotte Club, Port de Suffren, 75007 Paris"
+    "vu_le": "2026-10-17T00:12"
   },
   "gizeh-patrice-pouillard": {
     "complet": false,
     "date": "Mercredi 18 novembre 2026",
-    "title": "Pyramide de Gizeh : un regard différent",
+    "journal": [
+      [
+        "2026-10-26T12:47",
+        "drop"
+      ]
+    ],
+    "lieu": "Bar à Paris",
+    "titre": "Pyramide de Gizeh : un regard différent",
     "url": "https://amioclub.com/checkout?date=Mercredi%2018%20novembre%202026&title=Pyramide%20de%20Gizeh%20%3A%20un%20regard%20diff%C3%A9rent&event=gizeh-patrice-pouillard&venue=Bar%20%C3%A0%20Paris",
-    "venue": "Bar à Paris"
+    "vu_le": "2026-10-26T12:47"
   },
   "jeux-video-didier-mennecier": {
     "complet": false,
     "date": "Mercredi 4 novembre 2026",
-    "title": "Jeux vidéo, TikTok : comment les écrans captent notre attention et notre argent",
+    "journal": [
+      [
+        "2026-10-17T00:12",
+        "drop"
+      ]
+    ],
+    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "parution_inconnue": true,
+    "titre": "Jeux vidéo, TikTok : comment les écrans captent notre attention et notre argent",
     "url": "https://amioclub.com/checkout?date=Mercredi%204%20novembre%202026&title=Jeux%20vid%C3%A9o%2C%20TikTok%20%3A%20comment%20les%20%C3%A9crans%20captent%20notre%20attention%20et%20notre%20argent&event=jeux-video-didier-mennecier&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
-    "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
+    "vu_le": "2026-10-17T00:12"
   },
   "koh-lanta-sophia-mansouri": {
     "complet": false,
     "date": "Mardi 3 novembre 2026",
-    "title": "Du casting à l'élimination : tous les secrets de Koh-Lanta",
+    "journal": [
+      [
+        "2026-10-20T11:23",
+        "drop"
+      ]
+    ],
+    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "titre": "Du casting à l'élimination : tous les secrets de Koh-Lanta",
     "url": "https://amioclub.com/checkout?date=Mardi%203%20novembre%202026&title=Du%20casting%20%C3%A0%20l'%C3%A9limination%20%3A%20tous%20les%20secrets%20de%20Koh-Lanta&event=koh-lanta-sophia-mansouri&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
-    "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
+    "vu_le": "2026-10-20T11:23"
   },
   "legiste-nicolas-gmati": {
     "complet": false,
     "date": "Mardi 24 novembre 2026",
-    "title": "Médecin légiste : que peut bien dire un cadavre ?",
+    "journal": [
+      [
+        "2026-11-02T15:34",
+        "drop"
+      ]
+    ],
+    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "titre": "Médecin légiste : que peut bien dire un cadavre ?",
     "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026&title=M%C3%A9decin%20l%C3%A9giste%20%3A%20que%20peut%20bien%20dire%20un%20cadavre%20%3F&event=legiste-nicolas-gmati&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
-    "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
+    "vu_le": "2026-11-02T15:34"
   },
   "meurtre-julien-lefebure": {
     "complet": false,
     "date": "Mardi 17 novembre 2026",
-    "title": "Meurtre, faux marabout : dans la tête de l'avocat qui défend le pire",
+    "journal": [
+      [
+        "2026-10-26T12:47",
+        "drop"
+      ]
+    ],
+    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "titre": "Meurtre, faux marabout : dans la tête de l'avocat qui défend le pire",
     "url": "https://amioclub.com/checkout?date=Mardi%2017%20novembre%202026%20%C2%B7%20Meurtre&title=Meurtre%2C%20faux%20marabout%20%3A%20dans%20la%20t%C3%AAte%20de%20l'avocat%20qui%20d%C3%A9fend%20le%20pire&event=meurtre-julien-lefebure&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
-    "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
+    "vu_le": "2026-10-26T12:47"
   },
   "nasa-nicolas-mahoume": {
     "complet": false,
     "date": "Mercredi 25 novembre 2026",
-    "title": "Expédition avec la NASA : explorer Mars… depuis la Terre",
+    "journal": [
+      [
+        "2026-11-02T15:34",
+        "drop"
+      ]
+    ],
+    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "titre": "Expédition avec la NASA : explorer Mars… depuis la Terre",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026&title=Exp%C3%A9dition%20avec%20la%20NASA%20%3A%20explorer%20Mars%E2%80%A6%20depuis%20la%20Terre&event=nasa-nicolas-mahoume&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
-    "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
+    "vu_le": "2026-11-02T15:34"
   },
   "neurologue-biliana-todorova": {
     "complet": false,
     "date": "Mardi 17 novembre 2026",
-    "title": "Neurosciences : ton cerveau peut faire beaucoup plus que ça",
+    "journal": [
+      [
+        "2026-10-26T12:47",
+        "drop"
+      ]
+    ],
+    "lieu": "Impasse bar, 4 Cité Griset, 75011 Paris",
+    "titre": "Neurosciences : ton cerveau peut faire beaucoup plus que ça",
     "url": "https://amioclub.com/checkout?date=Mardi%2017%20novembre%202026&title=Neurosciences%20%3A%20ton%20cerveau%20peut%20faire%20beaucoup%20plus%20que%20%C3%A7a&event=neurologue-biliana-todorova&venue=Impasse%20bar%2C%204%20Cit%C3%A9%20Griset%2C%2075011%20Paris",
-    "venue": "Impasse bar, 4 Cité Griset, 75011 Paris"
+    "vu_le": "2026-10-26T12:47"
   },
   "passage-a-lacte-emma-christiaen-oliveira-2": {
     "complet": false,
     "date": "Lundi 30 novembre 2026",
-    "title": "Le passage à l'acte meurtrier...",
+    "journal": [
+      [
+        "2026-11-08T19:29",
+        "drop"
+      ]
+    ],
+    "lieu": "Bar à Paris",
+    "titre": "Le passage à l'acte meurtrier...",
     "url": "https://amioclub.com/checkout?date=Lundi%2030%20novembre%202026&title=Le%20passage%20%C3%A0%20l'acte%20meurtrier...&event=passage-a-lacte-emma-christiaen-oliveira-2&venue=Bar%20%C3%A0%20Paris",
-    "venue": "Bar à Paris"
+    "vu_le": "2026-11-08T19:29"
   },
   "presidentielle-richard-flurin": {
     "complet": false,
     "date": "Mercredi 28 octobre 2026",
-    "title": "À six mois de la présidentielle, tour d'horizon du paysage politique français",
+    "journal": [
+      [
+        "2026-10-17T00:12",
+        "drop"
+      ]
+    ],
+    "lieu": "Impasse bar, 4 Cité Griset, 75011 Paris",
+    "parution_inconnue": true,
+    "titre": "À six mois de la présidentielle, tour d'horizon du paysage politique français",
     "url": "https://amioclub.com/checkout?date=Mercredi%2028%20octobre%202026&title=%C3%80%20six%20mois%20de%20la%20pr%C3%A9sidentielle%2C%20tour%20d'horizon%20du%20paysage%20politique%20fran%C3%A7ais&event=presidentielle-richard-flurin&venue=Impasse%20bar%2C%204%20Cit%C3%A9%20Griset%2C%2075011%20Paris",
-    "venue": "Impasse bar, 4 Cité Griset, 75011 Paris"
+    "vu_le": "2026-10-17T00:12"
   },
   "prison-yannick-deslandes": {
     "complet": true,
+    "complet_le": "2026-10-17T00:12",
     "date": "Mercredi 21 octobre 2026",
-    "title": "22 ans en prison : les dessous du système carcéral",
+    "journal": [
+      [
+        "2026-10-17T00:12",
+        "drop"
+      ],
+      [
+        "2026-10-17T00:12",
+        "complet"
+      ]
+    ],
+    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "parution_inconnue": true,
+    "titre": "22 ans en prison : les dessous du système carcéral",
     "url": "https://amioclub.com/checkout?date=Mercredi%2021%20octobre%202026&title=22%20ans%20en%20prison%20%3A%20les%20dessous%20du%20syst%C3%A8me%20carc%C3%A9ral&event=prison-yannick-deslandes&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris#liste-attente",
-    "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
+    "vu_le": "2026-10-17T00:12"
   },
   "prison-yannick-deslandes-2": {
     "complet": false,
     "date": "Mercredi 18 novembre 2026",
-    "title": "22 ans en prison : les dessous du système carcéral",
+    "journal": [
+      [
+        "2026-10-28T15:55",
+        "drop"
+      ]
+    ],
+    "lieu": "Bonnotte Club, Port de Suffren, 75007 Paris",
+    "titre": "22 ans en prison : les dessous du système carcéral",
     "url": "https://amioclub.com/checkout?date=Mercredi%2018%20novembre%202026%20%C2%B7%20Prison&title=22%20ans%20en%20prison%20%3A%20les%20dessous%20du%20syst%C3%A8me%20carc%C3%A9ral&event=prison-yannick-deslandes-2&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
-    "venue": "Bonnotte Club, Port de Suffren, 75007 Paris"
+    "vu_le": "2026-10-28T15:55"
   },
   "sexologue-catherine-blanc": {
     "complet": false,
     "date": "Mardi 27 octobre 2026",
-    "title": "Sexologue : sexe, désir, liberté ; on en parle ?",
+    "journal": [
+      [
+        "2026-10-17T00:12",
+        "drop"
+      ]
+    ],
+    "lieu": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris",
+    "parution_inconnue": true,
+    "titre": "Sexologue : sexe, désir, liberté ; on en parle ?",
     "url": "https://amioclub.com/checkout?date=Mardi%2027%20octobre%202026&title=Sexologue%20%3A%20sexe%2C%20d%C3%A9sir%2C%20libert%C3%A9%20%3B%20on%20en%20parle%20%3F&event=sexologue-catherine-blanc&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
-    "venue": "Le Cirque, 141 Rue Saint-Martin, 75004 Paris"
+    "vu_le": "2026-10-17T00:12"
   }
 }

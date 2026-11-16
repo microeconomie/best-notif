@@ -3,9 +3,9 @@
     "alerte_seuil": false,
     "complet": true,
     "complet_le": "2026-10-26T08:20",
-    "complet_marge_h": 8.6,
+    "complet_marge_h": 5.8,
     "date": "Lundi 2 novembre 2026 à 19h30",
-    "dispo_le": "2026-10-25T23:42",
+    "dispo_le": "2026-10-26T02:33",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -25,7 +25,7 @@
       ]
     ],
     "lieu": "Pomelo bistrot",
-    "parution_marge_h": 23.6,
+    "parution_marge_h": 4.8,
     "places": 0,
     "publie_le": "2026-10-05T18:11",
     "rouvert_le": "2026-10-30T09:21",
@@ -38,7 +38,7 @@
     "capacite": 80,
     "complet": true,
     "complet_le": "2026-11-10T17:24",
-    "complet_marge_h": 15.6,
+    "complet_marge_h": 0.0,
     "courbe": [
       [
         "2026-11-16",
@@ -48,7 +48,7 @@
     "date": "Lundi 23 novembre 2026 à 19h30",
     "date_iso": "2026-11-23",
     "derniere_maj": "2026-11-16T15:51",
-    "dispo_le": "2026-11-10T01:49",
+    "dispo_le": "2026-11-10T17:23",
     "inscrits": 80,
     "intervenant": "Martine Glorian",
     "journal": [
@@ -62,7 +62,7 @@
       ]
     ],
     "lieu": "Pomelo bistrot",
-    "parution_marge_h": 23.6,
+    "parution_marge_h": 4.8,
     "places": 0,
     "publie_le": "2026-10-12T09:34",
     "specialite": "Maîtresse de conférences à Sorbonne Université, chercheuse sur les maladies cardiovasculaires",
@@ -88,7 +88,7 @@
       ]
     ],
     "lieu": "Kawaa du Lucernaire",
-    "parution_marge_h": 23.6,
+    "parution_marge_h": 4.8,
     "places": 0,
     "publie_le": "2026-10-12T09:39",
     "titre": "Pourquoi ne peut-on pas vivre sans rituels (même quand on croit s'en passer) ?",
@@ -157,7 +157,7 @@
       ]
     ],
     "lieu": "Kawaa du Lucernaire",
-    "parution_marge_h": 23.6,
+    "parution_marge_h": 4.8,
     "places": 0,
     "publie_le": "2026-10-16T15:28",
     "rouvert_le": "2026-11-11T18:15",
@@ -181,7 +181,7 @@
     "date": "Mardi 24 novembre 2026 à 19h30",
     "date_iso": "2026-11-24",
     "derniere_maj": "2026-11-16T15:51",
-    "dispo_le": "2026-10-23T13:59",
+    "dispo_le": "2026-10-23T13:58",
     "inscrits": 75,
     "intervenant": "Grégor Ozbolt",
     "journal": [
@@ -195,7 +195,7 @@
       ]
     ],
     "lieu": "Kawaa du Lucernaire",
-    "parution_marge_h": 23.6,
+    "parution_marge_h": 4.8,
     "places": 0,
     "publie_le": "2026-10-14T09:55",
     "specialite": "23e Français à avoir traversé la Manche à la nage, préparateur mental pour les dirigeants",
@@ -207,9 +207,9 @@
     "alerte_seuil": false,
     "complet": true,
     "complet_le": "2026-10-23T13:59",
-    "complet_marge_h": 5.8,
+    "complet_marge_h": 0.0,
     "date": "Lundi 9 novembre 2026 à 19h30",
-    "dispo_le": "2026-10-23T08:08",
+    "dispo_le": "2026-10-23T13:58",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -221,7 +221,7 @@
       ]
     ],
     "lieu": "Pomelo bistrot",
-    "parution_marge_h": 23.6,
+    "parution_marge_h": 4.8,
     "places": 0,
     "publie_le": "2026-10-12T09:39",
     "titre": "Comment parler politique sans s'engueuler (ni renoncer à ses idées) ?",
@@ -252,7 +252,7 @@
       ]
     ],
     "lieu": "Pomelo bistrot",
-    "parution_marge_h": 23.6,
+    "parution_marge_h": 4.8,
     "places": 8,
     "publie_le": "2026-10-12T09:39",
     "specialite": "Expert des politiques de l'eau, 20 ans à conseiller les gouvernements à l'OCDE",
@@ -266,7 +266,7 @@
     "complet_le": "2026-11-09T00:23",
     "complet_marge_h": 4.3,
     "date": "Mardi 10 novembre 2026 à 19h30",
-    "dispo_le": "2026-11-08T20:04",
+    "dispo_le": "2026-11-08T20:03",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -278,7 +278,7 @@
       ]
     ],
     "lieu": "Kawaa du Lucernaire",
-    "parution_marge_h": 23.6,
+    "parution_marge_h": 4.8,
     "places": 0,
     "publie_le": "2026-10-12T09:36",
     "titre": "Faut-il encore faire des enfants ?",
@@ -330,7 +330,7 @@
       ]
     ],
     "lieu": "Pomelo bistrot",
-    "parution_marge_h": 23.6,
+    "parution_marge_h": 4.8,
     "places": 0,
     "publie_le": "2026-10-05T18:11",
     "rouvert_le": "2026-11-13T12:44",
@@ -343,9 +343,9 @@
     "alerte_seuil": false,
     "complet": true,
     "complet_le": "2026-10-20T15:30",
-    "complet_marge_h": 23.6,
+    "complet_marge_h": 4.8,
     "date": "Mercredi 21 octobre 2026 à 19h30",
-    "dispo_le": "2026-10-19T15:53",
+    "dispo_le": "2026-10-20T10:44",
     "journal": [
       [
         "2026-10-19T15:53",
@@ -415,7 +415,7 @@
     "date": "Mardi 17 novembre 2026 à 19h30",
     "date_iso": "2026-11-17",
     "derniere_maj": "2026-11-16T15:51",
-    "dispo_le": "2026-11-16T15:51",
+    "dispo_le": "2026-11-03T18:11",
     "inscrits": 58,
     "intervenant": "Hubert Guérin.",
     "journal": [
@@ -437,7 +437,7 @@
       ]
     ],
     "lieu": "Bistouille - 20e",
-    "parution_marge_h": 23.6,
+    "parution_marge_h": 4.8,
     "places": 2,
     "publie_le": "2026-10-12T09:47",
     "rouvert_le": "2026-11-16T15:12",

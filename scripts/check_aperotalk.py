@@ -1,171 +1,94 @@
 #!/usr/bin/env python3
-"""Veille des nouveaux événements publiés sur aperotalk.com.
+"""Veille des talks d'Apéro Talk (aperotalk.com).
 
-Repère chaque événement grâce à son lien Shotgun, compare avec ceux déjà vus
-(data/aperotalk_seen.json) et notifie en cas de nouveauté :
-  - création d'une issue GitHub (toujours, via le GITHUB_TOKEN du workflow)
-  - notification push ntfy.sh (optionnel, si le secret NTFY_TOPIC existe)
+Le site marque ses cartes avec la classe « event-card », et celles qui sont
+complètes avec « is-soldout ». L'ancienne version de ce script ne repérait un
+talk que s'il avait un lien Shotgun : un talk rempli perdait son lien et
+disparaissait purement et simplement du suivi, sans jamais être enregistré
+comme complet. On lit donc désormais toutes les cartes.
+
+Shotgun ne publie aucun nombre de places, seulement un état binaire.
 """
-import html
-import json
 import os
 import re
 import sys
-import urllib.request
-from pathlib import Path
 
-PAGE_URL = "https://aperotalk.com/"
-STATE_FILE = Path("data/aperotalk_seen.json")
-EVENT_LINK = re.compile(
-    r'href="(https://shotgun\.live/[a-z]{2}/events/([a-z0-9-]+))"', re.IGNORECASE
-)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import veille as v
 
+PAGE = "https://aperotalk.com/"
+ETAT = "data/aperotalk_seen.json"
+ORGANISATEUR = "Apéro Talk"
 
-def clean(fragment):
-    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", fragment))).strip()
-
-
-def fetch(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (veille-aperotalk)"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read().decode("utf-8", errors="replace")
+CARTE = re.compile(r'class="([^"]*\bevent-card\b[^"]*)"', re.IGNORECASE)
+TITRE = re.compile(r"<h[23][^>]*>(.*?)</h[23]>", re.S | re.IGNORECASE)
+AFFICHE = re.compile(r'alt="Affiche\s*[:—-]\s*([^"]{3,200})"', re.IGNORECASE)
+LIGNE_LI = re.compile(r"<li[^>]*>(.*?)</li>", re.S | re.IGNORECASE)
+SHOTGUN = re.compile(r'href="(https://shotgun\.live/[a-z]{2}/events/([a-z0-9-]+))"', re.IGNORECASE)
+JOURS = "lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche"
+DATE = re.compile(rf"(?:{JOURS})\s+\d{{1,2}}(?:er)?\s+[a-zéû]+(?:\s+\d{{4}})?", re.IGNORECASE)
 
 
-def title_from_alt(anchor):
-    """Titre tiré du texte alternatif de l'affiche, du type « Affiche : Mon talk »."""
-    match = re.search(r'alt="([^"]{3,200})"', anchor)
-    if not match:
-        return ""
-    value = clean(match.group(1))
-    return re.sub(r"^Affiche\s*:\s*", "", value, flags=re.IGNORECASE).strip()
+def recuperer(page):
+    """Renvoie (nombre de cartes, événements). Une carte = un talk."""
+    reperes = [m.start() for m in CARTE.finditer(page)]
+    evenements = {}
+    for i, debut in enumerate(reperes):
+        fin = reperes[i + 1] if i + 1 < len(reperes) else len(page)
+        bloc = page[debut:fin]
+        classes = CARTE.match(page[debut:]).group(1) if CARTE.match(page[debut:]) else ""
 
-
-def title_and_date_from_heading(after):
-    match = re.search(r"<h[23][^>]*>(.*?)</h[23]>", after, re.S | re.I)
-    if not match:
-        return "", ""
-    title = clean(match.group(1))
-    li = re.search(r"<li[^>]*>(.*?)</li>", after[match.end():match.end() + 3000], re.S | re.I)
-    return title, clean(li.group(1)) if li else ""
-
-
-def extract_events(page):
-    """Chaque événement est identifié par son lien Shotgun.
-
-    On ne garde que la première occurrence de chaque lien (le bloc de l'affiche)
-    et on borne la recherche du titre au lien suivant, pour ne jamais déborder
-    sur la carte de l'événement d'après.
-    """
-    matches = list(EVENT_LINK.finditer(page))
-    events = {}
-    for index, match in enumerate(matches):
-        url, slug = match.group(1), match.group(2).lower()
-        if slug in events:
+        titre = ""
+        t = TITRE.search(bloc)
+        if t:
+            titre = v.propre(t.group(1))
+        if not titre:
+            a = AFFICHE.search(bloc)
+            if a:
+                titre = v.propre(a.group(1))
+        if not titre:
             continue
-        end = matches[index + 1].start() if index + 1 < len(matches) else len(page)
-        window = page[match.end():end]
-        anchor = window.split("</a>", 1)[0]
 
-        title, date = title_and_date_from_heading(window)
-        alt_title = title_from_alt(anchor)
-        if alt_title:
-            title = alt_title
-        if not title:
-            title = slug.replace("-", " ").capitalize()
-        events[slug] = {"title": title, "date": date, "url": url}
-    return events
+        lien = SHOTGUN.search(bloc)
+        d = DATE.search(v.propre(bloc))
+        lieux = [v.propre(x) for x in LIGNE_LI.findall(bloc)]
+        lieu = next((x for x in lieux if x and not DATE.match(x)), "")
 
-
-def load_seen():
-    if STATE_FILE.exists():
-        return json.loads(STATE_FILE.read_text(encoding="utf-8"))
-    return None
-
-
-def save_seen(seen):
-    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    STATE_FILE.write_text(
-        json.dumps(seen, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8"
-    )
-
-
-def post_json(url, payload, headers=None):
-    req = urllib.request.Request(
-        url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json", **(headers or {})},
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.status
-
-
-def describe(event):
-    return f"{event['title']} ({event['date']})" if event.get("date") else event["title"]
-
-
-def notify_github(new):
-    token, repo = os.environ.get("GH_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
-    if not token or not repo:
-        print("Pas de contexte GitHub, aucune issue créée.")
-        return
-    title = (
-        "Apéro Talk : nouvel événement"
-        if len(new) == 1
-        else f"Apéro Talk : {len(new)} nouveaux événements"
-    )
-    lines = [f"- **{describe(e)}** : {e['url']}" for e in new.values()]
-    payload = {"title": title, "body": f"Détecté sur {PAGE_URL}#evenements\n\n" + "\n".join(lines)}
-    owner = os.environ.get("GITHUB_REPOSITORY_OWNER")
-    if owner:
-        payload["assignees"] = [owner]
-    headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
-    try:
-        post_json(f"https://api.github.com/repos/{repo}/issues", payload, headers)
-    except Exception:
-        payload.pop("assignees", None)
-        post_json(f"https://api.github.com/repos/{repo}/issues", payload, headers)
-    print("Issue GitHub créée.")
-
-
-def notify_ntfy(new):
-    topic = os.environ.get("NTFY_TOPIC")
-    if not topic:
-        return
-    for event in new.values():
-        post_json("https://ntfy.sh", {
-            "topic": topic,
-            "title": "Nouvel Apéro Talk",
-            "message": describe(event),
-            "click": event["url"],
-            "tags": ["beers"],
-        })
-    print("Notification ntfy envoyée.")
+        cle = lien.group(2).lower() if lien else v.slug(titre)
+        evenements[cle] = {
+            "titre": titre,
+            "date": d.group(0).capitalize() if d else "",
+            "lieu": lieu[:60],
+            "url": lien.group(1) if lien else PAGE + "#evenements",
+            "complet": "is-soldout" in classes.lower(),
+            "intervenant": None,
+        }
+    return len(reperes), evenements
 
 
 def main():
-    events = extract_events(fetch(PAGE_URL))
-    if not events:
-        print("Aucun événement trouvé : site en panne ou structure modifiée ?", file=sys.stderr)
+    total, trouves = recuperer(v.fetch(PAGE))
+    if not trouves:
+        print("Aucune carte trouvée : site en panne ou structure modifiée ?", file=sys.stderr)
         sys.exit(1)
 
-    seen = load_seen()
-    if seen is None:
-        save_seen(events)
-        print(f"Initialisation : {len(events)} événements enregistrés, aucune alerte.")
-        return
+    etat = v.charger(ETAT)
+    premier = etat is None
+    etat = etat or {}
+    nouveaux, rouverts, _ = v.fusionner(etat, trouves, premier_passage=premier)
+    v.sauver(ETAT, etat)
 
-    new = {slug: e for slug, e in events.items() if slug not in seen}
-    if not new:
-        print(f"Rien de nouveau ({len(events)} événements en ligne).")
+    if premier:
+        print(f"Initialisation : {len(trouves)} talks enregistrés, aucune alerte.")
         return
-
-    for event in new.values():
-        print("Nouveau :", describe(event), event["url"])
-    notify_github(new)
-    notify_ntfy(new)
-    seen.update(new)
-    save_seen(seen)
+    v.alerter(ORGANISATEUR, PAGE + "#evenements", [
+        ("JUST DROPPED", nouveaux, v.accord(len(nouveaux), "nouveau talk", "nouveaux talks"), "beers"),
+    ])
+    print(v.resumer(ORGANISATEUR, etat, trouves, total))
+    for f in nouveaux.values():
+        print("  nouveau :", v.decrire(f))
+    for f in rouverts.values():
+        print("  remise en vente (non notifiée) :", v.decrire(f))
 
 
 if __name__ == "__main__":

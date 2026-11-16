@@ -6,7 +6,7 @@ on:
   workflow_dispatch:          # bouton "Run workflow" pour tester à la main
 
 permissions:
-  contents: write   # pour sauvegarder la liste des événements déjà vus
+  contents: write   # pour sauvegarder l'état et la base consolidée
   issues: write     # pour créer l'issue de notification
 
 concurrency:
@@ -22,21 +22,24 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Vérifier les événements
+      - name: Relever les événements
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python scripts/check_lebriefing.py
 
-      - name: Sauvegarder l'état
+      - name: Reconstruire la base consolidée
+        run: python scripts/construire_base.py
+
+      - name: Sauvegarder
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/lebriefing_seen.json
+          git add data
           if git diff --staged --quiet; then
             echo "Aucun changement à sauvegarder."
           else
             git commit -m "Veille Le Briefing : mise à jour"
-            git pull --rebase   # après le commit : le dossier de travail est propre
+            git pull --rebase
             git push
           fi

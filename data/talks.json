@@ -1,5 +1,6 @@
 [
 {
+"id": "amio--espion-olivier-mas",
 "organisateur": "Amio",
 "titre": "15 ans à la DGSE : tous les secrets d'un ancien espion",
 "intervenant": "",
@@ -14,11 +15,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://amioclub.com/checkout?date=Mardi%2020%20octobre%202026&title=15%20ans%20%C3%A0%20la%20DGSE%20%3A%20tous%20les%20secrets%20d'un%20ancien%20espion&event=espion-olivier-mas&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris#liste-attente",
 "points_de_mesure": 0
 },
 {
+"id": "amio--prison-yannick-deslandes",
 "organisateur": "Amio",
 "titre": "22 ans en prison : les dessous du système carcéral",
 "intervenant": "",
@@ -33,11 +36,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://amioclub.com/checkout?date=Mercredi%2021%20octobre%202026&title=22%20ans%20en%20prison%20%3A%20les%20dessous%20du%20syst%C3%A8me%20carc%C3%A9ral&event=prison-yannick-deslandes&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris#liste-attente",
 "points_de_mesure": 0
 },
 {
+"id": "amio--geopolitique-bruno-tertrais",
 "organisateur": "Amio",
 "titre": "Tendances géopolitiques : quel monde en 2030 ?",
 "intervenant": "",
@@ -52,11 +57,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mardi%2027%20octobre%202026%20%C2%B7%20Tendances%20g%C3%A9opolitiques&title=Tendances%20g%C3%A9opolitiques%20%3A%20quel%20monde%20en%202030%20%3F&event=geopolitique-bruno-tertrais&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--sexologue-catherine-blanc",
 "organisateur": "Amio",
 "titre": "Sexologue : sexe, désir, liberté ; on en parle ?",
 "intervenant": "",
@@ -71,11 +78,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mardi%2027%20octobre%202026&title=Sexologue%20%3A%20sexe%2C%20d%C3%A9sir%2C%20libert%C3%A9%20%3B%20on%20en%20parle%20%3F&event=sexologue-catherine-blanc&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--presidentielle-richard-flurin",
 "organisateur": "Amio",
 "titre": "À six mois de la présidentielle, tour d'horizon du paysage politique français",
 "intervenant": "",
@@ -90,11 +99,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mercredi%2028%20octobre%202026&title=%C3%80%20six%20mois%20de%20la%20pr%C3%A9sidentielle%2C%20tour%20d'horizon%20du%20paysage%20politique%20fran%C3%A7ais&event=presidentielle-richard-flurin&venue=Impasse%20bar%2C%204%20Cit%C3%A9%20Griset%2C%2075011%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--criminologie-elodie-eliot",
 "organisateur": "Amio",
 "titre": "Ce que les séries ne vous disent pas",
 "intervenant": "",
@@ -109,11 +120,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Lundi%202%20novembre%202026&title=Ce%20que%20les%20s%C3%A9ries%20ne%20vous%20disent%20pas&event=criminologie-elodie-eliot&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--koh-lanta-sophia-mansouri",
 "organisateur": "Amio",
 "titre": "Du casting à l'élimination : tous les secrets de Koh-Lanta",
 "intervenant": "",
@@ -128,11 +141,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mardi%203%20novembre%202026&title=Du%20casting%20%C3%A0%20l'%C3%A9limination%20%3A%20tous%20les%20secrets%20de%20Koh-Lanta&event=koh-lanta-sophia-mansouri&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--jeux-video-didier-mennecier",
 "organisateur": "Amio",
 "titre": "Jeux vidéo, TikTok : comment les écrans captent notre attention et notre argent",
 "intervenant": "",
@@ -147,11 +162,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mercredi%204%20novembre%202026&title=Jeux%20vid%C3%A9o%2C%20TikTok%20%3A%20comment%20les%20%C3%A9crans%20captent%20notre%20attention%20et%20notre%20argent&event=jeux-video-didier-mennecier&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--cold-cases-antoine-sauvestre-vinci",
 "organisateur": "Amio",
 "titre": "Cold cases : ces crimes oubliés qu'on rouvre 30 ans après",
 "intervenant": "",
@@ -166,11 +183,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Lundi%209%20novembre%202026&title=Cold%20cases%20%3A%20ces%20crimes%20oubli%C3%A9s%20qu'on%20rouvre%2030%20ans%20apr%C3%A8s&event=cold-cases-antoine-sauvestre-vinci&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--criminalite-jerome-barlatier",
 "organisateur": "Amio",
 "titre": "Criminalité : la comprendre et l'entraver",
 "intervenant": "",
@@ -185,11 +204,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Lundi%209%20novembre%202026%20%C2%B7%20Criminalit%C3%A9&title=Criminalit%C3%A9%20%3A%20la%20comprendre%20et%20l'entraver&event=criminalite-jerome-barlatier&venue=5%20Rue%20Meyerbeer%2C%2075009%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--meurtre-julien-lefebure",
 "organisateur": "Amio",
 "titre": "Meurtre, faux marabout : dans la tête de l'avocat qui défend le pire",
 "intervenant": "",
@@ -204,11 +225,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mardi%2017%20novembre%202026%20%C2%B7%20Meurtre&title=Meurtre%2C%20faux%20marabout%20%3A%20dans%20la%20t%C3%AAte%20de%20l'avocat%20qui%20d%C3%A9fend%20le%20pire&event=meurtre-julien-lefebure&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--neurologue-biliana-todorova",
 "organisateur": "Amio",
 "titre": "Neurosciences : ton cerveau peut faire beaucoup plus que ça",
 "intervenant": "",
@@ -223,11 +246,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mardi%2017%20novembre%202026&title=Neurosciences%20%3A%20ton%20cerveau%20peut%20faire%20beaucoup%20plus%20que%20%C3%A7a&event=neurologue-biliana-todorova&venue=Impasse%20bar%2C%204%20Cit%C3%A9%20Griset%2C%2075011%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--gizeh-patrice-pouillard",
 "organisateur": "Amio",
 "titre": "Pyramide de Gizeh : un regard différent",
 "intervenant": "",
@@ -242,11 +267,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mercredi%2018%20novembre%202026&title=Pyramide%20de%20Gizeh%20%3A%20un%20regard%20diff%C3%A9rent&event=gizeh-patrice-pouillard&venue=Bar%20%C3%A0%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--prison-yannick-deslandes-2",
 "organisateur": "Amio",
 "titre": "22 ans en prison : les dessous du système carcéral",
 "intervenant": "",
@@ -261,11 +288,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mercredi%2018%20novembre%202026%20%C2%B7%20Prison&title=22%20ans%20en%20prison%20%3A%20les%20dessous%20du%20syst%C3%A8me%20carc%C3%A9ral&event=prison-yannick-deslandes-2&venue=Bonnotte%20Club%2C%20Port%20de%20Suffren%2C%2075007%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--defense-johanic-galode",
 "organisateur": "Amio",
 "titre": "Soudain, un retour de la conflictualité en Europe…",
 "intervenant": "",
@@ -280,11 +309,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026%20%C2%B7%20D%C3%A9fense&title=Soudain%2C%20un%20retour%20de%20la%20conflictualit%C3%A9%20en%20Europe%E2%80%A6&event=defense-johanic-galode&venue=Bar%20%C3%A0%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--legiste-nicolas-gmati",
 "organisateur": "Amio",
 "titre": "Médecin légiste : que peut bien dire un cadavre ?",
 "intervenant": "",
@@ -299,11 +330,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026&title=M%C3%A9decin%20l%C3%A9giste%20%3A%20que%20peut%20bien%20dire%20un%20cadavre%20%3F&event=legiste-nicolas-gmati&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--fonds-marins-guillaume-pitron",
 "organisateur": "Amio",
 "titre": "Les fonds marins : nouvelle frontière du capitalisme",
 "intervenant": "",
@@ -318,11 +351,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Bar%20%C3%A0%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--nasa-nicolas-mahoume",
 "organisateur": "Amio",
 "titre": "Expédition avec la NASA : explorer Mars… depuis la Terre",
 "intervenant": "",
@@ -337,11 +372,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026&title=Exp%C3%A9dition%20avec%20la%20NASA%20%3A%20explorer%20Mars%E2%80%A6%20depuis%20la%20Terre&event=nasa-nicolas-mahoume&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--passage-a-lacte-emma-christiaen-oliveira-2",
 "organisateur": "Amio",
 "titre": "Le passage à l'acte meurtrier...",
 "intervenant": "",
@@ -356,11 +393,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Lundi%2030%20novembre%202026&title=Le%20passage%20%C3%A0%20l'acte%20meurtrier...&event=passage-a-lacte-emma-christiaen-oliveira-2&venue=Bar%20%C3%A0%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--addiction-juliette-hazart",
 "organisateur": "Amio",
 "titre": "L'addiction : ça commence quand ? Pourquoi est-ce si difficile de s'arrêter ?",
 "intervenant": "",
@@ -375,11 +414,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mercredi%202%20d%C3%A9cembre%202026&title=L'addiction%20%3A%20%C3%A7a%20commence%20quand%20%3F%20Pourquoi%20est-ce%20si%20difficile%20de%20s'arr%C3%AAter%20%3F&event=addiction-juliette-hazart&venue=Bar%20%C3%A0%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--eruptions-solaires-guillaume-aulanier",
 "organisateur": "Amio",
 "titre": "Éruptions solaires : dans la tête de l'astronome qui simule les colères du Soleil",
 "intervenant": "",
@@ -394,11 +435,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Lundi%207%20d%C3%A9cembre%202026&title=%C3%89ruptions%20solaires%20%3A%20dans%20la%20t%C3%AAte%20de%20l'astronome%20qui%20simule%20les%20col%C3%A8res%20du%20Soleil&event=eruptions-solaires-guillaume-aulanier&venue=Bar%20%C3%A0%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "amio--anxiete-monia-djillali",
 "organisateur": "Amio",
 "titre": "Anxiété, pression sociale : et si personne ne nous jugeait vraiment ?",
 "intervenant": "",
@@ -413,11 +456,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://amioclub.com/checkout?date=Mardi%208%20d%C3%A9cembre%202026&title=Anxi%C3%A9t%C3%A9%2C%20pression%20sociale%20%3A%20et%20si%20personne%20ne%20nous%20jugeait%20vraiment%20%3F&event=anxiete-monia-djillali&venue=Bar%20%C3%A0%20Paris",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--comment-bien-investir-son-epargne",
 "organisateur": "Apéro Talk",
 "titre": "Comment bien investir son epargne",
 "intervenant": "",
@@ -432,11 +477,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/comment-bien-investir-son-epargne",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--comment-la-science-change-l-intime",
 "organisateur": "Apéro Talk",
 "titre": "Comment la science change l intime",
 "intervenant": "",
@@ -451,11 +498,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/comment-la-science-change-l-intime",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--et-si-on-etait-tous-mediums",
 "organisateur": "Apéro Talk",
 "titre": "Et si on etait tous mediums",
 "intervenant": "",
@@ -470,11 +519,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/et-si-on-etait-tous-mediums",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--l-amour-est-il-ecrit-dans-les-etoiles",
 "organisateur": "Apéro Talk",
 "titre": "L amour est il ecrit dans les etoiles",
 "intervenant": "",
@@ -489,11 +540,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/l-amour-est-il-ecrit-dans-les-etoiles",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--l-ia-nous-rend-elle-stupide",
 "organisateur": "Apéro Talk",
 "titre": "L ia nous rend elle stupide",
 "intervenant": "",
@@ -508,11 +561,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/l-ia-nous-rend-elle-stupide",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--l-ia-va-t-elle-prendre-nos-jobs",
 "organisateur": "Apéro Talk",
 "titre": "L ia va t elle prendre nos jobs",
 "intervenant": "",
@@ -527,11 +582,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/l-ia-va-t-elle-prendre-nos-jobs",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--la-france-est-elle-prete-pour-la-guerre",
 "organisateur": "Apéro Talk",
 "titre": "La france est elle prete pour la guerre",
 "intervenant": "",
@@ -546,11 +603,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/la-france-est-elle-prete-pour-la-guerre",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--la-technologie-nous-rend-elle-plus-seuls",
 "organisateur": "Apéro Talk",
 "titre": "La technologie nous rend-elle plus seuls ?",
 "intervenant": "",
@@ -565,11 +624,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/la-technologie-nous-rend-elle-plus-seuls",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--notre-destin-est-il-deja-ecrit",
 "organisateur": "Apéro Talk",
 "titre": "Notre destin est-il déjà écrit ?",
 "intervenant": "",
@@ -584,11 +645,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/notre-destin-est-il-deja-ecrit",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--peut-on-controler-ses-fantasmes",
 "organisateur": "Apéro Talk",
 "titre": "Peut on controler ses fantasmes",
 "intervenant": "",
@@ -603,11 +666,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/peut-on-controler-ses-fantasmes",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--peut-on-defendre-l-indefendable",
 "organisateur": "Apéro Talk",
 "titre": "Peut on defendre l indefendable",
 "intervenant": "",
@@ -622,11 +687,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/peut-on-defendre-l-indefendable",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--qui-sont-vraiment-les-masculinistes",
 "organisateur": "Apéro Talk",
 "titre": "Qui sont vraiment les masculinistes ?",
 "intervenant": "",
@@ -641,11 +708,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/qui-sont-vraiment-les-masculinistes",
 "points_de_mesure": 0
 },
 {
+"id": "apero-talk--secte-un-an-infiltre-chez-les-gourous",
 "organisateur": "Apéro Talk",
 "titre": "Secte un an infiltre chez les gourous",
 "intervenant": "",
@@ -660,11 +729,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "inconnu",
 "url": "https://shotgun.live/fr/events/secte-un-an-infiltre-chez-les-gourous",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--352fe6f2-c30c-40ce-8a2d-b60042d6e9e0",
 "organisateur": "Causeries de Comptoir",
 "titre": "Et si notre idée de l'amour était complètement faussée ?",
 "intervenant": "",
@@ -679,11 +750,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=352fe6f2-c30c-40ce-8a2d-b60042d6e9e0",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--f43cab38-ed0f-44a5-b778-a3625e8e6ac4",
 "organisateur": "Causeries de Comptoir",
 "titre": "Pourquoi on rêve tous d'un travail qui n'existe pas ?",
 "intervenant": "",
@@ -698,11 +771,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=f43cab38-ed0f-44a5-b778-a3625e8e6ac4",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--f7bb5ec6-9183-484f-a08b-62e7925d95ea",
 "organisateur": "Causeries de Comptoir",
 "titre": "Et si l'opinion publique était fabriquée ?",
 "intervenant": "",
@@ -717,11 +792,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=f7bb5ec6-9183-484f-a08b-62e7925d95ea",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--102d4f46-6ec3-42aa-82a7-dc31de22ea8c",
 "organisateur": "Causeries de Comptoir",
 "titre": "Va-t-on vers l'effondrement ?",
 "intervenant": "",
@@ -736,11 +813,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=102d4f46-6ec3-42aa-82a7-dc31de22ea8c",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--1e57722b-169c-45d1-916b-d51daa172983",
 "organisateur": "Causeries de Comptoir",
 "titre": "Pourquoi ne peut-on pas vivre sans rituels (même quand on croit s'en passer) ?",
 "intervenant": "",
@@ -755,11 +834,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=1e57722b-169c-45d1-916b-d51daa172983",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--6e74e40e-5d70-480f-8bbf-312e60d229bf",
 "organisateur": "Causeries de Comptoir",
 "titre": "Comment parler politique sans s'engueuler (ni renoncer à ses idées) ?",
 "intervenant": "",
@@ -774,11 +855,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=6e74e40e-5d70-480f-8bbf-312e60d229bf",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--a17d3a63-7c94-4552-99f5-aeb4f140b9f7",
 "organisateur": "Causeries de Comptoir",
 "titre": "Faut-il encore faire des enfants ?",
 "intervenant": "",
@@ -793,11 +876,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=a17d3a63-7c94-4552-99f5-aeb4f140b9f7",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--da856edc-c465-4131-a73b-5bb42898afb6",
 "organisateur": "Causeries de Comptoir",
 "titre": "Sommes-nous prêts pour ce que l'IA va changer ?",
 "intervenant": "",
@@ -812,11 +897,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=da856edc-c465-4131-a73b-5bb42898afb6",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--f9983532-05ce-4672-bcf3-390bccb3a265",
 "organisateur": "Causeries de Comptoir",
 "titre": "Pourquoi juge-t-on les autres alors qu'on déteste l'être ?",
 "intervenant": "",
@@ -831,11 +918,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=f9983532-05ce-4672-bcf3-390bccb3a265",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--1e1f1b6f-c875-42e3-91f4-596640dc9184",
 "organisateur": "Causeries de Comptoir",
 "titre": "Peut-on vraiment choisir de vivre longtemps en bonne santé ?",
 "intervenant": "",
@@ -850,11 +939,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=1e1f1b6f-c875-42e3-91f4-596640dc9184",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--5f2d0447-76f0-4fbb-b841-e359160c9e4f",
 "organisateur": "Causeries de Comptoir",
 "titre": "Qu'est-ce qui nous fait vraiment dépasser nos limites ?",
 "intervenant": "",
@@ -869,11 +960,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=5f2d0447-76f0-4fbb-b841-e359160c9e4f",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--3f2d18e4-f695-411c-83f7-cae1f961b5f3",
 "organisateur": "Causeries de Comptoir",
 "titre": "Jusqu’où peut-on défendre l’inacceptable ?",
 "intervenant": "",
@@ -888,11 +981,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 0,
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=3f2d18e4-f695-411c-83f7-cae1f961b5f3",
 "points_de_mesure": 0
 },
 {
+"id": "causeries-de-comptoir--9ca1cb44-555b-4545-b8df-2dfcfbe3a322",
 "organisateur": "Causeries de Comptoir",
 "titre": "Va-t-on vraiment manquer d'eau ?",
 "intervenant": "",
@@ -907,11 +1002,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": 11,
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=9ca1cb44-555b-4545-b8df-2dfcfbe3a322",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--paris-comment-s-est-elle-batie-comment-va-t-elle-evoluer",
 "organisateur": "Le Briefing",
 "titre": "Paris : comment s’est-elle bâtie, comment va-t-elle évoluer ?",
 "intervenant": "",
@@ -926,11 +1023,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2002419207754?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--comment-repondre-quand-on-se-moque-de-nous",
 "organisateur": "Le Briefing",
 "titre": "Comment répondre quand on se moque de nous ?",
 "intervenant": "",
@@ -945,11 +1044,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2002419636035?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--abysses-que-renferme-le-fond-des-oceans",
 "organisateur": "Le Briefing",
 "titre": "Abysses : que renferme le fond des océans ?",
 "intervenant": "",
@@ -964,11 +1065,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2002419773446?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--peut-on-apprendre-la-philosophie-en-regardant-netflix",
 "organisateur": "Le Briefing",
 "titre": "Peut-on apprendre la philosophie en regardant Netflix ?",
 "intervenant": "",
@@ -983,11 +1086,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2002419951980?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--peut-on-ficher-toute-une-population",
 "organisateur": "Le Briefing",
 "titre": "Peut-on ficher toute une population ?",
 "intervenant": "",
@@ -1002,11 +1107,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2002421030205?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--quel-est-le-futur-de-l-education",
 "organisateur": "Le Briefing",
 "titre": "Quel est le futur de l’éducation ?",
 "intervenant": "",
@@ -1021,11 +1128,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2002420872734?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--sommes-nous-seuls-dans-l-univers",
 "organisateur": "Le Briefing",
 "titre": "Sommes-nous seuls dans l’Univers ?",
 "intervenant": "",
@@ -1040,11 +1149,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "oui",
 "url": "https://www.lebriefing.co/#programmation",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--peut-on-choisir-de-qui-l-on-tombe-amoureux",
 "organisateur": "Le Briefing",
 "titre": "Peut-on choisir de qui l'on tombe amoureux ?",
 "intervenant": "",
@@ -1059,11 +1170,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2002421602918?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--photographe-de-l-extreme-jusqu-ou-aller-pour-une-image",
 "organisateur": "Le Briefing",
 "titre": "Photographe de l’extrême : jusqu’où aller pour une image ?",
 "intervenant": "",
@@ -1078,11 +1191,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856344268?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--pourquoi-tout-le-monde-se-met-a-courir",
 "organisateur": "Le Briefing",
 "titre": "Pourquoi tout le monde se met à courir ?",
 "intervenant": "",
@@ -1097,11 +1212,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856351289?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--dating-how-to-get-away-with-dating-in-paris",
 "organisateur": "Le Briefing",
 "titre": "Dating : How to get away with dating in Paris ?",
 "intervenant": "",
@@ -1116,11 +1233,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856349283?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--expositions-universelles-a-quoi-paris-aurait-il-pu-ressembler",
 "organisateur": "Le Briefing",
 "titre": "Expositions universelles : à quoi Paris aurait-il pu ressembler ?",
 "intervenant": "",
@@ -1135,11 +1254,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856347277?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--comment-s-affirmer-au-travail",
 "organisateur": "Le Briefing",
 "titre": "Comment s’affirmer au travail ?",
 "intervenant": "",
@@ -1154,11 +1275,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856348280?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--anatomie-d-un-gang-comment-ca-marche-de-l-interieur",
 "organisateur": "Le Briefing",
 "titre": "Anatomie d’un gang : comment ça marche de l’intérieur ?",
 "intervenant": "",
@@ -1173,11 +1296,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856350286?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--moyen-age-tout-ce-qu-on-croit-savoir-est-il-faux",
 "organisateur": "Le Briefing",
 "titre": "Moyen Âge : tout ce qu’on croit savoir est-il faux ?",
 "intervenant": "",
@@ -1192,11 +1317,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856352292?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--comment-apprendre-a-parler-face-a-un-public",
 "organisateur": "Le Briefing",
 "titre": "Comment apprendre à parler face à un public ?",
 "intervenant": "",
@@ -1211,11 +1338,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856353295?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--du-premier-echec-a-la-5e-startup-les-coulisses-d-un-serial-entrepre",
 "organisateur": "Le Briefing",
 "titre": "Du premier échec à la 5ᵉ startup : les coulisses d’un serial entrepreneur",
 "intervenant": "",
@@ -1230,11 +1359,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.fr/e/billets-how-we-built-it-maxime-blondel-2004665884625",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--faire-travailler-son-argent-par-ou-commencer",
 "organisateur": "Le Briefing",
 "titre": "Faire travailler son argent : par où commencer ?",
 "intervenant": "",
@@ -1249,11 +1380,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856354298?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--l-etranger-ce-que-camus-a-vraiment-voulu-dire",
 "organisateur": "Le Briefing",
 "titre": "L'Étranger : ce que Camus a vraiment voulu dire",
 "intervenant": "",
@@ -1268,11 +1401,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.fr/e/billets-letranger-ce-que-camus-a-vraiment-voulu-dire-2004812227340",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--qu-est-ce-qu-une-peine-juste",
 "organisateur": "Le Briefing",
 "titre": "Qu’est-ce qu’une peine juste ?",
 "intervenant": "",
@@ -1287,11 +1422,13 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856355301?aff=oddtdtcreator",
 "points_de_mesure": 0
 },
 {
+"id": "le-briefing--sante-sommes-nous-vraiment-maitres-de-notre-corps",
 "organisateur": "Le Briefing",
 "titre": "Santé : sommes-nous vraiment maîtres de notre corps ?",
 "intervenant": "",
@@ -1306,6 +1443,7 @@
 "capacite": "",
 "inscrits": "",
 "places_restantes": "",
+"remplissage_pct": "",
 "complet": "non",
 "url": "https://www.eventbrite.com/e/2003856356304?aff=oddtdtcreator",
 "points_de_mesure": 0

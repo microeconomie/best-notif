@@ -79,7 +79,12 @@ def main():
         etat = v.charger(chemin) or {}
         for cle, f in etat.items():
             parution = f.get("publie_le") or f.get("vu_le") or ""
+            capacite = f.get("capacite")
+            restantes = f.get("places")
+            if restantes is None and capacite and isinstance(f.get("inscrits"), int):
+                restantes = capacite - f["inscrits"]
             lignes.append({
+                "id": f"{v.slug(organisateur)}--{cle}"[:80],
                 "organisateur": organisateur,
                 "titre": f.get("titre") or f.get("title") or cle,
                 "intervenant": f.get("intervenant") or "",
@@ -91,9 +96,11 @@ def main():
                 "complet_le": (f.get("complet_le") or "")[:16],
                 "jours_avant_complet": delai(parution, f.get("complet_le")),
                 "rouvert_le": (f.get("rouvert_le") or "")[:16],
-                "capacite": f.get("capacite") if f.get("capacite") is not None else "",
+                "capacite": capacite if capacite is not None else "",
                 "inscrits": f.get("inscrits") if f.get("inscrits") is not None else "",
-                "places_restantes": f.get("places") if f.get("places") is not None else "",
+                "places_restantes": restantes if restantes is not None else "",
+                "remplissage_pct": (round(100 * (capacite - restantes) / capacite)
+                                    if capacite and restantes is not None else ""),
                 "complet": {True: "oui", False: "non"}.get(f.get("complet"), "inconnu"),
                 "url": f.get("url", ""),
                 "points_de_mesure": len(f.get("courbe") or []),

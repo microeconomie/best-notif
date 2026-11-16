@@ -4,7 +4,7 @@
     "capacite": 79,
     "complet": true,
     "complet_le": "2026-11-16T16:04",
-    "complet_marge_h": 0.9,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -13,7 +13,7 @@
     ],
     "date": "Mercredi 2 décembre 2026",
     "derniere_maj": "2026-11-16T16:04",
-    "dispo_le": "2026-11-16T15:12",
+    "dispo_le": null,
     "inscrits": 86,
     "intervenant": "Juliette Hazart",
     "journal": [
@@ -121,7 +121,7 @@
     "capacite": 79,
     "complet": true,
     "complet_le": "2026-11-16T16:04",
-    "complet_marge_h": 0.1,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -130,7 +130,7 @@
     ],
     "date": "Mardi 24 novembre 2026",
     "derniere_maj": "2026-11-16T16:04",
-    "dispo_le": "2026-11-16T15:57",
+    "dispo_le": null,
     "inscrits": 94,
     "intervenant": "Johanic Galode",
     "journal": [
@@ -306,7 +306,7 @@
     "capacite": 79,
     "complet": true,
     "complet_le": "2026-11-16T16:04",
-    "complet_marge_h": 0.1,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -315,7 +315,7 @@
     ],
     "date": "Mardi 24 novembre 2026",
     "derniere_maj": "2026-11-16T16:04",
-    "dispo_le": "2026-11-16T15:57",
+    "dispo_le": null,
     "inscrits": 105,
     "intervenant": "Nicolas Gmati",
     "journal": [
@@ -340,7 +340,7 @@
     "capacite": 79,
     "complet": true,
     "complet_le": "2026-11-16T16:04",
-    "complet_marge_h": 0.9,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -349,7 +349,7 @@
     ],
     "date": "Mardi 17 novembre 2026",
     "derniere_maj": "2026-11-16T16:04",
-    "dispo_le": "2026-11-16T15:12",
+    "dispo_le": null,
     "inscrits": 107,
     "intervenant": "Julien Lefebure",
     "journal": [
@@ -403,7 +403,7 @@
     "capacite": 79,
     "complet": true,
     "complet_le": "2026-11-16T16:04",
-    "complet_marge_h": 0.1,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -412,7 +412,7 @@
     ],
     "date": "Mardi 17 novembre 2026",
     "derniere_maj": "2026-11-16T16:04",
-    "dispo_le": "2026-11-16T15:57",
+    "dispo_le": null,
     "inscrits": 102,
     "intervenant": "Biliana Todorova",
     "journal": [
@@ -437,7 +437,7 @@
     "capacite": 79,
     "complet": true,
     "complet_le": "2026-11-16T16:04",
-    "complet_marge_h": 0.9,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -446,7 +446,7 @@
     ],
     "date": "Lundi 30 novembre 2026",
     "derniere_maj": "2026-11-16T16:04",
-    "dispo_le": "2026-11-16T15:12",
+    "dispo_le": null,
     "inscrits": 96,
     "intervenant": "Oliveira 2",
     "journal": [
@@ -512,7 +512,7 @@
     "capacite": 79,
     "complet": true,
     "complet_le": "2026-11-16T16:04",
-    "complet_marge_h": 0.1,
+    "complet_marge_h": null,
     "courbe": [
       [
         "2026-11-16",
@@ -521,7 +521,7 @@
     ],
     "date": "Mercredi 18 novembre 2026",
     "derniere_maj": "2026-11-16T16:04",
-    "dispo_le": "2026-11-16T15:57",
+    "dispo_le": null,
     "inscrits": 99,
     "intervenant": "Deslandes 2",
     "journal": [

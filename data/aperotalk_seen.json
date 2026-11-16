@@ -10,6 +10,7 @@
       ]
     ],
     "parution_inconnue": true,
+    "parution_marge_h": null,
     "titre": "Comment bien investir son epargne",
     "url": "https://shotgun.live/fr/events/comment-bien-investir-son-epargne",
     "vu_le": "2026-09-15T22:12"
@@ -24,6 +25,7 @@
         "drop"
       ]
     ],
+    "parution_marge_h": 446.1,
     "titre": "Comment la science change l intime",
     "url": "https://shotgun.live/fr/events/comment-la-science-change-l-intime",
     "vu_le": "2026-10-04T12:21"
@@ -39,6 +41,7 @@
       ]
     ],
     "parution_inconnue": true,
+    "parution_marge_h": null,
     "titre": "Et si on etait tous mediums",
     "url": "https://shotgun.live/fr/events/et-si-on-etait-tous-mediums",
     "vu_le": "2026-09-15T22:12"
@@ -53,6 +56,7 @@
         "drop"
       ]
     ],
+    "parution_marge_h": 446.1,
     "titre": "L amour est il ecrit dans les etoiles",
     "url": "https://shotgun.live/fr/events/l-amour-est-il-ecrit-dans-les-etoiles",
     "vu_le": "2026-10-04T12:21"
@@ -77,6 +81,7 @@
       ]
     ],
     "lieu": "Le Musset",
+    "parution_marge_h": 446.1,
     "titre": "L'IA nous rend-elle stupide ?",
     "url": "https://shotgun.live/fr/events/l-ia-nous-rend-elle-stupide",
     "vu_le": "2026-10-04T12:21"
@@ -92,6 +97,7 @@
       ]
     ],
     "parution_inconnue": true,
+    "parution_marge_h": null,
     "titre": "L ia va t elle prendre nos jobs",
     "url": "https://shotgun.live/fr/events/l-ia-va-t-elle-prendre-nos-jobs",
     "vu_le": "2026-09-15T22:12"
@@ -111,6 +117,7 @@
       ]
     ],
     "lieu": "Le Musset",
+    "parution_marge_h": 446.1,
     "titre": "La France est-elle prête pour la guerre ?",
     "url": "https://shotgun.live/fr/events/la-france-est-elle-prete-pour-la-guerre",
     "vu_le": "2026-10-04T12:21"
@@ -130,6 +137,7 @@
       ]
     ],
     "lieu": "Pinot Grigio",
+    "parution_marge_h": 679.4,
     "titre": "La technologie nous rend-elle plus seuls ?",
     "url": "https://shotgun.live/fr/events/la-technologie-nous-rend-elle-plus-seuls",
     "vu_le": "2026-11-01T19:44"
@@ -154,6 +162,7 @@
       ]
     ],
     "lieu": "Nanna (péniche)",
+    "parution_marge_h": 679.4,
     "titre": "Notre destin est-il déjà écrit ?",
     "url": "https://shotgun.live/fr/events/notre-destin-est-il-deja-ecrit",
     "vu_le": "2026-11-01T19:44"
@@ -169,6 +178,7 @@
       ]
     ],
     "parution_inconnue": true,
+    "parution_marge_h": null,
     "titre": "Peut on controler ses fantasmes",
     "url": "https://shotgun.live/fr/events/peut-on-controler-ses-fantasmes",
     "vu_le": "2026-09-15T22:12"
@@ -184,6 +194,7 @@
       ]
     ],
     "parution_inconnue": true,
+    "parution_marge_h": null,
     "titre": "Peut on defendre l indefendable",
     "url": "https://shotgun.live/fr/events/peut-on-defendre-l-indefendable",
     "vu_le": "2026-09-15T22:12"
@@ -203,6 +214,7 @@
       ]
     ],
     "lieu": "Le Musset",
+    "parution_marge_h": 679.4,
     "titre": "Qui sont vraiment les masculinistes ?",
     "url": "https://shotgun.live/fr/events/qui-sont-vraiment-les-masculinistes",
     "vu_le": "2026-11-01T19:44"
@@ -218,6 +230,7 @@
       ]
     ],
     "parution_inconnue": true,
+    "parution_marge_h": null,
     "titre": "Secte un an infiltre chez les gourous",
     "url": "https://shotgun.live/fr/events/secte-un-an-infiltre-chez-les-gourous",
     "vu_le": "2026-09-15T22:12"

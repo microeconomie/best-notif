@@ -25,6 +25,7 @@
       ]
     ],
     "lieu": "Pomelo bistrot",
+    "parution_marge_h": 23.6,
     "places": 0,
     "rouvert_le": "2026-10-30T09:21",
     "titre": "Va-t-on vers l'effondrement ?",
@@ -60,6 +61,7 @@
       ]
     ],
     "lieu": "Pomelo bistrot",
+    "parution_marge_h": 23.6,
     "places": 0,
     "publie_le": "2026-10-12T09:34",
     "specialite": "Maîtresse de conférences à Sorbonne Université, chercheuse sur les maladies cardiovasculaires",
@@ -85,6 +87,7 @@
       ]
     ],
     "lieu": "Kawaa du Lucernaire",
+    "parution_marge_h": 23.6,
     "places": 0,
     "titre": "Pourquoi ne peut-on pas vivre sans rituels (même quand on croit s'en passer) ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=1e57722b-169c-45d1-916b-d51daa172983",
@@ -108,6 +111,7 @@
     ],
     "lieu": "Mezzanine",
     "parution_inconnue": true,
+    "parution_marge_h": null,
     "places": 0,
     "titre": "Et si notre idée de l'amour était complètement faussée ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=352fe6f2-c30c-40ce-8a2d-b60042d6e9e0",
@@ -150,6 +154,7 @@
       ]
     ],
     "lieu": "Kawaa du Lucernaire",
+    "parution_marge_h": 23.6,
     "places": 0,
     "publie_le": "2026-10-16T15:28",
     "rouvert_le": "2026-11-11T18:15",
@@ -187,6 +192,7 @@
       ]
     ],
     "lieu": "Kawaa du Lucernaire",
+    "parution_marge_h": 23.6,
     "places": 0,
     "publie_le": "2026-10-14T09:55",
     "specialite": "23e Français à avoir traversé la Manche à la nage, préparateur mental pour les dirigeants",
@@ -212,6 +218,7 @@
       ]
     ],
     "lieu": "Pomelo bistrot",
+    "parution_marge_h": 23.6,
     "places": 0,
     "titre": "Comment parler politique sans s'engueuler (ni renoncer à ses idées) ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=6e74e40e-5d70-480f-8bbf-312e60d229bf",
@@ -241,6 +248,7 @@
       ]
     ],
     "lieu": "Pomelo bistrot",
+    "parution_marge_h": 23.6,
     "places": 8,
     "publie_le": "2026-10-12T09:39",
     "specialite": "Expert des politiques de l'eau, 20 ans à conseiller les gouvernements à l'OCDE",
@@ -266,6 +274,7 @@
       ]
     ],
     "lieu": "Kawaa du Lucernaire",
+    "parution_marge_h": 23.6,
     "places": 0,
     "titre": "Faut-il encore faire des enfants ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=a17d3a63-7c94-4552-99f5-aeb4f140b9f7",
@@ -316,6 +325,7 @@
       ]
     ],
     "lieu": "Pomelo bistrot",
+    "parution_marge_h": 23.6,
     "places": 0,
     "publie_le": "2026-10-05T18:11",
     "rouvert_le": "2026-11-13T12:44",
@@ -343,6 +353,7 @@
     ],
     "lieu": "Mezzanine",
     "parution_inconnue": true,
+    "parution_marge_h": null,
     "places": 0,
     "titre": "Pourquoi on rêve tous d'un travail qui n'existe pas ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=f43cab38-ed0f-44a5-b778-a3625e8e6ac4",
@@ -375,6 +386,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_inconnue": true,
+    "parution_marge_h": null,
     "places": 0,
     "rouvert_le": "2026-10-26T20:49",
     "titre": "Et si l'opinion publique était fabriquée ?",
@@ -418,6 +430,7 @@
       ]
     ],
     "lieu": "Bistouille - 20e",
+    "parution_marge_h": 23.6,
     "places": 2,
     "publie_le": "2026-10-12T09:47",
     "rouvert_le": "2026-11-16T15:12",

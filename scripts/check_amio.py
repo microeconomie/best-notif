@@ -136,7 +136,8 @@ def disparues(etat, sessions, quand):
             fiche["absences"] = 0
             continue
         jour = date_du(fiche.get("date"))
-        if fiche.get("complet") or not fiche.get("vu_le") or not jour or jour < aujourdhui:
+        # le jour même, une session disparaît parce qu'elle a lieu, pas parce qu'elle est pleine
+        if fiche.get("complet") or not fiche.get("vu_le") or not jour or jour <= aujourdhui:
             continue
         fiche["absences"] = fiche.get("absences", 0) + 1
         if fiche["absences"] >= 2:

@@ -131,6 +131,9 @@ def fusionner(etat, trouves, seuil_places=None, premier_passage=False):
     quand = maintenant()
     jour = quand[:10]
     nouveaux, rouverts, derniers = {}, {}, {}
+    # le passage précédent borne la date d'apparition d'un talk découvert ici
+    passages = [f.get("derniere_maj") for f in etat.values() if f.get("derniere_maj")]
+    precedent = max(passages) if passages else None
 
     for cle, vu in trouves.items():
         fiche = etat.get(cle)
@@ -142,6 +145,7 @@ def fusionner(etat, trouves, seuil_places=None, premier_passage=False):
             fiche["complet_le"] = quand if complet_vu else None
             fiche["dispo_le"] = None
             fiche["complet_marge_h"] = None     # déjà complet à la découverte
+            fiche["parution_marge_h"] = None if premier_passage else marge_h(precedent, quand)
             if complet_vu:
                 _noter(fiche, quand, "complet")
             etat[cle] = fiche

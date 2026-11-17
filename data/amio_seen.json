@@ -9,10 +9,14 @@
       [
         "2026-11-16",
         86
+      ],
+      [
+        "2026-11-17",
+        86
       ]
     ],
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
+    "derniere_maj": "2026-11-17T03:41",
     "dispo_le": null,
     "inscrits": 86,
     "intervenant": "Juliette Hazart",
@@ -42,12 +46,16 @@
       [
         "2026-11-16",
         53
+      ],
+      [
+        "2026-11-17",
+        61
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
-    "dispo_le": "2026-11-16T20:17",
-    "inscrits": 53,
+    "derniere_maj": "2026-11-17T03:41",
+    "dispo_le": "2026-11-17T03:41",
+    "inscrits": 61,
     "intervenant": "Monia Djillali",
     "journal": [
       [
@@ -57,7 +65,7 @@
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 4.7,
-    "places": 26,
+    "places": 18,
     "titre": "Anxiété, pression sociale : et si personne ne nous jugeait vraiment ?",
     "url": "https://amioclub.com/checkout?date=Mardi%208%20d%C3%A9cembre%202026&title=Anxi%C3%A9t%C3%A9%2C%20pression%20sociale%20%3A%20et%20si%20personne%20ne%20nous%20jugeait%20vraiment%20%3F&event=anxiete-monia-djillali&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-15T21:39"
@@ -126,10 +134,14 @@
       [
         "2026-11-16",
         94
+      ],
+      [
+        "2026-11-17",
+        94
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
+    "derniere_maj": "2026-11-17T03:41",
     "dispo_le": null,
     "inscrits": 94,
     "intervenant": "Johanic Galode",
@@ -159,11 +171,15 @@
       [
         "2026-11-16",
         10
+      ],
+      [
+        "2026-11-17",
+        10
       ]
     ],
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
-    "dispo_le": "2026-11-16T20:17",
+    "derniere_maj": "2026-11-17T03:41",
+    "dispo_le": "2026-11-17T03:41",
     "inscrits": 10,
     "intervenant": "Guillaume Aulanier",
     "journal": [
@@ -211,12 +227,16 @@
       [
         "2026-11-16",
         69
+      ],
+      [
+        "2026-11-17",
+        71
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
-    "dispo_le": "2026-11-16T20:17",
-    "inscrits": 69,
+    "derniere_maj": "2026-11-17T03:41",
+    "dispo_le": "2026-11-17T03:41",
+    "inscrits": 71,
     "intervenant": "Guillaume Pitron",
     "journal": [
       [
@@ -226,7 +246,7 @@
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 9.8,
-    "places": 10,
+    "places": 8,
     "titre": "Les fonds marins : nouvelle frontière du capitalisme",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -311,10 +331,14 @@
       [
         "2026-11-16",
         105
+      ],
+      [
+        "2026-11-17",
+        105
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
+    "derniere_maj": "2026-11-17T03:41",
     "dispo_le": null,
     "inscrits": 105,
     "intervenant": "Nicolas Gmati",
@@ -345,12 +369,16 @@
       [
         "2026-11-16",
         107
+      ],
+      [
+        "2026-11-17",
+        109
       ]
     ],
     "date": "Mardi 17 novembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
+    "derniere_maj": "2026-11-17T03:41",
     "dispo_le": null,
-    "inscrits": 107,
+    "inscrits": 109,
     "intervenant": "Julien Lefebure",
     "journal": [
       [
@@ -378,11 +406,15 @@
       [
         "2026-11-16",
         50
+      ],
+      [
+        "2026-11-17",
+        50
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
-    "dispo_le": "2026-11-16T20:17",
+    "derniere_maj": "2026-11-17T03:41",
+    "dispo_le": "2026-11-17T03:41",
     "inscrits": 50,
     "intervenant": "Nicolas Mahoume",
     "journal": [
@@ -408,10 +440,14 @@
       [
         "2026-11-16",
         102
+      ],
+      [
+        "2026-11-17",
+        102
       ]
     ],
     "date": "Mardi 17 novembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
+    "derniere_maj": "2026-11-17T03:41",
     "dispo_le": null,
     "inscrits": 102,
     "intervenant": "Biliana Todorova",
@@ -442,10 +478,14 @@
       [
         "2026-11-16",
         96
+      ],
+      [
+        "2026-11-17",
+        96
       ]
     ],
     "date": "Lundi 30 novembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
+    "derniere_maj": "2026-11-17T03:41",
     "dispo_le": null,
     "inscrits": 96,
     "intervenant": "Oliveira 2",
@@ -517,12 +557,16 @@
       [
         "2026-11-16",
         97
+      ],
+      [
+        "2026-11-17",
+        99
       ]
     ],
     "date": "Mercredi 18 novembre 2026",
-    "derniere_maj": "2026-11-16T20:17",
+    "derniere_maj": "2026-11-17T03:41",
     "dispo_le": null,
-    "inscrits": 97,
+    "inscrits": 99,
     "intervenant": "Deslandes 2",
     "journal": [
       [

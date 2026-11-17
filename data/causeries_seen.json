@@ -51,7 +51,7 @@
     ],
     "date": "Lundi 23 novembre 2026 à 19h30",
     "date_iso": "2026-11-23",
-    "derniere_maj": "2026-11-17T01:22",
+    "derniere_maj": "2026-11-17T09:57",
     "dispo_le": "2026-11-10T17:23",
     "inscrits": 80,
     "intervenant": "Martine Glorian",
@@ -142,7 +142,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-17T01:22",
+    "derniere_maj": "2026-11-17T09:57",
     "dispo_le": "2026-10-23T18:49",
     "inscrits": 75,
     "intervenant": "Bellet Baptiste",
@@ -192,7 +192,7 @@
     ],
     "date": "Mardi 24 novembre 2026 à 19h30",
     "date_iso": "2026-11-24",
-    "derniere_maj": "2026-11-17T01:22",
+    "derniere_maj": "2026-11-17T09:57",
     "dispo_le": "2026-10-23T13:58",
     "inscrits": 75,
     "intervenant": "Grégor Ozbolt",
@@ -252,14 +252,14 @@
       ],
       [
         "2026-11-17",
-        74
+        75
       ]
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-17T01:22",
-    "dispo_le": "2026-11-17T01:22",
-    "inscrits": 74,
+    "derniere_maj": "2026-11-17T09:57",
+    "dispo_le": "2026-11-17T09:57",
+    "inscrits": 75,
     "intervenant": "Leflaive Xavier",
     "journal": [
       [
@@ -269,7 +269,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 4.8,
-    "places": 6,
+    "places": 5,
     "publie_le": "2026-10-12T09:39",
     "specialite": "Expert des politiques de l'eau, 20 ans à conseiller les gouvernements à l'OCDE",
     "titre": "Va-t-on vraiment manquer d'eau ?",
@@ -434,8 +434,8 @@
     ],
     "date": "Mardi 17 novembre 2026 à 19h30",
     "date_iso": "2026-11-17",
-    "derniere_maj": "2026-11-17T01:22",
-    "dispo_le": "2026-11-17T01:22",
+    "derniere_maj": "2026-11-17T09:57",
+    "dispo_le": "2026-11-17T09:57",
     "inscrits": 59,
     "intervenant": "Hubert Guérin.",
     "journal": [

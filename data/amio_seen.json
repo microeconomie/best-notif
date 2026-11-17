@@ -16,7 +16,7 @@
       ]
     ],
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
+    "derniere_maj": "2026-11-17T21:43",
     "dispo_le": null,
     "inscrits": 86,
     "intervenant": "Juliette Hazart",
@@ -40,8 +40,9 @@
   "anxiete-monia-djillali": {
     "alerte_seuil": false,
     "capacite": 79,
-    "complet": false,
-    "complet_marge_h": null,
+    "complet": true,
+    "complet_le": "2026-11-17T21:43",
+    "complet_marge_h": 8.6,
     "courbe": [
       [
         "2026-11-16",
@@ -49,23 +50,27 @@
       ],
       [
         "2026-11-17",
-        69
+        84
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
+    "derniere_maj": "2026-11-17T21:43",
     "dispo_le": "2026-11-17T13:06",
-    "inscrits": 69,
+    "inscrits": 84,
     "intervenant": "Monia Djillali",
     "journal": [
       [
         "2026-11-15T21:39",
         "drop"
+      ],
+      [
+        "2026-11-17T21:43",
+        "complet"
       ]
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 4.7,
-    "places": 10,
+    "places": 0,
     "titre": "Anxiété, pression sociale : et si personne ne nous jugeait vraiment ?",
     "url": "https://amioclub.com/checkout?date=Mardi%208%20d%C3%A9cembre%202026&title=Anxi%C3%A9t%C3%A9%2C%20pression%20sociale%20%3A%20et%20si%20personne%20ne%20nous%20jugeait%20vraiment%20%3F&event=anxiete-monia-djillali&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-15T21:39"
@@ -141,7 +146,7 @@
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
+    "derniere_maj": "2026-11-17T21:43",
     "dispo_le": null,
     "inscrits": 94,
     "intervenant": "Johanic Galode",
@@ -178,8 +183,8 @@
       ]
     ],
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
-    "dispo_le": "2026-11-17T13:06",
+    "derniere_maj": "2026-11-17T21:43",
+    "dispo_le": "2026-11-17T21:43",
     "inscrits": 10,
     "intervenant": "Guillaume Aulanier",
     "journal": [
@@ -230,13 +235,13 @@
       ],
       [
         "2026-11-17",
-        71
+        75
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
-    "dispo_le": "2026-11-17T13:06",
-    "inscrits": 71,
+    "derniere_maj": "2026-11-17T21:43",
+    "dispo_le": "2026-11-17T21:43",
+    "inscrits": 75,
     "intervenant": "Guillaume Pitron",
     "journal": [
       [
@@ -246,7 +251,7 @@
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 9.8,
-    "places": 8,
+    "places": 4,
     "titre": "Les fonds marins : nouvelle frontière du capitalisme",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -338,7 +343,7 @@
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
+    "derniere_maj": "2026-11-17T21:43",
     "dispo_le": null,
     "inscrits": 105,
     "intervenant": "Nicolas Gmati",
@@ -376,7 +381,7 @@
       ]
     ],
     "date": "Mardi 17 novembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
+    "derniere_maj": "2026-11-17T21:43",
     "dispo_le": null,
     "inscrits": 109,
     "intervenant": "Julien Lefebure",
@@ -409,13 +414,13 @@
       ],
       [
         "2026-11-17",
-        52
+        54
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
-    "dispo_le": "2026-11-17T13:06",
-    "inscrits": 52,
+    "derniere_maj": "2026-11-17T21:43",
+    "dispo_le": "2026-11-17T21:43",
+    "inscrits": 54,
     "intervenant": "Nicolas Mahoume",
     "journal": [
       [
@@ -425,7 +430,7 @@
     ],
     "lieu": "Le Cirque",
     "parution_marge_h": 9.8,
-    "places": 27,
+    "places": 25,
     "titre": "Expédition avec la NASA : explorer Mars… depuis la Terre",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026&title=Exp%C3%A9dition%20avec%20la%20NASA%20%3A%20explorer%20Mars%E2%80%A6%20depuis%20la%20Terre&event=nasa-nicolas-mahoume&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -447,7 +452,7 @@
       ]
     ],
     "date": "Mardi 17 novembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
+    "derniere_maj": "2026-11-17T21:43",
     "dispo_le": null,
     "inscrits": 102,
     "intervenant": "Biliana Todorova",
@@ -481,13 +486,13 @@
       ],
       [
         "2026-11-17",
-        96
+        94
       ]
     ],
     "date": "Lundi 30 novembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
+    "derniere_maj": "2026-11-17T21:43",
     "dispo_le": null,
-    "inscrits": 96,
+    "inscrits": 94,
     "intervenant": "Oliveira 2",
     "journal": [
       [
@@ -560,13 +565,13 @@
       ],
       [
         "2026-11-17",
-        101
+        99
       ]
     ],
     "date": "Mercredi 18 novembre 2026",
-    "derniere_maj": "2026-11-17T13:06",
+    "derniere_maj": "2026-11-17T21:43",
     "dispo_le": null,
-    "inscrits": 101,
+    "inscrits": 99,
     "intervenant": "Deslandes 2",
     "journal": [
       [

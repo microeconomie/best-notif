@@ -13,10 +13,14 @@
       [
         "2026-11-17",
         86
+      ],
+      [
+        "2026-11-18",
+        86
       ]
     ],
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
+    "derniere_maj": "2026-11-18T03:37",
     "dispo_le": null,
     "inscrits": 86,
     "intervenant": "Juliette Hazart",
@@ -51,12 +55,16 @@
       [
         "2026-11-17",
         84
+      ],
+      [
+        "2026-11-18",
+        88
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
+    "derniere_maj": "2026-11-18T03:37",
     "dispo_le": "2026-11-17T13:06",
-    "inscrits": 84,
+    "inscrits": 88,
     "intervenant": "Monia Djillali",
     "journal": [
       [
@@ -143,10 +151,14 @@
       [
         "2026-11-17",
         94
+      ],
+      [
+        "2026-11-18",
+        94
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
+    "derniere_maj": "2026-11-18T03:37",
     "dispo_le": null,
     "inscrits": 94,
     "intervenant": "Johanic Galode",
@@ -180,11 +192,15 @@
       [
         "2026-11-17",
         10
+      ],
+      [
+        "2026-11-18",
+        10
       ]
     ],
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
-    "dispo_le": "2026-11-17T21:43",
+    "derniere_maj": "2026-11-18T03:37",
+    "dispo_le": "2026-11-18T03:37",
     "inscrits": 10,
     "intervenant": "Guillaume Aulanier",
     "journal": [
@@ -224,7 +240,7 @@
     "vu_le": "2026-10-17T00:12"
   },
   "fonds-marins-guillaume-pitron": {
-    "alerte_seuil": false,
+    "alerte_seuil": true,
     "capacite": 79,
     "complet": false,
     "complet_marge_h": null,
@@ -236,22 +252,30 @@
       [
         "2026-11-17",
         75
+      ],
+      [
+        "2026-11-18",
+        76
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
-    "dispo_le": "2026-11-17T21:43",
-    "inscrits": 75,
+    "derniere_maj": "2026-11-18T03:37",
+    "dispo_le": "2026-11-18T03:37",
+    "inscrits": 76,
     "intervenant": "Guillaume Pitron",
     "journal": [
       [
         "2026-11-02T15:34",
         "drop"
+      ],
+      [
+        "2026-11-18T03:37",
+        "dernieres-places:3"
       ]
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 9.8,
-    "places": 4,
+    "places": 3,
     "titre": "Les fonds marins : nouvelle frontière du capitalisme",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -340,10 +364,14 @@
       [
         "2026-11-17",
         105
+      ],
+      [
+        "2026-11-18",
+        105
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
+    "derniere_maj": "2026-11-18T03:37",
     "dispo_le": null,
     "inscrits": 105,
     "intervenant": "Nicolas Gmati",
@@ -378,10 +406,14 @@
       [
         "2026-11-17",
         109
+      ],
+      [
+        "2026-11-18",
+        109
       ]
     ],
     "date": "Mardi 17 novembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
+    "derniere_maj": "2026-11-18T03:37",
     "dispo_le": null,
     "inscrits": 109,
     "intervenant": "Julien Lefebure",
@@ -415,11 +447,15 @@
       [
         "2026-11-17",
         54
+      ],
+      [
+        "2026-11-18",
+        54
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
-    "dispo_le": "2026-11-17T21:43",
+    "derniere_maj": "2026-11-18T03:37",
+    "dispo_le": "2026-11-18T03:37",
     "inscrits": 54,
     "intervenant": "Nicolas Mahoume",
     "journal": [
@@ -449,10 +485,14 @@
       [
         "2026-11-17",
         102
+      ],
+      [
+        "2026-11-18",
+        102
       ]
     ],
     "date": "Mardi 17 novembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
+    "derniere_maj": "2026-11-18T03:37",
     "dispo_le": null,
     "inscrits": 102,
     "intervenant": "Biliana Todorova",
@@ -487,12 +527,16 @@
       [
         "2026-11-17",
         94
+      ],
+      [
+        "2026-11-18",
+        98
       ]
     ],
     "date": "Lundi 30 novembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
+    "derniere_maj": "2026-11-18T03:37",
     "dispo_le": null,
-    "inscrits": 94,
+    "inscrits": 98,
     "intervenant": "Oliveira 2",
     "journal": [
       [
@@ -566,10 +610,14 @@
       [
         "2026-11-17",
         99
+      ],
+      [
+        "2026-11-18",
+        99
       ]
     ],
     "date": "Mercredi 18 novembre 2026",
-    "derniere_maj": "2026-11-17T21:43",
+    "derniere_maj": "2026-11-18T03:37",
     "dispo_le": null,
     "inscrits": 99,
     "intervenant": "Deslandes 2",

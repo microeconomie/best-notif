@@ -20,7 +20,7 @@
       ]
     ],
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-18T03:37",
+    "derniere_maj": "2026-11-18T12:56",
     "dispo_le": null,
     "inscrits": 86,
     "intervenant": "Juliette Hazart",
@@ -62,7 +62,7 @@
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-18T03:37",
+    "derniere_maj": "2026-11-18T12:56",
     "dispo_le": "2026-11-17T13:06",
     "inscrits": 88,
     "intervenant": "Monia Djillali",
@@ -158,7 +158,7 @@
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-18T03:37",
+    "derniere_maj": "2026-11-18T12:56",
     "dispo_le": null,
     "inscrits": 94,
     "intervenant": "Johanic Galode",
@@ -199,8 +199,8 @@
       ]
     ],
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-18T03:37",
-    "dispo_le": "2026-11-18T03:37",
+    "derniere_maj": "2026-11-18T12:56",
+    "dispo_le": "2026-11-18T12:56",
     "inscrits": 10,
     "intervenant": "Guillaume Aulanier",
     "journal": [
@@ -255,13 +255,13 @@
       ],
       [
         "2026-11-18",
-        76
+        78
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-18T03:37",
-    "dispo_le": "2026-11-18T03:37",
-    "inscrits": 76,
+    "derniere_maj": "2026-11-18T12:56",
+    "dispo_le": "2026-11-18T12:56",
+    "inscrits": 78,
     "intervenant": "Guillaume Pitron",
     "journal": [
       [
@@ -273,11 +273,11 @@
         "dernieres-places:3"
       ]
     ],
-    "lieu": "Bar à Paris",
+    "lieu": "Impasse bar",
     "parution_marge_h": 9.8,
-    "places": 3,
+    "places": 1,
     "titre": "Les fonds marins : nouvelle frontière du capitalisme",
-    "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Bar%20%C3%A0%20Paris",
+    "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Impasse%20bar%2C%204%20Cit%C3%A9%20Griset%2C%2075011%20Paris",
     "vu_le": "2026-11-02T15:34"
   },
   "geopolitique-bruno-tertrais": {
@@ -371,7 +371,7 @@
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-18T03:37",
+    "derniere_maj": "2026-11-18T12:56",
     "dispo_le": null,
     "inscrits": 105,
     "intervenant": "Nicolas Gmati",
@@ -454,8 +454,8 @@
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-18T03:37",
-    "dispo_le": "2026-11-18T03:37",
+    "derniere_maj": "2026-11-18T12:56",
+    "dispo_le": "2026-11-18T12:56",
     "inscrits": 54,
     "intervenant": "Nicolas Mahoume",
     "journal": [
@@ -534,7 +534,7 @@
       ]
     ],
     "date": "Lundi 30 novembre 2026",
-    "derniere_maj": "2026-11-18T03:37",
+    "derniere_maj": "2026-11-18T12:56",
     "dispo_le": null,
     "inscrits": 98,
     "intervenant": "Oliveira 2",
@@ -617,7 +617,7 @@
       ]
     ],
     "date": "Mercredi 18 novembre 2026",
-    "derniere_maj": "2026-11-18T03:37",
+    "derniere_maj": "2026-11-18T12:56",
     "dispo_le": null,
     "inscrits": 99,
     "intervenant": "Deslandes 2",

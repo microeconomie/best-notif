@@ -20,7 +20,7 @@
       ]
     ],
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-18T12:56",
+    "derniere_maj": "2026-11-18T21:20",
     "dispo_le": null,
     "inscrits": 86,
     "intervenant": "Juliette Hazart",
@@ -62,7 +62,7 @@
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-18T12:56",
+    "derniere_maj": "2026-11-18T21:20",
     "dispo_le": "2026-11-17T13:06",
     "inscrits": 88,
     "intervenant": "Monia Djillali",
@@ -158,7 +158,7 @@
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-18T12:56",
+    "derniere_maj": "2026-11-18T21:20",
     "dispo_le": null,
     "inscrits": 94,
     "intervenant": "Johanic Galode",
@@ -195,13 +195,13 @@
       ],
       [
         "2026-11-18",
-        10
+        13
       ]
     ],
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-18T12:56",
-    "dispo_le": "2026-11-18T12:56",
-    "inscrits": 10,
+    "derniere_maj": "2026-11-18T21:20",
+    "dispo_le": "2026-11-18T21:20",
+    "inscrits": 13,
     "intervenant": "Guillaume Aulanier",
     "journal": [
       [
@@ -211,7 +211,7 @@
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 4.7,
-    "places": 69,
+    "places": 66,
     "titre": "Éruptions solaires : dans la tête de l'astronome qui simule les colères du Soleil",
     "url": "https://amioclub.com/checkout?date=Lundi%207%20d%C3%A9cembre%202026&title=%C3%89ruptions%20solaires%20%3A%20dans%20la%20t%C3%AAte%20de%20l'astronome%20qui%20simule%20les%20col%C3%A8res%20du%20Soleil&event=eruptions-solaires-guillaume-aulanier&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-15T21:39"
@@ -240,10 +240,11 @@
     "vu_le": "2026-10-17T00:12"
   },
   "fonds-marins-guillaume-pitron": {
-    "alerte_seuil": true,
+    "alerte_seuil": false,
     "capacite": 79,
-    "complet": false,
-    "complet_marge_h": null,
+    "complet": true,
+    "complet_le": "2026-11-18T21:20",
+    "complet_marge_h": 8.4,
     "courbe": [
       [
         "2026-11-16",
@@ -255,13 +256,13 @@
       ],
       [
         "2026-11-18",
-        78
+        80
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-18T12:56",
+    "derniere_maj": "2026-11-18T21:20",
     "dispo_le": "2026-11-18T12:56",
-    "inscrits": 78,
+    "inscrits": 80,
     "intervenant": "Guillaume Pitron",
     "journal": [
       [
@@ -271,11 +272,15 @@
       [
         "2026-11-18T03:37",
         "dernieres-places:3"
+      ],
+      [
+        "2026-11-18T21:20",
+        "complet"
       ]
     ],
     "lieu": "Impasse bar",
     "parution_marge_h": 9.8,
-    "places": 1,
+    "places": 0,
     "titre": "Les fonds marins : nouvelle frontière du capitalisme",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Impasse%20bar%2C%204%20Cit%C3%A9%20Griset%2C%2075011%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -371,7 +376,7 @@
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-18T12:56",
+    "derniere_maj": "2026-11-18T21:20",
     "dispo_le": null,
     "inscrits": 105,
     "intervenant": "Nicolas Gmati",
@@ -450,13 +455,13 @@
       ],
       [
         "2026-11-18",
-        54
+        55
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-18T12:56",
-    "dispo_le": "2026-11-18T12:56",
-    "inscrits": 54,
+    "derniere_maj": "2026-11-18T21:20",
+    "dispo_le": "2026-11-18T21:20",
+    "inscrits": 55,
     "intervenant": "Nicolas Mahoume",
     "journal": [
       [
@@ -466,7 +471,7 @@
     ],
     "lieu": "Le Cirque",
     "parution_marge_h": 9.8,
-    "places": 25,
+    "places": 24,
     "titre": "Expédition avec la NASA : explorer Mars… depuis la Terre",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026&title=Exp%C3%A9dition%20avec%20la%20NASA%20%3A%20explorer%20Mars%E2%80%A6%20depuis%20la%20Terre&event=nasa-nicolas-mahoume&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -530,13 +535,13 @@
       ],
       [
         "2026-11-18",
-        98
+        99
       ]
     ],
     "date": "Lundi 30 novembre 2026",
-    "derniere_maj": "2026-11-18T12:56",
+    "derniere_maj": "2026-11-18T21:20",
     "dispo_le": null,
-    "inscrits": 98,
+    "inscrits": 99,
     "intervenant": "Oliveira 2",
     "journal": [
       [
@@ -617,7 +622,7 @@
       ]
     ],
     "date": "Mercredi 18 novembre 2026",
-    "derniere_maj": "2026-11-18T12:56",
+    "derniere_maj": "2026-11-18T21:20",
     "dispo_le": null,
     "inscrits": 99,
     "intervenant": "Deslandes 2",

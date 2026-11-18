@@ -43,8 +43,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Jeudi 19 novembre 2026",
-    "derniere_maj": "2026-11-18T13:26",
-    "dispo_le": "2026-11-18T13:26",
+    "derniere_maj": "2026-11-18T21:34",
+    "dispo_le": "2026-11-18T21:34",
     "intervenant": "Laurine Catillon",
     "journal": [
       [
@@ -115,23 +115,28 @@
   },
   "du-premier-echec-a-la-5e-startup-les-coulisses-d-un-serial-entrepreneur": {
     "capacite": null,
-    "complet": false,
-    "complet_marge_h": null,
+    "complet": true,
+    "complet_le": "2026-11-18T21:34",
+    "complet_marge_h": 8.1,
     "date": "Jeudi 19 novembre 2026",
-    "derniere_maj": "2026-11-18T13:26",
+    "derniere_maj": "2026-11-18T21:34",
     "dispo_le": "2026-11-18T13:26",
     "intervenant": "Maxime Blondel",
     "journal": [
       [
         "2026-11-10T20:35",
         "drop"
+      ],
+      [
+        "2026-11-18T21:34",
+        "complet"
       ]
     ],
     "lieu": "Journey",
     "parution_marge_h": 7.7,
     "ticket_id": "2004665884625",
     "titre": "Du premier échec à la 5ᵉ startup : les coulisses d’un serial entrepreneur",
-    "url": "https://www.eventbrite.fr/e/billets-how-we-built-it-maxime-blondel-2004665884625",
+    "url": "https://www.lebriefing.co/#programmation",
     "vu_le": "2026-11-10T20:35"
   },
   "expositions-universelles-a-quoi-paris-aurait-il-pu-ressembler": {
@@ -157,8 +162,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-18T13:26",
-    "dispo_le": "2026-11-18T13:26",
+    "derniere_maj": "2026-11-18T21:34",
+    "dispo_le": "2026-11-18T21:34",
     "intervenant": "Nacera Ramrajah",
     "journal": [
       [
@@ -178,8 +183,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-18T13:26",
-    "dispo_le": "2026-11-18T13:26",
+    "derniere_maj": "2026-11-18T21:34",
+    "dispo_le": "2026-11-18T21:34",
     "intervenant": null,
     "journal": [
       [
@@ -199,8 +204,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Mercredi 18 novembre 2026",
-    "derniere_maj": "2026-11-18T13:26",
-    "dispo_le": "2026-11-18T13:26",
+    "derniere_maj": "2026-11-18T21:34",
+    "dispo_le": "2026-11-18T21:34",
     "intervenant": "Florian Besson",
     "journal": [
       [
@@ -338,8 +343,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-18T13:26",
-    "dispo_le": "2026-11-18T13:26",
+    "derniere_maj": "2026-11-18T21:34",
+    "dispo_le": "2026-11-18T21:34",
     "intervenant": "Fabrice Di Vizio",
     "journal": [
       [
@@ -387,8 +392,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Jeudi 26 novembre 2026",
-    "derniere_maj": "2026-11-18T13:26",
-    "dispo_le": "2026-11-18T13:26",
+    "derniere_maj": "2026-11-18T21:34",
+    "dispo_le": "2026-11-18T21:34",
     "intervenant": "Joël Doré",
     "journal": [
       [

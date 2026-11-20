@@ -28,7 +28,7 @@
       ]
     ],
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-20T02:59",
+    "derniere_maj": "2026-11-20T11:20",
     "dispo_le": null,
     "inscrits": 86,
     "intervenant": "Juliette Hazart",
@@ -78,7 +78,7 @@
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-20T02:59",
+    "derniere_maj": "2026-11-20T11:20",
     "dispo_le": "2026-11-17T13:06",
     "inscrits": 88,
     "intervenant": "Monia Djillali",
@@ -178,13 +178,13 @@
       ],
       [
         "2026-11-20",
-        94
+        92
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-20T02:59",
+    "derniere_maj": "2026-11-20T11:20",
     "dispo_le": null,
-    "inscrits": 94,
+    "inscrits": 92,
     "intervenant": "Johanic Galode",
     "journal": [
       [
@@ -231,8 +231,8 @@
       ]
     ],
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-20T02:59",
-    "dispo_le": "2026-11-20T02:59",
+    "derniere_maj": "2026-11-20T11:20",
+    "dispo_le": "2026-11-20T11:20",
     "inscrits": 16,
     "intervenant": "Guillaume Aulanier",
     "journal": [
@@ -300,7 +300,7 @@
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-20T02:59",
+    "derniere_maj": "2026-11-20T11:20",
     "dispo_le": "2026-11-18T12:56",
     "inscrits": 84,
     "intervenant": "Guillaume Pitron",
@@ -420,13 +420,13 @@
       ],
       [
         "2026-11-20",
-        105
+        106
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-20T02:59",
+    "derniere_maj": "2026-11-20T11:20",
     "dispo_le": null,
-    "inscrits": 105,
+    "inscrits": 106,
     "intervenant": "Nicolas Gmati",
     "journal": [
       [
@@ -511,13 +511,13 @@
       ],
       [
         "2026-11-20",
-        56
+        57
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-20T02:59",
-    "dispo_le": "2026-11-20T02:59",
-    "inscrits": 56,
+    "derniere_maj": "2026-11-20T11:20",
+    "dispo_le": "2026-11-20T11:20",
+    "inscrits": 57,
     "intervenant": "Nicolas Mahoume",
     "journal": [
       [
@@ -527,7 +527,7 @@
     ],
     "lieu": "Le Cirque",
     "parution_marge_h": 9.8,
-    "places": 23,
+    "places": 22,
     "titre": "Expédition avec la NASA : explorer Mars… depuis la Terre",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026&title=Exp%C3%A9dition%20avec%20la%20NASA%20%3A%20explorer%20Mars%E2%80%A6%20depuis%20la%20Terre&event=nasa-nicolas-mahoume&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -603,7 +603,7 @@
       ]
     ],
     "date": "Lundi 30 novembre 2026",
-    "derniere_maj": "2026-11-20T02:59",
+    "derniere_maj": "2026-11-20T11:20",
     "dispo_le": null,
     "inscrits": 99,
     "intervenant": "Oliveira 2",

@@ -356,7 +356,7 @@
 "intervenant": "Johanic Galode",
 "theme": "Géopolitique & défense",
 "date_event": "2026-11-24",
-"lieu": "Bar à Paris",
+"lieu": "Upstairs Opéra",
 "parution": "2026-11-02T15:34",
 "parution_exacte": "non",
 "parution_marge_h": 9.8,
@@ -371,7 +371,7 @@
 "places_restantes": 0,
 "remplissage_pct": 100,
 "complet": "oui",
-"url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026%20%C2%B7%20D%C3%A9fense&title=Soudain%2C%20un%20retour%20de%20la%20conflictualit%C3%A9%20en%20Europe%E2%80%A6&event=defense-johanic-galode&venue=Bar%20%C3%A0%20Paris",
+"url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026%20%C2%B7%20D%C3%A9fense&title=Soudain%2C%20un%20retour%20de%20la%20conflictualit%C3%A9%20en%20Europe%E2%80%A6&event=defense-johanic-galode&venue=Upstairs%20Op%C3%A9ra%2C%205%20Rue%20Meyerbeer%2C%2075009%20Paris",
 "points_de_mesure": 5
 },
 {
@@ -467,7 +467,7 @@
 "jours_avant_complet": "",
 "rouvert_le": "",
 "capacite": 79,
-"inscrits": 99,
+"inscrits": 97,
 "places_restantes": 0,
 "remplissage_pct": 100,
 "complet": "oui",
@@ -481,7 +481,7 @@
 "intervenant": "Juliette Hazart",
 "theme": "Santé & corps",
 "date_event": "2026-12-02",
-"lieu": "Bar à Paris",
+"lieu": "3 Port de la Gare",
 "parution": "2026-11-08T19:29",
 "parution_exacte": "non",
 "parution_marge_h": 4.5,
@@ -496,7 +496,7 @@
 "places_restantes": 0,
 "remplissage_pct": 100,
 "complet": "oui",
-"url": "https://amioclub.com/checkout?date=Mercredi%202%20d%C3%A9cembre%202026&title=L'addiction%20%3A%20%C3%A7a%20commence%20quand%20%3F%20Pourquoi%20est-ce%20si%20difficile%20de%20s'arr%C3%AAter%20%3F&event=addiction-juliette-hazart&venue=Bar%20%C3%A0%20Paris",
+"url": "https://amioclub.com/checkout?date=Mercredi%202%20d%C3%A9cembre%202026&title=L'addiction%20%3A%20%C3%A7a%20commence%20quand%20%3F%20Pourquoi%20est-ce%20si%20difficile%20de%20s'arr%C3%AAter%20%3F&event=addiction-juliette-hazart&venue=3%20Port%20de%20la%20Gare%2C%2075013%20Paris#liste-attente",
 "points_de_mesure": 5
 },
 {
@@ -542,7 +542,7 @@
 "jours_avant_complet": 2.0,
 "rouvert_le": "",
 "capacite": 79,
-"inscrits": 88,
+"inscrits": 86,
 "places_restantes": 0,
 "remplissage_pct": 100,
 "complet": "oui",

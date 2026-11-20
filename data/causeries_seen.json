@@ -43,12 +43,16 @@
       [
         "2026-11-19",
         0
+      ],
+      [
+        "2026-11-20",
+        0
       ]
     ],
     "date": "Lundi 14 décembre 2026 à 19h30",
     "date_iso": "2026-12-14",
-    "derniere_maj": "2026-11-19T18:45",
-    "dispo_le": "2026-11-19T18:45",
+    "derniere_maj": "2026-11-20T00:58",
+    "dispo_le": "2026-11-20T00:58",
     "inscrits": 0,
     "intervenant": "Arnaud Zegierman",
     "journal": [
@@ -61,7 +65,7 @@
     "parution_marge_h": 9.1,
     "places": 80,
     "publie_le": "2026-11-09T12:41",
-    "specialite": null,
+    "specialite": "Sociologue, cofondateur de l'institut de sondages Viavoice",
     "titre": "La France n'est pas celle que vous croyez",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=1161884b-167d-459d-9aed-b7fdf6c8e92e",
     "vu_le": "2026-11-19T18:45"
@@ -88,12 +92,16 @@
       [
         "2026-11-19",
         79
+      ],
+      [
+        "2026-11-20",
+        79
       ]
     ],
     "date": "Lundi 23 novembre 2026 à 19h30",
     "date_iso": "2026-11-23",
-    "derniere_maj": "2026-11-19T18:45",
-    "dispo_le": "2026-11-19T18:45",
+    "derniere_maj": "2026-11-20T00:58",
+    "dispo_le": "2026-11-20T00:58",
     "inscrits": 79,
     "intervenant": "Martine Glorian",
     "journal": [
@@ -174,6 +182,39 @@
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=352fe6f2-c30c-40ce-8a2d-b60042d6e9e0",
     "vu_le": "2026-10-19T15:53"
   },
+  "3acc1f2a-bc71-4363-891e-0616a364ec85": {
+    "alerte_seuil": false,
+    "capacite": 60,
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "courbe": [
+      [
+        "2026-11-20",
+        1
+      ]
+    ],
+    "date": "Mercredi 2 décembre 2026 à 19h30",
+    "date_iso": "2026-12-02",
+    "derniere_maj": "2026-11-20T00:58",
+    "dispo_le": "2026-11-20T00:58",
+    "inscrits": 1,
+    "intervenant": "Pierre Martinet",
+    "journal": [
+      [
+        "2026-11-20T00:58",
+        "drop"
+      ]
+    ],
+    "lieu": "Le Cabaret Gaïté",
+    "parution_marge_h": 6.2,
+    "places": 59,
+    "publie_le": "2026-11-02T12:27",
+    "specialite": "Ancien agent du Service Action de la DGSE, ex-otage en Libye",
+    "titre": "Dans la peau d'un espion : faux papiers, missions clandestines et prise d'otage",
+    "url": "https://causeriesdecomptoir.fr/reservation?eventId=3acc1f2a-bc71-4363-891e-0616a364ec85",
+    "vu_le": "2026-11-20T00:58"
+  },
   "3f2d18e4-f695-411c-83f7-cae1f961b5f3": {
     "alerte_seuil": false,
     "capacite": 75,
@@ -196,11 +237,15 @@
       [
         "2026-11-19",
         75
+      ],
+      [
+        "2026-11-20",
+        75
       ]
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-19T18:45",
+    "derniere_maj": "2026-11-20T00:58",
     "dispo_le": "2026-10-23T18:49",
     "inscrits": 75,
     "intervenant": "Baptiste Bellet",
@@ -242,13 +287,17 @@
       [
         "2026-11-19",
         0
+      ],
+      [
+        "2026-11-20",
+        1
       ]
     ],
     "date": "Mardi 8 décembre 2026 à 19h30",
     "date_iso": "2026-12-08",
-    "derniere_maj": "2026-11-19T18:45",
-    "dispo_le": "2026-11-19T18:45",
-    "inscrits": 0,
+    "derniere_maj": "2026-11-20T00:58",
+    "dispo_le": "2026-11-20T00:58",
+    "inscrits": 1,
     "intervenant": "Johann Gironnet",
     "journal": [
       [
@@ -258,9 +307,9 @@
     ],
     "lieu": "La Rotonde Stalingrad",
     "parution_marge_h": 9.1,
-    "places": 100,
+    "places": 99,
     "publie_le": "2026-11-09T10:50",
-    "specialite": null,
+    "specialite": "Docteur en astrophysique, ingénieur de recherche au CNRS",
     "titre": "Et si les trous noirs n'étaient pas des monstres ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=59ab7db2-72b5-400c-8799-bff8e9911c97",
     "vu_le": "2026-11-19T18:45"
@@ -287,11 +336,15 @@
       [
         "2026-11-19",
         75
+      ],
+      [
+        "2026-11-20",
+        75
       ]
     ],
     "date": "Mardi 24 novembre 2026 à 19h30",
     "date_iso": "2026-11-24",
-    "derniere_maj": "2026-11-19T18:45",
+    "derniere_maj": "2026-11-20T00:58",
     "dispo_le": "2026-10-23T13:58",
     "inscrits": 75,
     "intervenant": "Grégor Ozbolt",
@@ -349,13 +402,17 @@
       [
         "2026-11-19",
         0
+      ],
+      [
+        "2026-11-20",
+        1
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-19T18:45",
-    "dispo_le": "2026-11-19T18:45",
-    "inscrits": 0,
+    "derniere_maj": "2026-11-20T00:58",
+    "dispo_le": "2026-11-20T00:58",
+    "inscrits": 1,
     "intervenant": "Alexandre Macé Dubois",
     "journal": [
       [
@@ -365,12 +422,45 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 80,
+    "places": 79,
     "publie_le": "2026-11-06T10:58",
     "specialite": "Journaliste infiltré, rédacteur en chef adjoint à France Télévisions, un an aux côtés d'un trafiquant de cocaïne",
     "titre": "Profession dealer : un an en immersion avec un trafiquant de drogue",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=73ae36f7-a08a-4c35-906b-b2605951cd32",
     "vu_le": "2026-11-19T18:45"
+  },
+  "99d8de39-0004-4487-9bfc-29606dad24f1": {
+    "alerte_seuil": false,
+    "capacite": 70,
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "courbe": [
+      [
+        "2026-11-20",
+        0
+      ]
+    ],
+    "date": "Lundi 7 décembre 2026 à 19h30",
+    "date_iso": "2026-12-07",
+    "derniere_maj": "2026-11-20T00:58",
+    "dispo_le": "2026-11-20T00:58",
+    "inscrits": 0,
+    "intervenant": "Camille Renoux",
+    "journal": [
+      [
+        "2026-11-20T00:58",
+        "drop"
+      ]
+    ],
+    "lieu": "Bistouille",
+    "parution_marge_h": 6.2,
+    "places": 70,
+    "publie_le": "2026-11-09T12:00",
+    "specialite": "Astrologue, fondatrice du Club Lunaire",
+    "titre": "Pourquoi une astrologue ne croit-elle pas aux horoscopes ?",
+    "url": "https://causeriesdecomptoir.fr/reservation?eventId=99d8de39-0004-4487-9bfc-29606dad24f1",
+    "vu_le": "2026-11-20T00:58"
   },
   "9ca1cb44-555b-4545-b8df-2dfcfbe3a322": {
     "alerte_seuil": false,
@@ -394,11 +484,15 @@
       [
         "2026-11-19",
         80
+      ],
+      [
+        "2026-11-20",
+        80
       ]
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-19T18:45",
+    "derniere_maj": "2026-11-20T00:58",
     "dispo_le": "2026-11-17T09:57",
     "inscrits": 80,
     "intervenant": "Xavier Leflaive",
@@ -456,13 +550,17 @@
       [
         "2026-11-19",
         0
+      ],
+      [
+        "2026-11-20",
+        1
       ]
     ],
     "date": "Mardi 22 décembre 2026 à 19h30",
     "date_iso": "2026-12-22",
-    "derniere_maj": "2026-11-19T18:45",
-    "dispo_le": "2026-11-19T18:45",
-    "inscrits": 0,
+    "derniere_maj": "2026-11-20T00:58",
+    "dispo_le": "2026-11-20T00:58",
+    "inscrits": 1,
     "intervenant": "Cyril Lobjois",
     "journal": [
       [
@@ -472,7 +570,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 9.1,
-    "places": 75,
+    "places": 74,
     "publie_le": "2026-11-09T12:37",
     "specialite": "Expert en communication non verbale, 100 000 abonnés autour de l'analyse comportementale",
     "titre": "Votre corps vous trahit-il ?",
@@ -489,12 +587,16 @@
       [
         "2026-11-19",
         0
+      ],
+      [
+        "2026-11-20",
+        0
       ]
     ],
     "date": "Mardi 15 décembre 2026 à 19h30",
     "date_iso": "2026-12-15",
-    "derniere_maj": "2026-11-19T18:45",
-    "dispo_le": "2026-11-19T18:45",
+    "derniere_maj": "2026-11-20T00:58",
+    "dispo_le": "2026-11-20T00:58",
     "inscrits": 0,
     "intervenant": "Yannick Lejeune",
     "journal": [
@@ -507,10 +609,76 @@
     "parution_marge_h": 9.1,
     "places": 100,
     "publie_le": "2026-11-09T12:42",
-    "specialite": null,
+    "specialite": "Directeur du digital et de l'IA du groupe IONIS (27 écoles, 35 000 étudiants)",
     "titre": "Pourquoi apprendre quand l'IA sait déjà tout ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=d3ceefa9-9b66-4ff4-9ba7-55ddcd19fb3c",
     "vu_le": "2026-11-19T18:45"
+  },
+  "d77b94b6-134b-4a6a-a3e3-f2962481f018": {
+    "alerte_seuil": false,
+    "capacite": 75,
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "courbe": [
+      [
+        "2026-11-20",
+        0
+      ]
+    ],
+    "date": "Dimanche 13 décembre 2026 à 18h00",
+    "date_iso": "2026-12-13",
+    "derniere_maj": "2026-11-20T00:58",
+    "dispo_le": "2026-11-20T00:58",
+    "inscrits": 0,
+    "intervenant": "Carole ANDRE-DESSORNES",
+    "journal": [
+      [
+        "2026-11-20T00:58",
+        "drop"
+      ]
+    ],
+    "lieu": "Kawaa du Lucernaire",
+    "parution_marge_h": 6.2,
+    "places": 75,
+    "publie_le": "2026-11-02T12:25",
+    "specialite": "Géopolitologue, chercheuse associée à la Fondation pour la recherche stratégique",
+    "titre": "D'où vient vraiment le chaos au Moyen-Orient ?",
+    "url": "https://causeriesdecomptoir.fr/reservation?eventId=d77b94b6-134b-4a6a-a3e3-f2962481f018",
+    "vu_le": "2026-11-20T00:58"
+  },
+  "da2f80de-faaf-4061-a9ed-036cd4daf0ff": {
+    "alerte_seuil": false,
+    "capacite": 75,
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "courbe": [
+      [
+        "2026-11-20",
+        0
+      ]
+    ],
+    "date": "Dimanche 6 décembre 2026 à 18h00",
+    "date_iso": "2026-12-06",
+    "derniere_maj": "2026-11-20T00:58",
+    "dispo_le": "2026-11-20T00:58",
+    "inscrits": 0,
+    "intervenant": "Jérémy Côme",
+    "journal": [
+      [
+        "2026-11-20T00:58",
+        "drop"
+      ]
+    ],
+    "lieu": "Kawaa du Lucernaire",
+    "parution_marge_h": 6.2,
+    "places": 75,
+    "publie_le": "2026-11-06T10:58",
+    "specialite": "Chroniqueur savoir-vivre sur France 2 et Europe 1, auteur des « Secrets de Monsieur Bonnes Manières » (Fayard)",
+    "titre": "Faut-il encore avoir de bonnes manières ?",
+    "url": "https://causeriesdecomptoir.fr/reservation?eventId=da2f80de-faaf-4061-a9ed-036cd4daf0ff",
+    "vu_le": "2026-11-20T00:58"
   },
   "da856edc-c465-4131-a73b-5bb42898afb6": {
     "alerte_seuil": false,

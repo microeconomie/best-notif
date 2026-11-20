@@ -1122,7 +1122,7 @@
 "remplissage_pct": 99,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=1e1f1b6f-c875-42e3-91f4-596640dc9184",
-"points_de_mesure": 4
+"points_de_mesure": 5
 },
 {
 "id": "causeries-de-comptoir--5f2d0447-76f0-4fbb-b841-e359160c9e4f",
@@ -1147,7 +1147,7 @@
 "remplissage_pct": 100,
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=5f2d0447-76f0-4fbb-b841-e359160c9e4f",
-"points_de_mesure": 4
+"points_de_mesure": 5
 },
 {
 "id": "causeries-de-comptoir--3f2d18e4-f695-411c-83f7-cae1f961b5f3",
@@ -1172,7 +1172,7 @@
 "remplissage_pct": 100,
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=3f2d18e4-f695-411c-83f7-cae1f961b5f3",
-"points_de_mesure": 4
+"points_de_mesure": 5
 },
 {
 "id": "causeries-de-comptoir--9ca1cb44-555b-4545-b8df-2dfcfbe3a322",
@@ -1197,7 +1197,57 @@
 "remplissage_pct": 100,
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=9ca1cb44-555b-4545-b8df-2dfcfbe3a322",
-"points_de_mesure": 4
+"points_de_mesure": 5
+},
+{
+"id": "causeries-de-comptoir--3acc1f2a-bc71-4363-891e-0616a364ec85",
+"organisateur": "Causeries de Comptoir",
+"titre": "Dans la peau d'un espion : faux papiers, missions clandestines et prise d'otage",
+"intervenant": "Pierre Martinet",
+"theme": "Géopolitique & défense",
+"date_event": "2026-12-02",
+"lieu": "Le Cabaret Gaïté",
+"parution": "2026-11-02T12:27",
+"parution_exacte": "oui",
+"parution_marge_h": 0,
+"parution_date_sure": "oui",
+"complet_le": "",
+"complet_marge_h": "",
+"complet_date_sure": "",
+"jours_avant_complet": "",
+"rouvert_le": "",
+"capacite": 60,
+"inscrits": 1,
+"places_restantes": 59,
+"remplissage_pct": 2,
+"complet": "non",
+"url": "https://causeriesdecomptoir.fr/reservation?eventId=3acc1f2a-bc71-4363-891e-0616a364ec85",
+"points_de_mesure": 1
+},
+{
+"id": "causeries-de-comptoir--da2f80de-faaf-4061-a9ed-036cd4daf0ff",
+"organisateur": "Causeries de Comptoir",
+"titre": "Faut-il encore avoir de bonnes manières ?",
+"intervenant": "Jérémy Côme",
+"theme": "Autre",
+"date_event": "2026-12-06",
+"lieu": "Kawaa du Lucernaire",
+"parution": "2026-11-06T10:58",
+"parution_exacte": "oui",
+"parution_marge_h": 0,
+"parution_date_sure": "oui",
+"complet_le": "",
+"complet_marge_h": "",
+"complet_date_sure": "",
+"jours_avant_complet": "",
+"rouvert_le": "",
+"capacite": 75,
+"inscrits": 0,
+"places_restantes": 75,
+"remplissage_pct": 0,
+"complet": "non",
+"url": "https://causeriesdecomptoir.fr/reservation?eventId=da2f80de-faaf-4061-a9ed-036cd4daf0ff",
+"points_de_mesure": 1
 },
 {
 "id": "causeries-de-comptoir--73ae36f7-a08a-4c35-906b-b2605951cd32",
@@ -1217,11 +1267,36 @@
 "jours_avant_complet": "",
 "rouvert_le": "",
 "capacite": 80,
-"inscrits": 0,
-"places_restantes": 80,
-"remplissage_pct": 0,
+"inscrits": 1,
+"places_restantes": 79,
+"remplissage_pct": 1,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=73ae36f7-a08a-4c35-906b-b2605951cd32",
+"points_de_mesure": 2
+},
+{
+"id": "causeries-de-comptoir--99d8de39-0004-4487-9bfc-29606dad24f1",
+"organisateur": "Causeries de Comptoir",
+"titre": "Pourquoi une astrologue ne croit-elle pas aux horoscopes ?",
+"intervenant": "Camille Renoux",
+"theme": "Autre",
+"date_event": "2026-12-07",
+"lieu": "Bistouille",
+"parution": "2026-11-09T12:00",
+"parution_exacte": "oui",
+"parution_marge_h": 0,
+"parution_date_sure": "oui",
+"complet_le": "",
+"complet_marge_h": "",
+"complet_date_sure": "",
+"jours_avant_complet": "",
+"rouvert_le": "",
+"capacite": 70,
+"inscrits": 0,
+"places_restantes": 70,
+"remplissage_pct": 0,
+"complet": "non",
+"url": "https://causeriesdecomptoir.fr/reservation?eventId=99d8de39-0004-4487-9bfc-29606dad24f1",
 "points_de_mesure": 1
 },
 {
@@ -1229,7 +1304,7 @@
 "organisateur": "Causeries de Comptoir",
 "titre": "Et si les trous noirs n'étaient pas des monstres ?",
 "intervenant": "Johann Gironnet",
-"theme": "Autre",
+"theme": "Sciences & espace",
 "date_event": "2026-12-08",
 "lieu": "La Rotonde Stalingrad",
 "parution": "2026-11-09T10:50",
@@ -1242,11 +1317,36 @@
 "jours_avant_complet": "",
 "rouvert_le": "",
 "capacite": 100,
-"inscrits": 0,
-"places_restantes": 100,
-"remplissage_pct": 0,
+"inscrits": 1,
+"places_restantes": 99,
+"remplissage_pct": 1,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=59ab7db2-72b5-400c-8799-bff8e9911c97",
+"points_de_mesure": 2
+},
+{
+"id": "causeries-de-comptoir--d77b94b6-134b-4a6a-a3e3-f2962481f018",
+"organisateur": "Causeries de Comptoir",
+"titre": "D'où vient vraiment le chaos au Moyen-Orient ?",
+"intervenant": "Carole ANDRE-DESSORNES",
+"theme": "Géopolitique & défense",
+"date_event": "2026-12-13",
+"lieu": "Kawaa du Lucernaire",
+"parution": "2026-11-02T12:25",
+"parution_exacte": "oui",
+"parution_marge_h": 0,
+"parution_date_sure": "oui",
+"complet_le": "",
+"complet_marge_h": "",
+"complet_date_sure": "",
+"jours_avant_complet": "",
+"rouvert_le": "",
+"capacite": 75,
+"inscrits": 0,
+"places_restantes": 75,
+"remplissage_pct": 0,
+"complet": "non",
+"url": "https://causeriesdecomptoir.fr/reservation?eventId=d77b94b6-134b-4a6a-a3e3-f2962481f018",
 "points_de_mesure": 1
 },
 {
@@ -1272,7 +1372,7 @@
 "remplissage_pct": 0,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=1161884b-167d-459d-9aed-b7fdf6c8e92e",
-"points_de_mesure": 1
+"points_de_mesure": 2
 },
 {
 "id": "causeries-de-comptoir--d3ceefa9-9b66-4ff4-9ba7-55ddcd19fb3c",
@@ -1297,7 +1397,7 @@
 "remplissage_pct": 0,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=d3ceefa9-9b66-4ff4-9ba7-55ddcd19fb3c",
-"points_de_mesure": 1
+"points_de_mesure": 2
 },
 {
 "id": "causeries-de-comptoir--c2e7f14f-4dcf-475c-8b30-233e124bed22",
@@ -1317,12 +1417,12 @@
 "jours_avant_complet": "",
 "rouvert_le": "",
 "capacite": 75,
-"inscrits": 0,
-"places_restantes": 75,
-"remplissage_pct": 0,
+"inscrits": 1,
+"places_restantes": 74,
+"remplissage_pct": 1,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=c2e7f14f-4dcf-475c-8b30-233e124bed22",
-"points_de_mesure": 1
+"points_de_mesure": 2
 },
 {
 "id": "le-briefing--paris-comment-s-est-elle-batie-comment-va-t-elle-evoluer",

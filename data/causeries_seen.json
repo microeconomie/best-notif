@@ -50,14 +50,14 @@
       ],
       [
         "2026-11-21",
-        3
+        4
       ]
     ],
     "date": "Lundi 14 décembre 2026 à 19h30",
     "date_iso": "2026-12-14",
-    "derniere_maj": "2026-11-21T15:57",
-    "dispo_le": "2026-11-21T15:57",
-    "inscrits": 3,
+    "derniere_maj": "2026-11-21T21:57",
+    "dispo_le": "2026-11-21T21:57",
+    "inscrits": 4,
     "intervenant": "Arnaud Zegierman",
     "journal": [
       [
@@ -67,7 +67,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 77,
+    "places": 76,
     "publie_le": "2026-11-09T12:41",
     "specialite": "Sociologue, cofondateur de l'institut de sondages Viavoice",
     "titre": "La France n'est pas celle que vous croyez",
@@ -75,9 +75,9 @@
     "vu_le": "2026-11-19T18:45"
   },
   "1e1f1b6f-c875-42e3-91f4-596640dc9184": {
-    "alerte_seuil": true,
+    "alerte_seuil": false,
     "capacite": 82,
-    "complet": false,
+    "complet": true,
     "complet_le": "2026-11-10T17:24",
     "complet_marge_h": 0.0,
     "courbe": [
@@ -103,14 +103,14 @@
       ],
       [
         "2026-11-21",
-        81
+        82
       ]
     ],
     "date": "Lundi 23 novembre 2026 à 19h30",
     "date_iso": "2026-11-23",
-    "derniere_maj": "2026-11-21T15:57",
+    "derniere_maj": "2026-11-21T21:57",
     "dispo_le": "2026-11-21T15:57",
-    "inscrits": 81,
+    "inscrits": 82,
     "intervenant": "Martine Glorian",
     "journal": [
       [
@@ -140,11 +140,15 @@
       [
         "2026-11-20T18:12",
         "dernieres-places:3"
+      ],
+      [
+        "2026-11-21T21:57",
+        "complet"
       ]
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 4.8,
-    "places": 1,
+    "places": 0,
     "publie_le": "2026-10-12T09:34",
     "rouvert_le": "2026-11-20T18:12",
     "specialite": "Maîtresse de conférences à Sorbonne Université, chercheuse sur les maladies cardiovasculaires",
@@ -215,14 +219,14 @@
       ],
       [
         "2026-11-21",
-        58
+        66
       ]
     ],
     "date": "Mercredi 2 décembre 2026 à 19h30",
     "date_iso": "2026-12-02",
-    "derniere_maj": "2026-11-21T15:57",
-    "dispo_le": "2026-11-21T15:57",
-    "inscrits": 58,
+    "derniere_maj": "2026-11-21T21:57",
+    "dispo_le": "2026-11-21T21:57",
+    "inscrits": 66,
     "intervenant": "Pierre Martinet",
     "journal": [
       [
@@ -232,7 +236,7 @@
     ],
     "lieu": "Le Cabaret Gaïté",
     "parution_marge_h": 6.2,
-    "places": 42,
+    "places": 34,
     "publie_le": "2026-11-02T12:27",
     "specialite": "Ancien agent du Service Action de la DGSE, ex-otage en Libye",
     "titre": "Dans la peau d'un espion : faux papiers, missions clandestines et prise d'otage",
@@ -273,7 +277,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-21T15:57",
+    "derniere_maj": "2026-11-21T21:57",
     "dispo_le": "2026-10-23T18:49",
     "inscrits": 75,
     "intervenant": "Baptiste Bellet",
@@ -327,8 +331,8 @@
     ],
     "date": "Mardi 8 décembre 2026 à 19h30",
     "date_iso": "2026-12-08",
-    "derniere_maj": "2026-11-21T15:57",
-    "dispo_le": "2026-11-21T15:57",
+    "derniere_maj": "2026-11-21T21:57",
+    "dispo_le": "2026-11-21T21:57",
     "inscrits": 7,
     "intervenant": "Johann Gironnet",
     "journal": [
@@ -380,7 +384,7 @@
     ],
     "date": "Mardi 24 novembre 2026 à 19h30",
     "date_iso": "2026-11-24",
-    "derniere_maj": "2026-11-21T15:57",
+    "derniere_maj": "2026-11-21T21:57",
     "dispo_le": "2026-10-23T13:58",
     "inscrits": 75,
     "intervenant": "Grégor Ozbolt",
@@ -445,14 +449,14 @@
       ],
       [
         "2026-11-21",
-        12
+        13
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-21T15:57",
-    "dispo_le": "2026-11-21T15:57",
-    "inscrits": 12,
+    "derniere_maj": "2026-11-21T21:57",
+    "dispo_le": "2026-11-21T21:57",
+    "inscrits": 13,
     "intervenant": "Alexandre Macé Dubois",
     "journal": [
       [
@@ -462,7 +466,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 68,
+    "places": 67,
     "publie_le": "2026-11-06T10:58",
     "specialite": "Journaliste indépendant, infiltré un an aux côtés d'un trafiquant de cocaïne",
     "titre": "Profession dealer : un an en immersion avec un trafiquant de drogue",
@@ -487,8 +491,8 @@
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-21T15:57",
-    "dispo_le": "2026-11-21T15:57",
+    "derniere_maj": "2026-11-21T21:57",
+    "dispo_le": "2026-11-21T21:57",
     "inscrits": 8,
     "intervenant": "Camille Renoux",
     "journal": [
@@ -540,7 +544,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-21T15:57",
+    "derniere_maj": "2026-11-21T21:57",
     "dispo_le": "2026-11-17T09:57",
     "inscrits": 80,
     "intervenant": "Xavier Leflaive",
@@ -605,14 +609,14 @@
       ],
       [
         "2026-11-21",
-        16
+        19
       ]
     ],
     "date": "Mardi 22 décembre 2026 à 19h30",
     "date_iso": "2026-12-22",
-    "derniere_maj": "2026-11-21T15:57",
-    "dispo_le": "2026-11-21T15:57",
-    "inscrits": 16,
+    "derniere_maj": "2026-11-21T21:57",
+    "dispo_le": "2026-11-21T21:57",
+    "inscrits": 19,
     "intervenant": "Cyril Lobjois",
     "journal": [
       [
@@ -622,7 +626,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 9.1,
-    "places": 59,
+    "places": 56,
     "publie_le": "2026-11-09T12:37",
     "specialite": "Expert en communication non verbale, 100 000 abonnés autour de l'analyse comportementale",
     "titre": "Votre corps vous trahit-il ?",
@@ -646,14 +650,14 @@
       ],
       [
         "2026-11-21",
-        52
+        54
       ]
     ],
     "date": "Mardi 15 décembre 2026 à 19h30",
     "date_iso": "2026-12-15",
-    "derniere_maj": "2026-11-21T15:57",
-    "dispo_le": "2026-11-21T15:57",
-    "inscrits": 52,
+    "derniere_maj": "2026-11-21T21:57",
+    "dispo_le": "2026-11-21T21:57",
+    "inscrits": 54,
     "intervenant": "Yannick Lejeune",
     "journal": [
       [
@@ -663,7 +667,7 @@
     ],
     "lieu": "La Rotonde Stalingrad",
     "parution_marge_h": 9.1,
-    "places": 48,
+    "places": 46,
     "publie_le": "2026-11-09T12:42",
     "specialite": "Directeur du digital et de l'IA du groupe IONIS (27 écoles, 35 000 étudiants)",
     "titre": "Pourquoi apprendre quand l'IA sait déjà tout ?",
@@ -688,8 +692,8 @@
     ],
     "date": "Dimanche 13 décembre 2026 à 18h00",
     "date_iso": "2026-12-13",
-    "derniere_maj": "2026-11-21T15:57",
-    "dispo_le": "2026-11-21T15:57",
+    "derniere_maj": "2026-11-21T21:57",
+    "dispo_le": "2026-11-21T21:57",
     "inscrits": 15,
     "intervenant": "Carole ANDRE-DESSORNES",
     "journal": [
@@ -725,8 +729,8 @@
     ],
     "date": "Dimanche 6 décembre 2026 à 18h00",
     "date_iso": "2026-12-06",
-    "derniere_maj": "2026-11-21T15:57",
-    "dispo_le": "2026-11-21T15:57",
+    "derniere_maj": "2026-11-21T21:57",
+    "dispo_le": "2026-11-21T21:57",
     "inscrits": 9,
     "intervenant": "Jérémy Côme",
     "journal": [

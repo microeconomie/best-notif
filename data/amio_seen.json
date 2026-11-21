@@ -25,10 +25,14 @@
       [
         "2026-11-20",
         86
+      ],
+      [
+        "2026-11-21",
+        86
       ]
     ],
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-20T19:58",
+    "derniere_maj": "2026-11-21T01:23",
     "dispo_le": null,
     "inscrits": 86,
     "intervenant": "Juliette Hazart",
@@ -75,12 +79,16 @@
       [
         "2026-11-20",
         86
+      ],
+      [
+        "2026-11-21",
+        88
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-20T19:58",
+    "derniere_maj": "2026-11-21T01:23",
     "dispo_le": "2026-11-17T13:06",
-    "inscrits": 86,
+    "inscrits": 88,
     "intervenant": "Monia Djillali",
     "journal": [
       [
@@ -179,12 +187,16 @@
       [
         "2026-11-20",
         92
+      ],
+      [
+        "2026-11-21",
+        91
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-20T19:58",
+    "derniere_maj": "2026-11-21T01:23",
     "dispo_le": null,
-    "inscrits": 92,
+    "inscrits": 91,
     "intervenant": "Johanic Galode",
     "journal": [
       [
@@ -228,11 +240,15 @@
       [
         "2026-11-20",
         16
+      ],
+      [
+        "2026-11-21",
+        16
       ]
     ],
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-20T19:58",
-    "dispo_le": "2026-11-20T19:58",
+    "derniere_maj": "2026-11-21T01:23",
+    "dispo_le": "2026-11-21T01:23",
     "inscrits": 16,
     "intervenant": "Guillaume Aulanier",
     "journal": [
@@ -297,10 +313,14 @@
       [
         "2026-11-20",
         84
+      ],
+      [
+        "2026-11-21",
+        84
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-20T19:58",
+    "derniere_maj": "2026-11-21T01:23",
     "dispo_le": "2026-11-18T12:56",
     "inscrits": 84,
     "intervenant": "Guillaume Pitron",
@@ -421,10 +441,14 @@
       [
         "2026-11-20",
         106
+      ],
+      [
+        "2026-11-21",
+        106
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-20T19:58",
+    "derniere_maj": "2026-11-21T01:23",
     "dispo_le": null,
     "inscrits": 106,
     "intervenant": "Nicolas Gmati",
@@ -512,11 +536,15 @@
       [
         "2026-11-20",
         57
+      ],
+      [
+        "2026-11-21",
+        57
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-20T19:58",
-    "dispo_le": "2026-11-20T19:58",
+    "derniere_maj": "2026-11-21T01:23",
+    "dispo_le": "2026-11-21T01:23",
     "inscrits": 57,
     "intervenant": "Nicolas Mahoume",
     "journal": [
@@ -600,12 +628,16 @@
       [
         "2026-11-20",
         97
+      ],
+      [
+        "2026-11-21",
+        99
       ]
     ],
     "date": "Lundi 30 novembre 2026",
-    "derniere_maj": "2026-11-20T19:58",
+    "derniere_maj": "2026-11-21T01:23",
     "dispo_le": null,
-    "inscrits": 97,
+    "inscrits": 99,
     "intervenant": "Oliveira 2",
     "journal": [
       [

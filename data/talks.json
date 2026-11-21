@@ -1122,7 +1122,7 @@
 "remplissage_pct": 96,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=1e1f1b6f-c875-42e3-91f4-596640dc9184",
-"points_de_mesure": 5
+"points_de_mesure": 6
 },
 {
 "id": "causeries-de-comptoir--5f2d0447-76f0-4fbb-b841-e359160c9e4f",
@@ -1147,7 +1147,7 @@
 "remplissage_pct": 100,
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=5f2d0447-76f0-4fbb-b841-e359160c9e4f",
-"points_de_mesure": 5
+"points_de_mesure": 6
 },
 {
 "id": "causeries-de-comptoir--3f2d18e4-f695-411c-83f7-cae1f961b5f3",
@@ -1172,7 +1172,7 @@
 "remplissage_pct": 100,
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=3f2d18e4-f695-411c-83f7-cae1f961b5f3",
-"points_de_mesure": 5
+"points_de_mesure": 6
 },
 {
 "id": "causeries-de-comptoir--9ca1cb44-555b-4545-b8df-2dfcfbe3a322",
@@ -1197,7 +1197,7 @@
 "remplissage_pct": 100,
 "complet": "oui",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=9ca1cb44-555b-4545-b8df-2dfcfbe3a322",
-"points_de_mesure": 5
+"points_de_mesure": 6
 },
 {
 "id": "causeries-de-comptoir--3acc1f2a-bc71-4363-891e-0616a364ec85",
@@ -1217,12 +1217,12 @@
 "jours_avant_complet": "",
 "rouvert_le": "",
 "capacite": 100,
-"inscrits": 43,
-"places_restantes": 57,
-"remplissage_pct": 43,
+"inscrits": 49,
+"places_restantes": 51,
+"remplissage_pct": 49,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=3acc1f2a-bc71-4363-891e-0616a364ec85",
-"points_de_mesure": 1
+"points_de_mesure": 2
 },
 {
 "id": "causeries-de-comptoir--da2f80de-faaf-4061-a9ed-036cd4daf0ff",
@@ -1247,7 +1247,7 @@
 "remplissage_pct": 5,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=da2f80de-faaf-4061-a9ed-036cd4daf0ff",
-"points_de_mesure": 1
+"points_de_mesure": 2
 },
 {
 "id": "causeries-de-comptoir--73ae36f7-a08a-4c35-906b-b2605951cd32",
@@ -1267,12 +1267,12 @@
 "jours_avant_complet": "",
 "rouvert_le": "",
 "capacite": 80,
-"inscrits": 7,
-"places_restantes": 73,
-"remplissage_pct": 9,
+"inscrits": 10,
+"places_restantes": 70,
+"remplissage_pct": 12,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=73ae36f7-a08a-4c35-906b-b2605951cd32",
-"points_de_mesure": 2
+"points_de_mesure": 3
 },
 {
 "id": "causeries-de-comptoir--99d8de39-0004-4487-9bfc-29606dad24f1",
@@ -1297,7 +1297,7 @@
 "remplissage_pct": 9,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=99d8de39-0004-4487-9bfc-29606dad24f1",
-"points_de_mesure": 1
+"points_de_mesure": 2
 },
 {
 "id": "causeries-de-comptoir--59ab7db2-72b5-400c-8799-bff8e9911c97",
@@ -1317,12 +1317,12 @@
 "jours_avant_complet": "",
 "rouvert_le": "",
 "capacite": 100,
-"inscrits": 6,
-"places_restantes": 94,
-"remplissage_pct": 6,
+"inscrits": 7,
+"places_restantes": 93,
+"remplissage_pct": 7,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=59ab7db2-72b5-400c-8799-bff8e9911c97",
-"points_de_mesure": 2
+"points_de_mesure": 3
 },
 {
 "id": "causeries-de-comptoir--d77b94b6-134b-4a6a-a3e3-f2962481f018",
@@ -1342,12 +1342,12 @@
 "jours_avant_complet": "",
 "rouvert_le": "",
 "capacite": 75,
-"inscrits": 7,
-"places_restantes": 68,
-"remplissage_pct": 9,
+"inscrits": 11,
+"places_restantes": 64,
+"remplissage_pct": 15,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=d77b94b6-134b-4a6a-a3e3-f2962481f018",
-"points_de_mesure": 1
+"points_de_mesure": 2
 },
 {
 "id": "causeries-de-comptoir--1161884b-167d-459d-9aed-b7fdf6c8e92e",
@@ -1372,7 +1372,7 @@
 "remplissage_pct": 1,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=1161884b-167d-459d-9aed-b7fdf6c8e92e",
-"points_de_mesure": 2
+"points_de_mesure": 3
 },
 {
 "id": "causeries-de-comptoir--d3ceefa9-9b66-4ff4-9ba7-55ddcd19fb3c",
@@ -1397,7 +1397,7 @@
 "remplissage_pct": 52,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=d3ceefa9-9b66-4ff4-9ba7-55ddcd19fb3c",
-"points_de_mesure": 2
+"points_de_mesure": 3
 },
 {
 "id": "causeries-de-comptoir--c2e7f14f-4dcf-475c-8b30-233e124bed22",
@@ -1422,7 +1422,7 @@
 "remplissage_pct": 13,
 "complet": "non",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=c2e7f14f-4dcf-475c-8b30-233e124bed22",
-"points_de_mesure": 2
+"points_de_mesure": 3
 },
 {
 "id": "le-briefing--paris-comment-s-est-elle-batie-comment-va-t-elle-evoluer",

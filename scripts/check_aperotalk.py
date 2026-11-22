@@ -9,6 +9,7 @@ comme complet. On lit donc désormais toutes les cartes.
 
 Shotgun ne publie aucun nombre de places, seulement un état binaire.
 """
+import json
 import os
 import re
 import sys
@@ -66,6 +67,55 @@ def recuperer(page):
     return len(reperes), evenements
 
 
+LD = re.compile(r'<script type="application/ld\+json"[^>]*>(.*?)</script>', re.S)
+AVEC = re.compile(r"[Aa]vec ([A-ZÉÈÊÀÂÎÔÛÇ][^,\n.;]{2,40})")
+
+
+def fiche_shotgun(url):
+    """Titre, date, lieu et intervenant, lus dans les données structurées.
+
+    La page de billetterie expose un bloc schema.org complet, et le garde
+    après la soirée. C'est la seule trace qui reste des talks enregistrés par
+    la première version de ce script, qui ne retenait que leur lien.
+    """
+    for brut in LD.findall(v.fetch(url, essais=2)):
+        try:
+            donnees = json.loads(brut)
+        except ValueError:
+            continue
+        if "Event" not in str(donnees.get("@type", "")):
+            continue
+        intervenant = AVEC.search(donnees.get("description") or "")
+        return {
+            "titre": v.propre(donnees.get("name") or ""),
+            "date_iso": (donnees.get("startDate") or "")[:10],
+            "lieu": v.propre((donnees.get("location") or {}).get("name") or "")[:60],
+            "intervenant": v.propre(intervenant.group(1)) if intervenant else None,
+        }
+    return None
+
+
+def completer_fiches(etat, limite=10):
+    """Rhabille les fiches sans date à partir de leur page Shotgun."""
+    nues = [c for c, f in etat.items()
+            if f.get("url") and not f.get("date") and not f.get("date_iso")][:limite]
+    rhabillees = 0
+    for cle in nues:
+        fiche = etat[cle]
+        try:
+            trouve = fiche_shotgun(fiche["url"])
+        except Exception as erreur:
+            print(f"Shotgun illisible pour {cle} ({type(erreur).__name__}).", file=sys.stderr)
+            continue
+        if not trouve or not trouve["date_iso"]:
+            continue
+        for champ, valeur in trouve.items():
+            if valeur:
+                fiche[champ] = valeur
+        rhabillees += 1
+    return rhabillees
+
+
 def main():
     total, trouves = recuperer(v.fetch(PAGE))
     if not trouves:
@@ -76,7 +126,10 @@ def main():
     premier = etat is None
     etat = etat or {}
     nouveaux, rouverts, _ = v.fusionner(etat, trouves, premier_passage=premier)
+    rhabillees = completer_fiches(etat)
     v.sauver(ETAT, etat)
+    if rhabillees:
+        print(f"{rhabillees} fiches anciennes complétées depuis Shotgun.")
 
     if premier:
         print(f"Initialisation : {len(trouves)} talks enregistrés, aucune alerte.")

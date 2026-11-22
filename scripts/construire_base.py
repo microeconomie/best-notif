@@ -81,11 +81,17 @@ def main():
     for organisateur, chemin in SOURCES.items():
         etat = v.charger(chemin) or {}
         for cle, f in etat.items():
-            parution = f.get("publie_le") or f.get("vu_le") or ""
+            # La date qui fait foi est celle à partir de laquelle la réservation
+            # est ouverte, c'est-à-dire le moment où le talk apparaît publiquement.
+            # Aucun organisateur ne la publie : celle que les Causeries exposent
+            # (created_at) est la création du brouillon dans leur base, de 4 à 49
+            # jours avant la mise en vente. Seule notre propre première détection
+            # témoigne de l'ouverture des réservations, à quelques heures près.
+            parution = f.get("vu_le") or ""
             # un délai ne vaut que si ses deux bouts tiennent à 48 h près
             marge = f.get("complet_marge_h")
             complet_sur = bool(f.get("complet_le")) and marge is not None and marge <= MARGE_MAX_H
-            marge_p = 0 if f.get("publie_le") else f.get("parution_marge_h")
+            marge_p = f.get("parution_marge_h")
             parution_sure = bool(parution) and marge_p is not None and marge_p <= MARGE_MAX_H
             fiable = complet_sur and parution_sure
             capacite = f.get("capacite")
@@ -101,7 +107,7 @@ def main():
                 "date_event": date_iso(f),
                 "lieu": f.get("lieu") or f.get("venue") or "",
                 "parution": parution[:16],
-                "parution_exacte": "oui" if f.get("publie_le") else "non",
+                "creation_en_base": (f.get("publie_le") or "")[:16],
                 "parution_marge_h": marge_p if marge_p is not None else "",
                 "parution_date_sure": "oui" if parution_sure else "non",
                 "complet_le": (f.get("complet_le") or "")[:16],

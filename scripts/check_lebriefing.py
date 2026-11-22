@@ -3,7 +3,9 @@
 
 Le site déclare lui-même ce dont on a besoin : chaque ville a son bloc,
 repéré par data-city-panel, chaque talk est une carte « event-card », et une
-carte complète porte « event-card--sold-out ». On s'appuie dessus plutôt que
+carte complète porte « event-card--sold-out », mais le site retarde parfois
+sur sa billetterie : Eventbrite tranche quand il est lisible. On s'appuie
+dessus plutôt que
 sur des approximations. Une troisième ville, Bordeaux, est apparue en
 novembre : le filtrage par bloc l'écarte sans rien changer.
 
@@ -98,11 +100,33 @@ def recuperer(page):
     return total, talks
 
 
+def arbitrer(trouves):
+    """Confronte chaque carte encore ouverte a sa billetterie.
+
+    Le site du Briefing retarde sur Eventbrite : une carte peut annoncer
+    « Reserver ma place » alors que la billetterie affiche COMPLET depuis
+    des jours. Quand Eventbrite est lisible et dit complet, il fait foi.
+    Quand il ne l'est pas, on s'en tient a la carte : mieux vaut manquer un
+    complet que d'en inventer un.
+    """
+    corriges = []
+    for fiche in trouves.values():
+        if fiche.get("complet"):
+            continue
+        fiche["billetterie"] = statut_billetterie(fiche.get("url", ""))
+        if fiche["billetterie"] == STATUTS["sold_out"]:
+            fiche["complet"] = True
+            corriges.append(fiche)
+    return corriges
+
+
 def main():
     total, trouves = recuperer(v.fetch(PAGE))
     if not trouves:
         print("Aucune carte trouvée : site en panne ou structure modifiée ?", file=sys.stderr)
         sys.exit(1)
+
+    corriges = arbitrer(trouves)
 
     etat = v.charger(ETAT)
     premier = etat is None
@@ -110,7 +134,8 @@ def main():
     nouveaux, rouverts, _ = v.fusionner(etat, trouves, premier_passage=premier)
 
     for fiche in list(nouveaux.values()) + list(rouverts.values()):
-        fiche["billetterie"] = statut_billetterie(fiche.get("url", ""))
+        if not fiche.get("billetterie"):
+            fiche["billetterie"] = statut_billetterie(fiche.get("url", ""))
     v.sauver(ETAT, etat)
 
     if premier:
@@ -120,7 +145,10 @@ def main():
         ("BACK ON SALE", rouverts, v.accord(len(rouverts), "talk à nouveau disponible", "talks à nouveau disponibles"), "tada"),
         ("JUST DROPPED", nouveaux, v.accord(len(nouveaux), "nouveau talk", "nouveaux talks"), "microphone"),
     ])
-    print(v.resumer(ORGANISATEUR, etat, trouves, total))
+    print(v.resumer(ORGANISATEUR, etat, trouves, total)
+          + (f", dont {len(corriges)} complets vus seulement sur Eventbrite" if corriges else ""))
+    for fiche in corriges:
+        print("  complet d'apres la billetterie :", v.decrire(fiche))
 
 
 if __name__ == "__main__":

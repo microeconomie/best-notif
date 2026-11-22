@@ -69,6 +69,33 @@ def recuperer(page):
 
 LD = re.compile(r'<script type="application/ld\+json"[^>]*>(.*?)</script>', re.S)
 AVEC = re.compile(r"[Aa]vec ([A-ZÉÈÊÀÂÎÔÛÇ][^,\n.;]{2,40})")
+NAVIGATEUR = {"User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                             "AppleWebKit/537.36 (KHTML, like Gecko) "
+                             "Chrome/141.0.0.0 Safari/537.36"),
+              "Accept-Language": "fr-FR,fr;q=0.9"}
+SIGLES = {"ia": "IA", "ai": "AI", "adn": "ADN", "ovni": "OVNI", "pib": "PIB"}
+
+
+def phrase(titre):
+    """Shotgun Capitalise Chaque Mot : on revient a une phrase lisible.
+
+    Le decoupage se fait sur les suites de lettres et non sur les mots, pour
+    que « L\u2019Ia » et « Peut-On » soient traites comme deux elements.
+    """
+    rang = [0]
+
+    def remplacer(trouve):
+        mot = trouve.group(0)
+        bas = mot.lower()
+        premier = rang[0] == 0
+        rang[0] += 1
+        if bas in SIGLES:
+            return SIGLES[bas]
+        if premier:
+            return mot[:1].upper() + bas[1:]
+        return bas
+
+    return re.sub(r"[A-Za-z\u00c0-\u024f]+", remplacer, titre)
 
 
 def fiche_shotgun(url):
@@ -78,7 +105,7 @@ def fiche_shotgun(url):
     après la soirée. C'est la seule trace qui reste des talks enregistrés par
     la première version de ce script, qui ne retenait que leur lien.
     """
-    for brut in LD.findall(v.fetch(url, essais=2)):
+    for brut in LD.findall(v.fetch(url, essais=2, entetes=NAVIGATEUR)):
         try:
             donnees = json.loads(brut)
         except ValueError:
@@ -87,7 +114,7 @@ def fiche_shotgun(url):
             continue
         intervenant = AVEC.search(donnees.get("description") or "")
         return {
-            "titre": v.propre(donnees.get("name") or ""),
+            "titre": phrase(v.propre(donnees.get("name") or "")),
             "date_iso": (donnees.get("startDate") or "")[:10],
             "lieu": v.propre((donnees.get("location") or {}).get("name") or "")[:60],
             "intervenant": v.propre(intervenant.group(1)) if intervenant else None,
@@ -105,7 +132,8 @@ def completer_fiches(etat, limite=10):
         try:
             trouve = fiche_shotgun(fiche["url"])
         except Exception as erreur:
-            print(f"Shotgun illisible pour {cle} ({type(erreur).__name__}).", file=sys.stderr)
+            print(f"Shotgun illisible pour {cle} "
+                  f"({type(erreur).__name__} {getattr(erreur, 'code', '')}).", file=sys.stderr)
             continue
         if not trouve or not trouve["date_iso"]:
             continue

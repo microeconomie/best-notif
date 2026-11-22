@@ -55,15 +55,47 @@ def theme(texte):
 
 
 def date_iso(fiche):
+    """La date de l'événement, au format ISO.
+
+    Apéro Talk écrit ses dates sans millésime (« Lundi 23 novembre »). Un
+    talk se tenant toujours après sa mise en ligne, l'année se déduit de la
+    date où la veille l'a repéré : la même, ou la suivante si le jour et le
+    mois sont déjà passés à ce moment-là.
+    """
     if fiche.get("date_iso"):
         return fiche["date_iso"]
-    m = re.search(r"(\d{1,2})\s+([a-zéû]+)\s+(\d{4})", (fiche.get("date") or "").lower())
+    texte = (fiche.get("date") or "").lower()
+    m = re.search(r"(\d{1,2})(?:er)?\s+([a-zéû]+)\s+(\d{4})", texte)
+    if m and m.group(2) in MOIS:
+        return f"{m.group(3)}-{MOIS[m.group(2)]:02d}-{int(m.group(1)):02d}"
+    m = re.search(r"(\d{1,2})(?:er)?\s+([a-zéû]+)", texte)
     if not m or m.group(2) not in MOIS:
         return ""
-    return f"{m.group(3)}-{MOIS[m.group(2)]:02d}-{int(m.group(1)):02d}"
+    jour, mois = int(m.group(1)), MOIS[m.group(2)]
+    repere = (fiche.get("vu_le") or fiche.get("derniere_maj") or "")[:10]
+    if not repere:
+        return ""
+    an = int(repere[:4])
+    if (mois, jour) < (int(repere[5:7]), int(repere[8:10])):
+        an += 1
+    return f"{an}-{mois:02d}-{jour:02d}"
 
 
 MARGE_MAX_H = 48      # au-delà, la date de complet est tenue pour indéterminée
+
+
+def statut(date_ev, complet):
+    """L'état du talk, en tenant compte du fait qu'il ait eu lieu ou non.
+
+    Une fois la soirée passée, « disponible » n'a plus de sens : ce qui
+    compte alors est qu'elle ait fait le plein ou non.
+    """
+    if complet is True:
+        return "complet"
+    passe = bool(date_ev) and date_ev < datetime.now().date().isoformat()
+    if complet is None:
+        return "indéterminé"
+    return "jamais complet" if passe else "disponible"
 
 
 def delai(depart, arrivee):
@@ -94,6 +126,7 @@ def main():
             marge_p = f.get("parution_marge_h")
             parution_sure = bool(parution) and marge_p is not None and marge_p <= MARGE_MAX_H
             fiable = complet_sur and parution_sure
+            date_ev = date_iso(f)
             capacite = f.get("capacite")
             restantes = f.get("places")
             if restantes is None and capacite and isinstance(f.get("inscrits"), int):
@@ -104,7 +137,7 @@ def main():
                 "titre": f.get("titre") or f.get("title") or cle,
                 "intervenant": f.get("intervenant") or "",
                 "theme": theme(f"{f.get('titre') or f.get('title') or cle} {f.get('specialite') or ''} {cle.replace('-', ' ')}"),
-                "date_event": date_iso(f),
+                "date_event": date_ev,
                 "lieu": f.get("lieu") or f.get("venue") or "",
                 "parution": parution[:16],
                 "creation_en_base": (f.get("publie_le") or "")[:16],
@@ -121,6 +154,7 @@ def main():
                 "remplissage_pct": (round(100 * (capacite - restantes) / capacite)
                                     if capacite and restantes is not None else ""),
                 "complet": {True: "oui", False: "non"}.get(f.get("complet"), "inconnu"),
+                "statut": statut(date_ev, f.get("complet")),
                 "url": f.get("url", ""),
                 "points_de_mesure": len(f.get("courbe") or []),
             })

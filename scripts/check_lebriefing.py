@@ -9,10 +9,12 @@ en annonçant deux complets sur trente et un.
 
 Ce script lit donc la même source que la page : /api/content, qui donne pour
 chaque soirée son titre, son intervenant, sa salle, sa date et son statut.
-Eventbrite reste consulté pour les soirées encore ouvertes, car la
-billetterie ferme parfois avant que le site ne l'affiche. Les deux sources
-divergent dans les deux sens : une soirée est tenue pour complète dès que
-l'une des deux le dit.
+Eventbrite n'arbitre rien : son statut de vente vaut pour toutes les
+catégories de billets confondues, et annonce donc « en vente » tant qu'une
+seule d'entre elles reste ouverte, fût-elle réservée aux membres. Une soirée
+dont les billets généraux sont épuisés y apparaît disponible. Le statut du
+site fait foi ; celui de la billetterie n'est conservé qu'à titre indicatif
+sur les talks nouvellement repérés.
 """
 import json
 import os
@@ -81,36 +83,17 @@ def recuperer(brut):
     return len(annonces), talks
 
 
-def arbitrer(talks):
-    """Confronte à Eventbrite les soirées que le site dit encore ouvertes.
-
-    La billetterie ferme parfois avant que le site ne le reflète. Quand elle
-    est lisible et annonce complet, elle fait foi. Quand elle ne l'est pas,
-    le statut du site reste la référence : mieux vaut manquer un complet que
-    d'en inventer un.
-    """
-    corriges = []
-    for fiche in talks.values():
-        if fiche.get("complet"):
-            continue
-        fiche["billetterie"] = statut_billetterie(fiche.get("url", ""))
-        if fiche["billetterie"] == STATUTS["sold_out"]:
-            fiche["complet"] = True
-            corriges.append(fiche)
-    return corriges
-
-
 def main():
     total, trouves = recuperer(v.fetch(API))
     if not trouves:
         print("Aucun talk parisien renvoyé par l'API : panne ou changement ?", file=sys.stderr)
         sys.exit(1)
-    corriges = arbitrer(trouves)
-
     etat = v.charger(ETAT)
     premier = etat is None
     etat = etat or {}
     nouveaux, rouverts, _ = v.fusionner(etat, trouves, premier_passage=premier)
+    for fiche in list(nouveaux.values()) + list(rouverts.values()):
+        fiche["billetterie"] = statut_billetterie(fiche.get("url", ""))
     v.sauver(ETAT, etat)
 
     if premier:
@@ -122,12 +105,9 @@ def main():
         ("JUST DROPPED", nouveaux,
          v.accord(len(nouveaux), "nouveau talk", "nouveaux talks"), "microphone"),
     ])
-    print(v.resumer(ORGANISATEUR, etat, trouves, total)
-          + (f", dont {len(corriges)} complets vus seulement sur Eventbrite" if corriges else ""))
+    print(v.resumer(ORGANISATEUR, etat, trouves, total))
     for fiche in nouveaux.values():
         print("  nouveau :", v.decrire(fiche))
-    for fiche in corriges:
-        print("  complet d'après la billetterie :", v.decrire(fiche))
 
 
 if __name__ == "__main__":

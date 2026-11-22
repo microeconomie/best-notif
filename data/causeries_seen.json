@@ -59,8 +59,8 @@
     ],
     "date": "Lundi 14 décembre 2026 à 19h30",
     "date_iso": "2026-12-14",
-    "derniere_maj": "2026-11-22T18:10",
-    "dispo_le": "2026-11-22T18:10",
+    "derniere_maj": "2026-11-22T20:11",
+    "dispo_le": "2026-11-22T20:11",
     "inscrits": 7,
     "intervenant": "Arnaud Zegierman",
     "journal": [
@@ -116,7 +116,7 @@
     ],
     "date": "Lundi 23 novembre 2026 à 19h30",
     "date_iso": "2026-11-23",
-    "derniere_maj": "2026-11-22T18:10",
+    "derniere_maj": "2026-11-22T20:11",
     "dispo_le": "2026-11-22T10:34",
     "inscrits": 82,
     "intervenant": "Martine Glorian",
@@ -227,11 +227,11 @@
     "vu_le": "2026-10-19T15:53"
   },
   "3acc1f2a-bc71-4363-891e-0616a364ec85": {
-    "alerte_seuil": true,
+    "alerte_seuil": false,
     "capacite": 100,
-    "complet": false,
-    "complet_le": null,
-    "complet_marge_h": null,
+    "complet": true,
+    "complet_le": "2026-11-22T20:11",
+    "complet_marge_h": 2.0,
     "courbe": [
       [
         "2026-11-20",
@@ -243,14 +243,14 @@
       ],
       [
         "2026-11-22",
-        99
+        100
       ]
     ],
     "date": "Mercredi 2 décembre 2026 à 19h30",
     "date_iso": "2026-12-02",
-    "derniere_maj": "2026-11-22T18:10",
+    "derniere_maj": "2026-11-22T20:11",
     "dispo_le": "2026-11-22T18:10",
-    "inscrits": 99,
+    "inscrits": 100,
     "intervenant": "Pierre Martinet",
     "journal": [
       [
@@ -260,11 +260,15 @@
       [
         "2026-11-22T18:10",
         "dernieres-places:1"
+      ],
+      [
+        "2026-11-22T20:11",
+        "complet"
       ]
     ],
     "lieu": "Le Cabaret Gaïté",
     "parution_marge_h": 6.2,
-    "places": 1,
+    "places": 0,
     "publie_le": "2026-11-02T12:27",
     "specialite": "Ancien agent du Service Action de la DGSE, ex-otage en Libye",
     "titre": "Dans la peau d'un espion : faux papiers, missions clandestines et prise d'otage",
@@ -309,7 +313,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-22T18:10",
+    "derniere_maj": "2026-11-22T20:11",
     "dispo_le": "2026-10-23T18:49",
     "inscrits": 75,
     "intervenant": "Baptiste Bellet",
@@ -362,14 +366,14 @@
       ],
       [
         "2026-11-22",
-        9
+        12
       ]
     ],
     "date": "Mardi 8 décembre 2026 à 19h30",
     "date_iso": "2026-12-08",
-    "derniere_maj": "2026-11-22T18:10",
-    "dispo_le": "2026-11-22T18:10",
-    "inscrits": 9,
+    "derniere_maj": "2026-11-22T20:11",
+    "dispo_le": "2026-11-22T20:11",
+    "inscrits": 12,
     "intervenant": "Johann Gironnet",
     "journal": [
       [
@@ -379,7 +383,7 @@
     ],
     "lieu": "La Rotonde Stalingrad",
     "parution_marge_h": 9.1,
-    "places": 91,
+    "places": 88,
     "publie_le": "2026-11-09T10:50",
     "specialite": "Docteur en astrophysique, ingénieur de recherche au CNRS",
     "titre": "Et si les trous noirs n'étaient pas des monstres ?",
@@ -424,7 +428,7 @@
     ],
     "date": "Mardi 24 novembre 2026 à 19h30",
     "date_iso": "2026-11-24",
-    "derniere_maj": "2026-11-22T18:10",
+    "derniere_maj": "2026-11-22T20:11",
     "dispo_le": "2026-10-23T13:58",
     "inscrits": 75,
     "intervenant": "Grégor Ozbolt",
@@ -493,14 +497,14 @@
       ],
       [
         "2026-11-22",
-        13
+        17
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-22T18:10",
-    "dispo_le": "2026-11-22T18:10",
-    "inscrits": 13,
+    "derniere_maj": "2026-11-22T20:11",
+    "dispo_le": "2026-11-22T20:11",
+    "inscrits": 17,
     "intervenant": "Alexandre Macé Dubois",
     "journal": [
       [
@@ -510,7 +514,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 67,
+    "places": 63,
     "publie_le": "2026-11-06T10:58",
     "specialite": "Journaliste indépendant, infiltré un an aux côtés d'un trafiquant de cocaïne",
     "titre": "Profession dealer : un an en immersion avec un trafiquant de drogue",
@@ -539,8 +543,8 @@
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-22T18:10",
-    "dispo_le": "2026-11-22T18:10",
+    "derniere_maj": "2026-11-22T20:11",
+    "dispo_le": "2026-11-22T20:11",
     "inscrits": 8,
     "intervenant": "Camille Renoux",
     "journal": [
@@ -596,7 +600,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-22T18:10",
+    "derniere_maj": "2026-11-22T20:11",
     "dispo_le": "2026-11-17T09:57",
     "inscrits": 80,
     "intervenant": "Xavier Leflaive",
@@ -665,14 +669,14 @@
       ],
       [
         "2026-11-22",
-        30
+        31
       ]
     ],
     "date": "Mardi 22 décembre 2026 à 19h30",
     "date_iso": "2026-12-22",
-    "derniere_maj": "2026-11-22T18:10",
-    "dispo_le": "2026-11-22T18:10",
-    "inscrits": 30,
+    "derniere_maj": "2026-11-22T20:11",
+    "dispo_le": "2026-11-22T20:11",
+    "inscrits": 31,
     "intervenant": "Cyril Lobjois",
     "journal": [
       [
@@ -682,7 +686,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 9.1,
-    "places": 45,
+    "places": 44,
     "publie_le": "2026-11-09T12:37",
     "specialite": "Expert en communication non verbale, 100 000 abonnés autour de l'analyse comportementale",
     "titre": "Votre corps vous trahit-il ?",
@@ -715,8 +719,8 @@
     ],
     "date": "Mardi 15 décembre 2026 à 19h30",
     "date_iso": "2026-12-15",
-    "derniere_maj": "2026-11-22T18:10",
-    "dispo_le": "2026-11-22T18:10",
+    "derniere_maj": "2026-11-22T20:11",
+    "dispo_le": "2026-11-22T20:11",
     "inscrits": 59,
     "intervenant": "Yannick Lejeune",
     "journal": [
@@ -751,14 +755,14 @@
       ],
       [
         "2026-11-22",
-        28
+        29
       ]
     ],
     "date": "Dimanche 13 décembre 2026 à 18h00",
     "date_iso": "2026-12-13",
-    "derniere_maj": "2026-11-22T18:10",
-    "dispo_le": "2026-11-22T18:10",
-    "inscrits": 28,
+    "derniere_maj": "2026-11-22T20:11",
+    "dispo_le": "2026-11-22T20:11",
+    "inscrits": 29,
     "intervenant": "Carole ANDRE-DESSORNES",
     "journal": [
       [
@@ -768,7 +772,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 6.2,
-    "places": 47,
+    "places": 46,
     "publie_le": "2026-11-02T12:25",
     "specialite": "Géopolitologue, chercheuse associée à la Fondation pour la recherche stratégique",
     "titre": "D'où vient vraiment le chaos au Moyen-Orient ?",
@@ -792,14 +796,14 @@
       ],
       [
         "2026-11-22",
-        14
+        16
       ]
     ],
     "date": "Dimanche 6 décembre 2026 à 18h00",
     "date_iso": "2026-12-06",
-    "derniere_maj": "2026-11-22T18:10",
-    "dispo_le": "2026-11-22T18:10",
-    "inscrits": 14,
+    "derniere_maj": "2026-11-22T20:11",
+    "dispo_le": "2026-11-22T20:11",
+    "inscrits": 16,
     "intervenant": "Jérémy Côme",
     "journal": [
       [
@@ -809,7 +813,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 6.2,
-    "places": 61,
+    "places": 59,
     "publie_le": "2026-11-06T10:58",
     "specialite": "Chroniqueur savoir-vivre sur France 2 et Europe 1, auteur des « Secrets de Monsieur Bonnes Manières » (Fayard)",
     "titre": "Faut-il encore avoir de bonnes manières ?",

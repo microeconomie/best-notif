@@ -40,12 +40,13 @@
   },
   "can-money-buy-football": {
     "billetterie": "en vente",
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
     "date": "Jeudi 10 décembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": "Simon Kuper",
     "journal": [
       [
@@ -82,12 +83,13 @@
   },
   "comment-negocier-avec-un-preneur-d-otages": {
     "billetterie": "en vente",
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": null,
     "journal": [
       [
@@ -139,12 +141,13 @@
   },
   "comment-sait-on-ce-que-l-on-sait": {
     "billetterie": "en vente",
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
     "date": "Mercredi 16 décembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": "Étienne Klein",
     "journal": [
       [
@@ -160,12 +163,13 @@
   },
   "dans-les-coulisses-d-hollywood-comment-fabrique-t-on-une-star": {
     "billetterie": "en vente",
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
     "date": "Jeudi 3 décembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": "Didier Allouch",
     "journal": [
       [
@@ -242,17 +246,23 @@
     "vu_le": "2026-10-25T17:50"
   },
   "faire-travailler-son-argent-par-ou-commencer": {
+    "billetterie": "complet",
     "capacite": null,
-    "complet": false,
-    "complet_marge_h": null,
+    "complet": true,
+    "complet_le": "2026-11-22T19:21",
+    "complet_marge_h": 1.4,
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
     "dispo_le": "2026-11-22T18:00",
     "intervenant": "Nacera Ramrajah",
     "journal": [
       [
         "2026-10-25T17:50",
         "drop"
+      ],
+      [
+        "2026-11-22T19:21",
+        "complet"
       ]
     ],
     "lieu": "Journey",
@@ -264,12 +274,13 @@
   },
   "faut-il-passer-a-une-vie-republique": {
     "billetterie": "en vente",
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": "Dominique Rousseau",
     "journal": [
       [
@@ -285,12 +296,13 @@
   },
   "gainsbourg-genie-ou-imposteur": {
     "billetterie": "en vente",
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
     "date": "Mercredi 9 décembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": null,
     "journal": [
       [
@@ -306,12 +318,13 @@
   },
   "ia-allons-nous-devenir-des-esclaves-heureux": {
     "billetterie": "en vente",
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
     "date": "Mardi 15 décembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": "Antoine Buéno",
     "journal": [
       [
@@ -326,12 +339,13 @@
     "vu_le": "2026-11-22T18:00"
   },
   "l-etranger-ce-que-camus-a-vraiment-voulu-dire": {
+    "billetterie": "en vente",
     "capacite": null,
     "complet": false,
     "complet_marge_h": null,
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": null,
     "journal": [
       [
@@ -469,12 +483,13 @@
   },
   "pourquoi-sommes-nous-notre-pire-adversaire": {
     "billetterie": "en vente",
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
     "date": "Lundi 14 décembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": "Yassin Najid explore ce qui",
     "journal": [
       [
@@ -507,17 +522,23 @@
     "vu_le": "2026-10-25T17:50"
   },
   "qu-est-ce-qu-une-peine-juste": {
+    "billetterie": "complet",
     "capacite": null,
-    "complet": false,
-    "complet_marge_h": null,
+    "complet": true,
+    "complet_le": "2026-11-22T19:21",
+    "complet_marge_h": 1.4,
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
     "dispo_le": "2026-11-22T18:00",
     "intervenant": "Fabrice Di Vizio",
     "journal": [
       [
         "2026-10-25T17:50",
         "drop"
+      ],
+      [
+        "2026-11-22T19:21",
+        "complet"
       ]
     ],
     "lieu": "Griffon",
@@ -529,12 +550,13 @@
   },
   "que-fait-vraiment-un-espion-francais": {
     "billetterie": "en vente",
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
     "date": "Jeudi 17 décembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": "Vincent Crouzet",
     "journal": [
       [
@@ -577,12 +599,13 @@
     "vu_le": "2026-10-16T14:44"
   },
   "sante-sommes-nous-vraiment-maitres-de-notre-corps": {
+    "billetterie": "en vente",
     "capacite": null,
     "complet": false,
     "complet_marge_h": null,
     "date": "Jeudi 26 novembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": "Joël Doré",
     "journal": [
       [
@@ -599,12 +622,13 @@
   },
   "societe-quel-changement-ne-voyons-nous-pas-venir": {
     "billetterie": "en vente",
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
     "date": "Mardi 1er décembre 2026",
-    "derniere_maj": "2026-11-22T18:00",
-    "dispo_le": "2026-11-22T18:00",
+    "derniere_maj": "2026-11-22T19:21",
+    "dispo_le": "2026-11-22T19:21",
     "intervenant": "Arnaud Zegierman",
     "journal": [
       [

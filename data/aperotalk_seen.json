@@ -2,62 +2,74 @@
   "comment-bien-investir-son-epargne": {
     "complet_marge_h": null,
     "date": "",
+    "date_iso": "2026-10-13",
     "dispo_le": null,
+    "intervenant": "Morgane Dion",
     "journal": [
       [
         "2026-09-15T22:12",
         "drop"
       ]
     ],
+    "lieu": "inavoué restaurant",
     "parution_inconnue": true,
     "parution_marge_h": null,
-    "titre": "Comment bien investir son epargne",
+    "titre": "Comment bien investir son épargne ?",
     "url": "https://shotgun.live/fr/events/comment-bien-investir-son-epargne",
     "vu_le": "2026-09-15T22:12"
   },
   "comment-la-science-change-l-intime": {
     "complet_marge_h": null,
     "date": "",
+    "date_iso": "2026-11-09",
     "dispo_le": null,
+    "intervenant": "Flore Cherry",
     "journal": [
       [
         "2026-10-04T12:21",
         "drop"
       ]
     ],
+    "lieu": "Le Musset",
     "parution_marge_h": 6.5,
-    "titre": "Comment la science change l intime",
+    "titre": "Comment la science change l'intime ?",
     "url": "https://shotgun.live/fr/events/comment-la-science-change-l-intime",
     "vu_le": "2026-10-04T12:21"
   },
   "et-si-on-etait-tous-mediums": {
     "complet_marge_h": null,
     "date": "",
+    "date_iso": "2026-09-21",
     "dispo_le": null,
+    "intervenant": "Sandie Lopez",
     "journal": [
       [
         "2026-09-15T22:12",
         "drop"
       ]
     ],
+    "lieu": "7 by Sevenly Heart",
     "parution_inconnue": true,
     "parution_marge_h": null,
-    "titre": "Et si on etait tous mediums",
+    "titre": "Et si on etait tous mediums ?",
     "url": "https://shotgun.live/fr/events/et-si-on-etait-tous-mediums",
     "vu_le": "2026-09-15T22:12"
   },
   "l-amour-est-il-ecrit-dans-les-etoiles": {
     "complet_marge_h": null,
     "date": "",
+    "date_iso": "2026-11-03",
     "dispo_le": null,
+    "intervenant": "Fabienne Tanti",
     "journal": [
       [
         "2026-10-04T12:21",
         "drop"
       ]
     ],
+    "lieu": "Le Musset",
     "parution_marge_h": 6.5,
-    "titre": "L amour est il ecrit dans les etoiles",
+    "titre": "L'amour est-il écrit dans les étoiles ?",
     "url": "https://shotgun.live/fr/events/l-amour-est-il-ecrit-dans-les-etoiles",
     "vu_le": "2026-10-04T12:21"
   },
@@ -67,7 +79,7 @@
     "complet_le": "2026-11-16T15:12",
     "complet_marge_h": null,
     "date": "Lundi 23 novembre",
-    "derniere_maj": "2026-11-22T15:22",
+    "derniere_maj": "2026-11-22T18:06",
     "dispo_le": null,
     "intervenant": null,
     "journal": [
@@ -89,16 +101,19 @@
   "l-ia-va-t-elle-prendre-nos-jobs": {
     "complet_marge_h": null,
     "date": "",
+    "date_iso": "2026-09-29",
     "dispo_le": null,
+    "intervenant": "Guendalina Caldarini",
     "journal": [
       [
         "2026-09-15T22:12",
         "drop"
       ]
     ],
+    "lieu": "7 by Sevenly Heart",
     "parution_inconnue": true,
     "parution_marge_h": null,
-    "titre": "L ia va t elle prendre nos jobs",
+    "titre": "L’IA va-t-elle prendre nos jobs ?",
     "url": "https://shotgun.live/fr/events/l-ia-va-t-elle-prendre-nos-jobs",
     "vu_le": "2026-09-15T22:12"
   },
@@ -127,8 +142,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Jeudi 17 décembre",
-    "derniere_maj": "2026-11-22T15:22",
-    "dispo_le": "2026-11-22T15:22",
+    "derniere_maj": "2026-11-22T18:06",
+    "dispo_le": "2026-11-22T18:06",
     "intervenant": null,
     "journal": [
       [
@@ -148,7 +163,7 @@
     "complet_le": "2026-11-16T15:12",
     "complet_marge_h": null,
     "date": "Vendredi 4 décembre",
-    "derniere_maj": "2026-11-22T15:22",
+    "derniere_maj": "2026-11-22T18:06",
     "dispo_le": null,
     "intervenant": null,
     "journal": [
@@ -170,32 +185,38 @@
   "peut-on-controler-ses-fantasmes": {
     "complet_marge_h": null,
     "date": "",
+    "date_iso": "2026-10-05",
     "dispo_le": null,
+    "intervenant": "Bagheera",
     "journal": [
       [
         "2026-09-15T22:12",
         "drop"
       ]
     ],
+    "lieu": "Le Musset",
     "parution_inconnue": true,
     "parution_marge_h": null,
-    "titre": "Peut on controler ses fantasmes",
+    "titre": "Peut on contrôler ses fantasmes ?",
     "url": "https://shotgun.live/fr/events/peut-on-controler-ses-fantasmes",
     "vu_le": "2026-09-15T22:12"
   },
   "peut-on-defendre-l-indefendable": {
     "complet_marge_h": null,
     "date": "",
+    "date_iso": "2026-10-27",
     "dispo_le": null,
+    "intervenant": "Maître Baptiste Bellet",
     "journal": [
       [
         "2026-09-15T22:12",
         "drop"
       ]
     ],
+    "lieu": "Le Musset",
     "parution_inconnue": true,
     "parution_marge_h": null,
-    "titre": "Peut on defendre l indefendable",
+    "titre": "Peut-on défendre l'indéfendable ?",
     "url": "https://shotgun.live/fr/events/peut-on-defendre-l-indefendable",
     "vu_le": "2026-09-15T22:12"
   },
@@ -204,8 +225,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Lundi 7 décembre",
-    "derniere_maj": "2026-11-22T15:22",
-    "dispo_le": "2026-11-22T15:22",
+    "derniere_maj": "2026-11-22T18:06",
+    "dispo_le": "2026-11-22T18:06",
     "intervenant": null,
     "journal": [
       [
@@ -222,16 +243,19 @@
   "secte-un-an-infiltre-chez-les-gourous": {
     "complet_marge_h": null,
     "date": "",
+    "date_iso": "2026-10-21",
     "dispo_le": null,
+    "intervenant": "Étienne Jacob",
     "journal": [
       [
         "2026-09-15T22:12",
         "drop"
       ]
     ],
+    "lieu": "7 by Sevenly Heart",
     "parution_inconnue": true,
     "parution_marge_h": null,
-    "titre": "Secte un an infiltre chez les gourous",
+    "titre": "Secte : un an infiltré chez les gourous",
     "url": "https://shotgun.live/fr/events/secte-un-an-infiltre-chez-les-gourous",
     "vu_le": "2026-09-15T22:12"
   }

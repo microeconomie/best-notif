@@ -84,17 +84,22 @@ def date_iso(fiche):
 MARGE_MAX_H = 48      # au-delà, la date de complet est tenue pour indéterminée
 
 
-def statut(date_ev, complet):
-    """L'état du talk, en tenant compte du fait qu'il ait eu lieu ou non.
+def statut(date_ev, fiche):
+    """L'etat du talk, en tenant compte du fait qu'il ait eu lieu ou non.
 
-    Une fois la soirée passée, « disponible » n'a plus de sens : ce qui
-    compte alors est qu'elle ait fait le plein ou non.
+    Un talk complet une fois l'est definitivement ici. Les places qui se
+    liberent ensuite, apres une annulation, declenchent bien une alerte par
+    mail, mais elles ne doivent pas effacer le fait que la soiree a fait le
+    plein : c'est cela que le barometre mesure.
+
+    Une fois la date passee, « disponible » n'a plus de sens : ce qui compte
+    alors est que la soiree ait fait le plein ou non.
     """
-    if complet is True:
+    if fiche.get("complet") or fiche.get("complet_le"):
         return "complet"
-    passe = bool(date_ev) and date_ev < datetime.now().date().isoformat()
-    if complet is None:
+    if fiche.get("complet") is None:
         return "indéterminé"
+    passe = bool(date_ev) and date_ev < datetime.now().date().isoformat()
     return "jamais complet" if passe else "disponible"
 
 
@@ -154,7 +159,7 @@ def main():
                 "remplissage_pct": (round(100 * (capacite - restantes) / capacite)
                                     if capacite and restantes is not None else ""),
                 "complet": {True: "oui", False: "non"}.get(f.get("complet"), "inconnu"),
-                "statut": statut(date_ev, f.get("complet")),
+                "statut": statut(date_ev, f),
                 "url": f.get("url", ""),
                 "points_de_mesure": len(f.get("courbe") or []),
             })

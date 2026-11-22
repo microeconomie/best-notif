@@ -38,6 +38,27 @@
     "url": "https://www.eventbrite.com/e/2003856350286?aff=oddtdtcreator",
     "vu_le": "2026-10-25T17:50"
   },
+  "can-money-buy-football": {
+    "billetterie": "en vente",
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "date": "Jeudi 10 décembre 2026",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
+    "intervenant": "Simon Kuper",
+    "journal": [
+      [
+        "2026-11-22T18:00",
+        "drop"
+      ]
+    ],
+    "lieu": "Journey",
+    "parution_marge_h": 7.8,
+    "titre": "Can money buy football?",
+    "url": "https://www.eventbrite.fr/e/can-money-buy-football-tickets-2005222370088",
+    "vu_le": "2026-11-22T18:00"
+  },
   "comment-apprendre-a-parler-face-a-un-public": {
     "capacite": null,
     "complet": false,
@@ -58,6 +79,27 @@
     "titre": "Comment apprendre à parler face à un public ?",
     "url": "https://www.eventbrite.com/e/2003856353295?aff=oddtdtcreator",
     "vu_le": "2026-10-25T17:50"
+  },
+  "comment-negocier-avec-un-preneur-d-otages": {
+    "billetterie": "en vente",
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "date": "Lundi 7 décembre 2026",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
+    "intervenant": null,
+    "journal": [
+      [
+        "2026-11-22T18:00",
+        "drop"
+      ]
+    ],
+    "lieu": "MEO Training House",
+    "parution_marge_h": 7.8,
+    "titre": "Comment négocier avec un preneur d’otages ?",
+    "url": "https://www.eventbrite.fr/e/comment-negocier-avec-un-preneur-dotages-tickets-2005222373097",
+    "vu_le": "2026-11-22T18:00"
   },
   "comment-repondre-quand-on-se-moque-de-nous": {
     "complet": false,
@@ -94,6 +136,48 @@
     "titre": "Comment s’affirmer au travail ?",
     "url": "https://www.eventbrite.com/e/2003856348280?aff=oddtdtcreator",
     "vu_le": "2026-10-25T17:50"
+  },
+  "comment-sait-on-ce-que-l-on-sait": {
+    "billetterie": "en vente",
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "date": "Mercredi 16 décembre 2026",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
+    "intervenant": "Étienne Klein",
+    "journal": [
+      [
+        "2026-11-22T18:00",
+        "drop"
+      ]
+    ],
+    "lieu": "La Rotonde Stalingrad",
+    "parution_marge_h": 7.8,
+    "titre": "Comment sait-on ce que l’on sait ?",
+    "url": "https://www.eventbrite.fr/e/comment-sait-on-ce-que-lon-sait-tickets-2005222376106",
+    "vu_le": "2026-11-22T18:00"
+  },
+  "dans-les-coulisses-d-hollywood-comment-fabrique-t-on-une-star": {
+    "billetterie": "en vente",
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "date": "Jeudi 3 décembre 2026",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
+    "intervenant": "Didier Allouch",
+    "journal": [
+      [
+        "2026-11-22T18:00",
+        "drop"
+      ]
+    ],
+    "lieu": "Journey",
+    "parution_marge_h": 7.8,
+    "titre": "Dans les coulisses d’Hollywood : comment fabrique-t-on une star ?",
+    "url": "https://www.eventbrite.fr/e/dans-les-coulisses-dhollywood-comment-fabrique-t-on-une-star-tickets-2005222369085",
+    "vu_le": "2026-11-22T18:00"
   },
   "dating-how-to-get-away-with-dating-in-paris": {
     "complet": false,
@@ -162,8 +246,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-22T10:14",
-    "dispo_le": "2026-11-22T10:14",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
     "intervenant": "Nacera Ramrajah",
     "journal": [
       [
@@ -178,13 +262,76 @@
     "url": "https://www.eventbrite.com/e/2003856354298?aff=oddtdtcreator",
     "vu_le": "2026-10-25T17:50"
   },
+  "faut-il-passer-a-une-vie-republique": {
+    "billetterie": "en vente",
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "date": "Mercredi 2 décembre 2026",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
+    "intervenant": "Dominique Rousseau",
+    "journal": [
+      [
+        "2026-11-22T18:00",
+        "drop"
+      ]
+    ],
+    "lieu": "Journey",
+    "parution_marge_h": 7.8,
+    "titre": "Faut-il passer à une VIe République ?",
+    "url": "https://www.eventbrite.fr/e/faut-il-passer-a-une-vie-republique-tickets-2005222362064",
+    "vu_le": "2026-11-22T18:00"
+  },
+  "gainsbourg-genie-ou-imposteur": {
+    "billetterie": "en vente",
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "date": "Mercredi 9 décembre 2026",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
+    "intervenant": null,
+    "journal": [
+      [
+        "2026-11-22T18:00",
+        "drop"
+      ]
+    ],
+    "lieu": "Fougue Speakeasy",
+    "parution_marge_h": 7.8,
+    "titre": "Gainsbourg : génie ou imposteur ?",
+    "url": "https://www.eventbrite.fr/e/gainsbourg-genie-ou-imposteur-tickets-2005222372094",
+    "vu_le": "2026-11-22T18:00"
+  },
+  "ia-allons-nous-devenir-des-esclaves-heureux": {
+    "billetterie": "en vente",
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "date": "Mardi 15 décembre 2026",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
+    "intervenant": "Antoine Buéno",
+    "journal": [
+      [
+        "2026-11-22T18:00",
+        "drop"
+      ]
+    ],
+    "lieu": "Journey",
+    "parution_marge_h": 7.8,
+    "titre": "IA : allons-nous devenir des esclaves heureux ?",
+    "url": "https://www.eventbrite.fr/e/ia-allons-nous-devenir-des-esclaves-heureux-tickets-2005222375103",
+    "vu_le": "2026-11-22T18:00"
+  },
   "l-etranger-ce-que-camus-a-vraiment-voulu-dire": {
     "capacite": null,
     "complet": false,
     "complet_marge_h": null,
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-22T10:14",
-    "dispo_le": "2026-11-22T10:14",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
     "intervenant": null,
     "journal": [
       [
@@ -320,6 +467,27 @@
     "url": "https://www.eventbrite.com/e/2003856344268?aff=oddtdtcreator",
     "vu_le": "2026-10-25T17:50"
   },
+  "pourquoi-sommes-nous-notre-pire-adversaire": {
+    "billetterie": "en vente",
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "date": "Lundi 14 décembre 2026",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
+    "intervenant": "Yassin Najid explore ce qui",
+    "journal": [
+      [
+        "2026-11-22T18:00",
+        "drop"
+      ]
+    ],
+    "lieu": "MEO Training House",
+    "parution_marge_h": 7.8,
+    "titre": "Pourquoi sommes-nous notre pire adversaire ?",
+    "url": "https://www.eventbrite.fr/e/pourquoi-sommes-nous-notre-pire-adversaire-tickets-2005222374100",
+    "vu_le": "2026-11-22T18:00"
+  },
   "pourquoi-tout-le-monde-se-met-a-courir": {
     "complet": false,
     "complet_marge_h": null,
@@ -343,8 +511,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-22T10:14",
-    "dispo_le": "2026-11-22T10:14",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
     "intervenant": "Fabrice Di Vizio",
     "journal": [
       [
@@ -358,6 +526,27 @@
     "titre": "Qu’est-ce qu’une peine juste ?",
     "url": "https://www.eventbrite.com/e/2003856355301?aff=oddtdtcreator",
     "vu_le": "2026-10-25T17:50"
+  },
+  "que-fait-vraiment-un-espion-francais": {
+    "billetterie": "en vente",
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "date": "Jeudi 17 décembre 2026",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
+    "intervenant": "Vincent Crouzet",
+    "journal": [
+      [
+        "2026-11-22T18:00",
+        "drop"
+      ]
+    ],
+    "lieu": "Journey",
+    "parution_marge_h": 7.8,
+    "titre": "Que fait vraiment un espion français ?",
+    "url": "https://www.eventbrite.fr/e/que-fait-vraiment-un-espion-francais-tickets-2005222377109",
+    "vu_le": "2026-11-22T18:00"
   },
   "quel-est-le-futur-de-l-education": {
     "complet": false,
@@ -392,8 +581,8 @@
     "complet": false,
     "complet_marge_h": null,
     "date": "Jeudi 26 novembre 2026",
-    "derniere_maj": "2026-11-22T10:14",
-    "dispo_le": "2026-11-22T10:14",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
     "intervenant": "Joël Doré",
     "journal": [
       [
@@ -407,6 +596,27 @@
     "titre": "Santé : sommes-nous vraiment maîtres de notre corps ?",
     "url": "https://www.eventbrite.com/e/2003856356304?aff=oddtdtcreator",
     "vu_le": "2026-10-25T17:50"
+  },
+  "societe-quel-changement-ne-voyons-nous-pas-venir": {
+    "billetterie": "en vente",
+    "complet": false,
+    "complet_le": null,
+    "complet_marge_h": null,
+    "date": "Mardi 1er décembre 2026",
+    "derniere_maj": "2026-11-22T18:00",
+    "dispo_le": "2026-11-22T18:00",
+    "intervenant": "Arnaud Zegierman",
+    "journal": [
+      [
+        "2026-11-22T18:00",
+        "drop"
+      ]
+    ],
+    "lieu": "Delaville Café",
+    "parution_marge_h": 7.8,
+    "titre": "Société : quel changement ne voyons-nous pas venir ?",
+    "url": "https://www.eventbrite.fr/e/societe-quel-changement-ne-voyons-nous-pas-venir-tickets-2005222371091",
+    "vu_le": "2026-11-22T18:00"
   },
   "sommes-nous-seuls-dans-l-univers": {
     "complet": true,

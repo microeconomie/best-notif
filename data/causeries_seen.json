@@ -51,12 +51,16 @@
       [
         "2026-11-21",
         4
+      ],
+      [
+        "2026-11-22",
+        4
       ]
     ],
     "date": "Lundi 14 décembre 2026 à 19h30",
     "date_iso": "2026-12-14",
-    "derniere_maj": "2026-11-21T21:57",
-    "dispo_le": "2026-11-21T21:57",
+    "derniere_maj": "2026-11-22T02:46",
+    "dispo_le": "2026-11-22T02:46",
     "inscrits": 4,
     "intervenant": "Arnaud Zegierman",
     "journal": [
@@ -75,9 +79,9 @@
     "vu_le": "2026-11-19T18:45"
   },
   "1e1f1b6f-c875-42e3-91f4-596640dc9184": {
-    "alerte_seuil": false,
+    "alerte_seuil": true,
     "capacite": 82,
-    "complet": true,
+    "complet": false,
     "complet_le": "2026-11-10T17:24",
     "complet_marge_h": 0.0,
     "courbe": [
@@ -104,13 +108,17 @@
       [
         "2026-11-21",
         82
+      ],
+      [
+        "2026-11-22",
+        81
       ]
     ],
     "date": "Lundi 23 novembre 2026 à 19h30",
     "date_iso": "2026-11-23",
-    "derniere_maj": "2026-11-21T21:57",
-    "dispo_le": "2026-11-21T15:57",
-    "inscrits": 82,
+    "derniere_maj": "2026-11-22T02:46",
+    "dispo_le": "2026-11-22T02:46",
+    "inscrits": 81,
     "intervenant": "Martine Glorian",
     "journal": [
       [
@@ -144,13 +152,21 @@
       [
         "2026-11-21T21:57",
         "complet"
+      ],
+      [
+        "2026-11-22T02:46",
+        "revente"
+      ],
+      [
+        "2026-11-22T02:46",
+        "dernieres-places:1"
       ]
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 4.8,
-    "places": 0,
+    "places": 1,
     "publie_le": "2026-10-12T09:34",
-    "rouvert_le": "2026-11-20T18:12",
+    "rouvert_le": "2026-11-22T02:46",
     "specialite": "Maîtresse de conférences à Sorbonne Université, chercheuse sur les maladies cardiovasculaires",
     "titre": "Peut-on vraiment choisir de vivre longtemps en bonne santé ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=1e1f1b6f-c875-42e3-91f4-596640dc9184",
@@ -220,13 +236,17 @@
       [
         "2026-11-21",
         66
+      ],
+      [
+        "2026-11-22",
+        67
       ]
     ],
     "date": "Mercredi 2 décembre 2026 à 19h30",
     "date_iso": "2026-12-02",
-    "derniere_maj": "2026-11-21T21:57",
-    "dispo_le": "2026-11-21T21:57",
-    "inscrits": 66,
+    "derniere_maj": "2026-11-22T02:46",
+    "dispo_le": "2026-11-22T02:46",
+    "inscrits": 67,
     "intervenant": "Pierre Martinet",
     "journal": [
       [
@@ -236,7 +256,7 @@
     ],
     "lieu": "Le Cabaret Gaïté",
     "parution_marge_h": 6.2,
-    "places": 34,
+    "places": 33,
     "publie_le": "2026-11-02T12:27",
     "specialite": "Ancien agent du Service Action de la DGSE, ex-otage en Libye",
     "titre": "Dans la peau d'un espion : faux papiers, missions clandestines et prise d'otage",
@@ -273,11 +293,15 @@
       [
         "2026-11-21",
         75
+      ],
+      [
+        "2026-11-22",
+        75
       ]
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-21T21:57",
+    "derniere_maj": "2026-11-22T02:46",
     "dispo_le": "2026-10-23T18:49",
     "inscrits": 75,
     "intervenant": "Baptiste Bellet",
@@ -327,12 +351,16 @@
       [
         "2026-11-21",
         7
+      ],
+      [
+        "2026-11-22",
+        7
       ]
     ],
     "date": "Mardi 8 décembre 2026 à 19h30",
     "date_iso": "2026-12-08",
-    "derniere_maj": "2026-11-21T21:57",
-    "dispo_le": "2026-11-21T21:57",
+    "derniere_maj": "2026-11-22T02:46",
+    "dispo_le": "2026-11-22T02:46",
     "inscrits": 7,
     "intervenant": "Johann Gironnet",
     "journal": [
@@ -380,11 +408,15 @@
       [
         "2026-11-21",
         75
+      ],
+      [
+        "2026-11-22",
+        75
       ]
     ],
     "date": "Mardi 24 novembre 2026 à 19h30",
     "date_iso": "2026-11-24",
-    "derniere_maj": "2026-11-21T21:57",
+    "derniere_maj": "2026-11-22T02:46",
     "dispo_le": "2026-10-23T13:58",
     "inscrits": 75,
     "intervenant": "Grégor Ozbolt",
@@ -450,12 +482,16 @@
       [
         "2026-11-21",
         13
+      ],
+      [
+        "2026-11-22",
+        13
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-21T21:57",
-    "dispo_le": "2026-11-21T21:57",
+    "derniere_maj": "2026-11-22T02:46",
+    "dispo_le": "2026-11-22T02:46",
     "inscrits": 13,
     "intervenant": "Alexandre Macé Dubois",
     "journal": [
@@ -487,12 +523,16 @@
       [
         "2026-11-21",
         8
+      ],
+      [
+        "2026-11-22",
+        8
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-21T21:57",
-    "dispo_le": "2026-11-21T21:57",
+    "derniere_maj": "2026-11-22T02:46",
+    "dispo_le": "2026-11-22T02:46",
     "inscrits": 8,
     "intervenant": "Camille Renoux",
     "journal": [
@@ -540,11 +580,15 @@
       [
         "2026-11-21",
         80
+      ],
+      [
+        "2026-11-22",
+        80
       ]
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-21T21:57",
+    "derniere_maj": "2026-11-22T02:46",
     "dispo_le": "2026-11-17T09:57",
     "inscrits": 80,
     "intervenant": "Xavier Leflaive",
@@ -610,12 +654,16 @@
       [
         "2026-11-21",
         19
+      ],
+      [
+        "2026-11-22",
+        19
       ]
     ],
     "date": "Mardi 22 décembre 2026 à 19h30",
     "date_iso": "2026-12-22",
-    "derniere_maj": "2026-11-21T21:57",
-    "dispo_le": "2026-11-21T21:57",
+    "derniere_maj": "2026-11-22T02:46",
+    "dispo_le": "2026-11-22T02:46",
     "inscrits": 19,
     "intervenant": "Cyril Lobjois",
     "journal": [
@@ -651,12 +699,16 @@
       [
         "2026-11-21",
         54
+      ],
+      [
+        "2026-11-22",
+        54
       ]
     ],
     "date": "Mardi 15 décembre 2026 à 19h30",
     "date_iso": "2026-12-15",
-    "derniere_maj": "2026-11-21T21:57",
-    "dispo_le": "2026-11-21T21:57",
+    "derniere_maj": "2026-11-22T02:46",
+    "dispo_le": "2026-11-22T02:46",
     "inscrits": 54,
     "intervenant": "Yannick Lejeune",
     "journal": [
@@ -688,12 +740,16 @@
       [
         "2026-11-21",
         15
+      ],
+      [
+        "2026-11-22",
+        15
       ]
     ],
     "date": "Dimanche 13 décembre 2026 à 18h00",
     "date_iso": "2026-12-13",
-    "derniere_maj": "2026-11-21T21:57",
-    "dispo_le": "2026-11-21T21:57",
+    "derniere_maj": "2026-11-22T02:46",
+    "dispo_le": "2026-11-22T02:46",
     "inscrits": 15,
     "intervenant": "Carole ANDRE-DESSORNES",
     "journal": [
@@ -725,13 +781,17 @@
       [
         "2026-11-21",
         9
+      ],
+      [
+        "2026-11-22",
+        10
       ]
     ],
     "date": "Dimanche 6 décembre 2026 à 18h00",
     "date_iso": "2026-12-06",
-    "derniere_maj": "2026-11-21T21:57",
-    "dispo_le": "2026-11-21T21:57",
-    "inscrits": 9,
+    "derniere_maj": "2026-11-22T02:46",
+    "dispo_le": "2026-11-22T02:46",
+    "inscrits": 10,
     "intervenant": "Jérémy Côme",
     "journal": [
       [
@@ -741,7 +801,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 6.2,
-    "places": 66,
+    "places": 65,
     "publie_le": "2026-11-06T10:58",
     "specialite": "Chroniqueur savoir-vivre sur France 2 et Europe 1, auteur des « Secrets de Monsieur Bonnes Manières » (Fayard)",
     "titre": "Faut-il encore avoir de bonnes manières ?",

@@ -58,14 +58,14 @@
       ],
       [
         "2026-11-23",
-        9
+        10
       ]
     ],
     "date": "Lundi 14 décembre 2026 à 19h30",
     "date_iso": "2026-12-14",
-    "derniere_maj": "2026-11-23T08:28",
-    "dispo_le": "2026-11-23T08:28",
-    "inscrits": 9,
+    "derniere_maj": "2026-11-23T20:45",
+    "dispo_le": "2026-11-23T20:45",
+    "inscrits": 10,
     "intervenant": "Arnaud Zegierman",
     "journal": [
       [
@@ -75,7 +75,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 71,
+    "places": 70,
     "publie_le": "2026-11-09T12:41",
     "specialite": "Sociologue, cofondateur de l'institut de sondages Viavoice",
     "titre": "La France n'est pas celle que vous croyez",
@@ -124,7 +124,7 @@
     ],
     "date": "Lundi 23 novembre 2026 à 19h30",
     "date_iso": "2026-11-23",
-    "derniere_maj": "2026-11-23T08:28",
+    "derniere_maj": "2026-11-23T20:45",
     "dispo_le": "2026-11-22T10:34",
     "inscrits": 82,
     "intervenant": "Martine Glorian",
@@ -260,7 +260,7 @@
     ],
     "date": "Mercredi 2 décembre 2026 à 19h30",
     "date_iso": "2026-12-02",
-    "derniere_maj": "2026-11-23T08:28",
+    "derniere_maj": "2026-11-23T20:45",
     "dispo_le": "2026-11-22T18:10",
     "inscrits": 100,
     "intervenant": "Pierre Martinet",
@@ -329,7 +329,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-23T08:28",
+    "derniere_maj": "2026-11-23T20:45",
     "dispo_le": "2026-10-23T18:49",
     "inscrits": 75,
     "intervenant": "Baptiste Bellet",
@@ -386,14 +386,14 @@
       ],
       [
         "2026-11-23",
-        13
+        19
       ]
     ],
     "date": "Mardi 8 décembre 2026 à 19h30",
     "date_iso": "2026-12-08",
-    "derniere_maj": "2026-11-23T08:28",
-    "dispo_le": "2026-11-23T08:28",
-    "inscrits": 13,
+    "derniere_maj": "2026-11-23T20:45",
+    "dispo_le": "2026-11-23T20:45",
+    "inscrits": 19,
     "intervenant": "Johann Gironnet",
     "journal": [
       [
@@ -403,7 +403,7 @@
     ],
     "lieu": "La Rotonde Stalingrad",
     "parution_marge_h": 9.1,
-    "places": 87,
+    "places": 81,
     "publie_le": "2026-11-09T10:50",
     "specialite": "Docteur en astrophysique, ingénieur de recherche au CNRS",
     "titre": "Et si les trous noirs n'étaient pas des monstres ?",
@@ -452,7 +452,7 @@
     ],
     "date": "Mardi 24 novembre 2026 à 19h30",
     "date_iso": "2026-11-24",
-    "derniere_maj": "2026-11-23T08:28",
+    "derniere_maj": "2026-11-23T20:45",
     "dispo_le": "2026-10-23T13:58",
     "inscrits": 75,
     "intervenant": "Grégor Ozbolt",
@@ -525,14 +525,14 @@
       ],
       [
         "2026-11-23",
-        19
+        25
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-23T08:28",
-    "dispo_le": "2026-11-23T08:28",
-    "inscrits": 19,
+    "derniere_maj": "2026-11-23T20:45",
+    "dispo_le": "2026-11-23T20:45",
+    "inscrits": 25,
     "intervenant": "Alexandre Macé Dubois",
     "journal": [
       [
@@ -542,7 +542,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 61,
+    "places": 55,
     "publie_le": "2026-11-06T10:58",
     "specialite": "Journaliste indépendant, infiltré un an aux côtés d'un trafiquant de cocaïne",
     "titre": "Profession dealer : un an en immersion avec un trafiquant de drogue",
@@ -570,14 +570,14 @@
       ],
       [
         "2026-11-23",
-        8
+        9
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-23T08:28",
-    "dispo_le": "2026-11-23T08:28",
-    "inscrits": 8,
+    "derniere_maj": "2026-11-23T20:45",
+    "dispo_le": "2026-11-23T20:45",
+    "inscrits": 9,
     "intervenant": "Camille Renoux",
     "journal": [
       [
@@ -587,7 +587,7 @@
     ],
     "lieu": "Bistouille",
     "parution_marge_h": 6.2,
-    "places": 62,
+    "places": 61,
     "publie_le": "2026-11-09T12:00",
     "specialite": "Astrologue, fondatrice du Club Lunaire",
     "titre": "Pourquoi une astrologue ne croit-elle pas aux horoscopes ?",
@@ -636,7 +636,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-23T08:28",
+    "derniere_maj": "2026-11-23T20:45",
     "dispo_le": "2026-11-17T09:57",
     "inscrits": 80,
     "intervenant": "Xavier Leflaive",
@@ -709,14 +709,14 @@
       ],
       [
         "2026-11-23",
-        32
+        50
       ]
     ],
     "date": "Mardi 22 décembre 2026 à 19h30",
     "date_iso": "2026-12-22",
-    "derniere_maj": "2026-11-23T08:28",
-    "dispo_le": "2026-11-23T08:28",
-    "inscrits": 32,
+    "derniere_maj": "2026-11-23T20:45",
+    "dispo_le": "2026-11-23T20:45",
+    "inscrits": 50,
     "intervenant": "Cyril Lobjois",
     "journal": [
       [
@@ -726,7 +726,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 9.1,
-    "places": 43,
+    "places": 25,
     "publie_le": "2026-11-09T12:37",
     "specialite": "Expert en communication non verbale, 100 000 abonnés autour de l'analyse comportementale",
     "titre": "Votre corps vous trahit-il ?",
@@ -758,14 +758,14 @@
       ],
       [
         "2026-11-23",
-        60
+        64
       ]
     ],
     "date": "Mardi 15 décembre 2026 à 19h30",
     "date_iso": "2026-12-15",
-    "derniere_maj": "2026-11-23T08:28",
-    "dispo_le": "2026-11-23T08:28",
-    "inscrits": 60,
+    "derniere_maj": "2026-11-23T20:45",
+    "dispo_le": "2026-11-23T20:45",
+    "inscrits": 64,
     "intervenant": "Yannick Lejeune",
     "journal": [
       [
@@ -775,7 +775,7 @@
     ],
     "lieu": "La Rotonde Stalingrad",
     "parution_marge_h": 9.1,
-    "places": 40,
+    "places": 36,
     "publie_le": "2026-11-09T12:42",
     "specialite": "Directeur du digital et de l'IA du groupe IONIS (27 écoles, 35 000 étudiants)",
     "titre": "Pourquoi apprendre quand l'IA sait déjà tout ?",
@@ -803,14 +803,14 @@
       ],
       [
         "2026-11-23",
-        30
+        38
       ]
     ],
     "date": "Dimanche 13 décembre 2026 à 18h00",
     "date_iso": "2026-12-13",
-    "derniere_maj": "2026-11-23T08:28",
-    "dispo_le": "2026-11-23T08:28",
-    "inscrits": 30,
+    "derniere_maj": "2026-11-23T20:45",
+    "dispo_le": "2026-11-23T20:45",
+    "inscrits": 38,
     "intervenant": "Carole ANDRE-DESSORNES",
     "journal": [
       [
@@ -820,7 +820,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 6.2,
-    "places": 45,
+    "places": 37,
     "publie_le": "2026-11-02T12:25",
     "specialite": "Géopolitologue, chercheuse associée à la Fondation pour la recherche stratégique",
     "titre": "D'où vient vraiment le chaos au Moyen-Orient ?",
@@ -848,14 +848,14 @@
       ],
       [
         "2026-11-23",
-        18
+        25
       ]
     ],
     "date": "Dimanche 6 décembre 2026 à 18h00",
     "date_iso": "2026-12-06",
-    "derniere_maj": "2026-11-23T08:28",
-    "dispo_le": "2026-11-23T08:28",
-    "inscrits": 18,
+    "derniere_maj": "2026-11-23T20:45",
+    "dispo_le": "2026-11-23T20:45",
+    "inscrits": 25,
     "intervenant": "Jérémy Côme",
     "journal": [
       [
@@ -865,7 +865,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 6.2,
-    "places": 57,
+    "places": 50,
     "publie_le": "2026-11-06T10:58",
     "specialite": "Chroniqueur savoir-vivre sur France 2 et Europe 1, auteur des « Secrets de Monsieur Bonnes Manières » (Fayard)",
     "titre": "Faut-il encore avoir de bonnes manières ?",

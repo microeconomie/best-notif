@@ -160,6 +160,7 @@ def main():
                                     if capacite and restantes is not None else ""),
                 "complet": {True: "oui", False: "non"}.get(f.get("complet"), "inconnu"),
                 "statut": statut(date_ev, f),
+                "derniere_veille": (f.get("derniere_maj") or "")[:16],
                 "url": f.get("url", ""),
                 "points_de_mesure": len(f.get("courbe") or []),
             })

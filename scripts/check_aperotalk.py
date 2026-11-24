@@ -13,6 +13,8 @@ import json
 import os
 import re
 import sys
+import time
+from urllib.error import HTTPError
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import veille as v
@@ -105,7 +107,17 @@ def fiche_shotgun(url):
     après la soirée. C'est la seule trace qui reste des talks enregistrés par
     la première version de ce script, qui ne retenait que leur lien.
     """
-    for brut in LD.findall(v.fetch(url, essais=2, entetes=NAVIGATEUR)):
+    page = ""
+    for essai in range(3):
+        try:
+            page = v.fetch(url, essais=1, entetes=NAVIGATEUR, delai=20)
+            break
+        except HTTPError as erreur:
+            # 429 : trop de demandes rapprochées, la billetterie veut qu'on respire
+            if erreur.code != 429 or essai == 2:
+                raise
+            time.sleep(15 * (essai + 1))
+    for brut in LD.findall(page):
         try:
             donnees = json.loads(brut)
         except ValueError:
@@ -122,7 +134,7 @@ def fiche_shotgun(url):
     return None
 
 
-def completer_fiches(etat, limite=10):
+def completer_fiches(etat, limite=4):
     """Comble depuis Shotgun ce que la page d'Apéro Talk ne dit pas.
 
     Ses cartes n'annoncent ni l'intervenant ni le millésime. La billetterie,
@@ -133,7 +145,9 @@ def completer_fiches(etat, limite=10):
             if f.get("url") and (not (f.get("date") or f.get("date_iso"))
                                  or not f.get("intervenant"))][:limite]
     rhabillees = 0
-    for cle in nues:
+    for rang, cle in enumerate(nues):
+        if rang:
+            time.sleep(5)
         fiche = etat[cle]
         try:
             trouve = fiche_shotgun(fiche["url"])

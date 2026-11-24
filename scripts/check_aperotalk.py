@@ -123,9 +123,15 @@ def fiche_shotgun(url):
 
 
 def completer_fiches(etat, limite=10):
-    """Rhabille les fiches sans date à partir de leur page Shotgun."""
+    """Comble depuis Shotgun ce que la page d'Apéro Talk ne dit pas.
+
+    Ses cartes n'annoncent ni l'intervenant ni le millésime. La billetterie,
+    elle, publie un bloc structuré complet et le garde après la soirée : on y
+    puise ce qui manque, sans jamais écraser ce qu'on a déjà.
+    """
     nues = [c for c, f in etat.items()
-            if f.get("url") and not f.get("date") and not f.get("date_iso")][:limite]
+            if f.get("url") and (not (f.get("date") or f.get("date_iso"))
+                                 or not f.get("intervenant"))][:limite]
     rhabillees = 0
     for cle in nues:
         fiche = etat[cle]
@@ -135,12 +141,14 @@ def completer_fiches(etat, limite=10):
             print(f"Shotgun illisible pour {cle} "
                   f"({type(erreur).__name__} {getattr(erreur, 'code', '')}).", file=sys.stderr)
             continue
-        if not trouve or not trouve["date_iso"]:
+        if not trouve:
             continue
+        comble = False
         for champ, valeur in trouve.items():
-            if valeur:
+            if valeur and not fiche.get(champ):
                 fiche[champ] = valeur
-        rhabillees += 1
+                comble = True
+        rhabillees += comble
     return rhabillees
 
 
@@ -157,7 +165,7 @@ def main():
     rhabillees = completer_fiches(etat)
     v.sauver(ETAT, etat)
     if rhabillees:
-        print(f"{rhabillees} fiches anciennes complétées depuis Shotgun.")
+        print(f"{rhabillees} fiches complétées depuis Shotgun.")
 
     if premier:
         print(f"Initialisation : {len(trouves)} talks enregistrés, aucune alerte.")

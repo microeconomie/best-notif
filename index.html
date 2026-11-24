@@ -82,7 +82,7 @@
     font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body);
     line-height: 1.5; -webkit-font-smoothing: antialiased;
   }
-  .site { max-width: 1120px; margin: 0 auto; padding: 40px 16px 72px; }
+  .site { max-width: none; margin: 0; padding: 32px 12px 64px; }
   .site-titre { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: 2.1rem;
     line-height: 1.15; margin: 0 0 4px; letter-spacing: -.01em; }
   .site-sous { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 30px; }
@@ -99,6 +99,28 @@
     background-position: calc(100% - 15px) 52%, calc(100% - 10px) 52%;
     background-size: 5px 5px, 5px 5px; background-repeat: no-repeat; cursor: pointer; }
   .dash-skeleton { opacity: .35; }
+  .bt-veilles { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: var(--cds-gap-md); }
+  .bt-veille { background: var(--color-panel); border: 1px solid var(--color-border-line);
+    border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column;
+    align-items: center; gap: 7px; text-align: center; position: relative; overflow: hidden; }
+  .bt-veille-logo { width: 34px; height: 34px; object-fit: contain; border-radius: 7px; }
+  .bt-veille-mono { width: 34px; height: 34px; border-radius: 7px; display: grid; place-items: center;
+    background: var(--color-bg); border: 1px solid var(--color-border-line);
+    font-family: var(--font-anthropic-serif); font-size: 1rem; color: var(--color-fg-muted); }
+  .bt-veille-nom { font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); }
+  .bt-veille-age { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted);
+    font-variant-numeric: tabular-nums; }
+  .bt-veille-btn { appearance: none; font: inherit; font-size: var(--cds-font-size-caption);
+    padding: 5px 11px; border-radius: 999px; border: 1px solid var(--color-border-line);
+    background: transparent; color: var(--color-text-secondary); cursor: pointer; white-space: nowrap; }
+  .bt-veille-btn:hover:not(:disabled) { border-color: var(--color-fg); color: var(--color-fg); }
+  .bt-veille-btn:disabled { opacity: .5; cursor: default; }
+  .bt-veille-etat { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); min-height: 1.2em; }
+  .bt-veille-etat.ok { color: var(--color-ok); }
+  .bt-veille-jauge { position: absolute; left: 0; bottom: 0; height: 2px; width: 0;
+    background: var(--color-ok); transition: width .9s linear; }
+  @keyframes bt-pulse { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+  .bt-veille.attente .bt-veille-logo, .bt-veille.attente .bt-veille-mono { animation: bt-pulse 1.4s ease-in-out infinite; }
   .bt-erreur { color: var(--color-bad); font-size: var(--cds-font-size-caption); }
 
   .bt-wrap { display: flex; flex-direction: column; gap: var(--cds-gap-xl); }
@@ -188,10 +210,11 @@
       <b data-draw="k_flous">—</b> autres talks sont complets sans qu'on sache depuis quand,
       et restent hors des calculs.
     </p>
+    <div class="bt-veilles" data-draw="k_veilles"></div>
     <p class="bt-note">
-      Dernier passage de chaque veille : <span data-draw="k_passages">—</span>. Cette page lit le
-      dépôt à chaque ouverture : elle est donc aussi à jour que la dernière veille, GitHub
-      plafonnant les exécutions programmées à environ trois par jour.
+      Cette page lit le dépôt à chaque ouverture : elle est aussi à jour que la dernière veille.
+      GitHub plafonne les exécutions programmées à environ trois par jour et par organisateur ;
+      forcer un passage ouvre sa page de lancement, puis cette page guette le résultat.
     </p>
 
     <div class="bt-tiles">
@@ -412,6 +435,8 @@
 </script>
 <script>
   // ---- utilitaires partagés ----
+  const DONNEES = 'data/talks.json';
+
   window.BT = (function () {
     const lignes = () => {
       const d = dash.data('talks');
@@ -552,23 +577,152 @@
   txt('k_flous', () => BT.nb(dash.data('c_flous').data));
   txt('k_median', () => BT.nb(dash.data('c_median').data, 1));
 
-  dash.draw('k_passages', (el) => {
-    const l = BT.lignes();
-    const dernier = {};
-    l.forEach((x) => {
-      const v = x.derniere_veille;
-      if (v && (!dernier[x.organisateur] || v > dernier[x.organisateur])) dernier[x.organisateur] = v;
+  const ORGAS = [
+    { nom: 'Amio', logo: 'https://amioclub.com/apple-touch-icon.png', wf: 'veille-amio.yml' },
+    { nom: 'Apéro Talk', logo: 'https://aperotalk.com/apple-touch-icon.png', wf: 'veille-aperotalk.yml' },
+    { nom: 'Causeries de Comptoir', logo: 'https://causeriesdecomptoir.fr/apple-touch-icon.png', wf: 'veille-causeries.yml' },
+    { nom: 'Le Briefing', logo: 'https://www.lebriefing.co/favicon.ico', wf: 'veille-lebriefing.yml' },
+  ];
+  const DEPOT = 'https://github.com/microeconomie/best-notif';
+  const ATTENTE_ESTIMEE = 120000;   // un passage dure 10 a 15 s, la republication du site le reste
+  const ATTENTE_MAX = 420000;
+  const suivis = {};                // organisateur -> surveillance en cours
+
+  const dernierPassage = (orga) => {
+    let d = '';
+    BT.lignes().forEach((x) => {
+      if (x.organisateur === orga && x.derniere_veille && x.derniere_veille > d) d = x.derniere_veille;
     });
-    const noms = Object.keys(dernier).sort((a, b) => a.localeCompare(b, 'fr'));
-    if (!noms.length) { el.textContent = l.length ? 'non renseigné' : '—'; return; }
-    const maintenant = Date.now();
-    el.textContent = noms.map((n) => {
-      // les horodatages sont en temps universel et notés sans suffixe
-      const min = Math.max(0, Math.round((maintenant - new Date(dernier[n] + 'Z').getTime()) / 60000));
-      const age = min < 60 ? `${min} min` : `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, '0')}`;
-      return `${n} il y a ${age}`;
-    }).join(' · ');
+    return d;
+  };
+
+  const anciennete = (iso) => {
+    if (!iso) return 'jamais';
+    // les horodatages sont en temps universel et notés sans suffixe
+    const min = Math.max(0, Math.round((Date.now() - new Date(iso + 'Z').getTime()) / 60000));
+    if (min < 60) return `il y a ${min} min`;
+    return `il y a ${Math.floor(min / 60)} h ${String(min % 60).padStart(2, '0')}`;
+  };
+
+  // ce qui a bougé chez un organisateur entre deux versions de la base
+  const comparer = (avant, apres, orga) => {
+    const vieux = new Map(avant.filter((x) => x.organisateur === orga).map((x) => [x.id, x]));
+    const faits = [];
+    let nouveaux = 0, complets = 0, inscrits = 0;
+    apres.filter((x) => x.organisateur === orga).forEach((x) => {
+      const v = vieux.get(x.id);
+      if (!v) { nouveaux++; return; }
+      if (v.statut !== x.statut && x.statut === 'complet') complets++;
+      else if (String(v.inscrits) !== String(x.inscrits)) inscrits++;
+    });
+    if (nouveaux) faits.push(`${nouveaux} ${nouveaux > 1 ? 'nouveaux talks' : 'nouveau talk'}`);
+    if (complets) faits.push(`${complets} passé${complets > 1 ? 's' : ''} complet${complets > 1 ? 's' : ''}`);
+    if (inscrits) faits.push(`${inscrits} remplissage${inscrits > 1 ? 's' : ''} modifié${inscrits > 1 ? 's' : ''}`);
+    return faits;
+  };
+
+  dash.draw('k_veilles', (el) => {
+    const frag = document.createDocumentFragment();
+    ORGAS.forEach((o) => {
+      const carte = document.createElement('article');
+      carte.className = 'bt-veille';
+      carte.dataset.orga = o.nom;
+
+      const img = document.createElement('img');
+      img.className = 'bt-veille-logo';
+      img.src = o.logo; img.alt = ''; img.loading = 'lazy';
+      img.onerror = () => {
+        const mono = document.createElement('div');
+        mono.className = 'bt-veille-mono';
+        mono.textContent = o.nom[0];
+        img.replaceWith(mono);
+      };
+      carte.appendChild(img);
+
+      const nom = document.createElement('div');
+      nom.className = 'bt-veille-nom';
+      nom.textContent = o.nom;
+      carte.appendChild(nom);
+
+      const age = document.createElement('div');
+      age.className = 'bt-veille-age';
+      age.textContent = anciennete(dernierPassage(o.nom));
+      carte.appendChild(age);
+
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'bt-veille-btn';
+      btn.textContent = 'Forcer la veille';
+      btn.onclick = () => lancer(o);
+      carte.appendChild(btn);
+
+      const etat = document.createElement('div');
+      etat.className = 'bt-veille-etat';
+      carte.appendChild(etat);
+
+      const jauge = document.createElement('div');
+      jauge.className = 'bt-veille-jauge';
+      carte.appendChild(jauge);
+
+      frag.appendChild(carte);
+    });
+    el.replaceChildren(frag);
+    rafraichirSuivis();
   });
+
+  // met à jour les cartes sous surveillance sans tout redessiner
+  function rafraichirSuivis() {
+    ORGAS.forEach((o) => {
+      const s = suivis[o.nom];
+      const carte = document.querySelector(`.bt-veille[data-orga="${CSS.escape(o.nom)}"]`);
+      if (!carte) return;
+      const etat = carte.querySelector('.bt-veille-etat');
+      const jauge = carte.querySelector('.bt-veille-jauge');
+      const btn = carte.querySelector('.bt-veille-btn');
+      if (!s) { carte.classList.remove('attente'); jauge.style.width = '0'; return; }
+      if (s.phase === 'attente') {
+        carte.classList.add('attente');
+        btn.disabled = true;
+        const passe = Date.now() - s.debut;
+        jauge.style.width = `${Math.min(99, (passe / ATTENTE_ESTIMEE) * 100)}%`;
+        etat.className = 'bt-veille-etat';
+        etat.textContent = passe < ATTENTE_ESTIMEE
+          ? `en attente du passage… ${Math.round((ATTENTE_ESTIMEE - passe) / 1000)} s`
+          : 'toujours en attente…';
+      } else {
+        carte.classList.remove('attente');
+        btn.disabled = false;
+        jauge.style.width = '0';
+        etat.className = s.phase === 'fini' ? 'bt-veille-etat ok' : 'bt-veille-etat';
+        etat.textContent = s.resume;
+      }
+    });
+  }
+
+  const pause = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  async function lancer(o) {
+    if (suivis[o.nom] && suivis[o.nom].phase === 'attente') return;
+    window.open(`${DEPOT}/actions/workflows/${o.wf}`, '_blank', 'noopener');
+    const repere = dernierPassage(o.nom);
+    const avant = BT.lignes().slice();
+    suivis[o.nom] = { phase: 'attente', debut: Date.now(), repere, avant };
+    rafraichirSuivis();
+    while (Date.now() - suivis[o.nom].debut < ATTENTE_MAX) {
+      await pause(10000);
+      await dash.charger(DONNEES);
+      if (dernierPassage(o.nom) !== repere) {
+        const faits = comparer(avant, BT.lignes(), o.nom);
+        suivis[o.nom] = { phase: 'fini', resume: faits.length ? faits.join(', ') : 'aucun changement' };
+        rafraichirSuivis();
+        return;
+      }
+    }
+    suivis[o.nom] = { phase: 'expire', resume: 'rien reçu, le passage a-t-il été lancé ?' };
+    rafraichirSuivis();
+  }
+
+  setInterval(rafraichirSuivis, 1000);
   txt('t_total', () => BT.nb(dash.data('c_total').data));
   txt('t_complets', () => BT.nb(dash.data('c_complets').data));
   txt('t_median', () => {
@@ -854,8 +1008,8 @@
   // Le fichier est servi par le depot lui-meme, a cote de cette page : chaque
   // ouverture montre donc ce que la derniere veille a ecrit. On reinterroge
   // toutes les dix minutes pour qu'un onglet laisse ouvert ne vieillisse pas.
-  dash.charger('data/talks.json');
-  setInterval(() => dash.charger('data/talks.json'), 10 * 60 * 1000);
+  dash.charger(DONNEES);
+  setInterval(() => dash.charger(DONNEES), 10 * 60 * 1000);
 </script>
   <p class="site-pied">
     Données reconstruites à chaque passage des veilles et publiées dans

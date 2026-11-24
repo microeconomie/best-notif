@@ -1,6 +1,7 @@
 {
   "addiction-juliette-hazart": {
     "alerte_seuil": false,
+    "capacite": null,
     "complet": true,
     "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
@@ -43,7 +44,7 @@
       ]
     ],
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
+    "derniere_maj": "2026-11-24T11:14",
     "dispo_le": null,
     "inscrits": 87,
     "intervenant": "Juliette Hazart",
@@ -65,7 +66,8 @@
   },
   "anxiete-monia-djillali": {
     "alerte_seuil": false,
-    "complet": true,
+    "capacite": null,
+    "complet": false,
     "complet_le": "2026-11-17T21:43",
     "complet_marge_h": 8.6,
     "courbe": [
@@ -107,8 +109,8 @@
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
-    "dispo_le": "2026-11-17T13:06",
+    "derniere_maj": "2026-11-24T11:14",
+    "dispo_le": "2026-11-24T11:14",
     "inscrits": 89,
     "intervenant": "Monia Djillali",
     "journal": [
@@ -119,16 +121,22 @@
       [
         "2026-11-17T21:43",
         "complet"
+      ],
+      [
+        "2026-11-24T11:14",
+        "revente"
       ]
     ],
     "lieu": "Bar à Paris",
     "parution_marge_h": 4.7,
+    "rouvert_le": "2026-11-24T11:14",
     "titre": "Anxiété, pression sociale : et si personne ne nous jugeait vraiment ?",
     "url": "https://amioclub.com/checkout?date=Mardi%208%20d%C3%A9cembre%202026&title=Anxi%C3%A9t%C3%A9%2C%20pression%20sociale%20%3A%20et%20si%20personne%20ne%20nous%20jugeait%20vraiment%20%3F&event=anxiete-monia-djillali&venue=Bar%20%C3%A0%20Paris",
     "vu_le": "2026-11-15T21:39"
   },
   "beaute-hubert-guerin": {
     "alerte_seuil": false,
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
@@ -147,8 +155,8 @@
       ]
     ],
     "date": "Dimanche 13 décembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
-    "dispo_le": "2026-11-24T10:20",
+    "derniere_maj": "2026-11-24T11:14",
+    "dispo_le": "2026-11-24T11:14",
     "inscrits": 31,
     "intervenant": "Hubert Guerin",
     "journal": [
@@ -165,9 +173,10 @@
   },
   "braqueur-khaled-miloudi": {
     "alerte_seuil": false,
-    "complet": false,
-    "complet_le": null,
-    "complet_marge_h": null,
+    "capacite": null,
+    "complet": true,
+    "complet_le": "2026-11-24T11:14",
+    "complet_marge_h": 0.9,
     "courbe": [
       [
         "2026-11-22",
@@ -183,7 +192,7 @@
       ]
     ],
     "date": "Mardi 15 décembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
+    "derniere_maj": "2026-11-24T11:14",
     "dispo_le": "2026-11-24T10:20",
     "inscrits": 64,
     "intervenant": "Khaled Miloudi",
@@ -191,6 +200,10 @@
       [
         "2026-11-22T18:26",
         "drop"
+      ],
+      [
+        "2026-11-24T11:14",
+        "complet"
       ]
     ],
     "lieu": "Bar à Paris",
@@ -255,7 +268,8 @@
   },
   "defense-johanic-galode": {
     "alerte_seuil": false,
-    "complet": true,
+    "capacite": null,
+    "complet": false,
     "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
     "courbe": [
@@ -297,8 +311,8 @@
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
-    "dispo_le": null,
+    "derniere_maj": "2026-11-24T11:14",
+    "dispo_le": "2026-11-24T11:14",
     "inscrits": 92,
     "intervenant": "Johanic Galode",
     "journal": [
@@ -309,16 +323,22 @@
       [
         "2026-11-16T16:04",
         "complet"
+      ],
+      [
+        "2026-11-24T11:14",
+        "revente"
       ]
     ],
     "lieu": "Upstairs Opéra",
     "parution_marge_h": 9.8,
+    "rouvert_le": "2026-11-24T11:14",
     "titre": "Soudain, un retour de la conflictualité en Europe…",
     "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026%20%C2%B7%20D%C3%A9fense&title=Soudain%2C%20un%20retour%20de%20la%20conflictualit%C3%A9%20en%20Europe%E2%80%A6&event=defense-johanic-galode&venue=Upstairs%20Op%C3%A9ra%2C%205%20Rue%20Meyerbeer%2C%2075009%20Paris",
     "vu_le": "2026-11-02T15:34"
   },
   "eruptions-solaires-guillaume-aulanier": {
     "alerte_seuil": false,
+    "capacite": null,
     "complet": false,
     "complet_marge_h": null,
     "courbe": [
@@ -360,8 +380,8 @@
       ]
     ],
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
-    "dispo_le": "2026-11-24T10:20",
+    "derniere_maj": "2026-11-24T11:14",
+    "dispo_le": "2026-11-24T11:14",
     "inscrits": 16,
     "intervenant": "Guillaume Aulanier",
     "journal": [
@@ -401,6 +421,7 @@
   },
   "exoplanetes-pierre-olivier-lagage": {
     "alerte_seuil": false,
+    "capacite": null,
     "complet": false,
     "complet_le": null,
     "complet_marge_h": null,
@@ -419,8 +440,8 @@
       ]
     ],
     "date": "Lundi 14 décembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
-    "dispo_le": "2026-11-24T10:20",
+    "derniere_maj": "2026-11-24T11:14",
+    "dispo_le": "2026-11-24T11:14",
     "inscrits": 9,
     "intervenant": "Olivier Lagage",
     "journal": [
@@ -437,7 +458,8 @@
   },
   "fonds-marins-guillaume-pitron": {
     "alerte_seuil": false,
-    "complet": true,
+    "capacite": null,
+    "complet": false,
     "complet_le": "2026-11-18T21:20",
     "complet_marge_h": 8.4,
     "courbe": [
@@ -475,13 +497,13 @@
       ],
       [
         "2026-11-24",
-        87
+        85
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
-    "dispo_le": "2026-11-18T12:56",
-    "inscrits": 87,
+    "derniere_maj": "2026-11-24T11:14",
+    "dispo_le": "2026-11-24T11:14",
+    "inscrits": 85,
     "intervenant": "Guillaume Pitron",
     "journal": [
       [
@@ -495,10 +517,15 @@
       [
         "2026-11-18T21:20",
         "complet"
+      ],
+      [
+        "2026-11-24T11:14",
+        "revente"
       ]
     ],
     "lieu": "Impasse bar",
     "parution_marge_h": 9.8,
+    "rouvert_le": "2026-11-24T11:14",
     "titre": "Les fonds marins : nouvelle frontière du capitalisme",
     "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026%20%C2%B7%20Fonds%20marins&title=Les%20fonds%20marins%20%3A%20nouvelle%20fronti%C3%A8re%20du%20capitalisme&event=fonds-marins-guillaume-pitron&venue=Impasse%20bar%2C%204%20Cit%C3%A9%20Griset%2C%2075011%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -575,7 +602,8 @@
   },
   "legiste-nicolas-gmati": {
     "alerte_seuil": false,
-    "complet": true,
+    "capacite": null,
+    "complet": false,
     "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
     "courbe": [
@@ -617,8 +645,8 @@
       ]
     ],
     "date": "Mardi 24 novembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
-    "dispo_le": null,
+    "derniere_maj": "2026-11-24T11:14",
+    "dispo_le": "2026-11-24T11:14",
     "inscrits": 104,
     "intervenant": "Nicolas Gmati",
     "journal": [
@@ -629,10 +657,15 @@
       [
         "2026-11-16T16:04",
         "complet"
+      ],
+      [
+        "2026-11-24T11:14",
+        "revente"
       ]
     ],
     "lieu": "Le Cirque",
     "parution_marge_h": 9.8,
+    "rouvert_le": "2026-11-24T11:14",
     "titre": "Médecin légiste : que peut bien dire un cadavre ?",
     "url": "https://amioclub.com/checkout?date=Mardi%2024%20novembre%202026&title=M%C3%A9decin%20l%C3%A9giste%20%3A%20que%20peut%20bien%20dire%20un%20cadavre%20%3F&event=legiste-nicolas-gmati&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
     "vu_le": "2026-11-02T15:34"
@@ -679,6 +712,7 @@
   },
   "nasa-nicolas-mahoume": {
     "alerte_seuil": false,
+    "capacite": null,
     "complet": false,
     "complet_marge_h": null,
     "courbe": [
@@ -720,8 +754,8 @@
       ]
     ],
     "date": "Mercredi 25 novembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
-    "dispo_le": "2026-11-24T10:20",
+    "derniere_maj": "2026-11-24T11:14",
+    "dispo_le": "2026-11-24T11:14",
     "inscrits": 60,
     "intervenant": "Nicolas Mahoume",
     "journal": [
@@ -778,7 +812,8 @@
   },
   "passage-a-lacte-emma-christiaen-oliveira-2": {
     "alerte_seuil": false,
-    "complet": true,
+    "capacite": null,
+    "complet": false,
     "complet_le": "2026-11-16T16:04",
     "complet_marge_h": null,
     "courbe": [
@@ -820,8 +855,8 @@
       ]
     ],
     "date": "Lundi 30 novembre 2026",
-    "derniere_maj": "2026-11-24T10:20",
-    "dispo_le": null,
+    "derniere_maj": "2026-11-24T11:14",
+    "dispo_le": "2026-11-24T11:14",
     "inscrits": 99,
     "intervenant": "Oliveira 2",
     "journal": [
@@ -832,12 +867,17 @@
       [
         "2026-11-16T16:04",
         "complet"
+      ],
+      [
+        "2026-11-24T11:14",
+        "revente"
       ]
     ],
-    "lieu": "Bar à Paris",
+    "lieu": "Cabaret Gaîté",
     "parution_marge_h": 4.5,
+    "rouvert_le": "2026-11-24T11:14",
     "titre": "Le passage à l'acte meurtrier...",
-    "url": "https://amioclub.com/checkout?date=Lundi%2030%20novembre%202026&title=Le%20passage%20%C3%A0%20l'acte%20meurtrier...&event=passage-a-lacte-emma-christiaen-oliveira-2&venue=Bar%20%C3%A0%20Paris",
+    "url": "https://amioclub.com/checkout?date=Lundi%2030%20novembre%202026&title=Le%20passage%20%C3%A0%20l'acte%20meurtrier...&event=passage-a-lacte-emma-christiaen-oliveira-2&venue=Cabaret%20Ga%C3%AEt%C3%A9%2C%2080%20Avenue%20du%20Maine%2C%2075014%20Paris",
     "vu_le": "2026-11-08T19:29"
   },
   "presidentielle-richard-flurin": {

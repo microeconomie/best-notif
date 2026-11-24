@@ -1,9 +1,12 @@
 name: Rattrapage ponctuel des intervenants
 
-# Déclenchement manuel seulement : ce rattrapage n'a de sens qu'une fois.
-# À supprimer après usage.
+# Ce rattrapage n'a de sens qu'une fois. Il se déclenche sur les pushes de
+# sa propre branche, faute de pouvoir l'être à la main depuis une branche qui
+# n'est pas la branche par défaut. À supprimer après usage.
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - rattrapage-intervenants
 
 permissions:
   contents: write

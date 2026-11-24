@@ -30,6 +30,9 @@ LIGNE_LI = re.compile(r"<li[^>]*>(.*?)</li>", re.S | re.IGNORECASE)
 SHOTGUN = re.compile(r'href="(https://shotgun\.live/[a-z]{2}/events/([a-z0-9-]+))"', re.IGNORECASE)
 JOURS = "lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche"
 DATE = re.compile(rf"(?:{JOURS})\s+\d{{1,2}}(?:er)?\s+[a-zéû]+(?:\s+\d{{4}})?", re.IGNORECASE)
+# « Avec Émilie Dupont, chercheuse… » : le nom suit le mot « avec » dans la
+# description de la carte, une fois les entités HTML décodées.
+AVEC = re.compile(r"\bavec\s+([A-ZÀ-Ý][\w'\u2019-]+(?:\s+[A-ZÀ-Ý][\w'\u2019-]+){0,3})")
 
 
 def recuperer(page):
@@ -53,7 +56,9 @@ def recuperer(page):
             continue
 
         lien = SHOTGUN.search(bloc)
-        d = DATE.search(v.propre(bloc))
+        texte = v.propre(bloc)
+        d = DATE.search(texte)
+        qui = AVEC.search(texte)
         lieux = [v.propre(x) for x in LIGNE_LI.findall(bloc)]
         lieu = next((x for x in lieux if x and not DATE.match(x)), "")
 
@@ -64,7 +69,7 @@ def recuperer(page):
             "lieu": lieu[:60],
             "url": lien.group(1) if lien else PAGE + "#evenements",
             "complet": "is-soldout" in classes.lower(),
-            "intervenant": None,
+            "intervenant": qui.group(1) if qui else None,
         }
     return len(reperes), evenements
 

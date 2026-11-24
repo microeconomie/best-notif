@@ -217,6 +217,7 @@
     "complet_marge_h": null,
     "date": "Lundi 9 novembre 2026",
     "dispo_le": "2026-11-16T15:12",
+    "intervenant": "Antoine Sauvestre-Vinci",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -235,6 +236,7 @@
     "complet_marge_h": null,
     "date": "Lundi 9 novembre 2026",
     "dispo_le": "2026-11-16T15:12",
+    "intervenant": "Jérôme Barlatier",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -253,6 +255,7 @@
     "complet_marge_h": null,
     "date": "Lundi 2 novembre 2026",
     "dispo_le": "2026-11-16T15:12",
+    "intervenant": "Elodie Eliot",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -402,6 +405,7 @@
     "complet_marge_h": 8.5,
     "date": "Mardi 20 octobre 2026",
     "dispo_le": "2026-10-19T04:29",
+    "intervenant": "Olivier Mas",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -535,6 +539,7 @@
     "complet_marge_h": null,
     "date": "Mardi 27 octobre 2026",
     "dispo_le": "2026-11-16T15:12",
+    "intervenant": "Bruno Tertrais",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -553,6 +558,7 @@
     "complet_marge_h": null,
     "date": "Mercredi 18 novembre 2026",
     "dispo_le": "2026-11-16T15:12",
+    "intervenant": "Patrice Pouillard",
     "journal": [
       [
         "2026-10-26T12:47",
@@ -570,6 +576,7 @@
     "complet_marge_h": null,
     "date": "Mercredi 4 novembre 2026",
     "dispo_le": "2026-11-16T15:12",
+    "intervenant": "Didier Mennecier",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -588,6 +595,7 @@
     "complet_marge_h": null,
     "date": "Mardi 3 novembre 2026",
     "dispo_le": "2026-11-16T15:12",
+    "intervenant": "Sophia Mansouri",
     "journal": [
       [
         "2026-10-20T11:23",
@@ -885,6 +893,7 @@
     "complet_marge_h": null,
     "date": "Mercredi 28 octobre 2026",
     "dispo_le": "2026-11-16T15:12",
+    "intervenant": "Richard Flurin",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -904,6 +913,7 @@
     "complet_marge_h": null,
     "date": "Mercredi 21 octobre 2026",
     "dispo_le": null,
+    "intervenant": "Yannick Deslandes",
     "journal": [
       [
         "2026-10-17T00:12",
@@ -974,6 +984,7 @@
     "complet_marge_h": null,
     "date": "Mardi 27 octobre 2026",
     "dispo_le": "2026-11-16T15:12",
+    "intervenant": "Catherine Blanc",
     "journal": [
       [
         "2026-10-17T00:12",

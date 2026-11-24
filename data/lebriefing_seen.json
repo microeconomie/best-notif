@@ -4,6 +4,7 @@
     "complet_marge_h": null,
     "date": "Mercredi 14 octobre 2026",
     "dispo_le": "2026-11-16T15:20",
+    "intervenant": "Françoise Gaill",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -114,6 +115,7 @@
     "complet_marge_h": null,
     "date": "Mercredi 7 octobre 2026",
     "dispo_le": "2026-11-16T15:20",
+    "intervenant": "Emmanuelle Piquet",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -132,6 +134,7 @@
     "complet_marge_h": null,
     "date": "Jeudi 12 novembre 2026",
     "dispo_le": "2026-11-16T15:20",
+    "intervenant": "Émilie Berthet",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -200,6 +203,7 @@
     "complet_marge_h": null,
     "date": "Lundi 9 novembre 2026",
     "dispo_le": "2026-11-16T15:20",
+    "intervenant": "Christina Moeller",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -244,6 +248,7 @@
     "complet_marge_h": null,
     "date": "Mardi 10 novembre 2026",
     "dispo_le": "2026-11-16T15:20",
+    "intervenant": "Sophie Gacheny",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -413,6 +418,7 @@
     "complet_marge_h": null,
     "date": "Mardi 6 octobre 2026",
     "dispo_le": "2026-11-16T15:20",
+    "intervenant": "Simon Texier",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -431,6 +437,7 @@
     "complet_marge_h": null,
     "date": "Jeudi 15 octobre 2026",
     "dispo_le": "2026-11-16T15:20",
+    "intervenant": "Gilles Vervisch",
     "journal": [
       [
         "2026-10-19T21:13",
@@ -450,6 +457,7 @@
     "complet_marge_h": null,
     "date": "Mercredi 28 octobre 2026",
     "dispo_le": null,
+    "intervenant": "Aurore Malet-Karas",
     "journal": [
       [
         "2026-10-16T14:44",
@@ -477,6 +485,7 @@
     "complet_marge_h": null,
     "date": "Mercredi 21 octobre 2026",
     "dispo_le": "2026-11-16T15:20",
+    "intervenant": "Nicolas Belorgey",
     "journal": [
       [
         "2026-10-16T14:44",
@@ -495,6 +504,7 @@
     "complet_marge_h": null,
     "date": "Mardi 3 novembre 2026",
     "dispo_le": "2026-11-16T15:20",
+    "intervenant": "Maxime Mergalet",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -538,6 +548,7 @@
     "complet_marge_h": null,
     "date": "Mercredi 4 novembre 2026",
     "dispo_le": "2026-11-16T15:20",
+    "intervenant": "Rafael Janosevic",
     "journal": [
       [
         "2026-10-25T17:50",
@@ -612,6 +623,7 @@
     "complet_marge_h": null,
     "date": "Jeudi 22 octobre 2026",
     "dispo_le": null,
+    "intervenant": "François Taddei",
     "journal": [
       [
         "2026-10-16T14:44",
@@ -695,6 +707,7 @@
     "complet_marge_h": null,
     "date": "Mardi 27 octobre 2026",
     "dispo_le": null,
+    "intervenant": "Jacques Arnould",
     "journal": [
       [
         "2026-10-19T21:13",

@@ -6,6 +6,7 @@
     "complet_marge_h": 5.8,
     "date": "Lundi 2 novembre 2026 à 19h30",
     "dispo_le": "2026-10-26T02:33",
+    "intervenant": "Thomas Guénolé",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -195,6 +196,7 @@
     "complet_marge_h": 5.5,
     "date": "Mardi 3 novembre 2026 à 19h30",
     "dispo_le": "2026-10-27T05:50",
+    "intervenant": "Pascal Lardelier",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -219,6 +221,7 @@
     "complet_marge_h": null,
     "date": "Mardi 20 octobre 2026 à 19h30",
     "dispo_le": null,
+    "intervenant": "Hélène Frébault",
     "journal": [
       [
         "2026-10-19T15:53",
@@ -502,6 +505,7 @@
     "complet_marge_h": 0.0,
     "date": "Lundi 9 novembre 2026 à 19h30",
     "dispo_le": "2026-10-23T13:58",
+    "intervenant": "Antoine Marie",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -698,6 +702,7 @@
     "complet_marge_h": 4.3,
     "date": "Mardi 10 novembre 2026 à 19h30",
     "dispo_le": "2026-11-08T20:03",
+    "intervenant": "Gilles Pison",
     "journal": [
       [
         "2026-10-20T15:30",
@@ -981,6 +986,7 @@
     "complet_marge_h": 4.8,
     "date": "Mercredi 21 octobre 2026 à 19h30",
     "dispo_le": "2026-10-20T10:44",
+    "intervenant": "Le télétravailleur",
     "journal": [
       [
         "2026-10-19T15:53",
@@ -1007,6 +1013,7 @@
     "complet_marge_h": null,
     "date": "Mardi 27 octobre 2026 à 19h30",
     "dispo_le": null,
+    "intervenant": "Camille Salinesi",
     "journal": [
       [
         "2026-10-19T15:53",

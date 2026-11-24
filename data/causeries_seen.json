@@ -63,14 +63,14 @@
       ],
       [
         "2026-11-24",
-        12
+        13
       ]
     ],
     "date": "Lundi 14 décembre 2026 à 19h30",
     "date_iso": "2026-12-14",
-    "derniere_maj": "2026-11-24T11:59",
-    "dispo_le": "2026-11-24T11:59",
-    "inscrits": 12,
+    "derniere_maj": "2026-11-24T16:47",
+    "dispo_le": "2026-11-24T16:47",
+    "inscrits": 13,
     "intervenant": "Arnaud Zegierman",
     "journal": [
       [
@@ -80,7 +80,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 68,
+    "places": 67,
     "publie_le": "2026-11-09T12:41",
     "specialite": "Sociologue, cofondateur de l'institut de sondages Viavoice",
     "titre": "La France n'est pas celle que vous croyez",
@@ -271,7 +271,7 @@
     ],
     "date": "Mercredi 2 décembre 2026 à 19h30",
     "date_iso": "2026-12-02",
-    "derniere_maj": "2026-11-24T11:59",
+    "derniere_maj": "2026-11-24T16:47",
     "dispo_le": "2026-11-22T18:10",
     "inscrits": 100,
     "intervenant": "Pierre Martinet",
@@ -344,7 +344,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-24T11:59",
+    "derniere_maj": "2026-11-24T16:47",
     "dispo_le": "2026-10-23T18:49",
     "inscrits": 75,
     "intervenant": "Baptiste Bellet",
@@ -410,8 +410,8 @@
     ],
     "date": "Mardi 8 décembre 2026 à 19h30",
     "date_iso": "2026-12-08",
-    "derniere_maj": "2026-11-24T11:59",
-    "dispo_le": "2026-11-24T11:59",
+    "derniere_maj": "2026-11-24T16:47",
+    "dispo_le": "2026-11-24T16:47",
     "inscrits": 19,
     "intervenant": "Johann Gironnet",
     "journal": [
@@ -430,9 +430,9 @@
     "vu_le": "2026-11-19T18:45"
   },
   "5f2d0447-76f0-4fbb-b841-e359160c9e4f": {
-    "alerte_seuil": false,
+    "alerte_seuil": true,
     "capacite": 75,
-    "complet": true,
+    "complet": false,
     "complet_le": "2026-10-23T18:49",
     "complet_marge_h": 4.8,
     "courbe": [
@@ -470,14 +470,14 @@
       ],
       [
         "2026-11-24",
-        75
+        74
       ]
     ],
     "date": "Mardi 24 novembre 2026 à 19h30",
     "date_iso": "2026-11-24",
-    "derniere_maj": "2026-11-24T11:59",
-    "dispo_le": "2026-10-23T13:58",
-    "inscrits": 75,
+    "derniere_maj": "2026-11-24T16:47",
+    "dispo_le": "2026-11-24T16:47",
+    "inscrits": 74,
     "intervenant": "Grégor Ozbolt",
     "journal": [
       [
@@ -487,12 +487,21 @@
       [
         "2026-10-23T18:49",
         "complet"
+      ],
+      [
+        "2026-11-24T16:47",
+        "revente"
+      ],
+      [
+        "2026-11-24T16:47",
+        "dernieres-places:1"
       ]
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 4.8,
-    "places": 0,
+    "places": 1,
     "publie_le": "2026-10-14T09:55",
+    "rouvert_le": "2026-11-24T16:47",
     "specialite": "23e Français à avoir traversé la Manche à la nage, préparateur mental pour les dirigeants",
     "titre": "Qu'est-ce qui nous fait vraiment dépasser nos limites ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=5f2d0447-76f0-4fbb-b841-e359160c9e4f",
@@ -558,8 +567,8 @@
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-24T11:59",
-    "dispo_le": "2026-11-24T11:59",
+    "derniere_maj": "2026-11-24T16:47",
+    "dispo_le": "2026-11-24T16:47",
     "inscrits": 27,
     "intervenant": "Alexandre Macé Dubois",
     "journal": [
@@ -607,8 +616,8 @@
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-24T11:59",
-    "dispo_le": "2026-11-24T11:59",
+    "derniere_maj": "2026-11-24T16:47",
+    "dispo_le": "2026-11-24T16:47",
     "inscrits": 12,
     "intervenant": "Camille Renoux",
     "journal": [
@@ -672,7 +681,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-24T11:59",
+    "derniere_maj": "2026-11-24T16:47",
     "dispo_le": "2026-11-17T09:57",
     "inscrits": 80,
     "intervenant": "Xavier Leflaive",
@@ -755,8 +764,8 @@
     ],
     "date": "Mardi 22 décembre 2026 à 19h30",
     "date_iso": "2026-12-22",
-    "derniere_maj": "2026-11-24T11:59",
-    "dispo_le": "2026-11-24T11:59",
+    "derniere_maj": "2026-11-24T16:47",
+    "dispo_le": "2026-11-24T16:47",
     "inscrits": 54,
     "intervenant": "Cyril Lobjois",
     "journal": [
@@ -808,8 +817,8 @@
     ],
     "date": "Mardi 15 décembre 2026 à 19h30",
     "date_iso": "2026-12-15",
-    "derniere_maj": "2026-11-24T11:59",
-    "dispo_le": "2026-11-24T11:59",
+    "derniere_maj": "2026-11-24T16:47",
+    "dispo_le": "2026-11-24T16:47",
     "inscrits": 70,
     "intervenant": "Yannick Lejeune",
     "journal": [
@@ -852,14 +861,14 @@
       ],
       [
         "2026-11-24",
-        41
+        43
       ]
     ],
     "date": "Dimanche 13 décembre 2026 à 18h00",
     "date_iso": "2026-12-13",
-    "derniere_maj": "2026-11-24T11:59",
-    "dispo_le": "2026-11-24T11:59",
-    "inscrits": 41,
+    "derniere_maj": "2026-11-24T16:47",
+    "dispo_le": "2026-11-24T16:47",
+    "inscrits": 43,
     "intervenant": "Carole ANDRE-DESSORNES",
     "journal": [
       [
@@ -869,7 +878,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 6.2,
-    "places": 34,
+    "places": 32,
     "publie_le": "2026-11-02T12:25",
     "specialite": "Géopolitologue, chercheuse associée à la Fondation pour la recherche stratégique",
     "titre": "D'où vient vraiment le chaos au Moyen-Orient ?",
@@ -906,8 +915,8 @@
     ],
     "date": "Dimanche 6 décembre 2026 à 18h00",
     "date_iso": "2026-12-06",
-    "derniere_maj": "2026-11-24T11:59",
-    "dispo_le": "2026-11-24T11:59",
+    "derniere_maj": "2026-11-24T16:47",
+    "dispo_le": "2026-11-24T16:47",
     "inscrits": 28,
     "intervenant": "Jérémy Côme",
     "journal": [

@@ -7,6 +7,9 @@ son fichier d'état, alerte par issue GitHub, puis reconstruit la base.
 ## Ce qui est écrit à la main et ce qui est dérivé
 
 - `scripts/` et `.github/workflows/` : le code.
+- `scripts/ponctuel/` : des rattrapages passés, gardés comme trace de ce qui a
+  été corrigé à la main et de la source de chaque valeur. Jamais appelés par
+  une veille, et à ne pas relancer sans raison.
 - `data/<organisateur>_seen.json` : l'état de chaque veille, écrit par elle
   seule, une fiche par talk. Jamais purgé : un talk reste dans la base après
   sa soirée, même quand il disparaît du site.

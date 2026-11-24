@@ -13,6 +13,13 @@ son fichier d'état, alerte par issue GitHub, puis reconstruit la base.
 - `data/talks.json` et `data/talks.csv` : **dérivés**, reconstruits par
   `scripts/construire_base.py` à chaque passage de chaque veille.
 
+## Le site
+
+`index.html` à la racine est le baromètre public, servi par GitHub Pages. Il lit
+`data/talks.json` à côté de lui, donc il est à jour dès qu'une veille a commité,
+sans intervention. Toute sa logique de rendu tient dans ce seul fichier ;
+`assets/d3.min.js` est embarqué pour ne dépendre d'aucun service extérieur.
+
 ## Règle pour les pull requests
 
 **Ne pas inclure `data/talks.json` ni `data/talks.csv` dans une pull

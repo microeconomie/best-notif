@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Baromètre des talks parisiens</title>
+<meta name="description" content="Suivi des talks de quatre organisateurs parisiens : parution, remplissage et délai avant complet.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<script src="assets/d3.min.js"></script>
+<style>
+  :root {
+    color-scheme: light dark;
+    --font-anthropic-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-anthropic-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+
+    --cds-radius: 10px;
+    --cds-gap-sm: 10px;
+    --cds-gap-md: 16px;
+    --cds-gap-xl: 34px;
+    --cds-pad-sm: 8px;
+    --cds-pad-md: 14px;
+    --cds-pad-lg: 18px;
+    --cds-font-size-caption: 0.8125rem;
+    --cds-font-size-body: 1rem;
+    --cds-font-size-heading: 1.1875rem;
+    --cds-font-weight-medium: 560;
+
+    --color-bg: #faf9f6;
+    --color-panel: #ffffff;
+    --color-fg: #1d1b19;
+    --color-text-secondary: #55504a;
+    --color-fg-muted: #79736b;
+    --color-border-line: #e6e1d9;
+    --color-ok: #2f7a4f;
+    --color-bad: #b04228;
+
+    --cds-border: var(--color-border-line);
+    --cds-text-secondary: var(--color-text-secondary);
+    --cds-surface-popover: #ffffff;
+    --cds-shadow-popover: 0 8px 24px rgba(31, 27, 22, .14);
+    --cds-chart-axis: #aaa49b;
+    --cds-chart-grid: #ece7df;
+    --cds-chart-muted: #cac3b9;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --color-bg: #17150f;
+      --color-panel: #201d17;
+      --color-fg: #f3efe7;
+      --color-text-secondary: #bab3a7;
+      --color-fg-muted: #948d81;
+      --color-border-line: #332f27;
+      --color-ok: #63bd87;
+      --color-bad: #e08264;
+      --cds-surface-popover: #262219;
+      --cds-shadow-popover: 0 8px 24px rgba(0, 0, 0, .5);
+      --cds-chart-axis: #6d675d;
+      --cds-chart-grid: #2b271f;
+      --cds-chart-muted: #4e4940;
+    }
+  }
+  :root[data-theme="dark"] {
+    --color-bg: #17150f;
+    --color-panel: #201d17;
+    --color-fg: #f3efe7;
+    --color-text-secondary: #bab3a7;
+    --color-fg-muted: #948d81;
+    --color-border-line: #332f27;
+    --color-ok: #63bd87;
+    --color-bad: #e08264;
+    --cds-surface-popover: #262219;
+    --cds-shadow-popover: 0 8px 24px rgba(0, 0, 0, .5);
+    --cds-chart-axis: #6d675d;
+    --cds-chart-grid: #2b271f;
+    --cds-chart-muted: #4e4940;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--color-bg); color: var(--color-fg);
+    font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body);
+    line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  .site { max-width: 1120px; margin: 0 auto; padding: 40px 16px 72px; }
+  .site-titre { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: 2.1rem;
+    line-height: 1.15; margin: 0 0 4px; letter-spacing: -.01em; }
+  .site-sous { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 30px; }
+  .site-sous a { color: inherit; }
+  .site-pied { margin-top: 44px; padding-top: var(--cds-pad-md); border-top: 1px solid var(--color-border-line);
+    color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .site-pied a { color: inherit; }
+
+  .dash-select { appearance: none; font: inherit; font-size: var(--cds-font-size-caption);
+    padding: 6px 28px 6px 10px; border-radius: var(--cds-radius);
+    border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg);
+    background-image: linear-gradient(45deg, transparent 50%, var(--color-fg-muted) 50%),
+      linear-gradient(135deg, var(--color-fg-muted) 50%, transparent 50%);
+    background-position: calc(100% - 15px) 52%, calc(100% - 10px) 52%;
+    background-size: 5px 5px, 5px 5px; background-repeat: no-repeat; cursor: pointer; }
+  .dash-skeleton { opacity: .35; }
+  .bt-erreur { color: var(--color-bad); font-size: var(--cds-font-size-caption); }
+
+  .bt-wrap { display: flex; flex-direction: column; gap: var(--cds-gap-xl); }
+  .bt-lede { font-size: var(--cds-font-size-body); color: var(--color-fg-muted); max-width: 62ch; line-height: 1.55; }
+  .bt-lede b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); font-variant-numeric: tabular-nums; }
+
+  .bt-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--cds-gap-md); }
+  .bt-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .bt-tile-k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .04em; text-transform: uppercase; }
+  .bt-tile-v { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: 2rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .bt-tile-n { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+
+  .bt-sec { display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+  .bt-onglets { display: flex; gap: 2px; border-bottom: 1px solid var(--color-border-line); }
+  .bt-onglet { appearance: none; background: none; border: 0; border-bottom: 2px solid transparent;
+    margin-bottom: -1px; padding: 7px 13px; font: inherit; font-size: var(--cds-font-size-caption);
+    color: var(--color-fg-muted); cursor: pointer; }
+  .bt-onglet:hover { color: var(--color-fg); }
+  .bt-onglet[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); }
+  .bt-panneau { display: flex; flex-direction: column; gap: var(--cds-gap-xl); }
+  .bt-panneau[hidden] { display: none; }
+  .bt-sec h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .bt-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); max-width: 70ch; line-height: 1.5; }
+  .bt-chart { position: relative; min-height: 180px; }
+  .bt-chart svg { display: block; width: 100%; height: auto; }
+  .bt-chart text { font-family: var(--font-anthropic-sans); }
+  .bt-ax text { fill: var(--cds-text-secondary); font-size: 11px; }
+  .bt-ax .domain, .bt-ax line { stroke: var(--cds-chart-axis); }
+  .bt-grid line { stroke: var(--cds-chart-grid); }
+  .bt-val { fill: var(--color-fg); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .bt-lab { fill: var(--color-fg); font-size: 11.5px; }
+
+  .bt-tip { position: absolute; pointer-events: none; opacity: 0; transition: opacity .12s; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); border-radius: var(--cds-radius); padding: 6px 9px; font-size: var(--cds-font-size-caption); max-width: 240px; z-index: 5; }
+  .bt-tip b { display: block; font-weight: var(--cds-font-weight-medium); margin-bottom: 2px; }
+  .bt-tip span { color: var(--cds-text-secondary); }
+
+  .bt-filtres { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+  .bt-filtres input[type="search"] { flex: 1 1 160px; min-width: 0; background: var(--color-bg); color: var(--color-fg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 6px 10px; font: inherit; font-size: var(--cds-font-size-caption); }
+  .bt-compte { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+
+  .bt-scroll { overflow: auto; max-height: 78vh; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); }
+  table.bt-table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .bt-table th, .bt-table td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  /* avec border-collapse, la bordure d'un en-tête collant se décolle : on la dessine en ombre */
+  .bt-table th { position: sticky; top: 0; z-index: 2; border-bottom: 0; box-shadow: inset 0 -1px 0 var(--color-border-line);
+    background: var(--color-panel); font-weight: var(--cds-font-weight-medium); cursor: pointer; user-select: none; }
+  .bt-table th[aria-sort="ascending"]::after { content: " ↑"; }
+  .bt-table th[aria-sort="descending"]::after { content: " ↓"; }
+  .bt-table td.bt-titre { white-space: normal; min-width: 240px; }
+  .bt-table tbody tr:last-child td { border-bottom: 0; }
+  /* une soiree passee reste lisible, mais recule d'un plan */
+  .bt-table tbody tr.bt-passe { opacity: .62; }
+  .bt-table tbody tr.bt-passe:hover { opacity: 1; }
+
+  .bt-pill { display: inline-block; padding: 1px 7px; border-radius: 999px; font-size: 11px; border: 1px solid var(--color-border-line); }
+  .bt-pill.oui { color: var(--color-bad); border-color: color-mix(in srgb, var(--color-bad) 40%, transparent); }
+  .bt-pill.non { color: var(--color-ok); border-color: color-mix(in srgb, var(--color-ok) 40%, transparent); }
+  .bt-pill.passe { color: var(--color-text-secondary); }
+  .bt-titre a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--color-border-line); }
+  .bt-titre a:hover { border-bottom-color: currentColor; }
+
+  .bt-legende { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .bt-legende span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 5px; background: currentColor; }
+
+  details.bt-methode { border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-md); }
+  details.bt-methode summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  details.bt-methode div { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.6; max-width: 72ch; padding-top: var(--cds-pad-sm); display: flex; flex-direction: column; gap: 8px; }
+</style>
+</head>
+<body>
+<div class="site">
+  <h1 class="site-titre">Baromètre des talks parisiens</h1>
+  <p class="site-sous">
+    Apéro Talk, Le Briefing, Amio et Causeries de Comptoir, suivis en continu depuis le
+    <a href="https://github.com/microeconomie/best-notif">dépôt best-notif</a>.
+  </p>
+
+<div class="bt-wrap">
+
+  <section class="bt-sec" id="apercu">
+    <p class="bt-lede">
+      <b data-draw="k_total">—</b> talks recensés chez quatre organisateurs parisiens, dont
+      <b data-draw="k_complets">—</b> affichent complet. Le délai entre l'ouverture des
+      réservations et le complet n'est retenu que lorsque ses deux bouts sont connus à moins de
+      48 heures près, soit <b data-draw="k_mesures">—</b> talks à ce jour. Pour ceux-là, il
+      s'écoule <b data-draw="k_median">—</b> jours en médiane avant le complet.
+      <b data-draw="k_flous">—</b> autres talks sont complets sans qu'on sache depuis quand,
+      et restent hors des calculs.
+    </p>
+    <p class="bt-note">
+      Dernier passage de chaque veille : <span data-draw="k_passages">—</span>. Cette page lit le
+      dépôt à chaque ouverture : elle est donc aussi à jour que la dernière veille, GitHub
+      plafonnant les exécutions programmées à environ trois par jour.
+    </p>
+
+    <div class="bt-tiles">
+      <div class="bt-tile">
+        <span class="bt-tile-k">Talks recensés</span>
+        <span class="bt-tile-v" data-draw="t_total" data-source="c_total">—</span>
+        <span class="bt-tile-n">Quatre organisateurs</span>
+      </div>
+      <div class="bt-tile">
+        <span class="bt-tile-k">Complets</span>
+        <span class="bt-tile-v" data-draw="t_complets" data-source="c_complets">—</span>
+        <span class="bt-tile-n" data-draw="t_complets_n">—</span>
+      </div>
+      <div class="bt-tile">
+        <span class="bt-tile-k">Délai médian</span>
+        <span class="bt-tile-v" data-draw="t_median" data-source="c_median">—</span>
+        <span class="bt-tile-n" data-draw="t_median_n">—</span>
+      </div>
+      <div class="bt-tile">
+        <span class="bt-tile-k">Thématique la plus courue</span>
+        <span class="bt-tile-v" style="font-size:1.15rem" data-draw="t_theme" data-source="c_theme_star">—</span>
+        <span class="bt-tile-n" data-draw="t_theme_n">—</span>
+      </div>
+    </div>
+  </section>
+
+  <nav class="bt-onglets" role="tablist" aria-label="Vues">
+    <button type="button" class="bt-onglet" data-onglet="base" role="tab" aria-selected="true">La base</button>
+    <button type="button" class="bt-onglet" data-onglet="stats" role="tab" aria-selected="false">Statistiques</button>
+  </nav>
+
+  <div class="bt-panneau" data-panneau="base">
+  <section class="bt-sec" id="base">
+    <h2>La base complète</h2>
+    <div class="bt-filtres">
+      <select class="dash-select" data-draw="f_orga" aria-label="Organisateur"></select>
+      <select class="dash-select" data-draw="f_theme" aria-label="Thématique"></select>
+      <select class="dash-select" id="f-statut" aria-label="Statut">
+        <option value="">Tous les statuts</option>
+        <option value="complet">Complet</option>
+        <option value="disponible">Places disponibles</option>
+        <option value="jamais complet">Jamais complet</option>
+        <option value="indéterminé">Statut indéterminé</option>
+      </select>
+      <input type="search" id="f-q" placeholder="Chercher un titre, un intervenant…" aria-label="Recherche">
+      <span class="bt-compte" data-draw="f_compte">—</span>
+    </div>
+    <div class="bt-scroll">
+      <table class="bt-table" data-source="talks" data-row-key="id">
+        <thead>
+          <tr>
+            <th data-field="titre" data-tri="titre">Talk</th>
+            <th data-field="organisateur" data-tri="organisateur">Organisateur</th>
+            <th data-field="date_event" data-tri="date_event">Date du talk</th>
+            <th data-field="theme" data-tri="theme">Thématique</th>
+            <th data-field="intervenant" data-tri="intervenant">Intervenant</th>
+            <th data-field="parution" data-tri="parution">Parution</th>
+            <th data-field="parution_marge_h" data-tri="parution_marge_h">± parution</th>
+            <th data-field="complet_le" data-tri="complet_le">Complet le</th>
+            <th data-field="complet_marge_h" data-tri="complet_marge_h">± complet</th>
+            <th data-field="jours_avant_complet" data-tri="jours_avant_complet">Jours</th>
+            <th data-field="remplissage_pct" data-tri="remplissage_pct">Remplissage</th>
+            <th data-field="statut" data-tri="statut">Statut</th>
+          </tr>
+        </thead>
+        <tbody data-draw="tableau"></tbody>
+      </table>
+    </div>
+    <p class="bt-note">
+      Les colonnes se trient en cliquant sur leur en-tête. Pour récupérer ces lignes dans un
+      tableur, ouvrez Sources à côté de la page et téléchargez le fichier.
+    </p>
+  </section>
+  </div>
+
+  <div class="bt-panneau" data-panneau="stats" hidden>
+  <section class="bt-sec" id="delais">
+    <h2>Combien de jours pour se remplir</h2>
+    <p class="bt-note">
+      Du jour où les réservations ouvrent à celui où la dernière place part. Les deux bouts
+      sont relevés par la veille elle-même, à quelques heures près : aucun organisateur ne
+      publie sa date de mise en vente.
+    </p>
+    <div class="bt-chart" data-draw="g_delais" data-source="c_delais">—</div>
+  </section>
+
+  <section class="bt-sec" id="themes">
+    <h2>Ce qui se remplit, par thématique</h2>
+    <p class="bt-note">
+      Part des talks affichant complet dans chaque thématique, tous organisateurs confondus. Le
+      nombre de talks figure à droite de chaque barre : une thématique représentée deux fois ne
+      vaut pas une tendance.
+    </p>
+    <div class="bt-chart" data-draw="g_themes" data-source="c_themes">—</div>
+  </section>
+
+  <section class="bt-sec" id="organisateurs">
+    <h2>Les quatre organisateurs</h2>
+    <p class="bt-note">
+      Les quatre complets sont désormais lus de façon fiable, chacun à sa source. Les délais,
+      eux, restent inégaux : chez Le Briefing, Amio et Apéro Talk, la plupart des talks étaient
+      déjà en ligne, et souvent déjà complets, au démarrage du suivi.
+    </p>
+    <div class="bt-chart" data-draw="g_orgas" data-source="c_orgas">—</div>
+  </section>
+  </div>
+
+  <details class="bt-methode">
+    <summary>Méthode, limites et provenance des données</summary>
+    <div>
+      <p><b>Ce que mesure le délai.</b> Pour les Causeries de Comptoir, la date de mise en ligne
+      est celle enregistrée par l'organisateur dans sa propre base, et la date de complet est
+      celle où la veille a vu le nombre de places tomber à zéro.</p>
+      <p><b>La règle des 48 heures, aux deux bouts.</b> On ne sait jamais à quelle heure exacte un
+      talk est apparu ni à laquelle il est tombé : on sait qu'il était absent, ou encore ouvert,
+      au passage précédent de la veille, et présent, ou complet, à celui-ci. L'écart entre les
+      deux passages est la marge d'erreur, reportée dans les colonnes « ± parution » et
+      « ± complet » et reconstituée pour tout l'historique à partir des horaires réels
+      d'exécution. Une date dont la marge dépasse 48 heures est tenue pour indéterminée, et un
+      délai n'est retenu que si ses deux bouts tiennent : la date reste affichée, mais ne compte
+      dans aucune moyenne. Les
+      veilles sont programmées toutes les heures, mais GitHub n'honore qu'environ un créneau sur
+      dix : les passages réels s'espacent en pratique de six à neuf heures. C'est donc la
+      précision à attendre sur les talks qui tomberont désormais, et elle reste très loin de la
+      limite des 48 heures.</p>
+      <p><b>Pourquoi l'historique d'avant novembre est lacunaire.</b> Les quatre veilles n'ont pas
+      démarré en même temps ni avec les mêmes capacités. Jusqu'au 16 novembre, celle d'Apéro Talk
+      ne faisait que repérer les nouvelles mises en ligne : elle ne relisait pas le statut des
+      talks déjà connus, qui pouvaient donc passer complets sans que rien ne l'enregistre. Celle
+      du Briefing a commencé le 11 octobre mais n'a su lire le complet qu'à partir du 19. Celles
+      d'Amio et des Causeries lisaient le statut dès leur premier passage, ce qui explique que
+      presque tous les délais fiables viennent des Causeries. Dans les trois autres cas, les talks
+      déjà complets le jour où la veille a ouvert les yeux resteront indéterminés pour toujours.</p>
+      <p><b>Aucun organisateur ne publie sa date de mise en vente.</b> Les Causeries exposent
+      bien une date de création, mais c'est celle du brouillon dans leur base : la vérification
+      montre un écart de 4 à 49 jours avant l'ouverture réelle des réservations, car les causeries
+      sont mises en ligne par lots. La seule date qui témoigne de l'ouverture est donc la première
+      détection par la veille, à six ou neuf heures près. C'est elle qui sert de date d'apparition
+      pour les quatre organisateurs, et la date de création des Causeries reste dans la base à
+      titre indicatif.</p>
+      <p><b>Ce que chaque organisateur laisse voir.</b> Les Causeries publient leur nombre de
+      places restantes. Amio ne le publie pas, mais sa page interroge une fonction qui renvoie les
+      billets vendus ; comparés à la capacité d'une soirée, ils donnent un taux de remplissage et
+      un nombre de places restantes aussi précis. Apéro Talk et Le Briefing n'indiquent que
+      complet ou disponible, jamais un nombre de places : chez eux le remplissage restera un
+      binaire, repéré à quelques heures près mais sans courbe. Dans tous les cas, les talks déjà
+      en ligne le jour où la veille a ouvert les yeux resteront indéterminés pour toujours.</p>
+      <p><b>Les thématiques sont une classification maison</b>, déduite du titre et de la
+      spécialité de l'intervenant par repérage de mots-clés. Elle est perfectible, et une
+      thématique peu représentée ne dit rien de solide.</p>
+      <p><b>Les dates de mise en ligne des trois autres organisateurs</b> sont des dates de
+      première détection par la veille, donc postérieures à la publication réelle, parfois de
+      plusieurs heures. La colonne de précision du tableau le signale ligne par ligne.</p>
+    </div>
+  </details>
+
+</div>
+
+
+<script>
+  // ---- la mecanique que fournissait l'environnement des artefacts ----
+  // Trois choses seulement : retenir des valeurs calculees, dessiner dans les
+  // elements marques data-draw, et charger le fichier de donnees du depot.
+  const dash = (function () {
+    const calculs = {};
+    const rendus = {};
+    const apresDonnees = [];
+    let etat = { status: 'loading', data: null };
+    let cache = {};
+
+    const api = {
+      colors: ['#4a7a5d', '#9a7340'],
+
+      calc(nom, spec) { calculs[nom] = spec; },
+
+      data(nom) {
+        if (nom === 'talks') return etat;
+        if (etat.status !== 'ok') return { status: etat.status, data: null };
+        if (!(nom in cache)) {
+          if (!calculs[nom]) return { status: 'error', data: null };
+          try { cache[nom] = calculs[nom].fn(etat.data); }
+          catch (e) { console.error('calcul', nom, e); return { status: 'error', data: null }; }
+        }
+        return { status: 'ok', data: cache[nom] };
+      },
+
+      draw(nom, fn) {
+        if (fn) rendus[nom] = fn;
+        const f = rendus[nom];
+        if (!f) return;
+        document.querySelectorAll('[data-draw="' + nom + '"]').forEach((el) => {
+          try { f(el); } catch (e) { console.error('rendu', nom, e); }
+        });
+      },
+
+      onData(fn) { apresDonnees.push(fn); if (etat.status === 'ok') fn(); },
+
+      tout() { Object.keys(rendus).forEach((n) => api.draw(n)); },
+
+      async charger(url) {
+        try {
+          const r = await fetch(url, { cache: 'no-store' });
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          const d = await r.json();
+          if (!Array.isArray(d) || !d.length) throw new Error('fichier vide ou inattendu');
+          etat = { status: 'ok', data: d };
+        } catch (e) {
+          console.error('chargement', e);
+          etat = { status: 'error', data: null };
+        }
+        cache = {};
+        api.tout();
+        apresDonnees.forEach((f) => { try { f(); } catch (e) { console.error(e); } });
+      },
+    };
+    return api;
+  })();
+</script>
+<script>
+  // ---- utilitaires partagés ----
+  window.BT = (function () {
+    const lignes = () => {
+      const d = dash.data('talks');
+      return d.status === 'ok' && Array.isArray(d.data) ? d.data : [];
+    };
+    const mediane = (xs) => {
+      const v = xs.filter((x) => typeof x === 'number').sort((a, b) => a - b);
+      if (!v.length) return null;
+      const m = Math.floor(v.length / 2);
+      return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2;
+    };
+    const nb = (x, d) => (x === null || x === undefined ? '—' : x.toLocaleString('fr-FR', { maximumFractionDigits: d ?? 0 }));
+    const jour = (s) => {
+      if (!s) return '—';
+      // les dates de parution et de complet portent une heure (2026-11-16T16:04) :
+      // on ne garde que la partie calendaire, la précision vit dans les colonnes de marge
+      const p = String(s).slice(0, 10).split('-');
+      return p.length === 3 && p[2].length === 2 ? `${p[2]}/${p[1]}/${p[0].slice(2)}` : s;
+    };
+    const vide = (el, texte) => {
+      el.replaceChildren();
+      const p = document.createElement('p');
+      p.className = 'bt-note';
+      p.textContent = texte;
+      el.appendChild(p);
+    };
+    const etat = (el, ids) => {
+      const sts = ids.map((i) => dash.data(i).status);
+      if (sts.some((s) => s === 'loading')) { el.textContent = '—'; el.classList.add('dash-skeleton'); return false; }
+      el.classList.remove('dash-skeleton');
+      if (sts.some((s) => s === 'error')) { vide(el, 'Chargement impossible.'); return false; }
+      return true;
+    };
+    return { lignes, mediane, nb, jour, vide, etat };
+  })();
+
+  // ---- valeurs calculées ----
+  dash.calc('c_total', {
+    inputs: ['talks'], title: 'Nombre de talks recensés',
+    description: 'Total des lignes de la base.',
+    fn: (talks) => talks.length,
+  });
+  dash.calc('c_complets', {
+    inputs: ['talks'], title: 'Talks affichant complet',
+    description: 'Lignes dont le statut vaut « oui ».',
+    fn: (talks) => talks.filter((t) => t.complet === 'oui').length,
+  });
+  dash.calc('c_mesures', {
+    inputs: ['talks'], title: 'Délais de remplissage mesurés',
+    description: 'Lignes disposant à la fois d’une date de mise en ligne et d’une date de complet.',
+    fn: (talks) => talks.filter((t) => typeof t.jours_avant_complet === 'number').length,
+  });
+  dash.calc('c_flous', {
+    inputs: ['talks'], title: 'Complets de date indéterminée',
+    description: 'Talks complets dont la date de bascule n’est pas connue à 48 heures près : déjà complets quand la veille les a découverts, ou repérés après une trop longue interruption.',
+    fn: (talks) => talks.filter((t) => t.complet_date_sure === 'non').length,
+  });
+  dash.calc('c_median', {
+    inputs: ['talks'], title: 'Délai médian de remplissage',
+    description: 'Médiane, en jours, des délais mesurés.',
+    fn: (talks) => {
+      const v = talks.map((t) => t.jours_avant_complet).filter((x) => typeof x === 'number').sort((a, b) => a - b);
+      if (!v.length) return null;
+      const m = Math.floor(v.length / 2);
+      return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2;
+    },
+  });
+  dash.calc('c_delais', {
+    inputs: ['talks'], title: 'Délai de remplissage par talk',
+    description: 'Talks dont le délai est mesurable, du plus rapide au plus lent.',
+    fn: (talks) => talks
+      .filter((t) => typeof t.jours_avant_complet === 'number')
+      .map((t) => ({ titre: t.titre, theme: t.theme, intervenant: t.intervenant, jours: t.jours_avant_complet, parution: t.parution }))
+      .sort((a, b) => a.jours - b.jours),
+  });
+  dash.calc('c_themes', {
+    inputs: ['talks'], title: 'Taux de complet par thématique',
+    description: 'Pour chaque thématique : nombre de talks, nombre de complets, et part que cela représente.',
+    fn: (talks) => {
+      const m = new Map();
+      talks.forEach((t) => {
+        const e = m.get(t.theme) || { theme: t.theme, talks: 0, complets: 0, connus: 0 };
+        e.talks += 1;
+        if (t.complet !== 'inconnu') e.connus += 1;
+        if (t.complet === 'oui') e.complets += 1;
+        m.set(t.theme, e);
+      });
+      return [...m.values()]
+        .map((e) => ({ ...e, taux: e.connus ? Math.round((100 * e.complets) / e.connus) : null }))
+        .sort((a, b) => (b.taux ?? -1) - (a.taux ?? -1) || b.talks - a.talks);
+    },
+  });
+  dash.calc('c_theme_star', {
+    inputs: ['talks'], title: 'Thématique au plus fort taux de complet',
+    description: 'Thématique comptant au moins quatre talks au statut connu et la plus forte part de complets.',
+    fn: (talks) => {
+      const m = new Map();
+      talks.forEach((t) => {
+        if (t.complet === 'inconnu') return;
+        const e = m.get(t.theme) || { theme: t.theme, n: 0, c: 0 };
+        e.n += 1;
+        if (t.complet === 'oui') e.c += 1;
+        m.set(t.theme, e);
+      });
+      const el = [...m.values()].filter((e) => e.n >= 4).sort((a, b) => b.c / b.n - a.c / a.n)[0];
+      return el ? el.theme : null;
+    },
+  });
+  dash.calc('c_orgas', {
+    inputs: ['talks'], title: 'Synthèse par organisateur',
+    description: 'Pour chaque organisateur : nombre de talks, part de complets parmi les statuts connus, délai médian lorsqu’il est mesurable.',
+    fn: (talks) => {
+      const m = new Map();
+      talks.forEach((t) => {
+        const e = m.get(t.organisateur) || { organisateur: t.organisateur, talks: 0, complets: 0, connus: 0, delais: [] };
+        e.talks += 1;
+        if (t.complet !== 'inconnu') e.connus += 1;
+        if (t.complet === 'oui') e.complets += 1;
+        if (typeof t.jours_avant_complet === 'number') e.delais.push(t.jours_avant_complet);
+        m.set(t.organisateur, e);
+      });
+      return [...m.values()].map((e) => {
+        const v = e.delais.sort((a, b) => a - b);
+        const md = v.length ? (v.length % 2 ? v[Math.floor(v.length / 2)] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2) : null;
+        return { organisateur: e.organisateur, talks: e.talks, complets: e.complets, connus: e.connus, taux: e.connus ? Math.round((100 * e.complets) / e.connus) : null, delai_median: md };
+      }).sort((a, b) => b.talks - a.talks);
+    },
+  });
+</script>
+
+<script>
+  // ---- phrase d'introduction et tuiles ----
+  const txt = (nom, f) => dash.draw(nom, (el) => { el.textContent = f(); });
+
+  txt('k_total', () => BT.nb(dash.data('c_total').data));
+  txt('k_complets', () => BT.nb(dash.data('c_complets').data));
+  txt('k_mesures', () => BT.nb(dash.data('c_mesures').data));
+  txt('k_flous', () => BT.nb(dash.data('c_flous').data));
+  txt('k_median', () => BT.nb(dash.data('c_median').data, 1));
+
+  dash.draw('k_passages', (el) => {
+    const l = BT.lignes();
+    const dernier = {};
+    l.forEach((x) => {
+      const v = x.derniere_veille;
+      if (v && (!dernier[x.organisateur] || v > dernier[x.organisateur])) dernier[x.organisateur] = v;
+    });
+    const noms = Object.keys(dernier).sort((a, b) => a.localeCompare(b, 'fr'));
+    if (!noms.length) { el.textContent = l.length ? 'non renseigné' : '—'; return; }
+    const maintenant = Date.now();
+    el.textContent = noms.map((n) => {
+      // les horodatages sont en temps universel et notés sans suffixe
+      const min = Math.max(0, Math.round((maintenant - new Date(dernier[n] + 'Z').getTime()) / 60000));
+      const age = min < 60 ? `${min} min` : `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, '0')}`;
+      return `${n} il y a ${age}`;
+    }).join(' · ');
+  });
+  txt('t_total', () => BT.nb(dash.data('c_total').data));
+  txt('t_complets', () => BT.nb(dash.data('c_complets').data));
+  txt('t_median', () => {
+    const v = dash.data('c_median').data;
+    return v === null || v === undefined ? '—' : `${BT.nb(v, 1)} j`;
+  });
+  txt('t_theme', () => dash.data('c_theme_star').data || '—');
+
+  dash.draw('t_complets_n', (el) => {
+    const t = dash.data('c_total').data, c = dash.data('c_complets').data;
+    el.textContent = typeof t === 'number' && typeof c === 'number' && t ? `${Math.round((100 * c) / t)} % du total` : '—';
+  });
+  dash.draw('t_median_n', (el) => {
+    const n = dash.data('c_mesures').data;
+    el.textContent = typeof n === 'number' ? `sur ${n} talks mesurés` : '—';
+  });
+  dash.draw('t_theme_n', (el) => {
+    const t = dash.data('c_theme_star').data;
+    const r = (dash.data('c_themes').data || []).find((x) => x.theme === t);
+    el.textContent = r ? `${r.taux} % de complets sur ${r.connus} talks` : '—';
+  });
+</script>
+
+<script>
+  // ---- graphiques ----
+  const infobulle = (hote) => {
+    const t = document.createElement('div');
+    t.className = 'bt-tip';
+    hote.appendChild(t);
+    return {
+      montre(html, x, y) {
+        t.replaceChildren(...html);
+        t.style.opacity = '1';
+        const l = Math.max(4, Math.min(x + 12, hote.clientWidth - t.offsetWidth - 4));
+        t.style.left = `${l}px`;
+        t.style.top = `${Math.max(0, y - t.offsetHeight - 10)}px`;
+      },
+      cache() { t.style.opacity = '0'; },
+    };
+  };
+  const bout = (tag, texte, gras) => {
+    const e = document.createElement(tag);
+    e.textContent = texte;
+    if (gras) e.style.fontWeight = '500';
+    return e;
+  };
+
+  // barres horizontales génériques
+  function barres(el, { lignes, etiquette, valeur, suffixe, couleur, bulle, maxForce }) {
+    el.replaceChildren();
+    if (!lignes.length) { BT.vide(el, 'Aucune donnée à afficher.'); return; }
+    const L = el.clientWidth || 600;
+    const hBarre = 22, espace = 8, hautMarge = 6, basMarge = 4;
+    const H = hautMarge + lignes.length * (hBarre + espace) - espace + basMarge;
+    const svg = d3.select(el).append('svg')
+      .attr('viewBox', `0 0 ${L} ${H}`)
+      .attr('role', 'img')
+      .attr('aria-label', el.getAttribute('data-aria') || 'Graphique en barres');
+    const largeurLabel = Math.min(Math.max(120, L * 0.38), 260);
+    // la place du libelle de valeur suit sa longueur, sinon il deborde du cadre
+    const largeurVal = Math.min(230, Math.max(52, Math.max(
+      ...lignes.map((d) => String(suffixe(d)).length)) * 6.6 + 10));
+    const x = d3.scaleLinear()
+      .domain([0, maxForce || d3.max(lignes, valeur) || 1])
+      .range([0, Math.max(10, L - largeurLabel - largeurVal - 8)]);
+    const tip = bulle ? infobulle(el) : null;
+
+    const g = svg.selectAll('g.bt-row').data(lignes).enter().append('g')
+      .attr('class', 'bt-row')
+      .attr('transform', (d, i) => `translate(0,${hautMarge + i * (hBarre + espace)})`);
+
+    g.append('text')
+      .attr('class', 'bt-lab')
+      .attr('x', 0).attr('y', hBarre / 2).attr('dominant-baseline', 'middle')
+      .text((d) => {
+        const s = etiquette(d);
+        const max = Math.floor(largeurLabel / 6.3);
+        return s.length > max ? `${s.slice(0, max - 1).trimEnd()}…` : s;
+      });
+
+    g.append('rect')
+      .attr('x', largeurLabel).attr('y', 2)
+      .attr('height', hBarre - 4).attr('rx', 3)
+      .attr('width', (d) => Math.max(2, x(valeur(d))))
+      .style('fill', (d, i) => couleur(d, i));
+
+    g.append('text')
+      .attr('class', 'bt-val')
+      .attr('x', (d) => largeurLabel + Math.max(2, x(valeur(d))) + 6)
+      .attr('y', hBarre / 2).attr('dominant-baseline', 'middle')
+      .text((d) => suffixe(d));
+
+    if (tip) {
+      g.style('cursor', 'default')
+        .on('pointerenter pointermove', function (ev, d) {
+          const r = el.getBoundingClientRect();
+          tip.montre(bulle(d), ev.clientX - r.left, ev.clientY - r.top);
+        })
+        .on('pointerleave', () => tip.cache());
+    }
+  }
+
+  dash.draw('g_delais', (el) => {
+    if (!BT.etat(el, ['c_delais'])) return;
+    const l = dash.data('c_delais').data || [];
+    el.setAttribute('data-aria', 'Délai en jours entre la mise en ligne et le complet, par talk');
+    barres(el, {
+      lignes: l,
+      etiquette: (d) => d.titre,
+      valeur: (d) => d.jours,
+      suffixe: (d) => `${BT.nb(d.jours, 1)} j`,
+      couleur: () => dash.colors[0],
+      bulle: (d) => [
+        bout('b', d.titre, true),
+        bout('span', `${d.theme}${d.intervenant ? ` · ${d.intervenant}` : ''}`),
+        document.createElement('br'),
+        bout('span', `En ligne le ${BT.jour(d.parution)}, complet ${BT.nb(d.jours, 1)} jours plus tard`),
+      ],
+    });
+  });
+
+  dash.draw('g_themes', (el) => {
+    if (!BT.etat(el, ['c_themes'])) return;
+    const l = (dash.data('c_themes').data || []).filter((d) => d.taux !== null);
+    el.setAttribute('data-aria', 'Part de talks complets par thématique');
+    barres(el, {
+      lignes: l,
+      etiquette: (d) => d.theme,
+      valeur: (d) => d.taux,
+      suffixe: (d) => `${d.taux} %  ·  ${d.talks} talks`,
+      couleur: (d) => (d.connus < 4 ? 'var(--cds-chart-muted)' : dash.colors[0]),
+      maxForce: 100,
+      bulle: (d) => [
+        bout('b', d.theme, true),
+        bout('span', `${d.complets} complets sur ${d.connus} talks au statut connu`),
+        document.createElement('br'),
+        bout('span', d.connus < 4 ? 'Trop peu de talks pour en tirer une tendance' : `${d.talks} talks recensés au total`),
+      ],
+    });
+  });
+
+  dash.draw('g_orgas', (el) => {
+    if (!BT.etat(el, ['c_orgas'])) return;
+    const l = dash.data('c_orgas').data || [];
+    el.setAttribute('data-aria', 'Nombre de talks recensés par organisateur');
+    barres(el, {
+      lignes: l,
+      etiquette: (d) => d.organisateur,
+      valeur: (d) => d.talks,
+      suffixe: (d) => `${d.talks} talks  ·  ${d.taux === null ? 'statut inconnu' : `${d.taux} % complets`}`,
+      couleur: () => dash.colors[1] || dash.colors[0],
+      bulle: (d) => [
+        bout('b', d.organisateur, true),
+        bout('span', `${d.complets} complets sur ${d.connus} statuts connus`),
+        document.createElement('br'),
+        bout('span', d.delai_median === null ? 'Délai de remplissage non mesurable' : `Délai médian : ${BT.nb(d.delai_median, 1)} jours`),
+      ],
+    });
+  });
+</script>
+
+<script>
+  // ---- base filtrable ----
+  const F = { orga: '', theme: '', statut: '', q: '', tri: 'date_event', sens: -1 };
+
+  const filtre = () => {
+    const q = F.q.trim().toLowerCase();
+    return BT.lignes().filter((t) =>
+      (!F.orga || t.organisateur === F.orga) &&
+      (!F.theme || t.theme === F.theme) &&
+      (!F.statut || t.statut === F.statut) &&
+      (!q || `${t.titre} ${t.intervenant || ''} ${t.theme}`.toLowerCase().includes(q)));
+  };
+
+  const options = (sel, toutes, champ, libelle) => {
+    const vals = [...new Set(BT.lignes().map((t) => t[champ]))].filter(Boolean).sort((a, b) => a.localeCompare(b, 'fr'));
+    sel.replaceChildren(new Option(libelle, ''), ...vals.map((v) => new Option(v, v)));
+    sel.value = F[toutes] || '';
+    sel.onchange = () => { F[toutes] = sel.value; dash.draw('tableau'); dash.draw('f_compte'); };
+  };
+
+  dash.draw('f_orga', (el) => options(el, 'orga', 'organisateur', 'Tous les organisateurs'));
+  dash.draw('f_theme', (el) => options(el, 'theme', 'theme', 'Toutes les thématiques'));
+  dash.draw('f_compte', (el) => {
+    const n = filtre().length, tot = BT.lignes().length;
+    const texte = tot ? (n === tot ? `${tot} talks` : `${n} talks sur ${tot}`) : '\u2014';
+    // le tableau defile sur lui-meme : sans cela on croit la liste finie
+    const boite = document.querySelector('.bt-scroll');
+    const deborde = boite && boite.scrollHeight > boite.clientHeight + 4;
+    el.textContent = deborde ? `${texte} \u00b7 faites défiler le tableau` : texte;
+  });
+
+  dash.draw('tableau', (el) => {
+    const d = dash.data('talks');
+    if (d.status === 'loading') { el.replaceChildren(); return; }
+    const l = filtre().slice().sort((a, b) => {
+      const x = a[F.tri], y = b[F.tri];
+      if (x === null || x === undefined) return 1;
+      if (y === null || y === undefined) return -1;
+      return (typeof x === 'number' ? x - y : String(x).localeCompare(String(y), 'fr')) * F.sens;
+    });
+    const frag = document.createDocumentFragment();
+    const aujourdhui = new Date().toISOString().slice(0, 10);
+    l.forEach((t) => {
+      const tr = document.createElement('tr');
+      if (t.date_event && t.date_event < aujourdhui) tr.className = 'bt-passe';
+      tr.setAttribute('data-key', t.id);
+      const cel = (v, cls) => {
+        const td = document.createElement('td');
+        if (cls) td.className = cls;
+        if (v instanceof Node) td.appendChild(v); else td.textContent = v;
+        tr.appendChild(td);
+      };
+      if (t.url && /^https:\/\//.test(t.url)) {
+        const a = document.createElement('a');
+        a.href = t.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+        a.textContent = t.titre;
+        a.title = 'Ouvrir la page de réservation';
+        cel(a, 'bt-titre');
+      } else {
+        cel(t.titre, 'bt-titre');
+      }
+      cel(t.organisateur);
+      cel(BT.jour(t.date_event));
+      cel(t.theme);
+      cel(t.intervenant || '—');
+      cel(BT.jour(t.parution));
+      cel(typeof t.parution_marge_h === 'number'
+        ? (t.parution_marge_h ? `± ${BT.nb(t.parution_marge_h, 0)} h` : 'exacte')
+        : 'indéterminée');
+      cel(BT.jour(t.complet_le));
+      cel(typeof t.complet_marge_h === 'number' ? `± ${BT.nb(t.complet_marge_h, 0)} h`
+        : (t.complet_le ? 'indéterminée' : '—'));
+      cel(typeof t.jours_avant_complet === 'number' ? BT.nb(t.jours_avant_complet, 1) : '—');
+      cel(typeof t.remplissage_pct === 'number' ? `${t.remplissage_pct} %` : '—');
+      const p = document.createElement('span');
+      const STATUTS = {
+        'complet': ['Complet', 'oui'],
+        'jamais complet': ['Jamais complet', 'passe'],
+        'disponible': ['Dispo', 'non'],
+        'indéterminé': ['Indéterminé', 'passe'],
+      };
+      const [libelle, classe] = STATUTS[t.statut] || [t.statut || '—', 'passe'];
+      p.className = `bt-pill ${classe}`;
+      p.textContent = libelle;
+      cel(p);
+      frag.appendChild(tr);
+    });
+    el.replaceChildren(frag);
+    dash.draw('f_compte');
+  });
+
+  dash.onData(() => {
+    document.querySelectorAll('.bt-table th[data-tri]').forEach((th) => {
+      const champ = th.getAttribute('data-tri');
+      th.setAttribute('aria-sort', F.tri === champ ? (F.sens === 1 ? 'ascending' : 'descending') : 'none');
+      th.onclick = () => {
+        if (F.tri === champ) F.sens = -F.sens; else { F.tri = champ; F.sens = 1; }
+        dash.draw('tableau');
+        dash.onData(() => {});
+      };
+    });
+    const s = document.getElementById('f-statut');
+    if (s) s.onchange = () => { F.statut = s.value; dash.draw('tableau'); dash.draw('f_compte'); };
+    const q = document.getElementById('f-q');
+    if (q) q.oninput = () => { F.q = q.value; dash.draw('tableau'); dash.draw('f_compte'); };
+
+    // les graphiques se dimensionnent sur leur conteneur : il faut le redessiner
+    // une fois visible, sinon il se croit large de zero
+    const panneaux = [...document.querySelectorAll('.bt-panneau')];
+    const onglets = [...document.querySelectorAll('.bt-onglet')];
+    const montrer = (nom) => {
+      panneaux.forEach((p) => { p.hidden = p.dataset.panneau !== nom; });
+      onglets.forEach((o) => o.setAttribute('aria-selected', String(o.dataset.onglet === nom)));
+      const vu = panneaux.find((p) => p.dataset.panneau === nom);
+      if (vu) vu.querySelectorAll('[data-draw]').forEach((el) => dash.draw(el.getAttribute('data-draw')));
+    };
+    onglets.forEach((o) => { o.onclick = () => montrer(o.dataset.onglet); });
+  });
+</script>
+
+<script>
+  // Le fichier est servi par le depot lui-meme, a cote de cette page : chaque
+  // ouverture montre donc ce que la derniere veille a ecrit. On reinterroge
+  // toutes les dix minutes pour qu'un onglet laisse ouvert ne vieillisse pas.
+  dash.charger('data/talks.json');
+  setInterval(() => dash.charger('data/talks.json'), 10 * 60 * 1000);
+</script>
+  <p class="site-pied">
+    Données reconstruites à chaque passage des veilles et publiées dans
+    <a href="https://github.com/microeconomie/best-notif/blob/main/data/talks.csv">data/talks.csv</a>.
+  </p>
+</div>
+</body>
+</html>

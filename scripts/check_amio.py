@@ -7,12 +7,16 @@ nombre de places restantes, que la page calcule elle-même après avoir
 interrogé une fonction publique. On refait ici le même calcul.
 
 Cette fonction renvoie, par date, le nombre de billets individuels (counts)
-et le nombre de billets vendus en pack (packs). Leur somme est le nombre de
-places occupées, à comparer à la capacité d'une soirée. La capacité n'est
-écrite nulle part dans le code du site : elle a été retrouvée en comparant
-l'affichage du site à ces chiffres, sur l'ensemble des sessions annoncées.
-Si Amio changeait de salle, c'est la constante ci-dessous qu'il faudrait
-revoir, et l'écart se verrait aussitôt dans le baromètre.
+et le nombre de billets vendus en pack (packs). Leur somme donne le nombre
+d'inscrits, qui est sûr et que l'on enregistre.
+
+En revanche on n'en déduit aucun complet. Il y faudrait la capacité de la
+soirée, qui varie d'une salle à l'autre (une session affichée complète à 64
+inscrits quand une autre reste ouverte à 92) et qui n'est lisible ni dans la
+page, ni dans l'API, ni dans le code du site. Le seul indice accessible sans
+navigateur est le lien de liste d'attente, que le site pose sur les sessions
+pleines : il est en retard de quelques heures sur la réalité, mais il ne se
+trompe pas dans l'autre sens.
 """
 import html
 import json
@@ -29,9 +33,6 @@ PAGE = SITE + "/upcoming-sessions"
 DISPOS = "https://iwodklhrgkftorthbqxl.supabase.co/functions/v1/get-event-availability"
 ETAT = "data/amio_seen.json"
 ORGANISATEUR = "Amio"
-
-CAPACITE = 79          # places par soirée, déduite de l'affichage du site
-SEUIL_PLACES = 3       # en dessous, on alerte
 
 LIEN = re.compile(r'href="(/checkout\?[^"]+)"', re.IGNORECASE)
 BUNDLE = re.compile(r'/assets/(index-[A-Za-z0-9_-]+\.js)')
@@ -56,6 +57,8 @@ def catalogue(page):
             continue
         sessions[cle] = {
             "titre": titre,
+            # le site renvoie vers la liste d'attente quand la soirée est pleine
+            "complet": "liste-attente" in lien,
             "date": prendre("date").split("·")[0].strip(),
             "etiquette_date": prendre("date"),
             "lieu": prendre("venue").split(",")[0][:60],
@@ -107,22 +110,17 @@ def main():
     for s in sessions.values():
         prises = occupees.get(s.pop("etiquette_date"))
         s["inscrits"] = prises if isinstance(prises, int) else None
-        s["capacite"] = CAPACITE if s["inscrits"] is not None else None
-        s["places"] = max(CAPACITE - s["inscrits"], 0) if s["inscrits"] is not None else None
-        s["complet"] = (s["places"] <= 0) if s["places"] is not None else None
 
     etat = v.charger(ETAT)
     premier = etat is None
     etat = etat or {}
-    nouveaux, _rouverts, derniers = v.fusionner(
-        etat, sessions, seuil_places=SEUIL_PLACES, premier_passage=premier)
+    nouveaux, _rouverts, _derniers = v.fusionner(etat, sessions, premier_passage=premier)
     v.sauver(ETAT, etat)
 
     if premier:
         print(f"Initialisation : {len(sessions)} sessions enregistrées, aucune alerte.")
         return
     v.alerter(ORGANISATEUR, PAGE, [
-        ("LAST CHANCE", derniers, f"{len(derniers)} sessions à {SEUIL_PLACES} places ou moins", "hourglass"),
         ("JUST DROPPED", nouveaux, v.accord(len(nouveaux), "nouvelle session", "nouvelles sessions"), "beer"),
     ])
     connus = sum(1 for s in sessions.values() if s["inscrits"] is not None)

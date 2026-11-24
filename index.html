@@ -960,9 +960,11 @@
       cel(typeof t.complet_marge_h === 'number' ? `± ${BT.nb(t.complet_marge_h, 0)} h`
         : (t.complet_le ? 'indéterminée' : '—'));
       cel(typeof t.jours_avant_complet === 'number' ? BT.nb(t.jours_avant_complet, 1) : '—');
-      // sans capacite connue, le nombre d'inscrits reste une information
-      cel(typeof t.remplissage_pct === 'number' ? `${t.remplissage_pct} %`
-        : (typeof t.inscrits === 'number' ? `${BT.nb(t.inscrits)} inscrits` : '—'));
+      // on dit le compte plutot que le taux, et la capacite quand on la connait
+      cel(typeof t.inscrits !== 'number' ? '\u2014'
+        : (typeof t.capacite === 'number'
+          ? `${BT.nb(t.inscrits)} inscrits sur ${BT.nb(t.capacite)}`
+          : `${BT.nb(t.inscrits)} inscrits`));
       const p = document.createElement('span');
       const STATUTS = {
         'complet': ['Complet', 'oui'],

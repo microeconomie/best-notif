@@ -356,9 +356,12 @@
       pour les quatre organisateurs, et la date de création des Causeries reste dans la base à
       titre indicatif.</p>
       <p><b>Ce que chaque organisateur laisse voir.</b> Les Causeries publient leur nombre de
-      places restantes. Amio ne le publie pas, mais sa page interroge une fonction qui renvoie les
-      billets vendus ; comparés à la capacité d'une soirée, ils donnent un taux de remplissage et
-      un nombre de places restantes aussi précis. Apéro Talk et Le Briefing n'indiquent que
+      places restantes. Amio ne publie ni ses places restantes ni la
+      capacité de ses salles, laquelle varie de l'une à l'autre : une soirée y est complète à 64
+      inscrits quand une autre reste ouverte à 92. Sa page interroge une fonction qui renvoie les
+      billets vendus, et c'est ce nombre d'inscrits que le tableau affiche, faute de pouvoir en
+      tirer un pourcentage qui serait inventé. Le complet s'y lit au lien de liste d'attente que
+      le site pose sur les soirées pleines. Apéro Talk et Le Briefing n'indiquent que
       complet ou disponible, jamais un nombre de places : chez eux le remplissage restera un
       binaire, repéré à quelques heures près mais sans courbe. Dans tous les cas, les talks déjà
       en ligne le jour où la veille a ouvert les yeux resteront indéterminés pour toujours.</p>
@@ -957,7 +960,9 @@
       cel(typeof t.complet_marge_h === 'number' ? `± ${BT.nb(t.complet_marge_h, 0)} h`
         : (t.complet_le ? 'indéterminée' : '—'));
       cel(typeof t.jours_avant_complet === 'number' ? BT.nb(t.jours_avant_complet, 1) : '—');
-      cel(typeof t.remplissage_pct === 'number' ? `${t.remplissage_pct} %` : '—');
+      // sans capacite connue, le nombre d'inscrits reste une information
+      cel(typeof t.remplissage_pct === 'number' ? `${t.remplissage_pct} %`
+        : (typeof t.inscrits === 'number' ? `${BT.nb(t.inscrits)} inscrits` : '—'));
       const p = document.createElement('span');
       const STATUTS = {
         'complet': ['Complet', 'oui'],

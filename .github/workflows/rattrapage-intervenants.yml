@@ -1,0 +1,34 @@
+name: Rattrapage ponctuel des intervenants
+
+# Déclenchement manuel seulement : ce rattrapage n'a de sens qu'une fois.
+# À supprimer après usage.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rattraper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Combler les intervenants manquants
+        run: python scripts/ponctuel/rattrapage_intervenants.py
+
+      - name: Sauvegarder les états
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*_seen.json
+          if git diff --staged --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "Rattrapage : intervenants retrouves dans la base des Causeries"
+            git push
+          fi

@@ -365,6 +365,10 @@
       complet ou disponible, jamais un nombre de places : chez eux le remplissage restera un
       binaire, repéré à quelques heures près mais sans courbe. Dans tous les cas, les talks déjà
       en ligne le jour où la veille a ouvert les yeux resteront indéterminés pour toujours.</p>
+      <p><b>Un intervenant qui revient</b> est suivi de son rang, « (2) » pour sa deuxième
+      soirée, « (3) » pour la troisième, tous organisateurs confondus et dans l'ordre des dates
+      de talk. Deux écritures d'un même nom sont rapprochées en ignorant accents, ponctuation et
+      titre de civilité, ce qui rate encore les pseudonymes et les homonymes.</p>
       <p><b>Les thématiques sont une classification maison</b>, déduite du titre et de la
       spécialité de l'intervenant par repérage de mots-clés. Elle est perfectible, et une
       thématique peu représentée ne dit rien de solide.</p>
@@ -376,6 +380,48 @@
 
 </div>
 
+
+<script>
+  // ---- intervenants qui reviennent ----
+  // Un intervenant vu sur plusieurs soirées porte son rang : « Nom (2) » à la
+  // deuxième, « (3) » à la troisième. L'ordre est celui des dates de talk, donc
+  // la première garde le nom nu, et le rang ne dépend pas de l'organisateur.
+  //
+  // Le rapprochement se fait sur une forme réduite du nom : sans accents, sans
+  // ponctuation et sans titre de civilité. Sans cela « Hubert Guerin », lu dans
+  // une URL d'Amio, et « Hubert Guérin. », lu chez les Causeries, passeraient
+  // pour deux personnes, de même que « Baptiste Bellet » et « Maître Baptiste
+  // Bellet ».
+  function numeroterIntervenants(lignes) {
+    const reduit = (nom) => String(nom || '')
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+      .replace(/^(dr|docteur|me|maitre|pr|professeur)\.?\s+/, '')
+      .replace(/[^a-z]+/g, ' ').trim();
+
+    lignes.forEach((t) => { t.intervenant_affiche = t.intervenant; });
+
+    const groupes = new Map();
+    lignes.forEach((t) => {
+      const cle = reduit(t.intervenant);
+      if (!cle) return;
+      if (!groupes.has(cle)) groupes.set(cle, []);
+      groupes.get(cle).push(t);
+    });
+
+    groupes.forEach((soirees) => {
+      if (soirees.length < 2) return;
+      // une soirée sans date passe en dernier : faute de pouvoir la situer, on
+      // ne lui donne pas le nom nu, qui revient à la première connue
+      soirees.sort((a, b) => String(a.date_event || '9999').localeCompare(String(b.date_event || '9999'))
+        || String(a.parution || '9999').localeCompare(String(b.parution || '9999'))
+        || String(a.id || '').localeCompare(String(b.id || '')));
+      soirees.forEach((t, rang) => {
+        t.intervenant_affiche = rang ? `${t.intervenant} (${rang + 1})` : t.intervenant;
+      });
+    });
+    return lignes;
+  }
+</script>
 
 <script>
   // ---- la mecanique que fournissait l'environnement des artefacts ----
@@ -423,7 +469,7 @@
           if (!r.ok) throw new Error('HTTP ' + r.status);
           const d = await r.json();
           if (!Array.isArray(d) || !d.length) throw new Error('fichier vide ou inattendu');
-          etat = { status: 'ok', data: d };
+          etat = { status: 'ok', data: numeroterIntervenants(d) };
         } catch (e) {
           console.error('chargement', e);
           etat = { status: 'error', data: null };
@@ -512,7 +558,7 @@
     description: 'Talks dont le délai est mesurable, du plus rapide au plus lent.',
     fn: (talks) => talks
       .filter((t) => typeof t.jours_avant_complet === 'number')
-      .map((t) => ({ titre: t.titre, theme: t.theme, intervenant: t.intervenant, jours: t.jours_avant_complet, parution: t.parution }))
+      .map((t) => ({ titre: t.titre, theme: t.theme, intervenant: t.intervenant_affiche, jours: t.jours_avant_complet, parution: t.parution }))
       .sort((a, b) => a.jours - b.jours),
   });
   dash.calc('c_themes', {
@@ -951,7 +997,7 @@
       cel(t.organisateur);
       cel(BT.jour(t.date_event));
       cel(t.theme);
-      cel(t.intervenant || '—');
+      cel(t.intervenant_affiche || '—');
       cel(BT.jour(t.parution));
       cel(typeof t.parution_marge_h === 'number'
         ? (t.parution_marge_h ? `± ${BT.nb(t.parution_marge_h, 0)} h` : 'exacte')

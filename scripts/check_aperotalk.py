@@ -172,7 +172,7 @@ def completer_fiches(etat, limite=4):
 
 
 def main():
-    total, trouves = recuperer(v.fetch(PAGE))
+    total, trouves = recuperer(v.fetch(PAGE, entetes=NAVIGATEUR))
     if not trouves:
         print("Aucune carte trouvée : site en panne ou structure modifiée ?", file=sys.stderr)
         sys.exit(1)

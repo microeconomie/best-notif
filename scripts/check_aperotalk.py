@@ -30,9 +30,6 @@ LIGNE_LI = re.compile(r"<li[^>]*>(.*?)</li>", re.S | re.IGNORECASE)
 SHOTGUN = re.compile(r'href="(https://shotgun\.live/[a-z]{2}/events/([a-z0-9-]+))"', re.IGNORECASE)
 JOURS = "lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche"
 DATE = re.compile(rf"(?:{JOURS})\s+\d{{1,2}}(?:er)?\s+[a-zéû]+(?:\s+\d{{4}})?", re.IGNORECASE)
-# « Avec Émilie Dupont, chercheuse… » : le nom suit le mot « avec » dans la
-# description de la carte, une fois les entités HTML décodées.
-AVEC = re.compile(r"\bavec\s+([A-ZÀ-Ý][\w'\u2019-]+(?:\s+[A-ZÀ-Ý][\w'\u2019-]+){0,3})")
 
 
 def recuperer(page):
@@ -75,6 +72,9 @@ def recuperer(page):
 
 
 LD = re.compile(r'<script type="application/ld\+json"[^>]*>(.*?)</script>', re.S)
+# « Avec Émilie Dupont, chercheuse… » : le nom suit le mot « avec », et
+# s'arrête à la première virgule. Sert aux deux lectures, la carte du site
+# comme la fiche de billetterie.
 AVEC = re.compile(r"[Aa]vec ([A-ZÉÈÊÀÂÎÔÛÇ][^,\n.;]{2,40})")
 NAVIGATEUR = {"User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                              "AppleWebKit/537.36 (KHTML, like Gecko) "

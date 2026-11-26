@@ -52,7 +52,7 @@
       ]
     ],
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-26T04:54",
+    "derniere_maj": "2026-11-26T14:58",
     "dispo_le": null,
     "inscrits": 87,
     "intervenant": "Juliette Hazart",
@@ -125,8 +125,8 @@
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-26T04:54",
-    "dispo_le": "2026-11-26T04:54",
+    "derniere_maj": "2026-11-26T14:58",
+    "dispo_le": "2026-11-26T14:58",
     "inscrits": 89,
     "intervenant": "Monia Djillali",
     "journal": [
@@ -179,8 +179,8 @@
       ]
     ],
     "date": "Dimanche 13 décembre 2026",
-    "derniere_maj": "2026-11-26T04:54",
-    "dispo_le": "2026-11-26T04:54",
+    "derniere_maj": "2026-11-26T14:58",
+    "dispo_le": "2026-11-26T14:58",
     "inscrits": 39,
     "intervenant": "Hubert Guerin",
     "journal": [
@@ -224,7 +224,7 @@
       ]
     ],
     "date": "Mardi 15 décembre 2026",
-    "derniere_maj": "2026-11-26T04:54",
+    "derniere_maj": "2026-11-26T14:58",
     "dispo_le": "2026-11-24T10:20",
     "inscrits": 64,
     "intervenant": "Khaled Miloudi",
@@ -423,13 +423,13 @@
       ],
       [
         "2026-11-26",
-        19
+        21
       ]
     ],
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-26T04:54",
-    "dispo_le": "2026-11-26T04:54",
-    "inscrits": 19,
+    "derniere_maj": "2026-11-26T14:58",
+    "dispo_le": "2026-11-26T14:58",
+    "inscrits": 21,
     "intervenant": "Guillaume Aulanier",
     "journal": [
       [
@@ -496,8 +496,8 @@
       ]
     ],
     "date": "Lundi 14 décembre 2026",
-    "derniere_maj": "2026-11-26T04:54",
-    "dispo_le": "2026-11-26T04:54",
+    "derniere_maj": "2026-11-26T14:58",
+    "dispo_le": "2026-11-26T14:58",
     "inscrits": 16,
     "intervenant": "Olivier Lagage",
     "journal": [
@@ -939,13 +939,13 @@
       ],
       [
         "2026-11-26",
-        99
+        98
       ]
     ],
     "date": "Lundi 30 novembre 2026",
-    "derniere_maj": "2026-11-26T04:54",
-    "dispo_le": "2026-11-26T04:54",
-    "inscrits": 99,
+    "derniere_maj": "2026-11-26T14:58",
+    "dispo_le": "2026-11-26T14:58",
+    "inscrits": 98,
     "intervenant": "Oliveira 2",
     "journal": [
       [
@@ -961,11 +961,11 @@
         "revente"
       ]
     ],
-    "lieu": "Cabaret Gaîté",
+    "lieu": "Cabaret Gaîté (à l'intérieur du centre commercial au niveau ",
     "parution_marge_h": 4.5,
     "rouvert_le": "2026-11-24T11:14",
     "titre": "Le passage à l'acte meurtrier...",
-    "url": "https://amioclub.com/checkout?date=Lundi%2030%20novembre%202026&title=Le%20passage%20%C3%A0%20l'acte%20meurtrier...&event=passage-a-lacte-emma-christiaen-oliveira-2&venue=Cabaret%20Ga%C3%AEt%C3%A9%2C%2080%20Avenue%20du%20Maine%2C%2075014%20Paris",
+    "url": "https://amioclub.com/checkout?date=Lundi%2030%20novembre%202026&title=Le%20passage%20%C3%A0%20l'acte%20meurtrier...&event=passage-a-lacte-emma-christiaen-oliveira-2&venue=Cabaret%20Ga%C3%AEt%C3%A9%20(%C3%A0%20l'int%C3%A9rieur%20du%20centre%20commercial%20au%20niveau%20-1)%2C%2080%20Avenue%20du%20Maine%2C%2075014%20Paris",
     "vu_le": "2026-11-08T19:29"
   },
   "presidentielle-richard-flurin": {

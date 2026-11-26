@@ -68,13 +68,17 @@
       [
         "2026-11-25",
         15
+      ],
+      [
+        "2026-11-26",
+        17
       ]
     ],
     "date": "Lundi 14 décembre 2026 à 19h30",
     "date_iso": "2026-12-14",
-    "derniere_maj": "2026-11-25T20:19",
-    "dispo_le": "2026-11-25T20:19",
-    "inscrits": 15,
+    "derniere_maj": "2026-11-26T03:19",
+    "dispo_le": "2026-11-26T03:19",
+    "inscrits": 17,
     "intervenant": "Arnaud Zegierman",
     "journal": [
       [
@@ -84,7 +88,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 65,
+    "places": 63,
     "publie_le": "2026-11-09T12:41",
     "specialite": "Sociologue, cofondateur de l'institut de sondages Viavoice",
     "titre": "La France n'est pas celle que vous croyez",
@@ -275,11 +279,15 @@
       [
         "2026-11-25",
         100
+      ],
+      [
+        "2026-11-26",
+        100
       ]
     ],
     "date": "Mercredi 2 décembre 2026 à 19h30",
     "date_iso": "2026-12-02",
-    "derniere_maj": "2026-11-25T20:19",
+    "derniere_maj": "2026-11-26T03:19",
     "dispo_le": "2026-11-22T18:10",
     "inscrits": 100,
     "intervenant": "Pierre Martinet",
@@ -352,11 +360,15 @@
       [
         "2026-11-25",
         75
+      ],
+      [
+        "2026-11-26",
+        75
       ]
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-25T20:19",
+    "derniere_maj": "2026-11-26T03:19",
     "dispo_le": "2026-10-23T18:49",
     "inscrits": 75,
     "intervenant": "Baptiste Bellet",
@@ -422,13 +434,17 @@
       [
         "2026-11-25",
         32
+      ],
+      [
+        "2026-11-26",
+        34
       ]
     ],
     "date": "Mardi 8 décembre 2026 à 19h30",
     "date_iso": "2026-12-08",
-    "derniere_maj": "2026-11-25T20:19",
-    "dispo_le": "2026-11-25T20:19",
-    "inscrits": 32,
+    "derniere_maj": "2026-11-26T03:19",
+    "dispo_le": "2026-11-26T03:19",
+    "inscrits": 34,
     "intervenant": "Johann Gironnet",
     "journal": [
       [
@@ -438,7 +454,7 @@
     ],
     "lieu": "La Rotonde Stalingrad",
     "parution_marge_h": 9.1,
-    "places": 68,
+    "places": 66,
     "publie_le": "2026-11-09T10:50",
     "specialite": "Docteur en astrophysique, ingénieur de recherche au CNRS",
     "titre": "Et si les trous noirs n'étaient pas des monstres ?",
@@ -583,13 +599,17 @@
       [
         "2026-11-25",
         39
+      ],
+      [
+        "2026-11-26",
+        42
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-25T20:19",
-    "dispo_le": "2026-11-25T20:19",
-    "inscrits": 39,
+    "derniere_maj": "2026-11-26T03:19",
+    "dispo_le": "2026-11-26T03:19",
+    "inscrits": 42,
     "intervenant": "Alexandre Macé Dubois",
     "journal": [
       [
@@ -599,7 +619,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 41,
+    "places": 38,
     "publie_le": "2026-11-06T10:58",
     "specialite": "Journaliste indépendant, infiltré un an aux côtés d'un trafiquant de cocaïne",
     "titre": "Profession dealer : un an en immersion avec un trafiquant de drogue",
@@ -636,12 +656,16 @@
       [
         "2026-11-25",
         12
+      ],
+      [
+        "2026-11-26",
+        12
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-25T20:19",
-    "dispo_le": "2026-11-25T20:19",
+    "derniere_maj": "2026-11-26T03:19",
+    "dispo_le": "2026-11-26T03:19",
     "inscrits": 12,
     "intervenant": "Camille Renoux",
     "journal": [
@@ -705,12 +729,16 @@
       [
         "2026-11-25",
         79
+      ],
+      [
+        "2026-11-26",
+        79
       ]
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-25T20:19",
-    "dispo_le": "2026-11-25T20:19",
+    "derniere_maj": "2026-11-26T03:19",
+    "dispo_le": "2026-11-26T03:19",
     "inscrits": 79,
     "intervenant": "Xavier Leflaive",
     "journal": [
@@ -801,13 +829,17 @@
       [
         "2026-11-25",
         64
+      ],
+      [
+        "2026-11-26",
+        69
       ]
     ],
     "date": "Mardi 22 décembre 2026 à 19h30",
     "date_iso": "2026-12-22",
-    "derniere_maj": "2026-11-25T20:19",
-    "dispo_le": "2026-11-25T20:19",
-    "inscrits": 64,
+    "derniere_maj": "2026-11-26T03:19",
+    "dispo_le": "2026-11-26T03:19",
+    "inscrits": 69,
     "intervenant": "Cyril Lobjois",
     "journal": [
       [
@@ -817,7 +849,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 9.1,
-    "places": 11,
+    "places": 6,
     "publie_le": "2026-11-09T12:37",
     "specialite": "Expert en communication non verbale, 100 000 abonnés autour de l'analyse comportementale",
     "titre": "Votre corps vous trahit-il ?",
@@ -858,12 +890,16 @@
       [
         "2026-11-25",
         77
+      ],
+      [
+        "2026-11-26",
+        77
       ]
     ],
     "date": "Mardi 15 décembre 2026 à 19h30",
     "date_iso": "2026-12-15",
-    "derniere_maj": "2026-11-25T20:19",
-    "dispo_le": "2026-11-25T20:19",
+    "derniere_maj": "2026-11-26T03:19",
+    "dispo_le": "2026-11-26T03:19",
     "inscrits": 77,
     "intervenant": "Yannick Lejeune",
     "journal": [
@@ -911,13 +947,17 @@
       [
         "2026-11-25",
         50
+      ],
+      [
+        "2026-11-26",
+        53
       ]
     ],
     "date": "Dimanche 13 décembre 2026 à 18h00",
     "date_iso": "2026-12-13",
-    "derniere_maj": "2026-11-25T20:19",
-    "dispo_le": "2026-11-25T20:19",
-    "inscrits": 50,
+    "derniere_maj": "2026-11-26T03:19",
+    "dispo_le": "2026-11-26T03:19",
+    "inscrits": 53,
     "intervenant": "Carole ANDRE-DESSORNES",
     "journal": [
       [
@@ -927,7 +967,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 6.2,
-    "places": 25,
+    "places": 22,
     "publie_le": "2026-11-02T12:25",
     "specialite": "Géopolitologue, chercheuse associée à la Fondation pour la recherche stratégique",
     "titre": "D'où vient vraiment le chaos au Moyen-Orient ?",
@@ -964,12 +1004,16 @@
       [
         "2026-11-25",
         35
+      ],
+      [
+        "2026-11-26",
+        35
       ]
     ],
     "date": "Dimanche 6 décembre 2026 à 18h00",
     "date_iso": "2026-12-06",
-    "derniere_maj": "2026-11-25T20:19",
-    "dispo_le": "2026-11-25T20:19",
+    "derniere_maj": "2026-11-26T03:19",
+    "dispo_le": "2026-11-26T03:19",
     "inscrits": 35,
     "intervenant": "Jérémy Côme",
     "journal": [

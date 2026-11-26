@@ -480,7 +480,7 @@
 "places_restantes": "",
 "remplissage_pct": "",
 "complet": "non",
-"statut": "disponible",
+"statut": "jamais complet",
 "derniere_veille": "2026-11-25T22:24",
 "url": "https://amioclub.com/checkout?date=Mercredi%2025%20novembre%202026&title=Exp%C3%A9dition%20avec%20la%20NASA%20%3A%20explorer%20Mars%E2%80%A6%20depuis%20la%20Terre&event=nasa-nicolas-mahoume&venue=Le%20Cirque%2C%20141%20Rue%20Saint-Martin%2C%2075004%20Paris",
 "points_de_mesure": 10
@@ -967,7 +967,7 @@
 "remplissage_pct": "",
 "complet": "oui",
 "statut": "complet",
-"derniere_veille": "2026-11-25T15:39",
+"derniere_veille": "2026-11-26T00:24",
 "url": "https://shotgun.live/fr/events/notre-destin-est-il-deja-ecrit",
 "points_de_mesure": 0
 },
@@ -994,7 +994,7 @@
 "remplissage_pct": "",
 "complet": "non",
 "statut": "disponible",
-"derniere_veille": "2026-11-25T15:39",
+"derniere_veille": "2026-11-26T00:24",
 "url": "https://shotgun.live/fr/events/qui-sont-vraiment-les-masculinistes",
 "points_de_mesure": 0
 },
@@ -1021,7 +1021,7 @@
 "remplissage_pct": "",
 "complet": "non",
 "statut": "disponible",
-"derniere_veille": "2026-11-25T15:39",
+"derniere_veille": "2026-11-26T00:24",
 "url": "https://shotgun.live/fr/events/la-technologie-nous-rend-elle-plus-seuls",
 "points_de_mesure": 0
 },

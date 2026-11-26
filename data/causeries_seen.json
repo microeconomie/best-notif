@@ -76,8 +76,8 @@
     ],
     "date": "Lundi 14 décembre 2026 à 19h30",
     "date_iso": "2026-12-14",
-    "derniere_maj": "2026-11-26T20:02",
-    "dispo_le": "2026-11-26T20:02",
+    "derniere_maj": "2026-11-26T22:43",
+    "dispo_le": "2026-11-26T22:43",
     "inscrits": 17,
     "intervenant": "Arnaud Zegierman",
     "journal": [
@@ -287,7 +287,7 @@
     ],
     "date": "Mercredi 2 décembre 2026 à 19h30",
     "date_iso": "2026-12-02",
-    "derniere_maj": "2026-11-26T20:02",
+    "derniere_maj": "2026-11-26T22:43",
     "dispo_le": "2026-11-22T18:10",
     "inscrits": 100,
     "intervenant": "Pierre Martinet",
@@ -368,7 +368,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-26T20:02",
+    "derniere_maj": "2026-11-26T22:43",
     "dispo_le": "2026-10-23T18:49",
     "inscrits": 75,
     "intervenant": "Baptiste Bellet",
@@ -437,14 +437,14 @@
       ],
       [
         "2026-11-26",
-        35
+        40
       ]
     ],
     "date": "Mardi 8 décembre 2026 à 19h30",
     "date_iso": "2026-12-08",
-    "derniere_maj": "2026-11-26T20:02",
-    "dispo_le": "2026-11-26T20:02",
-    "inscrits": 35,
+    "derniere_maj": "2026-11-26T22:43",
+    "dispo_le": "2026-11-26T22:43",
+    "inscrits": 40,
     "intervenant": "Johann Gironnet",
     "journal": [
       [
@@ -454,7 +454,7 @@
     ],
     "lieu": "La Rotonde Stalingrad",
     "parution_marge_h": 9.1,
-    "places": 65,
+    "places": 60,
     "publie_le": "2026-11-09T10:50",
     "specialite": "Docteur en astrophysique, ingénieur de recherche au CNRS",
     "titre": "Et si les trous noirs n'étaient pas des monstres ?",
@@ -602,14 +602,14 @@
       ],
       [
         "2026-11-26",
-        42
+        44
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-26T20:02",
-    "dispo_le": "2026-11-26T20:02",
-    "inscrits": 42,
+    "derniere_maj": "2026-11-26T22:43",
+    "dispo_le": "2026-11-26T22:43",
+    "inscrits": 44,
     "intervenant": "Alexandre Macé Dubois",
     "journal": [
       [
@@ -619,7 +619,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 38,
+    "places": 36,
     "publie_le": "2026-11-06T10:58",
     "specialite": "Journaliste indépendant, infiltré un an aux côtés d'un trafiquant de cocaïne",
     "titre": "Profession dealer : un an en immersion avec un trafiquant de drogue",
@@ -664,8 +664,8 @@
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-26T20:02",
-    "dispo_le": "2026-11-26T20:02",
+    "derniere_maj": "2026-11-26T22:43",
+    "dispo_le": "2026-11-26T22:43",
     "inscrits": 13,
     "intervenant": "Camille Renoux",
     "journal": [
@@ -737,7 +737,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-26T20:02",
+    "derniere_maj": "2026-11-26T22:43",
     "dispo_le": "2026-11-26T13:24",
     "inscrits": 80,
     "intervenant": "Xavier Leflaive",
@@ -841,7 +841,7 @@
     ],
     "date": "Mardi 22 décembre 2026 à 19h30",
     "date_iso": "2026-12-22",
-    "derniere_maj": "2026-11-26T20:02",
+    "derniere_maj": "2026-11-26T22:43",
     "dispo_le": "2026-11-26T13:24",
     "inscrits": 75,
     "intervenant": "Cyril Lobjois",
@@ -905,14 +905,14 @@
       ],
       [
         "2026-11-26",
-        81
+        82
       ]
     ],
     "date": "Mardi 15 décembre 2026 à 19h30",
     "date_iso": "2026-12-15",
-    "derniere_maj": "2026-11-26T20:02",
-    "dispo_le": "2026-11-26T20:02",
-    "inscrits": 81,
+    "derniere_maj": "2026-11-26T22:43",
+    "dispo_le": "2026-11-26T22:43",
+    "inscrits": 82,
     "intervenant": "Yannick Lejeune",
     "journal": [
       [
@@ -922,7 +922,7 @@
     ],
     "lieu": "La Rotonde Stalingrad",
     "parution_marge_h": 9.1,
-    "places": 19,
+    "places": 18,
     "publie_le": "2026-11-09T12:42",
     "specialite": "Directeur du digital et de l'IA du groupe IONIS (27 écoles, 35 000 étudiants)",
     "titre": "Pourquoi apprendre quand l'IA sait déjà tout ?",
@@ -962,14 +962,14 @@
       ],
       [
         "2026-11-26",
-        61
+        62
       ]
     ],
     "date": "Dimanche 13 décembre 2026 à 18h00",
     "date_iso": "2026-12-13",
-    "derniere_maj": "2026-11-26T20:02",
-    "dispo_le": "2026-11-26T20:02",
-    "inscrits": 61,
+    "derniere_maj": "2026-11-26T22:43",
+    "dispo_le": "2026-11-26T22:43",
+    "inscrits": 62,
     "intervenant": "Carole ANDRE-DESSORNES",
     "journal": [
       [
@@ -979,7 +979,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 6.2,
-    "places": 14,
+    "places": 13,
     "publie_le": "2026-11-02T12:25",
     "specialite": "Géopolitologue, chercheuse associée à la Fondation pour la recherche stratégique",
     "titre": "D'où vient vraiment le chaos au Moyen-Orient ?",
@@ -1024,8 +1024,8 @@
     ],
     "date": "Dimanche 6 décembre 2026 à 18h00",
     "date_iso": "2026-12-06",
-    "derniere_maj": "2026-11-26T20:02",
-    "dispo_le": "2026-11-26T20:02",
+    "derniere_maj": "2026-11-26T22:43",
+    "dispo_le": "2026-11-26T22:43",
     "inscrits": 37,
     "intervenant": "Jérémy Côme",
     "journal": [

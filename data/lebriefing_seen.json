@@ -47,8 +47,8 @@
     "complet_marge_h": null,
     "date": "Jeudi 10 décembre · 19h30",
     "date_iso": "2026-12-10",
-    "derniere_maj": "2026-11-26T13:05",
-    "dispo_le": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
+    "dispo_le": "2026-11-26T20:05",
     "exclusif": false,
     "intervenant": "Simon Kuper",
     "journal": [
@@ -88,12 +88,12 @@
   "comment-negocier-avec-un-preneur-d-otages": {
     "billetterie": "en vente",
     "capacite": null,
-    "complet": false,
-    "complet_le": null,
-    "complet_marge_h": null,
+    "complet": true,
+    "complet_le": "2026-11-26T20:05",
+    "complet_marge_h": 7.0,
     "date": "Lundi 7 décembre · 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
     "dispo_le": "2026-11-26T13:05",
     "exclusif": false,
     "intervenant": "Nicolas Chantreau",
@@ -101,6 +101,10 @@
       [
         "2026-11-22T18:00",
         "drop"
+      ],
+      [
+        "2026-11-26T20:05",
+        "complet"
       ]
     ],
     "lieu": "MEO Training House",
@@ -156,8 +160,8 @@
     "complet_marge_h": null,
     "date": "Mercredi 16 décembre · 19h30",
     "date_iso": "2026-12-16",
-    "derniere_maj": "2026-11-26T13:05",
-    "dispo_le": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
+    "dispo_le": "2026-11-26T20:05",
     "exclusif": false,
     "intervenant": "Étienne Klein",
     "journal": [
@@ -181,8 +185,8 @@
     "complet_marge_h": null,
     "date": "Jeudi 3 décembre · 19h30",
     "date_iso": "2026-12-03",
-    "derniere_maj": "2026-11-26T13:05",
-    "dispo_le": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
+    "dispo_le": "2026-11-26T20:05",
     "exclusif": false,
     "intervenant": "Didier Allouch",
     "journal": [
@@ -300,8 +304,8 @@
     "complet_marge_h": null,
     "date": "Mercredi 2 décembre · 19h30",
     "date_iso": "2026-12-02",
-    "derniere_maj": "2026-11-26T13:05",
-    "dispo_le": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
+    "dispo_le": "2026-11-26T20:05",
     "exclusif": false,
     "intervenant": "Dominique Rousseau",
     "journal": [
@@ -325,8 +329,8 @@
     "complet_marge_h": null,
     "date": "Mercredi 9 décembre · 19h30",
     "date_iso": "2026-12-09",
-    "derniere_maj": "2026-11-26T13:05",
-    "dispo_le": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
+    "dispo_le": "2026-11-26T20:05",
     "exclusif": false,
     "intervenant": "Philippe Gonin",
     "journal": [
@@ -350,8 +354,8 @@
     "complet_marge_h": null,
     "date": "Mardi 15 décembre · 19h30",
     "date_iso": "2026-12-15",
-    "derniere_maj": "2026-11-26T13:05",
-    "dispo_le": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
+    "dispo_le": "2026-11-26T20:05",
     "exclusif": false,
     "intervenant": "Antoine Buéno",
     "journal": [
@@ -531,8 +535,8 @@
     "complet_marge_h": null,
     "date": "Lundi 14 décembre · 19h30",
     "date_iso": "2026-12-14",
-    "derniere_maj": "2026-11-26T13:05",
-    "dispo_le": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
+    "dispo_le": "2026-11-26T20:05",
     "exclusif": false,
     "intervenant": "Yassin Najid",
     "journal": [
@@ -605,8 +609,8 @@
     "complet_marge_h": null,
     "date": "Jeudi 17 décembre · 19h30",
     "date_iso": "2026-12-17",
-    "derniere_maj": "2026-11-26T13:05",
-    "dispo_le": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
+    "dispo_le": "2026-11-26T20:05",
     "exclusif": false,
     "intervenant": "Vincent Crouzet",
     "journal": [
@@ -659,7 +663,7 @@
     "complet_marge_h": null,
     "date": "Jeudi 26 novembre · 19h30",
     "date_iso": "2026-11-26",
-    "derniere_maj": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
     "dispo_le": null,
     "exclusif": false,
     "intervenant": "Joël Doré",
@@ -689,8 +693,8 @@
     "complet_marge_h": null,
     "date": "Mardi 1 décembre · 19h30",
     "date_iso": "2026-12-01",
-    "derniere_maj": "2026-11-26T13:05",
-    "dispo_le": "2026-11-26T13:05",
+    "derniere_maj": "2026-11-26T20:05",
+    "dispo_le": "2026-11-26T20:05",
     "exclusif": false,
     "intervenant": "Arnaud Zegierman",
     "journal": [

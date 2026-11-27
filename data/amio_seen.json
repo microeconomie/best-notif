@@ -49,10 +49,14 @@
       [
         "2026-11-26",
         87
+      ],
+      [
+        "2026-11-27",
+        87
       ]
     ],
     "date": "Mercredi 2 décembre 2026",
-    "derniere_maj": "2026-11-26T23:43",
+    "derniere_maj": "2026-11-27T08:06",
     "dispo_le": null,
     "inscrits": 87,
     "intervenant": "Juliette Hazart",
@@ -122,11 +126,15 @@
       [
         "2026-11-26",
         89
+      ],
+      [
+        "2026-11-27",
+        89
       ]
     ],
     "date": "Mardi 8 décembre 2026",
-    "derniere_maj": "2026-11-26T23:43",
-    "dispo_le": "2026-11-26T23:43",
+    "derniere_maj": "2026-11-27T08:06",
+    "dispo_le": "2026-11-27T08:06",
     "inscrits": 89,
     "intervenant": "Monia Djillali",
     "journal": [
@@ -176,11 +184,15 @@
       [
         "2026-11-26",
         39
+      ],
+      [
+        "2026-11-27",
+        39
       ]
     ],
     "date": "Dimanche 13 décembre 2026",
-    "derniere_maj": "2026-11-26T23:43",
-    "dispo_le": "2026-11-26T23:43",
+    "derniere_maj": "2026-11-27T08:06",
+    "dispo_le": "2026-11-27T08:06",
     "inscrits": 39,
     "intervenant": "Hubert Guerin",
     "journal": [
@@ -221,10 +233,14 @@
       [
         "2026-11-26",
         64
+      ],
+      [
+        "2026-11-27",
+        64
       ]
     ],
     "date": "Mardi 15 décembre 2026",
-    "derniere_maj": "2026-11-26T23:43",
+    "derniere_maj": "2026-11-27T08:06",
     "dispo_le": "2026-11-24T10:20",
     "inscrits": 64,
     "intervenant": "Khaled Miloudi",
@@ -424,11 +440,15 @@
       [
         "2026-11-26",
         21
+      ],
+      [
+        "2026-11-27",
+        21
       ]
     ],
     "date": "Lundi 7 décembre 2026",
-    "derniere_maj": "2026-11-26T23:43",
-    "dispo_le": "2026-11-26T23:43",
+    "derniere_maj": "2026-11-27T08:06",
+    "dispo_le": "2026-11-27T08:06",
     "inscrits": 21,
     "intervenant": "Guillaume Aulanier",
     "journal": [
@@ -493,11 +513,15 @@
       [
         "2026-11-26",
         18
+      ],
+      [
+        "2026-11-27",
+        18
       ]
     ],
     "date": "Lundi 14 décembre 2026",
-    "derniere_maj": "2026-11-26T23:43",
-    "dispo_le": "2026-11-26T23:43",
+    "derniere_maj": "2026-11-27T08:06",
+    "dispo_le": "2026-11-27T08:06",
     "inscrits": 18,
     "intervenant": "Olivier Lagage",
     "journal": [
@@ -940,11 +964,15 @@
       [
         "2026-11-26",
         100
+      ],
+      [
+        "2026-11-27",
+        100
       ]
     ],
     "date": "Lundi 30 novembre 2026",
-    "derniere_maj": "2026-11-26T23:43",
-    "dispo_le": "2026-11-26T23:43",
+    "derniere_maj": "2026-11-27T08:06",
+    "dispo_le": "2026-11-27T08:06",
     "inscrits": 100,
     "intervenant": "Oliveira 2",
     "journal": [

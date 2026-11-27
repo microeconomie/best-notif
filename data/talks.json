@@ -1345,9 +1345,9 @@
 "remplissage_pct": 100,
 "complet": "oui",
 "statut": "complet",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=3f2d18e4-f695-411c-83f7-cae1f961b5f3",
-"points_de_mesure": 11
+"points_de_mesure": 12
 },
 {
 "id": "causeries-de-comptoir--9ca1cb44-555b-4545-b8df-2dfcfbe3a322",
@@ -1372,9 +1372,9 @@
 "remplissage_pct": 100,
 "complet": "oui",
 "statut": "complet",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=9ca1cb44-555b-4545-b8df-2dfcfbe3a322",
-"points_de_mesure": 11
+"points_de_mesure": 12
 },
 {
 "id": "causeries-de-comptoir--3acc1f2a-bc71-4363-891e-0616a364ec85",
@@ -1399,9 +1399,9 @@
 "remplissage_pct": 100,
 "complet": "oui",
 "statut": "complet",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=3acc1f2a-bc71-4363-891e-0616a364ec85",
-"points_de_mesure": 7
+"points_de_mesure": 8
 },
 {
 "id": "causeries-de-comptoir--da2f80de-faaf-4061-a9ed-036cd4daf0ff",
@@ -1421,14 +1421,14 @@
 "jours_avant_complet": "",
 "rouvert_le": "",
 "capacite": 75,
-"inscrits": 37,
-"places_restantes": 38,
-"remplissage_pct": 49,
+"inscrits": 38,
+"places_restantes": 37,
+"remplissage_pct": 51,
 "complet": "non",
 "statut": "disponible",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=da2f80de-faaf-4061-a9ed-036cd4daf0ff",
-"points_de_mesure": 7
+"points_de_mesure": 8
 },
 {
 "id": "causeries-de-comptoir--73ae36f7-a08a-4c35-906b-b2605951cd32",
@@ -1453,9 +1453,9 @@
 "remplissage_pct": 55,
 "complet": "non",
 "statut": "disponible",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=73ae36f7-a08a-4c35-906b-b2605951cd32",
-"points_de_mesure": 8
+"points_de_mesure": 9
 },
 {
 "id": "causeries-de-comptoir--99d8de39-0004-4487-9bfc-29606dad24f1",
@@ -1480,9 +1480,9 @@
 "remplissage_pct": 19,
 "complet": "non",
 "statut": "disponible",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=99d8de39-0004-4487-9bfc-29606dad24f1",
-"points_de_mesure": 7
+"points_de_mesure": 8
 },
 {
 "id": "causeries-de-comptoir--59ab7db2-72b5-400c-8799-bff8e9911c97",
@@ -1507,9 +1507,9 @@
 "remplissage_pct": 40,
 "complet": "non",
 "statut": "disponible",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=59ab7db2-72b5-400c-8799-bff8e9911c97",
-"points_de_mesure": 8
+"points_de_mesure": 9
 },
 {
 "id": "causeries-de-comptoir--d77b94b6-134b-4a6a-a3e3-f2962481f018",
@@ -1534,9 +1534,9 @@
 "remplissage_pct": 83,
 "complet": "non",
 "statut": "disponible",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=d77b94b6-134b-4a6a-a3e3-f2962481f018",
-"points_de_mesure": 7
+"points_de_mesure": 8
 },
 {
 "id": "causeries-de-comptoir--1161884b-167d-459d-9aed-b7fdf6c8e92e",
@@ -1561,9 +1561,9 @@
 "remplissage_pct": 21,
 "complet": "non",
 "statut": "disponible",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=1161884b-167d-459d-9aed-b7fdf6c8e92e",
-"points_de_mesure": 8
+"points_de_mesure": 9
 },
 {
 "id": "causeries-de-comptoir--d3ceefa9-9b66-4ff4-9ba7-55ddcd19fb3c",
@@ -1583,14 +1583,14 @@
 "jours_avant_complet": "",
 "rouvert_le": "",
 "capacite": 100,
-"inscrits": 82,
-"places_restantes": 18,
-"remplissage_pct": 82,
+"inscrits": 83,
+"places_restantes": 17,
+"remplissage_pct": 83,
 "complet": "non",
 "statut": "disponible",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=d3ceefa9-9b66-4ff4-9ba7-55ddcd19fb3c",
-"points_de_mesure": 8
+"points_de_mesure": 9
 },
 {
 "id": "causeries-de-comptoir--c2e7f14f-4dcf-475c-8b30-233e124bed22",
@@ -1615,9 +1615,9 @@
 "remplissage_pct": 100,
 "complet": "oui",
 "statut": "complet",
-"derniere_veille": "2026-11-26T22:43",
+"derniere_veille": "2026-11-27T04:40",
 "url": "https://causeriesdecomptoir.fr/reservation?eventId=c2e7f14f-4dcf-475c-8b30-233e124bed22",
-"points_de_mesure": 8
+"points_de_mesure": 9
 },
 {
 "id": "le-briefing--paris-comment-s-est-elle-batie-comment-va-t-elle-evoluer",

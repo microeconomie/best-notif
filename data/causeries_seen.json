@@ -80,8 +80,8 @@
     ],
     "date": "Lundi 14 décembre 2026 à 19h30",
     "date_iso": "2026-12-14",
-    "derniere_maj": "2026-11-27T04:40",
-    "dispo_le": "2026-11-27T04:40",
+    "derniere_maj": "2026-11-27T14:32",
+    "dispo_le": "2026-11-27T14:32",
     "inscrits": 17,
     "intervenant": "Arnaud Zegierman",
     "journal": [
@@ -295,7 +295,7 @@
     ],
     "date": "Mercredi 2 décembre 2026 à 19h30",
     "date_iso": "2026-12-02",
-    "derniere_maj": "2026-11-27T04:40",
+    "derniere_maj": "2026-11-27T14:32",
     "dispo_le": "2026-11-22T18:10",
     "inscrits": 100,
     "intervenant": "Pierre Martinet",
@@ -323,9 +323,9 @@
     "vu_le": "2026-11-20T00:58"
   },
   "3f2d18e4-f695-411c-83f7-cae1f961b5f3": {
-    "alerte_seuil": false,
+    "alerte_seuil": true,
     "capacite": 75,
-    "complet": true,
+    "complet": false,
     "complet_le": "2026-10-23T21:46",
     "complet_marge_h": 3.0,
     "courbe": [
@@ -375,14 +375,14 @@
       ],
       [
         "2026-11-27",
-        75
+        74
       ]
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-27T04:40",
-    "dispo_le": "2026-10-23T18:49",
-    "inscrits": 75,
+    "derniere_maj": "2026-11-27T14:32",
+    "dispo_le": "2026-11-27T14:32",
+    "inscrits": 74,
     "intervenant": "Baptiste Bellet",
     "journal": [
       [
@@ -400,13 +400,21 @@
       [
         "2026-11-12T01:13",
         "complet"
+      ],
+      [
+        "2026-11-27T14:32",
+        "revente"
+      ],
+      [
+        "2026-11-27T14:32",
+        "dernieres-places:1"
       ]
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 4.8,
-    "places": 0,
+    "places": 1,
     "publie_le": "2026-10-16T15:28",
-    "rouvert_le": "2026-11-11T18:15",
+    "rouvert_le": "2026-11-27T14:32",
     "specialite": "Avocat pénaliste au barreau de Paris, Secrétaire de la Conférence 2026",
     "titre": "Jusqu’où peut-on défendre l’inacceptable ?",
     "url": "https://causeriesdecomptoir.fr/reservation?eventId=3f2d18e4-f695-411c-83f7-cae1f961b5f3",
@@ -453,14 +461,14 @@
       ],
       [
         "2026-11-27",
-        40
+        43
       ]
     ],
     "date": "Mardi 8 décembre 2026 à 19h30",
     "date_iso": "2026-12-08",
-    "derniere_maj": "2026-11-27T04:40",
-    "dispo_le": "2026-11-27T04:40",
-    "inscrits": 40,
+    "derniere_maj": "2026-11-27T14:32",
+    "dispo_le": "2026-11-27T14:32",
+    "inscrits": 43,
     "intervenant": "Johann Gironnet",
     "journal": [
       [
@@ -470,7 +478,7 @@
     ],
     "lieu": "La Rotonde Stalingrad",
     "parution_marge_h": 9.1,
-    "places": 60,
+    "places": 57,
     "publie_le": "2026-11-09T10:50",
     "specialite": "Docteur en astrophysique, ingénieur de recherche au CNRS",
     "titre": "Et si les trous noirs n'étaient pas des monstres ?",
@@ -622,14 +630,14 @@
       ],
       [
         "2026-11-27",
-        44
+        45
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-27T04:40",
-    "dispo_le": "2026-11-27T04:40",
-    "inscrits": 44,
+    "derniere_maj": "2026-11-27T14:32",
+    "dispo_le": "2026-11-27T14:32",
+    "inscrits": 45,
     "intervenant": "Alexandre Macé Dubois",
     "journal": [
       [
@@ -639,7 +647,7 @@
     ],
     "lieu": "Pomelo bistrot",
     "parution_marge_h": 9.1,
-    "places": 36,
+    "places": 35,
     "publie_le": "2026-11-06T10:58",
     "specialite": "Journaliste indépendant, infiltré un an aux côtés d'un trafiquant de cocaïne",
     "titre": "Profession dealer : un an en immersion avec un trafiquant de drogue",
@@ -683,14 +691,14 @@
       ],
       [
         "2026-11-27",
-        13
+        16
       ]
     ],
     "date": "Lundi 7 décembre 2026 à 19h30",
     "date_iso": "2026-12-07",
-    "derniere_maj": "2026-11-27T04:40",
-    "dispo_le": "2026-11-27T04:40",
-    "inscrits": 13,
+    "derniere_maj": "2026-11-27T14:32",
+    "dispo_le": "2026-11-27T14:32",
+    "inscrits": 16,
     "intervenant": "Camille Renoux",
     "journal": [
       [
@@ -700,7 +708,7 @@
     ],
     "lieu": "Bistouille",
     "parution_marge_h": 6.2,
-    "places": 57,
+    "places": 54,
     "publie_le": "2026-11-09T12:00",
     "specialite": "Astrologue, fondatrice du Club Lunaire",
     "titre": "Faut-il prendre l'astrologie au sérieux ?",
@@ -765,7 +773,7 @@
     ],
     "date": "Lundi 30 novembre 2026 à 19h30",
     "date_iso": "2026-11-30",
-    "derniere_maj": "2026-11-27T04:40",
+    "derniere_maj": "2026-11-27T14:32",
     "dispo_le": "2026-11-26T13:24",
     "inscrits": 80,
     "intervenant": "Xavier Leflaive",
@@ -873,7 +881,7 @@
     ],
     "date": "Mardi 22 décembre 2026 à 19h30",
     "date_iso": "2026-12-22",
-    "derniere_maj": "2026-11-27T04:40",
+    "derniere_maj": "2026-11-27T14:32",
     "dispo_le": "2026-11-26T13:24",
     "inscrits": 75,
     "intervenant": "Cyril Lobjois",
@@ -946,8 +954,8 @@
     ],
     "date": "Mardi 15 décembre 2026 à 19h30",
     "date_iso": "2026-12-15",
-    "derniere_maj": "2026-11-27T04:40",
-    "dispo_le": "2026-11-27T04:40",
+    "derniere_maj": "2026-11-27T14:32",
+    "dispo_le": "2026-11-27T14:32",
     "inscrits": 83,
     "intervenant": "Yannick Lejeune",
     "journal": [
@@ -1002,14 +1010,14 @@
       ],
       [
         "2026-11-27",
-        62
+        67
       ]
     ],
     "date": "Dimanche 13 décembre 2026 à 18h00",
     "date_iso": "2026-12-13",
-    "derniere_maj": "2026-11-27T04:40",
-    "dispo_le": "2026-11-27T04:40",
-    "inscrits": 62,
+    "derniere_maj": "2026-11-27T14:32",
+    "dispo_le": "2026-11-27T14:32",
+    "inscrits": 67,
     "intervenant": "Carole ANDRE-DESSORNES",
     "journal": [
       [
@@ -1019,7 +1027,7 @@
     ],
     "lieu": "Kawaa du Lucernaire",
     "parution_marge_h": 6.2,
-    "places": 13,
+    "places": 8,
     "publie_le": "2026-11-02T12:25",
     "specialite": "Géopolitologue, chercheuse associée à la Fondation pour la recherche stratégique",
     "titre": "D'où vient vraiment le chaos au Moyen-Orient ?",
@@ -1068,8 +1076,8 @@
     ],
     "date": "Dimanche 6 décembre 2026 à 18h00",
     "date_iso": "2026-12-06",
-    "derniere_maj": "2026-11-27T04:40",
-    "dispo_le": "2026-11-27T04:40",
+    "derniere_maj": "2026-11-27T14:32",
+    "dispo_le": "2026-11-27T14:32",
     "inscrits": 38,
     "intervenant": "Jérémy Côme",
     "journal": [
